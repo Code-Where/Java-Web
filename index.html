@@ -27,7 +27,7 @@
                 <li><a href="programs.html">Pracise Programs</a></li>
             </ul>
         </nav>
-        <section class="header-content">
+        <section class="header-content" id="headTxt">
             <section>
                 <h1>Code-Where</h1>
                 <p>Greetings and welcome to CodeWhere, the best place for people to learn programming languages.
@@ -157,10 +157,14 @@
         let navMenu = document.getElementById("navMenu");
         checkBox.addEventListener("click", () => {
             if (checkBox.checked) {
-                navMenu.style.top = "150px";
+                navMenu.style.top = "75px";
+                console.log(document.getElementById("headTxt"));
+                document.getElementById("headTxt").classList.add("filter")
             }
             else {
                 navMenu.style.top = "-400px";
+                document.getElementById("headTxt").classList.remove("filter");
+
             }
         })
     </script>
