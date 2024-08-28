@@ -345,6 +345,12 @@ footer ul li a:hover{
     .hamburger{
         display: block;
     }
+    header .header-content section h1{
+        font-size: 2rem;
+    }
+    header .header-content section p{
+        font-size: 1rem;
+    }
     header section img {
         display: none;
     }
