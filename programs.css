@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(80, 77, 77);
+}
+header{
+    height: 40vh;
+    padding-bottom: 5vh;
+}
+main{
+    text-align: left;
+}
+main label{
+    font-size: 1.3rem;
+    margin-right: 1vw;
+    color: white;
+    margin-left: 2vw;
+}
+.selectMenu{
+    font-size: 1rem;
+    padding: 1.3vh 0.5vw;
+    color: black;
+}
