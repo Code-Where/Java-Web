@@ -151,23 +151,6 @@
             <p style="text-align: center;">Get connect with us</p>
         </section>
     </footer>
-
-    <script>
-        let checkBox = document.getElementById("checkMenu");
-        let navMenu = document.getElementById("navMenu");
-        checkBox.addEventListener("click", () => {
-            if (checkBox.checked) {
-                navMenu.style.top = "75px";
-                console.log(document.getElementById("headTxt"));
-                document.getElementById("headTxt").classList.add("filter")
-            }
-            else {
-                navMenu.style.top = "-400px";
-                document.getElementById("headTxt").classList.remove("filter");
-
-            }
-        })
-    </script>
 </body>
-
+<script src="hamburger.js"></script>
 </html>
