@@ -6,9 +6,10 @@ const quesData = {
             "difficulty": "easy",
             "topic": 0,
             "sample_input": null,
-            "sample_output": "hello world!",
+            "sample_output": "ABC",
             "solution": {
                 "language": "Java",
+                "explanation": "Explaining the above code",
                 "code": `
 import java.util.Scanner;
 
@@ -46,8 +47,7 @@ public class MatrixInput {
 
         scanner.close();
     }
-}`,
-                "explanation": "Explaining the above code"
+}`
             }
         },
         {
@@ -55,7 +55,7 @@ public class MatrixInput {
             "description": "Program to Add Two Matrices",
             "difficulty": "hard",
             "topic": 0,
-            "sample_input": null,
+            "sample_input": 123,
             "sample_output": "hello world!",
             "solution": {
                 "language": "Java",

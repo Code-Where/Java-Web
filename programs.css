@@ -29,18 +29,29 @@ main label{
 pre{
     overflow: hidden;
     color: whitesmoke;
-    margin: 2vh 4vw;
+    margin: 2vh 2vw;
     font-size: 1.2em;
     width: 50%;
     border-radius: 12px;
     text-align: start;
     background-color: #0D0D0D;
 }
+.explanationSection{
+    margin: 5vh 2vh;
+    border-radius: 10px;
+    background-color: #0D0D0D;
+    color: aliceblue;
+}
+.explanationSection p{
+    padding: 2vh 2vw;
+    font-size: 1rem;
+    text-align: left;
+}
 code{
     display: block;
-    padding: 2vh 3vw;
+    padding: 1vh 1vw;
     width: 100%;
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 .prehead{
     padding: 2vh 0vw;

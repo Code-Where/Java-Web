@@ -26,11 +26,15 @@ for (let index = 0; index < data.length; index++) {
     menu.innerHTML += `<option value="${index}">${data[index]}</option>`;
 }
 createQues(0, "mix");
+changeProgram(quesData.questions[0].solution.code, quesData.questions[0].sample_output, quesData.questions[0].sample_input, quesData.questions[0].solution.explanation);
+
 menu.addEventListener("change", () => {
     createQues(menu.selectedIndex, difficultyMenu.options[difficultyMenu.selectedIndex].value);
+    changeProgram(quesData.questions[quesMenu.options[0].value].solution.code, quesData.questions[quesMenu.options[0].value].sample_output, quesData.questions[0].sample_input, quesData.questions[0].solution.explanation);
 });
 difficultyMenu.addEventListener("change", () => {
     createQues(menu.selectedIndex, difficultyMenu.options[difficultyMenu.selectedIndex].value);
+    changeProgram(quesData.questions[quesMenu.options[0].value].solution.code, quesData.questions[quesMenu.options[0].value].sample_output, quesData.questions[0].sample_input, quesData.questions[0].solution.explanation);
 });
 function createQues(index, mode) {
     quesMenu.innerHTML = "";
@@ -47,4 +51,26 @@ function createQues(index, mode) {
         }
     }
 }
-document.getElementById("code").innerHTML += quesData.questions[0].solution.code;
+
+quesMenu.addEventListener("change", () => {
+    changeProgram(quesData.questions[quesMenu.options[quesMenu.selectedIndex].value].solution.code, quesData.questions[quesMenu.options[quesMenu.selectedIndex].value].sample_output, quesData.questions[quesMenu.options[quesMenu.selectedIndex].value].sample_input, quesData.questions[quesMenu.options[quesMenu.selectedIndex].value].solution.explanation);
+});
+
+function changeProgram(code, output, input, notes) {
+    let a = document.querySelectorAll(".inputstyle");
+    console.log(a);
+    if (input != null) {
+        a.forEach((element) => {
+            element.style.display = "block";
+        });
+        a[1].innerHTML = input;
+    }
+    else {
+        a.forEach((element) => {
+            element.style.display = "none";
+        });
+    }
+    document.getElementById("code").innerHTML = code;
+    document.getElementById("output").innerHTML = output;
+    document.querySelector(".explanationSection").innerHTML = `<section class="prehead inputstyle">Explanation</section><p>${notes}</p>`;
+}
