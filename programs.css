@@ -24,8 +24,6 @@ main label{
     padding: 1.3vh 0.5vw;
     color: black;
 }
-
-
 pre{
     overflow: hidden;
     color: whitesmoke;
@@ -50,7 +48,7 @@ pre{
 code{
     display: block;
     padding: 1vh 1vw;
-    width: 100%;
+    width: 95%;
     overflow-x: auto;
 }
 .prehead{
