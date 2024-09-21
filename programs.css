@@ -52,13 +52,22 @@ code{
     overflow-x: auto;
 }
 .prehead{
-    padding: 2vh 0vw;
+    padding: 2vh 2vw;
     border-radius: 12px 12px 0px 0px;
     background-color: #2F2F2F;
-    content: "Java";
     color: #B4966F;
 }
-
+.prehead #copybtn{
+    padding: 0.5vh 1.2vw;
+    border-radius: 15px;
+    background-color: #b4966f5d;
+    border: 1px solid #B4966F;
+    color: white;
+    box-shadow: 0px 0px 15px 0px wheat inset;
+}
+.a-center{
+    align-items: center;
+}
 @media (max-width: 768px){
     main section label{
         font-size: 1rem;

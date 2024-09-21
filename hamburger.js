@@ -38,6 +38,7 @@ difficultyMenu.addEventListener("change", () => {
 });
 function createQues(index, mode) {
     quesMenu.innerHTML = "";
+    quesMenu.disabled = false;
     for (let i = 0; i < quesData.questions.length; i++) {
         if (index == quesData.questions[i].topic) {
             if (mode == "mix") {
@@ -49,6 +50,10 @@ function createQues(index, mode) {
                 }
             }
         }
+    }
+    if(quesMenu.childNodes.length == 0){
+        quesMenu.innerHTML += `<option>No Questions Available</option>`;
+        quesMenu.disabled = true;
     }
 }
 
@@ -73,4 +78,15 @@ function changeProgram(code, output, input, notes) {
     document.getElementById("code").innerHTML = code;
     document.getElementById("output").innerHTML = output;
     document.querySelector(".explanationSection").innerHTML = `<section class="prehead inputstyle">Explanation</section><p>${notes}</p>`;
+}
+
+function copyCode(){
+    let code = document.getElementById("code").innerText;
+    navigator.clipboard.writeText(code) 
+    .then(() => {
+        alert('Text copied to clipboard');
+    })
+    .catch(err => {
+        console.error('Failed to copy text: ', err);
+    });
 }

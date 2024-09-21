@@ -1,5 +1,6 @@
 const quesData = {
     "questions": [
+        // 2d Array
         {
             "id": 0,
             "description": "Enter the Matrix of rows and columns entered by the user and print in matrix format",
@@ -2472,6 +2473,7 @@ class Main {
 }`
             }
         },
+        // Input/Output
         {
             "id": 52,
             "description": "Enter the character from user using InputStreamReader",
@@ -5464,6 +5466,2275 @@ class Main{
                 "language": "Java",
                 "explanation": "This program demonstrates the use of a nested try-catch block for exception handling.",
                 "code": null
+            }
+        },
+        // Packages
+        {
+            "id": 118,
+            "description": "Write a Java program to access the java.util.Date class through import keyword and print the current date of the system.",
+            "difficulty": "easy",
+            "topic": 15,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates using the import keyword to access the java.util.Date class and print the current system date.",
+                "code": `import java.util.Date;
+
+class Main{
+	public static void main(String[] args){
+		System.out.println("Today : " + new Date());
+	}
+}`
+            }
+        },
+        {
+            "id": 119,
+            "description": "Create a Java program to access the java.util.Date class through a qualified way and print the current date of the system.",
+            "difficulty": "easy",
+            "topic": 15,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates accessing the java.util.Date class directly through its fully qualified name and printing the current date.",
+                "code": `class Main{
+	public static void main(String[] args){
+		System.out.println("Today : " + new java.util.Date());
+	}
+}`
+            }
+        },
+        {
+            "id": 120,
+            "description": "Create a Java program to access the java.util.Date class through import keyword and print the current date of the system but inherit the Date class.",
+            "difficulty": "medium",
+            "topic": 15,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates importing the java.util.Date class, extending it, and printing the current date by using inheritance.",
+                "code": `import java.util.Date;
+class Main extends Date{
+	void display(){
+		System.out.println("Today : " + toString());
+	}
+	public static void main(String[] args){
+		new Main().display();
+	}
+}`
+            }
+        },
+        {
+            "id": 121,
+            "description": "Create a Java program to access the java.util.Date class through a qualified way and print the current date of the system but inherit the Date class.",
+            "difficulty": "medium",
+            "topic": 15,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates accessing the java.util.Date class using the fully qualified name, extending it, and printing the current system date through inheritance.",
+                "code": `class Main extends java.util.Date{
+	void display(){
+		System.out.println("Today : " + toString());
+	}
+	public static void main(String[] args){
+		new Main().display();
+	}
+}`
+            }
+        },
+        {
+            "id": 122,
+            "description": "Create a Java program to create a package with multiple default classes.",
+            "difficulty": "medium",
+            "topic": 15,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates creating a package that contains multiple classes without public visibility, making them accessible only within the same package.",
+                "code": `package mypackage;
+
+class A{}
+
+class B{}
+
+class C{}`
+            }
+        },
+        {
+            "id": 123,
+            "description": "Create a Java program to create a package with 4 public classes, create the object in another file, and call the function created in those classes.",
+            "difficulty": "medium",
+            "topic": 15,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to create a package with 4 public classes and access them from another file by creating instances and invoking their methods.",
+                "code": null
+            }
+        },
+        {
+            "id": 124,
+            "description": "Write a Java program to perform employee payroll processing using packages. In the java file, Emp.java creates a package employee and creates a class Emp. Declare the variables name, empid, category, bpay, hra, da, npay, pf, grosspay, incometax, and allowance. Calculate the values in methods. Create another java file Emppay.java. Create an object e to call the methods to perform and print values.",
+            "difficulty": "hard",
+            "topic": 15,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates package creation and payroll processing in a multi-file setup with one file containing the employee class and the other handling the payroll methods.",
+                "code": null
+            }
+        },
+        {
+            "id": 125,
+            "description": "Create a Java program to create a package with public class and protected members to be accessed in another class.",
+            "difficulty": "medium",
+            "topic": 15,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates creating a package with public classes and protected members, showing how protected members are accessed from another class.",
+                "code": null
+            }
+        },
+        {
+            "id": 126,
+            "description": "Create a Java program to create a nested package i.e. c4.sample with public class and protected members to be accessed in another class.",
+            "difficulty": "medium",
+            "topic": 15,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to create a nested package with public classes and protected members and access them in another class.",
+                "code": null
+            }
+        },
+        {
+            "id": 127,
+            "description": "Create a Java program to create a package with public class and public members to be accessed in another class.",
+            "difficulty": "easy",
+            "topic": 15,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates creating a package with public classes and members, and shows how to access them from another class.",
+                "code": null
+            }
+        },
+        // 1D Array
+        {
+            "id": 128,
+            "description": "Program to copy all elements of one array into another array",
+            "difficulty": "easy",
+            "topic": 16,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to copy the elements of one array into another array using a loop.",
+                "code": `class Main{
+	static int[] duplicateArray(int arr[]){
+		int cparr[] = new int[arr.length];
+		for(int i = 0; i < arr.length; i++){
+			cparr[i] = arr[i];
+		}
+		return cparr;
+	}
+	static void printArray(int arr[]){
+		for(int i = 0; i < arr.length; i++){
+			System.out.println("Value at " + (i+1) + "position : " + arr[i]);
+		}
+	}
+	public static void main(String args[]){
+		int arr[] = {52, 98, 71, 28, 56};
+		System.out.println("Original Array : ");
+		printArray(arr);
+		int newarr[] = duplicateArray(arr);
+		System.out.println("Duplicated Array : ");
+		printArray(newarr); 
+	}
+}`
+            }
+        },
+        {
+            "id": 129,
+            "description": "Program to find the frequency of each element in the array",
+            "difficulty": "medium",
+            "topic": 16,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to count the frequency of each element in an array.",
+                "code": `class Main{
+	public static void main(String args[]){
+		int arr[] = {6,2,9,3,6,2};
+
+		java.util.List<Integer> uniquearr = new java.util.ArrayList<>();
+		java.util.List<Integer> freq = new java.util.ArrayList<>();
+
+		for(int i = 0; i < arr.length; i++){
+			if(uniquearr.isEmpty() || !uniquearr.contains(arr[i])){
+				uniquearr.add(arr[i]);
+				freq.add(1);
+			}
+			else if(uniquearr.contains(arr[i])){
+				freq.add(uniquearr.indexOf(arr[i]), (freq.get(uniquearr.indexOf(arr[i]))+1));
+			}
+		}
+		for(int i = 0; i < uniquearr.size(); i++){
+			System.out.println(uniquearr.get(i) + " occurred " + freq.get(i) + " Times");
+		}
+	}
+}`
+            }
+        },
+        {
+            "id": 130,
+            "description": "Program to left rotate the elements of an array",
+            "difficulty": "easy",
+            "topic": 16,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to left rotate the elements of an array by shifting each element to its left.",
+                "code": `class Main{
+	static void printArray(int arr[]){
+		for(int i = 0; i < arr.length; i++){
+			System.out.println("Value at " + (i+1) + " position : " + arr[i]);
+		}
+	}
+
+	static void leftRotate(int arr[], int n){
+		n = n % arr.length;
+		for(int i = 0; i < n; i++){
+			int temp = arr[0];
+			for(int j = 1; j < arr.length; j++){
+				arr[j-1] = arr[j];
+			}
+			arr[arr.length-1] = temp; 
+		}
+	}
+
+	public static void main(String[] args){
+		int arr[] = {20,38,17,47,27};
+		System.out.println("Before Left Rotation : ");
+		printArray(arr);
+		System.out.println("After Left Rotation 2 times: ");
+		leftRotate(arr, 2);
+		printArray(arr);
+	}
+}`
+            }
+        },
+        {
+            "id": 131,
+            "description": "Program to print the duplicate elements of an array",
+            "difficulty": "medium",
+            "topic": 16,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to find and print duplicate elements in an array.",
+                "code": `class Main{
+	static void printArray(int arr[]){
+		for(int i = 0; i < arr.length; i++){
+			System.out.println("Value at " + (i+1) + " position : " + arr[i]);
+		}
+	}
+
+	public static void main(String args[]){
+		int arr[] = {6,2,9,3,6,2};
+
+		java.util.ArrayList<Integer> uniquearr = new java.util.ArrayList<>();
+		java.util.ArrayList<Integer> freq = new java.util.ArrayList<>();
+
+		for(int i = 0; i < arr.length; i++){
+			if(uniquearr.isEmpty()){
+				uniquearr.add(arr[i]);
+				freq.add(1);
+			}
+			else if(uniquearr.contains(arr[i])){
+				freq.add(uniquearr.indexOf(arr[i]), (freq.get(uniquearr.indexOf(arr[i]))+1));
+			}
+			else{
+				uniquearr.add(arr[i]);
+				freq.add(1);
+			}
+		}
+		System.out.println("Array Values : ");
+		printArray(arr);
+		
+		System.out.println("Duplicate Values : ");
+		for(int i = 0; i < uniquearr.size(); i++){
+			if(freq.get(i) > 1){
+				System.out.println(uniquearr.get(i));
+			}
+		}
+	}
+}`
+            }
+        },
+        {
+            "id": 132,
+            "description": "Program to print the elements of an array",
+            "difficulty": "easy",
+            "topic": 16,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to iterate over an array and print its elements.",
+                "code": `class Main{
+	static void printArray(int arr[]){
+		for(int i = 0; i < arr.length; i++){
+			System.out.println("Value at " + (i+1) + " position : " + arr[i]);
+		}
+	}
+
+	public static void main(String[] args){
+		int arr[] = {83, 49, 289, 27, 23};
+		printArray(arr);
+	}
+}`
+            }
+        },
+        {
+            "id": 133,
+            "description": "Program to print the elements of an array in reverse order",
+            "difficulty": "easy",
+            "topic": 16,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to iterate over an array in reverse order and print its elements.",
+                "code": `class Main{
+	static void printReverseArray(int arr[]){
+		for(int i = arr.length-1; i >= 0; i--){
+			System.out.println("Value at " + (i+1) + " position : " + arr[i]);
+		}
+	}
+
+	public static void main(String[] args){
+		int arr[] = {83, 49, 289, 27, 23};
+		printReverseArray(arr);
+	}
+}`
+            }
+        },
+        {
+            "id": 134,
+            "description": "Program to print the elements of an array present on even position",
+            "difficulty": "easy",
+            "topic": 16,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to print the elements of an array that are located at even positions.",
+                "code": `class Main{
+	static void printArrayValueAtEven(int arr[]){
+		for(int i = 1; i < arr.length; i += 2){
+			System.out.println("Value at " + (i+1) + " position : " + arr[i]);
+		}
+	}
+
+	public static void main(String[] args){
+		int arr[] = {83, 49, 289, 27, 23};
+		printArrayValueAtEven(arr);
+	}
+}`
+            }
+        },
+        {
+            "id": 135,
+            "description": "Program to print the elements of an array present on odd position",
+            "difficulty": "easy",
+            "topic": 16,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to print the elements of an array that are located at odd positions.",
+                "code": `class Main{
+	static void printArrayValueAtOdd(int arr[]){
+		for(int i = 0; i < arr.length; i += 2){
+			System.out.println("Value at " + (i+1) + " position : " + arr[i]);
+		}
+	}
+
+	public static void main(String[] args){
+		int arr[] = {83, 49, 289, 27, 23};
+		printArrayValueAtOdd(arr);
+	}
+}`
+            }
+        },
+        {
+            "id": 136,
+            "description": "Program to print the largest element in an array",
+            "difficulty": "easy",
+            "topic": 16,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to find and print the largest element in an array.",
+                "code": `class Main{
+	static void printArray(int arr[]){
+		for(int i = 0; i < arr.length; i++){
+			System.out.println("Value at " + (i+1) + " position : " + arr[i]);
+		}
+	}
+	static int arrayMax(int arr[]){
+		int max = 0;
+		for(int i = 1; i < arr.length; i++){
+			if(arr[max] < arr[i])
+				max = i;
+		}
+		return arr[maxind];
+	}
+
+	public static void main(String[] args){
+		int arr[] = {83, 49, 289, 27, 23, 592};
+		printArray(arr);
+		System.out.println("\nMaximum value of array :" + arrayMax(arr));
+	}
+}`
+            }
+        },
+        {
+            "id": 137,
+            "description": "Program to print the smallest element in an array",
+            "difficulty": "easy",
+            "topic": 16,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to find and print the smallest element in an array.",
+                "code": `class Main{
+	static void printArray(int arr[]){
+		for(int i = 0; i < arr.length; i++){
+			System.out.println("Value at " + (i+1) + " position : " + arr[i]);
+		}
+	}
+	static int arrayMin(int arr[]){
+		int min = 0;
+		for(int i = 1; i < arr.length; i++){
+			if(arr[min] > arr[i])
+				min = i;
+		}
+		return arr[min];
+	}
+
+	public static void main(String[] args){
+		int arr[] = {83, 49, 289, 27, 23};
+		printArray(arr);
+		System.out.println("\nMinimum value of array :" + arrayMin(arr));
+	}
+}`
+            }
+        },
+        {
+            "id": 138,
+            "description": "Program to print the number of elements present in an array",
+            "difficulty": "easy",
+            "topic": 16,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to print the total number of elements present in an array.",
+                "code": `class Main {
+    public static void main(String[] args) {
+        int[] arr = {10, 20, 30, 40, 50};
+                
+        System.out.println("The number of elements present in the array is: " + arr.length);
+    }
+}
+`
+            }
+        },
+        {
+            "id": 139,
+            "description": "Program to print the sum of all the items of the array",
+            "difficulty": "easy",
+            "topic": 16,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to calculate and print the sum of all the elements of an array.",
+                "code": `class Main{
+	static void printArray(int arr[]){
+		for(int i = 0; i < arr.length; i++){
+			System.out.println("Value at " + (i+1) + " position : " + arr[i]);
+		}
+	}
+	
+	static int sumOfArray(int arr[]){
+		int sum = 0;
+		for(int i = 0; i < arr.length; i++){
+			sum += arr[i];
+		}
+		return sum;
+	}
+	
+	public static void main(String[] args){
+		int arr[] = {83, 49, 289, 27, 23};
+		printArray(arr);
+		System.out.println("\nSum of Values : " + sumOfArray(arr));
+	}
+}`
+            }
+        },
+        {
+            "id": 140,
+            "description": "Program to right rotate the elements of an array",
+            "difficulty": "easy",
+            "topic": 16,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to right rotate the elements of an array by shifting each element to its right.",
+                "code": `class Main{
+	static void printArray(int arr[]){
+		for(int i = 0; i < arr.length; i++){
+			System.out.println("Value at " + (i+1) + " position : " + arr[i]);
+		}
+	}
+
+	static void rightRotate(int arr[], int n){
+		n = n % arr.length;
+		for(int i = 0; i < n; i++){
+			int temp = arr[arr.length-1];
+			for(int j = arr.length-1; j >= 1; j--){
+				arr[j] = arr[j-1];
+			}
+			arr[0] = temp; 
+		}
+	}
+
+	public static void main(String[] args){
+		int arr[] = {1,3,5,7,9};
+		System.out.println("Before Right Rotation : ");
+		printArray(arr);
+		System.out.println("After Right Rotation 2 times: ");
+		rightRotate(arr, 2);
+		printArray(arr);
+	}
+}`
+            }
+        },
+        {
+            "id": 141,
+            "description": "Program to sort the elements of an array in ascending order",
+            "difficulty": "easy",
+            "topic": 16,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to sort the elements of an array in ascending order using any sorting algorithm.",
+                "code": `class Main{
+	static void printArray(int arr[]){
+		for(int i = 0; i < arr.length; i++){
+			System.out.println("Value at " + (i+1) + " position : " + arr[i]);
+		}
+	}
+	static void sortArray(int arr[]){
+		for(int i = 0; i < arr.length; i++){
+			for(int j = 0; j < (arr.length-i-1); j++){
+				if(arr[j] > arr[j+1]){
+					int temp = arr[j];
+					arr[j] = arr[j+1];
+					arr[j+1] = temp;
+				}
+			}
+		}
+	}		
+	public static void main(String[] args){
+		int arr[] = {83, 49, 289, 27, 23};
+		printArray(arr);
+		sortArray(arr);
+		System.out.println("\nAfter Sorting in Ascending order : ");
+		printArray(arr);
+	}
+}`
+            }
+        },
+        {
+            "id": 142,
+            "description": "Program to sort the elements of an array in descending order",
+            "difficulty": "easy",
+            "topic": 16,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to sort the elements of an array in descending order using any sorting algorithm.",
+                "code": `class Main{
+	static void printArray(int arr[]){
+		for(int i = 0; i < arr.length; i++){
+			System.out.println("Value at " + (i+1) + " position : " + arr[i]);
+		}
+	}
+	static void sortArray(int arr[]){
+		for(int i = 0; i < arr.length; i++){
+			for(int j = 0; j < (arr.length-i-1); j++){
+				if(arr[j] < arr[j+1]){
+					int temp = arr[j];
+					arr[j] = arr[j+1];
+					arr[j+1] = temp;
+				}
+			}
+		}
+	}		
+	public static void main(String[] args){
+		int arr[] = {83, 49, 289, 27, 23};
+		printArray(arr);
+		sortArray(arr);
+		System.out.println("\nAfter Sorting in Descending order : ");
+		printArray(arr);
+	}
+}`
+            }
+        },
+        {
+            "id": 143,
+            "description": "Program to find the 3rd largest number in an array",
+            "difficulty": "medium",
+            "topic": 16,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to find the third largest number in an array.",
+                "code": `class Main{
+	static void printArray(int arr[]){
+		for(int i = 0; i < arr.length; i++){
+			System.out.println("Value at " + (i+1) + " position : " + arr[i]);
+		}
+	}
+	static void sortArray(int arr[]){
+		for(int i = 0; i < arr.length; i++){
+			for(int j = 0; j < (arr.length-i-1); j++){
+				if(arr[j] < arr[j+1]){
+					int temp = arr[j];
+					arr[j] = arr[j+1];
+					arr[j+1] = temp;
+				}
+			}
+		}
+	}
+
+	static void thirdLargestArrayValue(int arr[]){
+		sortArray(arr);
+		int count = 0;
+
+		for(int i = 1; i < arr.length; i++){
+			while(i < arr.length && arr[i-1] == arr[i]){
+				i++;
+			}
+			count++;
+			if(count == 2 && i < arr.length){
+				System.out.println("Third Largest Value of Array : " + arr[i]);
+				return;
+			}
+		}
+		System.out.println("Third Largest Value of Array does not exist");
+	}		
+	public static void main(String[] args){
+		int arr[] = {9, 3, 91, 25, 87};
+		printArray(arr);
+		thirdLargestArrayValue(arr);
+	}
+}`
+            }
+        },
+        {
+            "id": 144,
+            "description": "Program to find the 2nd largest number in an array",
+            "difficulty": "medium",
+            "topic": 16,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to find the second largest number in an array.",
+                "code": `class Main{
+	static void printArray(int arr[]){
+		for(int i = 0; i < arr.length; i++){
+			System.out.println("Value at " + (i+1) + " position : " + arr[i]);
+		}
+	}
+	static void sortArray(int arr[]){
+		for(int i = 0; i < arr.length; i++){
+			for(int j = 0; j < (arr.length-i-1); j++){
+				if(arr[j] < arr[j+1]){
+					int temp = arr[j];
+					arr[j] = arr[j+1];
+					arr[j+1] = temp;
+				}
+			}
+		}
+	}
+
+	static void secondLargestArrayValue(int arr[]){
+		sortArray(arr);
+		int count = 0;
+
+		for(int i = 1; i < arr.length; i++){
+			while(i < arr.length && arr[i-1] == arr[i]){
+				i++;
+			}
+			count++;
+			if(count == 1 && i < arr.length){
+				System.out.println("Second Largest Value of Array : " + arr[i]);
+				return;
+			}
+		}
+		System.out.println("Second Largest Value of Array does not exist");
+	}		
+	public static void main(String[] args){
+		int arr[] = {9, 3, 91, 25, 87};
+		printArray(arr);
+		secondLargestArrayValue(arr);
+	}
+}`
+            }
+        },
+        {
+            "id": 145,
+            "description": "Program to find the largest number in an array",
+            "difficulty": "easy",
+            "topic": 16,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to find the largest number in an array.",
+                "code": `class Main{
+	static void printArray(int arr[]){
+		for(int i = 0; i < arr.length; i++){
+			System.out.println("Value at " + (i+1) + " position : " + arr[i]);
+		}
+	}
+	static int arrayMax(int arr[]){
+		int max = 0;
+		for(int i = 1; i < arr.length; i++){
+			if(arr[max] < arr[i])
+				max = i;
+		}
+		return arr[maxind];
+	}
+
+	public static void main(String[] args){
+		int arr[] = {83, 49, 289, 27, 23, 592};
+		printArray(arr);
+		System.out.println("\nMaximum value of array :" + arrayMax(arr));
+	}
+}`
+            }
+        },
+        {
+            "id": 146,
+            "description": "Program to find the 2nd smallest number in an array",
+            "difficulty": "medium",
+            "topic": 16,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to find the second smallest number in an array.",
+                "code": `class Main{
+	static void printArray(int arr[]){
+		for(int i = 0; i < arr.length; i++){
+			System.out.println("Value at " + (i+1) + " position : " + arr[i]);
+		}
+	}
+	static void sortArray(int arr[]){
+		for(int i = 0; i < arr.length; i++){
+			for(int j = 0; j < (arr.length-i-1); j++){
+				if(arr[j] > arr[j+1]){
+					int temp = arr[j];
+					arr[j] = arr[j+1];
+					arr[j+1] = temp;
+				}
+			}
+		}
+	}
+
+	static void secondSmallestArrayValue(int arr[]){
+		sortArray(arr);
+		int count = 0;
+
+		for(int i = 1; i < arr.length; i++){
+			while(i < arr.length && arr[i-1] == arr[i]){
+				i++;
+			}
+			count++;
+			if(count == 1 && i < arr.length){
+				System.out.println("Second Smallest Value of Array : " + arr[i]);
+				return;
+			}
+		}
+		System.out.println("Second Smallest Value of Array does not exist");
+	}		
+	public static void main(String[] args){
+		int arr[] = {9, 3, 91, 25, 87};
+		printArray(arr);
+		secondSmallestArrayValue(arr);
+	}
+}`
+            }
+        },
+        {
+            "id": 147,
+            "description": "Program to find the smallest number in an array",
+            "difficulty": "easy",
+            "topic": 16,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to find the smallest number in an array.",
+                "code": `class Main{
+	static void printArray(int arr[]){
+		for(int i = 0; i < arr.length; i++){
+			System.out.println("Value at " + (i+1) + " position : " + arr[i]);
+		}
+	}
+	static int arrayMin(int arr[]){
+		int min = 0;
+		for(int i = 1; i < arr.length; i++){
+			if(arr[min] > arr[i])
+				min = i;
+		}
+		return arr[min];
+	}
+
+	public static void main(String[] args){
+		int arr[] = {83, 49, 289, 27, 23};
+		printArray(arr);
+		System.out.println("\nMinimum value of array :" + arrayMin(arr));
+	}
+}`
+            }
+        },
+        {
+            "id": 148,
+            "description": "Program to remove duplicate elements in an array",
+            "difficulty": "medium",
+            "topic": 16,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to remove duplicate elements from an array.",
+                "code": `class Main{
+	static void printArray(int arr[]){
+		for(int i = 0; i < arr.length; i++){
+			System.out.println("Value at " + (i+1) + " position : " + arr[i]);
+		}
+	}
+
+	static int[] removeDuplicateElements(int arr[]){
+		int newarr[] = null;
+		java.util.ArrayList<Integer> uniquearr = new java.util.ArrayList<>();
+
+		for(int i = 0; i < arr.length; i++){
+			if(!uniquearr.contains(arr[i])){
+				uniquearr.add(arr[i]);
+			}
+		}
+		newarr = new int[uniquearr.size()];
+		for(int i = 0; i < uniquearr.size(); i++){
+			newarr[i] = uniquearr.get(i);
+		}
+		return newarr;
+	}
+	
+	public static void main(String args[]){
+		int arr[] = {6,2,9,3,6,2,3,6};
+		printArray(arr);
+		arr = removeDuplicateElements(arr);
+		System.out.println("New Array : ");
+		printArray(arr);
+	}
+}`
+            }
+        },
+        {
+            "id": 149,
+            "description": "Program to print odd and even numbers from an array",
+            "difficulty": "easy",
+            "topic": 16,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to separate and print the odd and even numbers from an array.",
+                "code": `class Main{
+	static void printOddFromArray(int arr[]){
+		System.out.println("Odd Values of array : ");
+		for(int i = 0; i < arr.length; i++){
+			if(arr[i] % 2 != 0)
+				System.out.println("Value at " + (i+1) + " position : " + arr[i]);
+		}
+	}
+	static void printEvenFromArray(int arr[]){
+		System.out.println("Even Values of array : ");
+		for(int i = 0; i < arr.length; i++){
+			if(arr[i] % 2 == 0)
+				System.out.println("Value at " + (i+1) + " position : " + arr[i]);
+		}
+	}
+	static void printArray(int arr[]){
+		for(int i = 0; i < arr.length; i++){
+			System.out.println("Value at " + (i+1) + " position : " + arr[i]);
+		}
+	}
+
+	public static void main(String[] args){
+		int arr[] = {83, 42, 28, 27, 23};
+		printArray(arr);
+		printOddFromArray(arr);
+		printEvenFromArray(arr);
+	}
+}`
+            }
+        },
+        {
+            "id": 150,
+            "description": "How to sort an array in Java",
+            "difficulty": "easy",
+            "topic": 16,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to sort an array using Java's built-in sorting method or a custom sorting algorithm.",
+                "code": `class Main{
+	static void printArray(int arr[]){
+		for(int i = 0; i < arr.length; i++){
+			System.out.println("Value at " + (i+1) + " position : " + arr[i]);
+		}
+	}
+	static void sortArray(int arr[]){
+		for(int i = 0; i < arr.length; i++){
+			for(int j = 0; j < (arr.length-i-1); j++){
+				if(arr[j] > arr[j+1]){
+					int temp = arr[j];
+					arr[j] = arr[j+1];
+					arr[j+1] = temp;
+				}
+			}
+		}
+	}		
+	public static void main(String[] args){
+		int arr[] = {83, 49, 289, 27, 23};
+		printArray(arr);
+		sortArray(arr);
+		System.out.println("\nAfter Sorting in Ascending order : ");
+		printArray(arr);
+	}
+}`
+            }
+        },
+        // Strings
+        {
+            "id": 151,
+            "description": "Program to check if a String contains only digits",
+            "difficulty": "easy",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program checks if the input string contains only numeric digits.",
+                "code": `class Main{
+	static boolean hasDigitsOnly(String str){
+		for(int i = 0; i < str.length(); i++){
+			char ch = str.charAt(i);
+			if(ch < '0' || ch > '9'){
+				return false;
+			}
+		}
+		return true;
+	}
+	public static void main(String[] args){
+		System.out.println("String Value : 389294");
+		System.out.println((hasDigitsOnly("389294")) ? "String Contain Only Digits" : "String Does not have digits only");
+
+		System.out.println("String Value : 393aje");
+		System.out.println((hasDigitsOnly("393aje")) ? "String Contain Only Digits" : "String Does not have digits only");
+	}
+}`
+            }
+        },
+        {
+            "id": 152,
+            "description": "Program to perform deep copy for String",
+            "difficulty": "medium",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to perform a deep copy of a String in Java.",
+                "code": `class Main{
+	static String strDeepCopy(String str){
+		String newstr = "";
+		for(int i = 0; i < str.length(); i++){
+			newstr += str.charAt(i);
+		}
+		return newstr;
+	}
+	public static void main(String[] args){
+		String str = "Hello Everyone";
+		String cpystr = strDeepCopy(str);
+		System.out.println("Orignal String : " + str);
+		System.out.println("Copied String : " + cpystr);
+	}
+}`
+            }
+        },
+        {
+            "id": 153,
+            "description": "Program to prove String is immutable programmatically",
+            "difficulty": "easy",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program proves the immutability of the String class in Java by showing that once created, a String object cannot be changed.",
+                "code": `class Main{
+	public static void main(String[] args){
+		String str = "Hello";
+		String strN = str + " World";
+		if(str == strN){
+			System.out.println("Both object are same i.e Mutable Objects");
+		}
+		else{
+			System.out.println("Both object are different i.e Immutable Objects");
+		}
+	}
+}`
+            }
+        },
+        {
+            "id": 154,
+            "description": "Program to remove all occurrences of a given character from input String",
+            "difficulty": "easy",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program removes all instances of a specific character from the input String.",
+                "code": `class Main{
+	static String removeChar(String str, char ch){
+		String newstr = "";
+		char c;
+		for(int i = 0; i < str.length(); i++){
+			c = str.charAt(i);
+			if(c != ch){
+				newstr += c;
+			}
+		}
+		return newstr;
+	}
+	public static void main(String[] args){
+		System.out.println("Removing p from apple");
+		System.out.println(removeChar("apple", 'p'));
+	}
+}`
+            }
+        },
+        {
+            "id": 155,
+            "description": "Program to append the string using StringBuffer class",
+            "difficulty": "easy",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to append a string using the StringBuffer class.",
+                "code": `class Main{
+	public static void main(String[] args){
+		StringBuffer str = new StringBuffer("Hello");
+		System.out.println("String Value : " + str);
+		str.append(" World. Number : ");
+		str.append(47);
+		System.out.println("After Appending String : " + str);
+	}
+}`
+            }
+        },
+        {
+            "id": 156,
+            "description": "Program to insert the string using StringBuffer class",
+            "difficulty": "easy",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to insert a string using the StringBuffer class.",
+                "code": `class Main{
+	public static void main(String[] args){
+		StringBuffer str = new StringBuffer("I am ");
+		System.out.println("Initial String : " + str);
+		str.insert(0, "Hello ");
+		str.insert(11, 20);
+		System.out.println("After Inserting String : " + str);
+	}
+}`
+            }
+        },
+        {
+            "id": 157,
+            "description": "Program to add characters to a string",
+            "difficulty": "easy",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program shows how to add characters to an existing string.",
+                "code": `class Main{
+	static String addChar(int index, char ch, String str){
+		String newstr = "";
+		int i;
+		if(index > str.length() || index < 0){	
+			System.out.println("Maximum index should be "+str.length()+" and minimum should be 0");
+			return null;
+		}
+		for(i = 0; i < index; i++){
+			newstr += str.charAt(i);
+		}
+		newstr += ch;
+		for(i = index; i < str.length(); i++){
+			newstr+= str.charAt(i);
+		}
+		return newstr;
+	}
+	public static void main(String[] args){
+		String str = "hell";
+		System.out.println("String : " + str);
+		System.out.println("Adding o at 4th index : " + addChar(4, 'o', str));
+		System.out.println("Adding J at 0th index : " + addChar(0, 'J', str));
+		System.out.println("Adding f at 2th index : " + addChar(2, 'f', str));
+	}
+}`
+            }
+        },
+        {
+            "id": 158,
+            "description": "Program to check Anagram",
+            "difficulty": "medium",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program checks whether two input strings are anagrams of each other.",
+                "code": null
+            }
+        },
+        {
+            "id": 159,
+            "description": "Program to check whether a string is a Palindrome",
+            "difficulty": "easy",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program checks if a given string is a palindrome.",
+                "code": `class Main{
+	static boolean isPallindrome(String str){
+		for(int i = 0, j = (str.length()-1); i < j; i++, j--){
+			if(str.charAt(i) != str.charAt(j)){
+				return false;
+			}
+		}
+		return true;
+	}
+	public static void main(String[] args){
+		System.out.println((isPallindrome("abc11cba")) ? "abc11cba is pallindrome" : "abc11cba is not pallindrome");
+		System.out.println((isPallindrome("39d")) ? "39d is pallindrome" : "39d is not pallindrome");
+	}
+}`
+            }
+        },
+        {
+            "id": 160,
+            "description": "Program to convert Enum to String",
+            "difficulty": "easy",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to convert an Enum to a String in Java.",
+                "code": `class Main{
+	enum Days {Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday}
+
+	public static void main(String[] args){
+		String str = "";
+		for(Days d : Days.values()){
+			str += (d+" "); 
+		}
+		System.out.println(str);
+	}
+}`
+            }
+        },
+        {
+            "id": 161,
+            "description": "Program to convert String to String Array",
+            "difficulty": "easy",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to convert a String to a String Array.",
+                "code": null
+            }
+        },
+        {
+            "id": 162,
+            "description": "Program to count number of words in a String",
+            "difficulty": "easy",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program counts the number of words present in a given String.",
+                "code": `class Main{
+	static int wordCount(String str){	
+		int count = 0, len = str.length();
+		
+		for(int i = 0; i < len; i++){
+			if(Character.isDigit(str.charAt(i))){
+				while(str.charAt(i) != ' ' && (i+1) != len){
+					i++;
+				}
+			}
+			else{
+				if((str.charAt(i) == ' ' || (i+1) == len) && Character.isLetter(str.charAt(i-1))){
+				count++;
+			}
+			}
+			
+		}
+		return count;
+	}
+
+	public static void main(String[] args){
+		int count = wordCount("Java is a Programming Language");
+		System.out.println("Number of words in string is : " + count);
+	}
+}`
+            }
+        },
+        {
+            "id": 163,
+            "description": "Program to count the total number of characters in a string",
+            "difficulty": "easy",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program counts the total number of characters in a String, including spaces.",
+                "code": `class Main{
+	public static void main(String[] args){
+		String str = "Hello World";
+		System.out.println("Number of Character in " + str + " : " + str.length());
+	}
+}`
+            }
+        },
+        {
+            "id": 164,
+            "description": "Program to count the total number of punctuation characters exists in a String",
+            "difficulty": "medium",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program counts the total number of punctuation marks present in a given String.",
+                "code": `class Main{
+	static int countPunctuation(String str){	
+		int count = 0, len = str.length();
+		
+		for(int i = 0; i < len; i++){
+			char ch = str.charAt(i);
+			if(ch == '!' || ch == ',' || ch == '.' || ch == '?' || ch == '!' || ch == ':' || ch == ';' || ch == '\'' || ch == '"' || ch == '-'){
+				count++;
+			}			
+		}
+		return count;
+	}
+
+	public static void main(String[] args){
+		int count = countPunctuation("Oh ! I love you. Uhh-hh");
+		System.out.println("Number of Punctuations in string is : " + count);
+	}
+}`
+            }
+        },
+        {
+            "id": 165,
+            "description": "Program to count the total number of vowels and consonants in a string",
+            "difficulty": "medium",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program counts the total number of vowels and consonants present in a String.",
+                "code": `class Main{
+	public static void main(String[] args){
+		String str = "Hello World";
+		int vowel = 0, cons = 0;
+		for(int i = 0; i < str.length(); i++){
+			char ch = str.charAt(i);
+			if(Character.isLetter(ch)){
+				switch(ch){
+					case 'a' :
+					case 'A' :
+					case 'e' :
+					case 'E' :
+					case 'i' :
+					case 'I' :
+					case 'o' :
+					case 'O' :
+					case 'u' :
+					case 'U' : vowel++; break;
+					default : cons++;
+				}
+			}
+		}
+		System.out.println("Number of Vowels : " + vowel);
+		System.out.println("Number of Consonents : " + cons);
+
+	}
+}`
+            }
+        },
+        {
+            "id": 166,
+            "description": "Program to determine whether a given string is palindrome",
+            "difficulty": "easy",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program checks if the input string is a palindrome by comparing characters from both ends.",
+                "code": `class Main{
+	static boolean isPallindrome(String str){
+		for(int i = 0, j = (str.length()-1); i < j; i++, j--){
+			if(str.charAt(i) != str.charAt(j)){
+				return false;
+			}
+		}
+		return true;
+	}
+	public static void main(String[] args){
+		System.out.println((isPallindrome("abc11cba")) ? "abc11cba is pallindrome" : "abc11cba is not pallindrome");
+		System.out.println((isPallindrome("39d")) ? "39d is pallindrome" : "39d is not pallindrome");
+	}
+}`
+            }
+        },
+        {
+            "id": 167,
+            "description": "Program to determine whether one string is a rotation of another",
+            "difficulty": "medium",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program determines if one string is a rotation of another string.",
+                "code": `class Main{
+	static boolean isRotation(String s1, String s2){
+		int count = 0;
+		if(s1.length() != s2.length()){
+			return false;
+		}
+		String temp = s1+s1;
+		for(int i = 0; i < (temp.length() - s2.length() + 1); i++){
+			count = 0;
+			while(count < s2.length() && temp.charAt(i) == s2.charAt(count)){
+				count++;
+				i++;
+			}
+			if(count == s2.length()){
+				return true;
+			}
+		}
+		return false;
+	}
+	public static void main(String[] args){
+		System.out.println((isRotation("ABCD", "DABC")) ? "String is rotated" : "String is not rotated");
+	}
+}
+`
+            }
+        },
+        {
+            "id": 168,
+            "description": "Program to divide a string in 'N' equal parts",
+            "difficulty": "medium",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program divides a string into N equal parts and prints each part.",
+                "code": `class Main{
+	static String[] strBreak(String str, int n){
+		String st[] = new String[n];
+		if(n < 1 || (str.length()%n) != 0){
+			System.out.println("Partition Unavailable");
+			return null;
+		}
+		for(int i = 0, k = 0; i < (str.length() - (str.length()/n) +1); k++){
+			st[k] = "";
+			for(int j = 0; j < (str.length()/n); j++){
+				st[k] += str.charAt(i);
+				i++;
+			}
+		}
+		return st;
+	}
+	
+	public static void main(String[] args){
+		String[] st = strBreak("HelloWorld12", 2);
+		if(st != null){
+			System.out.println("Parts of String are : ");
+
+			for(int i = 0; i < st.length; i++){
+				System.out.println("Part No " + (i+1) + " : " + st[i]);
+			}
+		}
+	}
+}`
+            }
+        },
+        {
+            "id": 169,
+            "description": "Program to find all subsets of a string",
+            "difficulty": "medium",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program finds and prints all subsets of a given string.",
+                "code": `class Main {
+    static void generateSubsets(String str) {
+        int n = str.length();
+        int subsetCount = (int) Math.pow(2, n);
+
+        for (int i = 0; i < subsetCount; i++) {
+            String subset = "";
+            for (int j = 0; j < n; j++) {
+                if ((i / (int) Math.pow(2, j)) % 2 == 1) {
+                    subset += str.charAt(j);
+                }
+            }
+            System.out.println(subset);
+        }
+    }
+    public static void main(String[] args) {
+        String inputString = "abcd";
+        generateSubsets(inputString);
+    }
+}
+`
+            }
+        },
+        {
+            "id": 170,
+            "description": "Program to find all the permutations of a string",
+            "difficulty": "hard",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program finds and prints all permutations of a given string.",
+                "code": null
+            }
+        },
+        {
+            "id": 171,
+            "description": "Program to find maximum and minimum occurring character in a string",
+            "difficulty": "medium",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program finds the character that appears the most and the least in a given string.",
+                "code": `class Main{
+	static Boolean containsChar(String str, char ch){
+		for(int i = 0; i < str.length(); i++){
+			if(str.charAt(i) == ch)
+				return true;
+		}
+		return false;
+	}
+	static void maxAndMinChar(String str){
+		String uniquechars = "";
+		for(int i = 0; i < str.length(); i++){
+			if(!containsChar(uniquechars, str.charAt(i))){
+				uniquechars += str.charAt(i);
+			}
+		}
+
+		int freq[] = new int[uniquechars.length()];
+
+		for(int i = 0; i < str.length(); i++){
+			freq[uniquechars.indexOf(str.charAt(i))]++;
+		}
+		int maxInd = 0;
+		int minInd = 0;
+		for(int i = 1; i < freq.length; i++){
+			if(freq[maxInd] < freq[i]){
+				maxInd = i;
+			}
+			if(freq[minInd] > freq[i]){
+				minInd = i;
+			}
+		}
+		System.out.println("Maximum Occuring Character : "+uniquechars.charAt(maxInd));
+		System.out.println("Number of times" + uniquechars.charAt(maxInd) +  "Occurs : "+freq[maxInd]);
+		System.out.println("Minimum Occuring Character : "+uniquechars.charAt(minInd));
+System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "+freq[minInd]);
+	}
+	public static void main(String[] args){
+		maxAndMinChar("aaabdhiaaiiahhdhh");
+	}
+}`
+            }
+        },
+        {
+            "id": 172,
+            "description": "Program to find reverse of the string",
+            "difficulty": "easy",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program reverses the input string and prints the result.",
+                "code": `class Main{
+	static String strReverse(String str){
+		String revstr = "";
+
+		for(int i = (str.length()-1); i >= 0; i--){
+			revstr += str.charAt(i);
+		}
+		return revstr;
+	}
+	public static void main(String[] args){
+		System.out.println(strReverse("Hello"));
+	}
+}`
+            }
+        },
+        {
+            "id": 173,
+            "description": "Program to find the duplicate characters in a string",
+            "difficulty": "medium",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program identifies and prints all duplicate characters found in a given string.",
+                "code": `class Main{
+	static char[] duplicates(String str){
+		String all = "";
+		String duplicates = "";
+		for(int i = 0; i < str.length(); i++){
+			if(all.indexOf(str.charAt(i)) != -1 && !(duplicates.indexOf(str.charAt(i)) != -1)){
+				duplicates += str.charAt(i);
+			}
+			else if(!(all.indexOf(str.charAt(i)) != -1)){
+				all += str.charAt(i);
+			}
+		}
+		return (duplicates.toCharArray());
+		
+}
+	public static void main(String[] args){
+		char[] ch = duplicates("aaabeabcdde");
+		System.out.println("Duplicate Characters");
+		for(int i = 0; i < ch.length; i++){
+			System.out.println(ch[i]);
+		}
+	}
+}`
+            }
+        },
+        {
+            "id": 174,
+            "description": "Program to find the duplicate words in a string",
+            "difficulty": "medium",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program identifies and prints all duplicate words found in a given string.",
+                "code": null
+            }
+        },
+        {
+            "id": 175,
+            "description": "Program to find the frequency of characters",
+            "difficulty": "easy",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates and prints the frequency of each character in a string.",
+                "code": `class Main{
+	static Boolean containsChar(String str, char ch){
+		for(int i = 0; i < str.length(); i++){
+			if(str.charAt(i) == ch)
+				return true;
+		}
+		return false;
+	}
+	static void charFrequency(String str){
+		String uniquechars = "";
+		for(int i = 0; i < str.length(); i++){
+			if(!containsChar(uniquechars, str.charAt(i))){
+				uniquechars += str.charAt(i);
+			}
+		}
+
+		int freq[] = new int[uniquechars.length()];
+
+		for(int i = 0; i < str.length(); i++){
+			freq[uniquechars.indexOf(str.charAt(i))]++;
+		}
+		for(int i = 0; i < freq.length; i++){
+			System.out.println("Character : " + uniquechars.charAt(i) + " Frequency : " + freq[i]);
+		}
+
+	}
+	public static void main(String[] args){
+		charFrequency("aaabdhiaaiiahhdhh");
+	}
+}`
+            }
+        },
+        {
+            "id": 176,
+            "description": "Program to find the largest and smallest word in a string",
+            "difficulty": "medium",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program finds and prints the largest and smallest word in a given string.",
+                "code": `class Main{
+	static void maxAndMinWord(String str){
+		String maxword = "";
+		String minword = "";
+		String curword = "";
+
+		for(int i = 0; i < str.length(); i++){
+			curword = "";
+			while(i < str.length() && str.charAt(i) != ' '){
+				curword += str.charAt(i);
+				i++;
+			}
+
+			if(minword.length() > curword.length() || minword.length() == 0){
+				minword = curword;
+			}
+			if(curword.length() > maxword.length()){
+				maxword = curword;
+			}
+			
+		}
+		System.out.println("Given String : " + str);
+		System.out.println("Largest Word in String : " + maxword);
+		System.out.println("Smallest Word in String : " + minword);
+
+	}
+	public static void main(String[] args){
+		maxAndMinWord("Hello I am a Abhishek Dhawan");
+	}
+}`
+            }
+        },
+        {
+            "id": 177,
+            "description": "Program to find the longest repeating sequence in a string",
+            "difficulty": "hard",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program identifies the longest repeating sequence in a string and prints it.",
+                "code": null
+            }
+        },
+        {
+            "id": 178,
+            "description": "Program to find the most repeated word in a text file",
+            "difficulty": "hard",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program reads a text file and finds the most repeated word.",
+                "code": null
+            }
+        },
+        {
+            "id": 179,
+            "description": "Program to find the number of the words in the given text file",
+            "difficulty": "medium",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program reads a text file and counts the number of words in it.",
+                "code": null
+            }
+        },
+        {
+            "id": 180,
+            "description": "Program to get a character from the given string",
+            "difficulty": "easy",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program retrieves and prints a character from a given string at a specific index.",
+                "code": `class Main{
+	static char getChar(String str, int index){
+		return str.charAt(index);
+	}
+	public static void main(String[] args){
+		System.out.println("Character at 4th index : " + getChar("Hello World", 4));
+	}
+}`
+            }
+        },
+        {
+            "id": 181,
+            "description": "Program to insert a string into another string",
+            "difficulty": "medium",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to insert one string into another at a specified position.",
+                "code": `class Main{
+	static String insertString(String str, String str2, int index){
+		String newstr = "";
+		if(index < 0 || index > str.length()){
+			return null;
+		}
+		for(int i = 0; i < index; i++){
+			newstr += str.charAt(i);
+		}
+		for(int i = 0; i < str2.length(); i++){
+			newstr += str2.charAt(i);
+		}
+		for(int i = index; i < str.length(); i++){
+			newstr += str.charAt(i);
+		}
+		return newstr;
+	}
+	public static void main(String[] args){
+		System.out.println(insertString("Heo", "ll", 2));
+	}
+}`
+            }
+        },
+        {
+            "id": 182,
+            "description": "Program to iterate over characters in a string",
+            "difficulty": "easy",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program iterates through each character in a string and prints them.",
+                "code": `class Main{
+	public static void main(String[] args){
+		String str = "Hello World";
+
+		for(int i = 0; i < str.length(); i++){
+			System.out.println("Character At " + i +"th index : " + str.charAt(i));
+		}
+	}
+}`
+            }
+        },
+        {
+            "id": 183,
+            "description": "Program to print a new line in a string",
+            "difficulty": "easy",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to include new lines within a string and print it.",
+                "code": `class Main{
+	public static void main(String[] args){
+		String str = "Hello I am \nLine Break";
+		System.out.println(str);
+	}
+}`
+            }
+        },
+        {
+            "id": 184,
+            "description": "Program to print even length words",
+            "difficulty": "medium",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program prints words from a string that have an even length.",
+                "code": `class Main{
+	static void evenLengthWords(String str){
+		System.out.println("Entered String : " + str);
+		String curword = "";
+		System.out.println("Even Length words in string : ");
+		for(int i = 0; i < str.length(); i++){
+			curword = "";
+			while(i < str.length() && str.charAt(i) != ' '){
+				curword += str.charAt(i);
+				i++;
+			}
+
+			if(curword.length() % 2 == 0){
+				System.out.println(curword);
+			}
+			
+		}
+
+	}
+	public static void main(String[] args){
+		evenLengthWords("Hello I am a Abhishek Dhawan");
+	}
+}`
+            }
+        },
+        {
+            "id": 185,
+            "description": "Program to print smallest and biggest possible palindrome word in a given string",
+            "difficulty": "hard",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program finds and prints the smallest and largest palindrome words from a given string.",
+                "code": `class Main{
+	static boolean isPallindrome(String str){
+		for(int i = 0, j = (str.length()-1); i < j; i++, j--){
+			if(str.charAt(i) != str.charAt(j)){
+				return false;
+			}
+		}
+		return true;
+	}
+
+	static void maxAndMinPallindrome(String str){
+		String maxword = "";
+		String minword = "";
+		String curword = "";
+
+		for(int i = 0; i < str.length(); i++){
+			curword = "";
+			while(i < str.length() && str.charAt(i) != ' '){
+				curword += str.charAt(i);
+				i++;
+			}
+
+			if((minword.length() > curword.length() || minword.length() == 0) && isPallindrome(curword)){
+				minword = curword;
+			}
+			if(curword.length() > maxword.length() && isPallindrome(curword)){
+				maxword = curword;
+			}
+			
+		}
+		System.out.println("Given String : " + str);
+		if(maxword.length() == 0){
+			System.out.println("No Pallindrome word found");
+			return;
+		}
+		System.out.println("Largest Pallindrome Word in String : " + maxword);
+		System.out.println("Smallest Pallindrome Word in String : " + minword);
+	}
+	public static void main(String[] args){
+		maxAndMinPallindrome("abba mobile no 123454321");
+		maxAndMinPallindrome("Hello world");
+	}
+}`
+            }
+        },
+        {
+            "id": 186,
+            "description": "Program to remove all the white spaces from a string",
+            "difficulty": "easy",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program removes all whitespace characters from a string and prints the result.",
+                "code": `class Main{
+	static String trimSpaces(String str){
+		String newstr = "";
+		for(int i = 0; i < str.length(); i++){
+			if(str.charAt(i) != ' '){
+				newstr += str.charAt(i);
+			}
+		}
+		return newstr;
+	}
+	public static void main(String[] args){
+		System.out.println(trimSpaces("Hello World I am Abhishek"));
+	}
+}`
+            }
+        },
+        {
+            "id": 187,
+            "description": "Program to replace lower-case characters with upper-case and vice-versa",
+            "difficulty": "easy",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program replaces all lowercase characters in a string with uppercase ones, and vice versa.",
+                "code": `class Main{
+	static String changeCase(String str){
+		String newstr = "";
+		for(int i = 0; i < str.length(); i++){
+			if(str.charAt(i) >= 'a' && str.charAt(i) <= 'z'){
+				newstr += (char)(str.charAt(i)-32);
+			}
+			else if(str.charAt(i) >= 'A' && str.charAt(i) <= 'Z'){
+				newstr += (char)(str.charAt(i)+32);
+			}
+		}
+		return newstr;
+	}
+	public static void main(String[] args){
+		System.out.println(changeCase("Hello I am Abhishek"));
+	}
+}`
+            }
+        },
+        {
+            "id": 188,
+            "description": "Program to replace the spaces of a string with a specific character",
+            "difficulty": "easy",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program replaces all spaces in a string with a specified character.",
+                "code": `class Main{
+	static String replaceSpaces(String str, char ch){
+		String newstr = "";
+		for(int i = 0; i < str.length(); i++){
+			if(str.charAt(i) == ' '){
+				newstr += ch;
+			}
+			else{
+				newstr += str.charAt(i);
+			}
+		}
+		return newstr;
+	}
+	public static void main(String[] args){
+		System.out.println(replaceSpaces("Hello World I am Abhishek  ", '*'));
+	}
+}`
+            }
+        },
+        {
+            "id": 189,
+            "description": "Program to separate the individual characters from a string",
+            "difficulty": "easy",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program separates each character in a string and prints them individually.",
+                "code": null
+            }
+        },
+        {
+            "id": 190,
+            "description": "Program to split a string into a number of sub-strings",
+            "difficulty": "easy",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program splits a string into multiple sub-strings based on a delimiter.",
+                "code": null
+            }
+        },
+        {
+            "id": 191,
+            "description": "Program to swap two string variables without using a third or temp variable",
+            "difficulty": "medium",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program swaps two string variables without the use of a temporary variable.",
+                "code": `class Main{
+	public static void main(String[] args){
+		String st1 = "Hello", st2 = "World";
+		System.out.println("Before Swap\nString 1 : " + st1 + " String 2 : " + st2);
+		st1 += st2;
+		st2 = st1.substring(0, st1.length() - st2.length());
+		st1 = st1.substring(st2.length());
+		System.out.println("After Swap\nString 1 : " + st1 + " String 2 : " + st2);
+
+	}
+}`
+            }
+        },
+        {
+            "id": 192,
+            "description": "Program to swap pair of characters",
+            "difficulty": "medium",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program swaps two specific characters in a string as provided by the user.",
+                "code": null
+            }
+        },
+        {
+            "id": 193,
+            "description": "Read two string inputs from the user and check if the first contains the second",
+            "difficulty": "easy",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program reads two strings and checks if the first string contains the second.",
+                "code": null
+            }
+        },
+        {
+            "id": 194,
+            "description": "Reverse a string without using the reverse() function",
+            "difficulty": "medium",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to reverse a string manually without using the built-in reverse() method.",
+                "code": `class Main{
+	static String strReverse(String str){
+		String revstr = "";
+
+		for(int i = (str.length()-1); i >= 0; i--){
+			revstr += str.charAt(i);
+		}
+		return revstr;
+	}
+	public static void main(String[] args){
+		System.out.println(strReverse("Hello"));
+	}
+}`
+            }
+        },
+        {
+            "id": 195,
+            "description": "Reverse a string word by word",
+            "difficulty": "medium",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program reverses the words in a given string, keeping the words in reverse order but not reversing the characters in each word.",
+                "code": `class Main{
+	static String strReverse(String str){
+		String revstr = "";
+
+		for(int i = (str.length()-1); i >= 0; i--){
+			revstr += str.charAt(i);
+		}
+		return revstr;
+	}
+	static String strReverseWords(String str){
+		String curword  = "", newstr = "";
+		for(int i = 0; i < str.length(); i++){
+			curword = "";
+			while(i < str.length() && str.charAt(i) != ' '){
+				curword += str.charAt(i);
+				i++;
+			}
+			newstr += (strReverse(curword));						if(i < str.length()){
+				newstr += ' ';
+			}
+		}
+		return newstr;
+	}
+	public static void main(String[] args){
+		System.out.println(strReverseWords("Hello World"));
+	}
+}`
+            }
+        },
+        {
+            "id": 196,
+            "description": "Write a program to check if two strings are created with the same characters",
+            "difficulty": "medium",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program checks whether two strings are made up of exactly the same characters, regardless of their order.",
+                "code": `class Main{
+	static boolean haveSameCharacters(String s1, String s2){
+		int j = 0;
+		for(int i = 0; i < s1.length(); i++){
+			for(j = 0; j < s2.length(); j++){
+				if(s1.charAt(i) == s2.charAt(j))
+					break;
+			}
+			if(j == s2.length()){
+				return false;
+			}
+		}
+		return true;
+	}
+	public static void main(String[] args){
+		System.out.println((haveSameCharacters("abbbccdee", "abcd")) ? "Same Characters" : "Different Characters");
+	}
+}`
+            }
+        },
+        {
+            "id": 197,
+            "description": "Write a program to find the first non-repeated character from the input string",
+            "difficulty": "hard",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program identifies the first non-repeating character in a given string.",
+                "code": null
+            }
+        },
+        {
+            "id": 198,
+            "description": "Create an object of StringBuffer class to reverse the string",
+            "difficulty": "easy",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates the usage of StringBuffer's reverse() method to reverse a string.",
+                "code": `class Main{
+	public static void main(String[] args){
+		String str = "Hello World";
+		StringBuffer st = new StringBuffer(str);
+		st.reverse();
+		str = st.toString();
+		System.out.println(str);
+	}
+}`
+            }
+        },
+        {
+            "id": 199,
+            "description": "Create an object of StringBuffer class to show functionality of insert, append, delete, and replace functions",
+            "difficulty": "easy",
+            "topic": 17,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates the usage of StringBuffer's methods like insert(), append(), delete(), and replace() on strings.",
+                "code": `class Main{
+	public static void main(String[] args){
+		StringBuffer str = new StringBuffer("Hello World");
+		System.out.println("Initial String : " + str);
+		str.insert(5, "!");
+		System.out.println("After Insert function : " + str);
+		str.append(" I am India.");
+		System.out.println("After Append function : " + str);
+		str.delete(0, 7);
+		System.out.println("After Delete function : " + str);
+		str.replace(2, 4, "My");
+		System.out.println("After Replace function : " + str);
+
+	}
+}`
             }
         }
     ]
