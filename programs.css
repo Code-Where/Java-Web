@@ -25,6 +25,7 @@ main label{
     color: black;
 }
 pre{
+    border: 2px solid white;
     overflow: hidden;
     color: whitesmoke;
     margin: 2vh 2vw;
@@ -67,6 +68,13 @@ code{
 }
 .a-center{
     align-items: center;
+}
+#input{
+    padding: 5vh 2vw;
+}
+#output{
+    padding: 5vh 2vw;
+    height: 50%;
 }
 @media (max-width: 768px){
     main section label{
