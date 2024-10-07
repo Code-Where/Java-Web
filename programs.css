@@ -64,7 +64,12 @@ code{
     background-color: #b4966f5d;
     border: 1px solid #B4966F;
     color: white;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.prehead #copybtn:hover{
     box-shadow: 0px 0px 15px 0px wheat inset;
+    transform: translate(2px);
 }
 .a-center{
     align-items: center;

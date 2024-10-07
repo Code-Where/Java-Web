@@ -84,9 +84,13 @@ function copyCode(){
     let code = document.getElementById("code").innerText;
     navigator.clipboard.writeText(code) 
     .then(() => {
-        alert('Text copied to clipboard');
+        document.getElementById("copybtn").innerHTML = "Copied";
+        setTimeout(()=>{
+            document.getElementById("copybtn").innerHTML = "Copy"
+        }, 5000);
     })
     .catch(err => {
         console.error('Failed to copy text: ', err);
     });
 }
+
