@@ -7736,6 +7736,2905 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
 	}
 }`
             }
+        },
+        // Basic Programming Construct
+        {
+            "id": 200,
+            "description": "Write a Java program to print ‘Hello World!’ on screen",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program prints a simple 'Hello World!' message on the screen.",
+                "code": `class Main{
+	public static void main(String[] args){
+		System.out.print("Hello World!");
+	}
+}`
+            }
+        },
+        {
+            "id": 201,
+            "description": "Write a Java program to print the sum of two numbers",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program takes two numbers as input and prints their sum.",
+                "code": `class Main{
+	public static void main(String[] args){
+		double num1 = 100, num2 = 47883, sum;
+		sum = num1 + num2;
+		System.out.print("Sum of " + num1 + " and " + num2 + " is " +sum);
+	}
+}`
+            }
+        },
+        {
+            "id": 202,
+            "description": "Write a Java program that takes two numbers and display the product of two numbers",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program accepts two numbers and displays their product.",
+                "code": null
+            }
+        },
+        {
+            "id": 203,
+            "description": "Write a Java program to print the sum, multiply, subtract, divide and remainder of two numbers",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program performs various arithmetic operations (addition, multiplication, subtraction, division, and modulus) on two numbers.",
+                "code": `class Main{
+	public static void main(String[] args){
+		int num1 = 5, num2 = 12, sum, prod, sub, div, remainder;
+		sum = num1 + num2;
+		prod = num1 * num2;
+		sub = num1 - num2;
+		div = num1 / num2;
+		remainder = num1 % num2;
+		System.out.println(num1 + " + " + num2 +" = " + sum);
+		System.out.println(num1 + " X " + num2 +" = " + prod);
+		System.out.println(num1 + " - " + num2 +" = " + sub);
+		System.out.println(num1 + " / " + num2 +" = " + div);
+		System.out.println(num1 + " % " + num2 +" = " + remainder);
+	}
+}
+`
+            }
+        },
+        {
+            "id": 204,
+            "description": "Write a Java program that takes five numbers as input to calculate and print the average of the numbers",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program takes five numbers as input, calculates their sum, and prints the average.",
+                "code": null
+            }
+        },
+        {
+            "id": 205,
+            "description": "Write a Java program to swap two variables",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program swaps the values of two variables.",
+                "code": `class Main{
+	public static void main(String[] args){
+		int num1 = 84, num2 = 128;
+		System.out.println("Before Swapping : ");
+		System.out.println("num1 = " + num1 + "\nnum2 = " + num2);
+		num1 += num2;
+		num2 = num1 - num2;
+		num1 = num1 - num2; 
+		System.out.println("After Swapping : ");
+		System.out.println("num1 = " + num1 + "\nnum2 = " + num2);
+	}
+}`
+            }
+        },
+        {
+            "id": 206,
+            "description": "Write a Java program to convert a decimal number to binary numbers",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program converts a decimal number to its binary representation.",
+                "code": `class Main{
+	public static void main(String[] args){
+		int num = 9, j = 0;
+		short arr[] = new short[10];
+		while(num > 0){
+			arr[j] = (short)(num % 2);
+			num /= 2;
+			j++;
+		}
+		for(int i = arr.length-1; i >= 0; i--){
+			System.out.print(arr[i]);
+		}		 
+	}
+}`
+            }
+        },
+        {
+            "id": 207,
+            "description": "Write a Java program to convert a binary number to decimal number",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program converts a binary number to its decimal equivalent.",
+                "code": null
+            }
+        },
+        {
+            "id": 208,
+            "description": "Write a Java program to check whether Java is installed on your computer or not",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program checks if Java is installed by printing the Java version installed on the system.",
+                "code": null
+            }
+        },
+        {
+            "id": 209,
+            "description": "Write a Java program and compute the sum of the digits of an integer",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program computes the sum of digits of a given integer.",
+                "code": null
+            }
+        },
+        {
+            "id": 210,
+            "description": "Write a Java program to compare two numbers",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program compares two numbers and prints which one is greater, or if they are equal.",
+                "code": `class Main{
+	static void compare(int a, int b){
+		if(a > b){
+			System.out.println(a + " is greater than " + b);
+		}
+		else if(b > a){
+			System.out.println(b + " is greater than " + a);
+		}
+		else{
+			System.out.println(a + " is equal to " + b);
+		}
+	}
+	public static void main(String[] args){
+		compare(18, 49);
+		compare(92, 47);
+		compare(84, 84);
+	}
+}`
+            }
+        },
+        {
+            "id": 211,
+            "description": "Write a Java program to count the letters, spaces, numbers and other characters of an input string",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program counts the occurrences of letters, spaces, numbers, and other characters in an input string.",
+                "code": `class Main{
+	public static void main(String args[]){
+		int letters = 0, spaces = 0, numbers = 0, others = 0;
+		String str = "";
+		java.io.BufferedReader br = new java.io.BufferedReader(new java.io.InputStreamReader(System.in));
+		System.out.println("Enter String value : ");
+		try{
+			str = br.readLine();
+		}
+		catch(Throwable ex){
+			System.out.println("Something Went Wrong : " + ex.getMessage());
+		}
+		for(int i = 0; i < str.length(); i++){
+			if(Character.isLetter(str.charAt(i))){
+				letters++;
+			}
+			else if(str.charAt(i) == ' '){
+				spaces++;
+			}
+			else if(Character.isDigit(str.charAt(i))){
+				numbers++;
+			}
+			else{
+				others++;
+			}
+		}
+		System.out.println("Entered String : " + str);
+		System.out.println("\nNumber of Letters : " + letters);
+		System.out.println("Number of Spaces : " + spaces);
+		System.out.println("Number of Numbers : " + numbers);
+		System.out.println("Number of Other Characters : " + others);
+
+	}
+}`
+            }
+        },
+        {
+            "id": 212,
+            "description": "Write a Java program to print the ascii value of a given character",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program prints the ASCII value of a given character.",
+                "code": `class Main{
+	public static void main(String[] args){
+		java.io.InputStreamReader isr = new java.io.InputStreamReader(System.in);
+		System.out.print("Enter Character : ");
+		try{
+			System.out.println("Ascii Value : " + isr.read());
+		}
+		catch(Throwable th){
+			System.out.println("Hardware Error Occured : " + th.getMessage());
+		}
+	}
+}`
+            }
+        },
+        {
+            "id": 213,
+            "description": "Write a Java program that accepts an integer (n) and computes the value of n+nn+nnn",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program computes the value of n+nn+nnn for a given integer n.",
+                "code": `class Main{
+	public static void main(String[] args){
+		java.io.BufferedReader br = new java.io.BufferedReader(new java.io.InputStreamReader(System.in));
+		System.out.print("Enter n value : ");
+		int val = 0;
+		try{
+			val = Integer.parseInt(br.readLine());
+			System.out.println("Value of n+nn+nn for n = " + val + " is " + (val+(val*val)+(val*val*val)));
+		}
+		catch(NumberFormatException nfe){
+			System.out.println("Entered Character Value : " + nfe.getMessage());
+		}
+		catch(Throwable ex){
+			System.out.println("Something Went Wrong : " + ex.getClass());
+		}
+	}
+}`
+            }
+        },
+        {
+            "id": 214,
+            "description": "Write a Java program to display the system time",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program displays the current system time.",
+                "code": `class Main{
+	public static void main(String[] args){
+		java.util.Date time = new java.util.Date();
+		System.out.println("System Time : " + time.getHours() +":" +time.getMinutes() + ":" + time.getSeconds());
+	}
+}`
+            }
+        },
+        {
+            "id": 215,
+            "description": "Write a Java program to print the odd numbers from 1 to 20",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program prints all odd numbers between 1 and 20.",
+                "code": `class Main{
+	static Boolean isOdd(int num){
+		return (num%2 == 0) ? false : true;
+	}
+	public static void main(String[] args){
+		for(int i = 1; i <= 20; i++){
+			if(isOdd(i)){
+				System.out.println(i + " is odd number");
+			}
+		}
+	}
+}`
+            }
+        },
+        {
+            "id": 216,
+            "description": "Write a Java program to print the even numbers from 1 to 20",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program prints all even numbers between 1 and 20.",
+                "code": `class Main{
+	static Boolean isEven(int num){
+		return (num%2 == 0) ? true : false;
+	}
+	public static void main(String[] args){
+		for(int i = 1; i <= 20; i++){
+			if(isEven(i)){
+				System.out.println(i + " is Even number");
+			}
+		}
+	}
+}`
+            }
+        },
+        {
+            "id": 217,
+            "description": "Write a Java program to convert a string to an integer",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program converts a given string to its corresponding integer value.",
+                "code": `class Main{
+	public static void main(String[] args){
+		int val = 0;
+		String str = "73388";
+		try{
+			val = Integer.parseInt(str);
+			System.out.println("Integer value : " + val);
+		}
+		catch(Throwable exc){
+			System.out.println(exc.getMessage());
+		}		
+	}
+}`
+            }
+        },
+        {
+            "id": 218,
+            "description": "Write a Java program to convert seconds to hour, minute and seconds",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program converts a given number of seconds into hours, minutes, and seconds.",
+                "code": `class Main{
+	public static void main(String[] args){
+		int t_seconds = 3661;
+		int hour = t_seconds/3600;
+		int minutes = (t_seconds%3600)/60;
+		int seconds = (t_seconds%3600)%60;
+		System.out.println("Total Seconds : " + t_seconds);
+		System.out.println(hour + " Hour " + minutes  + " Minutes " + seconds + " Seconds");
+	}
+}`
+            }
+        },
+        {
+            "id": 219,
+            "description": "Write a Java program to compute the sum of the first 100 prime numbers",
+            "difficulty": "hard",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates the sum of the first 100 prime numbers.",
+                "code": `class Main{
+	static Boolean isPrime(int num){
+		int i = 0;
+		if(num == 2)
+			return true;
+		for(i = 2; i < num; i++){
+			if(num%i == 0){
+				return false;
+			}
+		}
+		if(i == num)
+			return true;
+		else
+			return false;
+	}
+	public static void main(String[] args){
+		int sum = 0;
+		int count = 0;
+		for(int i = 2; count < 100; i++){
+			if(isPrime(i)){
+				sum += i;
+				count++;
+			}
+		}
+		System.out.println("Sum of first 100 Prime Numbers : " + sum);
+	}
+}`
+            }
+        },
+        {
+            "id": 220,
+            "description": "Write a Java program to swap the first and last elements of an array and create a new array",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program swaps the first and last elements of an array and creates a new array with the swapped elements.",
+                "code": `class Main{
+	static int[] swapAndCreate(int arr[]){
+		int[] newarr = new int[arr.length];
+		newarr[0] = arr[arr.length-1];
+		newarr[arr.length-1] = arr[0];
+		for(int i = 1; i < arr.length-1; i++){
+			newarr[i] = arr[i];
+		}
+		return newarr;
+	}
+	public static void main(String[] args){
+		int arr[] = {52, 74, 10, 53, 58};
+		int newarr[] = new int[arr.length];
+		newarr = swapAndCreate(arr);
+		System.out.println("Original Array : " + java.util.Arrays.toString(arr));
+		System.out.println("New Created Array : " + java.util.Arrays.toString(newarr));
+	}
+}`
+            }
+        },
+        {
+            "id": 221,
+            "description": "Write a Java program to count the number of even and odd elements in a given array",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program counts and prints the number of even and odd elements in a given array.",
+                "code": `class Main{
+	public static void main(String[] args){
+		int arr[] = {52, 86, 71, 52, 20, 93};
+		int odd = 0, even = 0;
+		for(int i = 0; i < arr.length; i++){
+			if(arr[i] % 2 == 0){
+				even++;
+			}
+			else{
+				odd++;
+			}
+		}
+		System.out.println("Array : " + java.util.Arrays.toString(arr));
+		System.out.println("Number of Even Elements : " + even);
+		System.out.println("Number of Odd Elements : " + odd);
+	}
+}`
+            }
+        },
+        {
+            "id": 222,
+            "description": "Write a Java program to compute the square root of a given integer",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program computes the square root of a given integer using Java's Math library.",
+                "code": `class Main{
+	public static void main(String[] args){
+		int num = 169;
+		System.out.println("Square Root of " + num + " is " + Math.sqrt(num));
+	}
+}`
+            }
+        },
+        {
+            "id": 223,
+            "description": "Write a Java program to check if a positive number is a palindrome or not",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program checks whether a given positive number is a palindrome (reads the same forward and backward).",
+                "code": `class Main{
+	static boolean isPallindrome(int num){
+		int rev = 0, n = num;
+		while(num > 0){
+			rev = (num%10) + (rev*10);
+			num /= 10;
+		}
+		return (rev == n) ? true : false;
+	}
+	public static void main(String args[]){
+		int num = 12221;
+		if(isPallindrome(num)){
+			System.out.println(num + " is Pallindrome");
+		}
+		else{
+			System.out.println(num + " is not Pallindrome");
+		}
+	}
+}`
+            }
+        },
+        {
+            "id": 224,
+            "description": "Write a Java program to add two numbers without using any arithmetic operators",
+            "difficulty": "hard",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program adds two numbers without using any arithmetic operators by employing bitwise operations.",
+                "code": null
+            }
+        },
+        {
+            "id": 225,
+            "description": "Write a Java program to add all the digits of a given positive integer",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program adds together all the digits of a given positive integer.",
+                "code": `class Main{
+	static int sumOfDigits(int num){
+		int sum = 0;
+		while(num > 0){
+			sum += (num%10);
+			num /= 10;
+		}
+		return sum;
+	}
+	public static void main(String args[]){
+		int num = 12221;
+		System.out.println("Sum of digits of " + num + " is " + sumOfDigits(num));
+	}
+}`
+            }
+        },
+        {
+            "id": 226,
+            "description": "Write a Java program to find the area of a circle",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates the area of a circle using the formula: area = π * radius².",
+                "code": `class Main{
+	static double circleArea(double radius){
+		return (Math.PI * radius * radius);
+	}
+	public static void main(String args[]){
+		double radius = 5;
+		System.out.println("Area of circle with radius " + radius + " is " + circleArea(radius));
+	}
+}`
+            }
+        },
+        {
+            "id": 227,
+            "description": "Write a Java program to find the area of a rectangle",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates the area of a rectangle using the formula: area = length * width.",
+                "code": `class Main{
+	static double rectangleArea(double length, double breadth){
+		return (length * breadth);
+	}
+	public static void main(String args[]){
+		double l = 5, b = 4;
+		System.out.println("Area of rectangle with length " + l + " and breadth " + b + " is " + rectangleArea(l, b));
+	}
+}`
+            }
+        },
+        {
+            "id": 228,
+            "description": "Write a Java program to find the area of a triangle",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates the area of a triangle using the formula: area = 0.5 * base * height.",
+                "code": `class Main{
+	static double triangleArea(double height, double base){
+		return ((1/2)*base*height);
+	}
+	public static void main(String args[]){
+		double h = 5, b = 4;
+		System.out.println("Area of triangle with height " + h + " and base " + b + " is " + triangleArea(h, b));
+	}
+}`
+            }
+        },
+        {
+            "id": 229,
+            "description": "Write a Java program to find the area of an equilateral triangle",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates the area of an equilateral triangle using the formula: area = (√3 / 4) * side².",
+                "code": `class Main{
+	static double equilateralTriangleArea(double side){
+		return (Math.sqrt(3)/4 * side * side);
+	}
+	public static void main(String args[]){
+		double a = 5;
+		System.out.println("Area of Equilateral Triangle with side " + a + " is " + equilateralTriangleArea(a));
+	}
+}`
+            }
+        },
+        {
+            "id": 230,
+            "description": "Write a Java program to find the area of a rhombus",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates the area of a rhombus using the formula: area = (diagonal1 * diagonal2) / 2.",
+                "code": `class Main{
+	static double rhombusArea(double base, double height){
+		return (base * height);
+	}
+	public static void main(String args[]){
+		double b = 5, h = 9;
+		System.out.println("Area of Rhombus with base " + b + " and height " + h + " is " + rhombusArea(b, h));
+	}
+}`
+            }
+        },
+        {
+            "id": 231,
+            "description": "Write a Java program to find the area of a parallelogram",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates the area of a parallelogram using the formula: area = base * height.",
+                "code": `class Main{
+	static double parallelogramArea(double base, double height){
+		return (base * height);
+	}
+	public static void main(String args[]){
+		double b = 5, h = 9;
+		System.out.println("Area of Parallelogram with base " + b + " and height " + h + " is " + parallelogramArea(b, h));
+	}
+}`
+            }
+        },
+        {
+            "id": 232,
+            "description": "Write a Java program to find the area of a prism",
+            "difficulty": "hard",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates the surface area of a prism using the relevant geometric formulas based on the type of prism.",
+                "code": `class Main{
+	static double prismArea(double trianglebase, double triangleheight, double prismheight, double side){
+		return (trianglebase * triangleheight) + ((3*side) * prismheight);
+	}
+	public static void main(String args[]){
+		double tb = 5, th = 9, a = 2, ph = 3;
+		System.out.println("Area of Triangular Prism is " + prismArea(tb, th, ph, a));
+	}
+}`
+            }
+        },
+        {
+            "id": 233,
+            "description": "Write a Java program to find the volume of a sphere",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates the volume of a sphere using the formula: volume = (4/3) * π * radius³.",
+                "code": `class Main{
+	static double sphereVolume(double radius){
+		return ((4.0/3.0) * Math.PI * radius * radius * radius);
+	}
+	public static void main(String[] args){
+		System.out.println("Volume of Sphere with radius 5 : " + sphereVolume(5));
+	}
+}`
+            }
+        },
+        {
+            "id": 234,
+            "description": "Write a Java program to find the volume of a cylinder",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates the volume of a cylinder using the formula: volume = π * radius² * height.",
+                "code": `class Main{
+	static double cyllinderVolume(double radius, double height){
+		return (Math.PI * radius * radius * height);
+	}
+	public static void main(String[] args){
+		System.out.println("Volume of Sphere with radius 5 and height 10 : " + cyllinderVolume(5, 10));
+	}
+}`
+            }
+        },
+        {
+            "id": 235,
+            "description": "Write a Java program to find the volume of a cuboid",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates the volume of a cuboid using the formula: volume = length * width * height.",
+                "code": `class Main{
+	static double cuboidVolume(double length, double breadth, double height){
+		return (length * breadth * height);
+	}
+	public static void main(String[] args){
+		System.out.println("Volume of Cuboid with length 5, breadth 7 and height 10 : " + cuboidVolume(5, 7, 10));
+	}
+}`
+            }
+        },
+        {
+            "id": 236,
+            "description": "Write a Java program to find the volume of a cone",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates the volume of a cone using the formula: volume = (1/3) * π * radius² * height.",
+                "code": `class Main{
+	static double coneVolume(double radius, double height){
+		return ((1.0/3.0) * Math.PI * radius * radius * height);
+	}
+	public static void main(String[] args){
+		System.out.println("Volume of Cone with radius 7 and height 10 : " + coneVolume(7, 10));
+	}
+}`
+            }
+        },
+        {
+            "id": 237,
+            "description": "Write a Java program to find the surface area of a cuboid",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates the surface area of a cuboid using the formula: surface area = 2 * (length * width + width * height + height * length).",
+                "code": `class Main{
+	static double cuboidSA(double length, double width, double height){
+		return 2 * ((length * width) + (width * height) + (length * height));
+	}
+	public static void main(String[] args){
+		System.out.println("Surface area of cuboid with length 3, width 6 and height 10 is " + cuboidSA(3, 6, 10));
+	}
+}`
+            }
+        },
+        {
+            "id": 238,
+            "description": "Write a Java program to find the surface area of a cylinder",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates the surface area of a cylinder using the formula: surface area = 2 * π * radius * (radius + height).",
+                "code": `class Main{
+	static double cylinderSA(double radius, double height){
+		return 2 * Math.PI * radius * (height + radius);
+	}
+	public static void main(String[] args){
+		System.out.println("Surface area of Cyllinder with radius 6 and height 10 is " + cylinderSA(6, 10));
+	}
+}`
+            }
+        },
+        {
+            "id": 239,
+            "description": "Write a Java program to find the surface area of a cube",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates the surface area of a cube using the formula: surface area = 6 * side².",
+                "code": `class Main{
+	static double cubeSA(double side){
+		return 6 * side * side;
+	}
+	public static void main(String[] args){
+		System.out.println("Surface area of Cube with side 10 is " + cubeSA(10));
+	}
+}`
+            }
+        },
+        {
+            "id": 240,
+            "description": "Write a Java program to calculate average marks",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates the average of marks input by the user.",
+                "code": `class Main{
+	static double averageCalc(double marks[]){
+		double sum = 0;
+		for(double val : marks){
+			sum += val;
+		}
+		return (sum/marks.length);
+	}
+	public static void main(String args[]){
+		double marks[] = {52, 78, 20, 74, 10};
+		
+		System.out.println("Average Marks of student is " + averageCalc(marks));
+	}
+}`
+            }
+        },
+        {
+            "id": 241,
+            "description": "Write a Java program to check if a character is a vowel or consonant",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program checks whether the input character is a vowel or a consonant.",
+                "code": `class Main{
+	static byte isVowelOrConsonent(char ch){
+		if(Character.isLetter(ch)){
+			switch(ch){
+				case 'a': ;
+				case 'e': ; 
+				case 'i': ;
+				case 'o': ;
+				case 'u': ;
+				case 'A': ;
+				case 'E': ; 
+				case 'I': ;
+				case 'O': ;
+				case 'U': return 1;
+				default : return 0;
+			}
+		}
+		return -1;
+	}
+	public static void main(String[] args){
+		char ch = 'I';
+		byte val = isVowelOrConsonent(ch);
+		if(val == -1){
+			System.out.println(ch + " is not a Letter");
+		}
+		else if(val == 0){
+			System.out.println(ch + " is a Consonent");
+		}
+		else{
+			System.out.println(ch + " is a Vowel");
+		}
+	}
+}`
+            }
+        },
+        {
+            "id": 242,
+            "description": "Write a Java program to sum of N numbers",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates the sum of N numbers input by the user.",
+                "code": `class Main{
+	static int sumOfN(int n, int start){
+		int sum = 0;
+		for(int i = 0; i < n; i++)
+			sum += (start + i);
+		return sum;
+	}
+	public static void main(String args[]){
+		System.out.println("Sum of first 100 Numbers : " + sumOfN(100, 1));
+	}
+}`
+            }
+        },
+        {
+            "id": 243,
+            "description": "Write a Java program to find the factorial of any number",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates the factorial of a given number using a loop or recursion.",
+                "code": `class Main{
+	static int factorial(int num){
+		if(num == 1 || num == 0)
+			return 1;
+		return num * factorial(num - 1);
+	}
+	public static void main(String args[]){
+		System.out.println("Factorial of 5 : " + factorial(5));
+	}
+}`
+            }
+        },
+        {
+            "id": 244,
+            "description": "Write a Java Program to calculate electricity bill",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates the electricity bill based on units consumed and rate per unit.",
+                "code": `class Main{
+	static double calculateBill(double units){
+		final double PRICE_PER_UNIT = 10;
+		
+		return units * PRICE_PER_UNIT;
+	}
+	public static void main(String args[]){
+		System.out.println("Electricity Bill Of Consumed Units 4000 : " + calculateBill(4000));
+	}
+}`
+            }
+        },
+        {
+            "id": 245,
+            "description": "Write a Java Program To Calculate CGPA Percentage",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates the CGPA percentage based on the CGPA input by the user.",
+                "code": `class Main{
+	public static void main(String[] args){
+		double marks[] = {90, 80, 70, 80, 90};
+		double sumofgrades = 0;
+		for(int i = 0; i < marks.length; i++){
+			sumofgrades += (marks[i]/10);
+		}
+		double cgpa = sumofgrades/marks.length;
+		double cgpapercent = cgpa * 9.5;
+		System.out.println("CGPA Percentage of Marks : " + java.util.Arrays.toString(marks) + " is " + cgpapercent);
+	}
+}
+`
+            }
+        },
+        {
+            "id": 246,
+            "description": "Write a Java Program to calculate compound interest",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates the compound interest using the formula: A = P(1 + r/n)^(nt), where P is the principal, r is the rate, t is the time, and n is the number of times the interest is compounded per year.",
+                "code": `class Main{
+	static double compoundInterest(double principle, double roi, int n, int time){
+		return (principle * Math.pow((1 + (roi/(n*100))), (n*time)));
+	}
+	public static void main(String[] args){
+		System.out.println("Compound Interest for Principle 10000 for 5 years at 5% : " + compoundInterest(10000, 5, 1, 5));
+	}
+}
+`
+            }
+        },
+        {
+            "id": 247,
+            "description": "Write a Java Program To Calculate Batting Average",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates the batting average based on the total runs and total outs.",
+                "code": `class Main{
+	static double battingAvg(int totalRuns, int outfrequency){
+		return ((double)totalRuns/(double)outfrequency);
+	}
+	public static void main(String[] args){
+		System.out.println("Virat Kohli scores 13906 runs and dismissed 239 times, His Average : " + battingAvg(13906, 239));
+	}
+}
+`
+            }
+        },
+        {
+            "id": 248,
+            "description": "Write a Java Program to Calculate Commission Percentage",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates the commission percentage based on sales and commission rate.",
+                "code": `class Main{
+	static double commissionCalc(double sales, double commissionRate){
+		return ((commissionRate/100) * sales);
+	}
+	public static void main(String[] args){
+		System.out.println("Commission of 40000Rs sales is " + commissionCalc(40000, 8.2));
+	}
+}`
+            }
+        },
+        {
+            "id": 249,
+            "description": "Write a Java Program To Find Distance Between Two Points",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates the distance between two points using the distance formula: distance = √[(x2 - x1)² + (y2 - y1)²].",
+                "code": `class Main {
+    public static void main(String[] args) {
+        double x1 = 3.0, y1 = 4.0; 
+        double x2 = 7.0, y2 = 1.0; 
+
+        double distance = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
+
+        System.out.println("The distance between the points (" + x1 + ", " + y1 + ") and (" + x2 + ", " + y2 + ") is: " + distance);
+    }
+}
+`
+            }
+        },
+        {
+            "id": 250,
+            "description": "Write a Java Program To Calculate Power Of Number",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates the power of a number using the Math.pow() function.",
+                "code": `class Main {
+    public static void main(String[] args) {
+        int base = 5;  
+        int exponent = 3;  
+        int result = 1;
+
+        for (int i = 1; i <= exponent; i++) {
+            result *= base; // Multiply the base 'exponent' times
+        }
+
+        System.out.println(base + " raised to the power of " + exponent + " is: " + result);
+    }
+}
+`
+            }
+        },
+        {
+            "id": 251,
+            "description": "Write a Java program to take three numbers from the user and print the greatest number",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program takes three numbers as input and prints the largest number using conditional statements.",
+                "code": `class Main {
+    public static void main(String[] args) {
+	int num1 = 0, num2 = 0, num3 = 0;
+        java.io.BufferedReader br = new java.io.BufferedReader(new java.io.InputStreamReader(System.in));
+        System.out.print("Enter the first number: ");
+	try{
+        	num1 = Integer.parseInt(br.readLine());
+
+        	System.out.print("Enter the second number: ");
+       		num2 = Integer.parseInt(br.readLine());
+
+        	System.out.print("Enter the third number: ");
+        	num3 = Integer.parseInt(br.readLine());
+	}
+	catch(NumberFormatException ex){
+		System.out.println("Entered Non integer Value");
+	}
+	catch(Throwable ex){
+		System.out.println("Unexpected Error : " + ex.getMessage());
+	}
+        int greatest;
+
+        if (num1 >= num2 && num1 >= num3) {
+            greatest = num1;
+        } else if (num2 >= num1 && num2 >= num3) {
+            greatest = num2;
+        } else {
+            greatest = num3;
+        }
+
+        System.out.println("The greatest number is: " + greatest);
+    }
+}
+`
+            }
+        },
+        {
+            "id": 252,
+            "description": "Write a Java program to find the number of days in a month",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program finds the number of days in a month based on the month number input and handles leap year conditions for February.",
+                "code": `class Main {
+    public static void main(String[] args) {
+	int month = 2, year = 2020;
+        int daysInMonth = 0;
+
+        switch (month) {
+            case 1:  
+            case 3:  
+            case 5:  
+            case 7:  
+            case 8:  
+            case 10: 
+            case 12: 
+                daysInMonth = 31;
+                break;
+            case 4:  
+            case 6:  
+            case 9:  
+            case 11: 
+                daysInMonth = 30;
+                break;
+            case 2:  
+                if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)) {
+                    daysInMonth = 29;
+                } else {
+                    daysInMonth = 28;
+                }
+                break;
+            default:
+                System.out.println("Invalid month! Please enter a valid month between 1 and 12.");
+                return;
+        }
+
+        System.out.println("The number of days in month " + month + " of year " + year + " is: " + daysInMonth);
+    }
+}
+`
+            }
+        },
+        {
+            "id": 253,
+            "description": "Write a Java program to test a number is positive or negative",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program checks whether a number is positive, negative, or zero based on user input.",
+                "code": `class Main {
+    public static void main(String[] args) {
+        int number = -5;
+
+        if (number > 0) {
+            System.out.println(number + " is positive.");
+        } else if (number < 0) {
+            System.out.println(number + " is negative.");
+        } else {
+            System.out.println("The number is zero.");
+        }
+    }
+}
+`
+            }
+        },
+        {
+            "id": 254,
+            "description": "Write a Java Program to accept number of week’s day (1-7) and print name of the day",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program accepts a number between 1 and 7 from the user and prints the corresponding weekday name.",
+                "code": `class Main {
+    public static void main(String[] args) {
+	int dayNumber = 4;
+        java.io.BufferedReader reader = new java.io.BufferedReader(new java.io.InputStreamReader(System.in));
+
+        try {
+            System.out.print("Enter the number of the day (1-7): ");
+            dayNumber = Integer.parseInt(reader.readLine());
+        } 
+	catch (java.io.IOException e) {
+            System.out.println("An error occurred during input.");
+	    return;
+        } 
+	catch (NumberFormatException e) {
+            System.out.println("Invalid input! Please enter a valid number.");
+	    return;
+        }
+	catch(Throwable e){
+	    System.out.println("Something Went Wrong!");
+	    return;
+	}
+	switch (dayNumber) {
+                case 1:
+                    System.out.println("Sunday");
+                    break;
+                case 2:
+                    System.out.println("Monday");
+                    break;
+                case 3:
+                    System.out.println("Tuesday");
+                    break;
+                case 4:
+                    System.out.println("Wednesday");
+                    break;
+                case 5:
+                    System.out.println("Thursday");
+                    break;
+                case 6:
+                    System.out.println("Friday");
+                    break;
+                case 7:
+                    System.out.println("Saturday");
+                    break;
+                default:
+                    System.out.println("Invalid input! Please enter a number between 1 and 7.");
+	}
+    }
+}
+`
+            }
+        },
+        {
+            "id": 255,
+            "description": "Write a Java program that takes a year from user and print whether that year is a leap year or not",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program checks whether the input year is a leap year or not based on leap year rules.",
+                "code": `class Main {
+    static boolean isLeapYear(int year){
+ 	if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)) {
+                return true;
+        } 
+	else {
+                return false;
+        }
+	
+    }
+    public static void main(String[] args) {
+        java.io.BufferedReader reader = new java.io.BufferedReader(new java.io.InputStreamReader(System.in));
+	int year = 2004;
+	try {
+            System.out.print("Enter the year: ");
+            year = Integer.parseInt(reader.readLine());
+        } 
+	catch (java.io.IOException e) {
+            System.out.println("An error occurred during input.");
+ 	    return;
+        } 
+	catch (NumberFormatException e) {
+            System.out.println("Invalid input! Please enter a valid year.");
+ 	    return;
+        }
+	catch(Throwable e){
+ 	    System.out.println("Unexpected Error : " + e.getMessage());
+	    return;
+	}
+	System.out.println((isLeapYear(year) ? year + " is a leap Year" : year + " is not a leap year"));
+    }
+}
+`
+            }
+        },
+        {
+            "id": 256,
+            "description": "Write a Java program to input 5 numbers from keyboard and find their sum and average",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program takes 5 numbers from the user, calculates their sum, and finds the average.",
+                "code": `class Main {
+    public static void main(String[] args) {
+        java.util.Scanner input = new java.util.Scanner(System.in);
+
+        double sum = 0;
+        int count = 5;
+	try{
+        	for (int i = 0; i < count; i++) {
+            		System.out.print("Enter number " + (i + 1) + ": ");
+            		sum += input.nextDouble();
+        	}
+	}
+	catch(Throwable th){
+		System.out.println("Error Occured : " + th.getMessage());
+		return;
+	}
+
+        double average = sum / count;
+
+        System.out.println("Sum: " + sum);
+        System.out.println("Average: " + average);
+    }
+}
+`
+            }
+        },
+        {
+            "id": 257,
+            "description": "Write a program in Java to display the first 5 natural numbers",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program displays the first five natural numbers using a loop.",
+                "code": `class Main {
+    public static void main(String[] args) {
+        int count = 5;
+
+        for (int i = 1; i <= count; i++) {
+            System.out.println(i);
+        }
+    }
+}
+`
+            }
+        },
+        {
+            "id": 258,
+            "description": "Write a Java program to check vowel or consonant",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program checks if a given character is a vowel or consonant.",
+                "code": null
+            }
+        },
+        {
+            "id": 259,
+            "description": "Write a Java program to display the cube of the number up to a given integer",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates and displays the cube of numbers up to a specified integer.",
+                "code": `class Main {
+    public static void main(String[] args) {
+	    int n = 0;
+        java.util.Scanner input = new java.util.Scanner(System.in);
+
+        System.out.print("Enter the integer: ");
+        try{
+            n = input.nextInt();
+        }
+        catch(Throwable th){
+            System.out.println("Error Occured : " + th.getMessage());
+        }
+        for (int i = 1; i <= n; i++) {
+            int cube = i * i * i;
+            System.out.println("Cube of " + i + " is: " + cube);
+        }
+    }
+}
+`
+            }
+        },
+        {
+            "id": 260,
+            "description": "Write a Java program to display the n terms of odd natural numbers and their sum",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program displays the first n odd natural numbers and calculates their sum.",
+                "code": `class Main {
+    public static void main(String[] args) {
+        int n = 5;
+
+        int sum = 0;
+        System.out.println("The first " + n + " odd natural numbers are:");
+        
+        for (int i = 1; i <= n; i++) {
+            int oddNumber = 2 * i - 1;
+            System.out.println(oddNumber);
+            sum += oddNumber;
+        }
+
+        System.out.println("Sum of these odd natural numbers is: " + sum);
+    }
+}
+`
+            }
+        },
+        {
+            "id": 261,
+            "description": "Write a Java program to display the multiplication table of a given integer",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program generates and displays the multiplication table for a user-specified integer.",
+                "code": `class Main{
+	static void printTable(int num){
+		System.out.println("Printing table of " + num);
+		for(int i = 1; i <= 10; i++){
+			System.out.println(num + " X " + i + " = " + num*i);
+		}
+	}
+	public static void main(String[] args){
+		printTable(5);
+	}
+}`
+            }
+        },
+        {
+            "id": 262,
+            "description": "Write a Java program that reads an integer and check whether it is negative, zero, or positive",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program checks whether the input integer is negative, zero, or positive.",
+                "code": `class Main {
+    public static void main(String[] args) {
+        java.util.Scanner input = new java.util.Scanner(System.in);
+	int num = 0;
+        System.out.print("Enter an integer: ");
+	try{
+		num = input.nextInt();
+	}
+	catch(Throwable th){
+		System.out.println("Error Occured : " + th.getMessage());
+		return;
+	}
+        if (num > 0) {
+            System.out.println(num + " is positive.");
+        } else if (num < 0) {
+            System.out.println(num + " is negative.");
+        } else {
+            System.out.println(num + " is zero.");
+        }
+    }
+}
+`
+            }
+        },
+        {
+            "id": 263,
+            "description": "Write a Java program that reads a positive integer and counts the number of digits",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program counts the number of digits in a given positive integer.",
+                "code": `class Main {
+    public static void main(String[] args) {
+        java.util.Scanner input = new java.util.Scanner(System.in);
+	int num = 0;
+        System.out.print("Enter a positive integer: ");
+	try{
+		num = input.nextInt();
+	}
+	catch(Throwable th){
+		System.out.println("Error Occured : " + th.getMessage());
+		return;
+	}
+
+        if (num <= 0) {
+            System.out.println("The num must be positive.");
+            return;
+        }
+
+        int count = 0;
+        while (num > 0) {
+            num /= 10;
+            count++;
+        }
+
+        System.out.println("The num of digits is: " + count);
+    }
+}
+`
+            }
+        },
+        {
+            "id": 264,
+            "description": "Write a Java program that accepts three numbers and check if all numbers are equal or not",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program checks if three input numbers are equal.",
+                "code": `class Main {
+    public static void main(String[] args) {
+        java.util.Scanner input = new java.util.Scanner(System.in);
+	int num1 = 0, num2 = 0, num3 = 0;
+        System.out.print("Enter a integer: ");
+	try{
+		num1 = input.nextInt();
+		System.out.print("Enter a integer: ");
+		num2 = input.nextInt();
+		System.out.print("Enter a integer: ");
+		num3 = input.nextInt();
+	}
+	catch(Throwable th){
+		System.out.println("Error Occured : " + th.getMessage());
+		return;
+	}
+
+        if(num1 == num2 && num2 == num3)
+        	System.out.println("The Numbers " + num1 + ", " + num2 + ", " + num3 + " are equal");
+	else
+		System.out.println("The Numbers " + num1 + ", " + num2 + ", " + num3 + " are not equal");
+    }
+}
+`
+            }
+        },
+        {
+            "id": 265,
+            "description": "Write a Java program that accepts three numbers from the user and check if numbers are in 'increasing' or 'decreasing' order.",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program checks if three numbers are arranged in increasing or decreasing order.",
+                "code": `class Main {
+    public static void main(String[] args) {
+        java.util.Scanner input = new java.util.Scanner(System.in);
+	    int num1 = 0, num2 = 0, num3 = 0;
+        System.out.print("Enter a integer: ");
+        try{
+            num1 = input.nextInt();
+            System.out.print("Enter a integer: ");
+            num2 = input.nextInt();
+            System.out.print("Enter a integer: ");
+            num3 = input.nextInt();
+        }
+        catch(Throwable th){
+            System.out.println("Error Occured : " + th.getMessage());
+            return;
+        }
+
+            if(num1 > num2 && num2 >= num3){
+            System.out.println("Numbers are in decreasing order");
+        }
+        else if(num1 < num2 && num2 <= num3){
+            System.out.println("Numbers are in increasing order");
+        }	
+        else{
+            System.out.println("Numbers are neither increasing nor decreasing");
+        }
+    }
+}
+`
+            }
+        },
+        {
+            "id": 266,
+            "description": "Write a Java program that determines a student’s grade",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates a student's grade based on their marks.",
+                "code": `class Main{
+	public static void main(String[] args){
+		double marks = 200.6;
+	
+		if(marks < 0 && marks > 400){
+			System.out.println("Invalid Marks");
+		}
+		else if(marks > 390){
+			System.out.println("Grade A+");
+		}
+		else if(marks > 350){
+			System.out.println("Grade A");
+		}
+		else if(marks > 300){
+			System.out.println("Grade B");
+		}
+		else if(marks > 250){
+			System.out.println("Grade C");
+		}
+		else if(marks > 150){
+			System.out.println("Grade D");
+		}
+		else if(marks > 50){
+			System.out.println("Grade E");
+		}	
+		else {
+			System.out.println("You are Failed! Grade F");
+		}
+	}
+	
+}`
+            }
+        },
+        {
+            "id": 267,
+            "description": "Write a Java program to create a simple calculator",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program implements a simple calculator that performs basic arithmetic operations.",
+                "code": `class Main {
+    public static void main(String[] args) {
+        java.util.Scanner input = new java.util.Scanner(System.in);
+        int choice = 1;
+        double num1 = 0, num2 = 0;
+        try {
+            System.out.print("Enter the first number: ");
+            num1 = input.nextDouble();
+
+            System.out.print("Enter the second number: ");
+            num2 = input.nextDouble();
+
+            System.out.println("Select an operation:");
+            System.out.println("1. Addition");
+            System.out.println("2. Subtraction");
+            System.out.println("3. Multiplication");
+            System.out.println("4. Division");
+
+            choice = input.nextInt();
+        } catch (Throwable th) {
+            System.out.println("Error Occured : " + th.getMessage());
+            return;
+        }
+        double result;
+
+        switch (choice) {
+            case 1:
+                result = num1 + num2;
+                System.out.println("The result of addition is: " + result);
+                break;
+            case 2:
+                result = num1 - num2;
+                System.out.println("The result of subtraction is: " + result);
+                break;
+            case 3:
+                result = num1 * num2;
+                System.out.println("The result of multiplication is: " + result);
+                break;
+            case 4:
+                if (num2 != 0) {
+                    result = num1 / num2;
+                    System.out.println("The result of division is: " + result);
+                } else {
+                    System.out.println("Error: Division by zero is not allowed.");
+                }
+                break;
+            default:
+                System.out.println("Invalid choice! Please select a valid operation.");
+                break;
+        }
+    }
+}
+`
+            }
+        },
+        {
+            "id": 268,
+            "description": "Write a Java program to concatenate two strings",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program concatenates two input strings and displays the result.",
+                "code": `class Main{
+	static String concatStrings(String str1, String str2){
+		return str1 + str2;
+	}
+	public static void main(String[] args){
+		String s1 = "Hello ", s2 = "World";
+		System.out.println("Concatenated String : " + concatStrings(s1, s2));
+	}
+}`
+            }
+        },
+        {
+            "id": 269,
+            "description": "Write a Java program to convert all characters in a string to lowercase",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program converts all characters of a given string to lowercase.",
+                "code": `class Main{
+	static String strLowerCase(String str){
+		String st = "";
+		for(int i = 0; i < str.length(); i++){
+			char ch = str.charAt(i);
+			if((int)ch >= 65 && (int)ch <= 90){
+				st += (char)(ch+32);
+			}
+			else{
+				st += ch;
+			}
+		}
+		return st;
+	}
+	public static void main(String[] args){
+		String str = "HELLO WORLD";
+		System.out.println(strLowerCase(str));
+	}
+}`
+            }
+        },
+        {
+            "id": 270,
+            "description": "Write a Java program to convert all characters in a string to uppercase",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program converts all characters of a given string to uppercase.",
+                "code": `class Main{
+	static String strUpperCase(String str){
+		String st = "";
+		for(int i = 0; i < str.length(); i++){
+			char ch = str.charAt(i);
+			if((int)ch >= 97 && (int)ch <= 122){
+				st += (char)(ch-32);
+			}
+			else{
+				st += ch;
+			}
+		}
+		return st;
+	}
+	public static void main(String[] args){
+		String str = "hello world";
+		System.out.println(strUpperCase(str));
+	}
+}`
+            }
+        },
+        {
+            "id": 271,
+            "description": "Write a Java program to trim a string (remove whitespaces)",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program removes leading and trailing whitespace from a given string.",
+                "code": `class Main{
+	static String strTrim(String str){
+		String st = "";
+		for(int i = 0; i < str.length(); i++){
+			char ch = str.charAt(i);
+			if(ch != ' '){
+				st += ch;
+			}
+		}
+		return st;
+	}
+	public static void main(String[] args){
+		String str = "hello world";
+		System.out.println(strTrim(str));
+	}
+}`
+            }
+        },
+        {
+            "id": 272,
+            "description": "Write a Java program to get a substring of a given string between two specified positions",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program extracts a substring from a given string based on specified indices.",
+                "code": `class Main{
+	static String strSubstring(String str, int startInx, int endInx){
+		String st = "";
+		if(startInx >= str.length() || startInx < 0){
+			System.out.println("Invalid Starting Index");
+			return st;
+		}
+		else if(endInx >= str.length() || endInx < 0){
+			System.out.println("Invalid Ending Index");
+			return st;
+		}
+		for(int i = startInx; i < endInx; i++){
+			st += str.charAt(i);
+		}
+		return st;
+	}
+	public static void main(String[] args){
+		String str = "hello world";		System.out.println(strSubstring(str, 6, 10));
+	}
+}`
+            }
+        },
+        {
+            "id": 273,
+            "description": "Write a Java program to replace all the ‘d’ characters with ‘f’ characters",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program replaces all occurrences of 'd' in a string with 'f'.",
+                "code": `class Main{
+	static String replaceChar(String str, char find, char replace){
+		String st = "";
+		for(int i = 0; i < str.length(); i++){
+			if(str.charAt(i) == find){
+				st += replace;
+			}
+			else{
+				st += str.charAt(i);
+			}
+		}
+		return st;
+	}
+	public static void main(String[] args){
+		String str = "hello world";							
+        System.out.println(replaceChar(str, 'd', 'f'));
+	}
+}`
+            }
+        },
+        {
+            "id": 274,
+            "description": "Write a Java program to get the length of a given string",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates and displays the length of a given string.",
+                "code": `class Main{
+	public static void main(String args[]){
+		String str = "hello";
+		System.out.println("Length of " + str + " : " + str.length() + " characters");
+	}
+}`
+            }
+        },
+        {
+            "id": 275,
+            "description": "Write a Java program to print current date and time in the specified format",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program displays the current date and time in a specified format.",
+                "code": `class Main{
+	public static void main(String[] args){
+
+        	java.time.LocalDateTime now = java.time.LocalDateTime.now();
+       		java.time.format.DateTimeFormatter formatter = 					java.time.format.DateTimeFormatter.ofPattern("'Date : 'dd-MM-yyyy 'Time : 'HH:mm:ss");
+
+        	String formattedDateTime = now.format(formatter);
+        	System.out.println("Current date and time: " + formattedDateTime);
+
+	}
+}`
+            }
+        },
+        {
+            "id": 276,
+            "description": "Write a Java program to get the character at the given index within the String",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program retrieves and displays the character at a specified index of a given string.",
+                "code": `class Main{
+	public static void main(String[] args){
+		String str = "Hello World";
+		System.out.println("String : " + str);
+
+		System.out.println("Character at index 4 : " + str.charAt(4));
+	}
+}`
+            }
+        },
+        {
+            "id": 277,
+            "description": "Write a Java program to remove a particular character from a string",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program removes all occurrences of a specified character from a given string.",
+                "code": `class Main{
+	static String removeChar(String str, char ch){
+		String st = "";
+		for(int i = 0; i < str.length(); i++){
+			if(str.charAt(i) != ch){
+				st += str.charAt(i);
+			}
+		}
+		return st;
+	}
+	public static void main(String[] args){
+		String st = "Hello";
+		System.out.println("String : " + st);
+		System.out.println("String After Removing character l : " + removeChar(st, 'l'));
+	}
+}`
+            }
+        },
+        {
+            "id": 278,
+            "description": "Write a Java program to reverse a String",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program reverses the characters in a given string.",
+                "code": `class Main{
+	static String reverseString(String str){
+		String st = "";
+		for(int i = str.length()-1; i >= 0; i--){
+			st += str.charAt(i);
+		}
+		return st;
+	}
+	public static void main(String[] args){
+		String str = "Hello";
+		System.out.println("String : " + str);
+		System.out.println("Reverse of String : " + reverseString(str));
+	}
+}`
+            }
+        },
+        {
+            "id": 279,
+            "description": "Write a Java program to remove HTML tags from a string",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program removes all HTML tags from a given string.",
+                "code": `class Main{
+	static String removeHtmlTags(String str){
+		String st = "";
+		for(int i = 0; i < str.length(); i++){
+			if(str.charAt(i) == '<'){
+				while(i < str.length() && str.charAt(i) != '>'){
+					i++;
+				}
+			}
+			else{
+				st += str.charAt(i);
+			}
+		}
+		return st;
+	}
+
+	public static void main(String[] args){
+		String str = "<b>hello world</b>";
+		System.out.println("Html Code : " + str);
+		System.out.println("Html Code without Tag: " + removeHtmlTags(str));
+
+	}
+}`
+            }
+        },
+        {
+            "id": 280,
+            "description": "Write a Java program to count the total number of lines from a string",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program counts and displays the total number of lines in a given string.",
+                "code": null
+            }
+        },
+        {
+            "id": 281,
+            "description": "Write a Java program to sum values of an array",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates and displays the sum of all elements in an array.",
+                "code": null
+            }
+        },
+        {
+            "id": 282,
+            "description": "Write a Java program to find the index of an array element",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program finds and displays the index of a specified element in an array.",
+                "code": null
+            }
+        },
+        {
+            "id": 283,
+            "description": "Write a Java program to calculate the average value of array elements",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates and displays the average of elements in an array.",
+                "code": null
+            }
+        },
+        {
+            "id": 284,
+            "description": "Write a Java program to test if an array contains a specific value",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program checks if a specified value is present in an array.",
+                "code": null
+            }
+        },
+        {
+            "id": 285,
+            "description": "Write a Java program to find the maximum and minimum value of an array",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program finds and displays the maximum and minimum values in an array.",
+                "code": null
+            }
+        },
+        {
+            "id": 286,
+            "description": "Write a Java program to insert an element (specific position) into an array",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program inserts a specified element into a specified position in an array.",
+                "code": null
+            }
+        },
+        {
+            "id": 287,
+            "description": "Write a Java program to reverse an array of integer values",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program reverses the order of elements in an integer array.",
+                "code": null
+            }
+        },
+        {
+            "id": 288,
+            "description": "Write a Java program to find the common elements between two arrays",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program identifies and displays common elements between two arrays.",
+                "code": null
+            }
+        },
+        {
+            "id": 289,
+            "description": "Write a Java program to find the duplicate values of an array of integer values",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program finds and displays duplicate values in an integer array.",
+                "code": null
+            }
+        },
+        {
+            "id": 290,
+            "description": "Write a Java program to convert an array to ArrayList",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program converts an array into an ArrayList and displays the result.",
+                "code": null
+            }
+        },
+        {
+            "id": 291,
+            "description": "Write a Java program to add two matrices of the same size",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program adds two matrices of the same size and displays the resulting matrix.",
+                "code": null
+            }
+        },
+        {
+            "id": 292,
+            "description": "Write a Java program to find the second largest number from the array",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program finds and displays the second largest number in an array.",
+                "code": null
+            }
+        },
+        {
+            "id": 293,
+            "description": "Write a Java program to find the second lowest number from the array",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program finds and displays the second lowest number in an array.",
+                "code": null
+            }
+        },
+        {
+            "id": 294,
+            "description": "Write a Java program to find the number of even and odd integers in a given array of integers",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program counts and displays the number of even and odd integers in an array.",
+                "code": null
+            }
+        },
+        {
+            "id": 295,
+            "description": "Write a Java program to get the difference between the largest and smallest values in an array of integers",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates and displays the difference between the maximum and minimum values in an array.",
+                "code": null
+            }
+        },
+        {
+            "id": 296,
+            "description": "Write a Java program to segregate all 0s on the left side and all 1s on the right side of a given array of 0s and 1s",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program rearranges an array of 0s and 1s so that all 0s appear before 1s.",
+                "code": null
+            }
+        },
+        {
+            "id": 297,
+            "description": "Write a Java program to cyclically rotate a given array clockwise by one",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program rotates the elements of an array clockwise by one position.",
+                "code": null
+            }
+        },
+        {
+            "id": 298,
+            "description": "Write a Java program to print all unique elements in an array",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program identifies and prints all unique elements present in an array.",
+                "code": null
+            }
+        },
+        {
+            "id": 299,
+            "description": "Write a Java program to sort the array in ascending order",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program sorts the elements of an array in ascending order.",
+                "code": null
+            }
+        },
+        {
+            "id": 300,
+            "description": "Write a Java program to sort the array in descending order",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program sorts the elements of an array in descending order.",
+                "code": null
+            }
+        },
+        {
+            "id": 301,
+            "description": "Write a Java program to sort names in alphabetical order",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program sorts a list of names in alphabetical order.",
+                "code": null
+            }
+        },
+        {
+            "id": 302,
+            "description": "Write a Java program to display transpose of a matrix",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates and displays the transpose of a given matrix.",
+                "code": null
+            }
+        },
+        {
+            "id": 303,
+            "description": "Write a Java program to search key elements in an array",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program searches for specified key elements in an array and returns their positions.",
+                "code": null
+            }
+        },
+        {
+            "id": 304,
+            "description": "Write a Java program to accept the marks of a student and find total marks and percentage",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates the total marks and percentage based on student input.",
+                "code": null
+            }
+        },
+        {
+            "id": 305,
+            "description": "Write a Java program to print numbers from 1 to 10 using loop",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program uses a loop to print numbers from 1 to 10.",
+                "code": null
+            }
+        },
+        {
+            "id": 306,
+            "description": "Write a Java program to calculate the sum of the first 10 natural numbers using loop",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates and prints the sum of the first 10 natural numbers using a loop.",
+                "code": null
+            }
+        },
+        {
+            "id": 307,
+            "description": "Write a Java program to print multiplication table of given number",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program prints the multiplication table for a specified number.",
+                "code": null
+            }
+        },
+        {
+            "id": 308,
+            "description": "Write a Java program to find the factorial value of any number entered through the keyboard",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates and displays the factorial of a user-entered number.",
+                "code": null
+            }
+        },
+        {
+            "id": 309,
+            "description": "Write a Java program that prompts the user to input an integer and then outputs the number with the digits reversed order",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program reverses the digits of a user-input integer and displays the result.",
+                "code": null
+            }
+        },
+        {
+            "id": 310,
+            "description": "Write a Java program that reads a set of integers, and then prints the sum of the even and odd integers using loop",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates and displays the sum of even and odd integers from user input.",
+                "code": null
+            }
+        },
+        {
+            "id": 311,
+            "description": "Write a Java program to check whether the number is a prime number or not",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program checks if a user-entered number is prime and displays the result.",
+                "code": null
+            }
+        },
+        {
+            "id": 312,
+            "description": "Write a Java program to calculate HCF of two given numbers using loop",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program calculates and displays the highest common factor (HCF) of two numbers.",
+                "code": null
+            }
+        },
+        {
+            "id": 313,
+            "description": "Write a Java program to enter the numbers till the user wants and at the end it should display the count of positive, negative and zeros",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program collects numbers from the user and counts how many are positive, negative, and zero.",
+                "code": null
+            }
+        },
+        {
+            "id": 314,
+            "description": "Write a Java program to enter the numbers till the user wants and at the end the program should display the largest and smallest numbers entered",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program keeps track of the largest and smallest numbers entered by the user.",
+                "code": null
+            }
+        },
+        {
+            "id": 315,
+            "description": "Write a Java program to print out all Armstrong numbers between 1 to 600 using loop",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program finds and prints all Armstrong numbers within the range of 1 to 600.",
+                "code": null
+            }
+        },
+        {
+            "id": 316,
+            "description": "Write a Java program to count total number of notes in entered amount using loop",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program counts and displays the number of currency notes needed for a given amount.",
+                "code": null
+            }
+        },
+        {
+            "id": 317,
+            "description": "Write a Java program to print Fibonacci series of n terms where n is input by user using loop",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program generates and prints the Fibonacci series for a specified number of terms.",
+                "code": null
+            }
+        },
+        {
+            "id": 318,
+            "description": "Write a Java program to calculate the sum of the following series where n is input by user",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program computes the sum of a specified mathematical series based on user input.",
+                "code": null
+            }
+        },
+        {
+            "id": 319,
+            "description": "Write a Java method to compute the average of three numbers",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This method calculates and returns the average of three given numbers.",
+                "code": null
+            }
+        },
+        {
+            "id": 320,
+            "description": "Write a Java method to find the smallest number among three numbers",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This method determines and returns the smallest of three provided numbers.",
+                "code": null
+            }
+        },
+        {
+            "id": 321,
+            "description": "Write a Java method to count all words in a string",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This method counts and returns the total number of words in a given string.",
+                "code": null
+            }
+        },
+        {
+            "id": 322,
+            "description": "Write a Java method to count all vowels in a string",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This method counts and returns the total number of vowels present in a string.",
+                "code": null
+            }
+        },
+        {
+            "id": 323,
+            "description": "Write a Java method to compute the sum of the digits in an integer",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This method calculates and returns the sum of all digits in a given integer.",
+                "code": null
+            }
+        },
+        {
+            "id": 324,
+            "description": "Write a Java method to check whether a year entered by the user is a leap year or not",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This method checks if a given year is a leap year and returns the result.",
+                "code": null
+            }
+        },
+        {
+            "id": 325,
+            "description": "Write a Java method to calculate the area of a triangle",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This method computes and returns the area of a triangle based on given dimensions.",
+                "code": null
+            }
+        },
+        {
+            "id": 326,
+            "description": "Write a Java method to find the area of a pentagon",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This method calculates and returns the area of a pentagon using provided measurements.",
+                "code": null
+            }
+        },
+        {
+            "id": 327,
+            "description": "Write a Java method to find if a number is even or not",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This method checks if a given number is even and returns the result.",
+                "code": null
+            }
+        },
+        {
+            "id": 328,
+            "description": "Write a Java method to check if a number is a palindrome or not",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This method determines whether a given number is a palindrome.",
+                "code": null
+            }
+        },
+        {
+            "id": 329,
+            "description": "Write a Java method to display prime numbers between 1 to 20",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This method finds and prints all prime numbers in the range from 1 to 20.",
+                "code": null
+            }
+        },
+        {
+            "id": 330,
+            "description": "Write a Java method to find GCD and LCM of two numbers",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This method computes and returns both the greatest common divisor (GCD) and least common multiple (LCM) of two numbers.",
+                "code": null
+            }
+        },
+        {
+            "id": 331,
+            "description": "Write a Java method to find factorial using recursion in Java",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This method calculates the factorial of a number using recursion.",
+                "code": null
+            }
+        },
+        {
+            "id": 332,
+            "description": "Write a Java program to reverse an integer number",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program takes an integer as input and reverses its digits.",
+                "code": null
+            }
+        },
+        {
+            "id": 333,
+            "description": "Write a Java program to round a float number to specified decimals",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program rounds a given float number to a specified number of decimal places.",
+                "code": null
+            }
+        },
+        {
+            "id": 334,
+            "description": "Write a Java program to test if a double number is an integer",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program checks if a given double value is an integer.",
+                "code": null
+            }
+        },
+        {
+            "id": 335,
+            "description": "Write a Java program to round up the result of integer division",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program performs integer division and rounds the result up.",
+                "code": null
+            }
+        },
+        {
+            "id": 336,
+            "description": "Write a Java program to convert a Roman number to an integer number",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program converts a Roman numeral input into its equivalent integer value.",
+                "code": null
+            }
+        },
+        {
+            "id": 337,
+            "description": "Write a Java program to convert a float value to absolute value",
+            "difficulty": "easy",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program converts a given float number to its absolute value.",
+                "code": null
+            }
+        },
+        {
+            "id": 338,
+            "description": "Write a Java program to accept a float value of number and return a rounded float value",
+            "difficulty": "medium",
+            "topic": 2,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program accepts a float number and returns it rounded to the nearest whole number.",
+                "code": null
+            }
         }
     ]
 
