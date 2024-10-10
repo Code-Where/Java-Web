@@ -39,7 +39,7 @@ class Main{
 		System.out.println("Printing Matrix Values : ");
 		for(int i = 0; i < arr.length; i++){
 			for(int j = 0; j < arr[i].length; j++){
-				System.out.print(arr[i][j] + "\t");
+				System.out.print(arr[i][j] + "\\t");
 			}
 			System.out.println();
 		}
@@ -79,7 +79,7 @@ class Main{
 	static void printMatrix(int mat[][]){
 		for(int i = 0; i < mat.length; i++){
 			for(int j = 0; j < mat[i].length; j++){
-				System.out.print(mat[i][j]+"\t");
+				System.out.print(mat[i][j]+"\\t");
 			}
 			System.out.println();
 		}
@@ -132,7 +132,7 @@ class Main{
 	static void printMatrix(int mat[][]){
 		for(int i = 0; i < mat.length; i++){
 			for(int j = 0; j < mat[i].length; j++){
-				System.out.print(mat[i][j]+"\t");
+				System.out.print(mat[i][j]+"\\t");
 			}
 			System.out.println();
 		}
@@ -183,7 +183,7 @@ class Main{
 	static void printMatrix(int mat[][]){
 		for(int i = 0; i < mat.length; i++){
 			for(int j = 0; j < mat[i].length; j++){
-				System.out.print(mat[i][j]+"\t");
+				System.out.print(mat[i][j]+"\\t");
 			}
 			System.out.println();
 		}
@@ -235,7 +235,7 @@ class Main{
 	static void printMatrix(int mat[][]){
 		for(int i = 0; i < mat.length; i++){
 			for(int j = 0; j < mat[i].length; j++){
-				System.out.print(mat[i][j]+"\t");
+				System.out.print(mat[i][j]+"\\t");
 			}
 			System.out.println();
 		}
@@ -266,7 +266,7 @@ class Main{
 	static void printMatrix(int mat[][]){
 		for(int i = 0; i < mat.length; i++){
 			for(int j = 0; j < mat[i].length; j++){
-				System.out.print(mat[i][j]+"\t");
+				System.out.print(mat[i][j]+"\\t");
 			}
 			System.out.println();
 		}
@@ -275,10 +275,10 @@ class Main{
 		for(int i = 0; i < mat.length; i++){
 			for(int j = 0; j < mat[i].length; j++){
 				if(i < j){
-					System.out.print(0+"\t");
+					System.out.print(0+"\\t");
 				}
 				else{
-					System.out.print(mat[i][j]+"\t");
+					System.out.print(mat[i][j]+"\\t");
 				}
 			}
 			System.out.println();
@@ -310,7 +310,7 @@ class Main{
 	static void printMatrix(int mat[][]){
 		for(int i = 0; i < mat.length; i++){
 			for(int j = 0; j < mat[i].length; j++){
-				System.out.print(mat[i][j]+"\t");
+				System.out.print(mat[i][j]+"\\t");
 			}
 			System.out.println();
 		}
@@ -319,10 +319,10 @@ class Main{
 		for(int i = 0; i < mat.length; i++){
 			for(int j = 0; j < mat[i].length; j++){
 				if(i > j){
-					System.out.print(0+"\t");
+					System.out.print(0+"\\t");
 				}
 				else{
-					System.out.print(mat[i][j]+"\t");
+					System.out.print(mat[i][j]+"\\t");
 				}
 
 			}
@@ -355,7 +355,7 @@ class Main{
 	static void printMatrix(int mat[][]){
 		for(int i = 0; i < mat.length; i++){
 			for(int j = 0; j < mat[i].length; j++){
-				System.out.print(mat[i][j]+"\t");
+				System.out.print(mat[i][j]+"\\t");
 			}
 			System.out.println();
 		}
@@ -399,7 +399,7 @@ class Main{
 	static void printMatrix(int mat[][]){
 		for(int i = 0; i < mat.length; i++){
 			for(int j = 0; j < mat[i].length; j++){
-				System.out.print(mat[i][j]+"\t");
+				System.out.print(mat[i][j]+"\\t");
 			}
 			System.out.println();
 		}
@@ -446,7 +446,7 @@ class Main{
 	static void printMatrix(int mat[][]){
 		for(int i = 0; i < mat.length; i++){
 			for(int j = 0; j < mat[i].length; j++){
-				System.out.print(mat[i][j]+"\t");
+				System.out.print(mat[i][j]+"\\t");
 			}
 			System.out.println();
 		}
@@ -485,7 +485,7 @@ class Main{
 	static void printMatrix(int mat[][]){
 		for(int i = 0; i < mat.length; i++){
 			for(int j = 0; j < mat[i].length; j++){
-				System.out.print(mat[i][j]+"\t");
+				System.out.print(mat[i][j]+"\\t");
 			}
 			System.out.println();
 		}
@@ -533,7 +533,7 @@ System.out.println("Matrix : ");
 	static void printMatrix(int mat[][]){
 		for(int i = 0; i < mat.length; i++){
 			for(int j = 0; j < mat[i].length; j++){
-				System.out.print(mat[i][j]+"\t");
+				System.out.print(mat[i][j]+"\\t");
 			}
 			System.out.println();
 		}
@@ -581,7 +581,7 @@ System.out.println("Matrix : ");
 	static void printMatrix(int mat[][]){
 		for(int i = 0; i < mat.length; i++){
 			for(int j = 0; j < mat[i].length; j++){
-				System.out.print(mat[i][j]+"\t");
+				System.out.print(mat[i][j]+"\\t");
 			}
 			System.out.println();
 		}
@@ -787,13 +787,13 @@ System.out.println("Matrix : ");
 		else if(Character.compare(a, b) < 0){
 			a++;
 			while(a != b){
-				System.out.print(a++ + "\t");
+				System.out.print(a++ + "\\t");
 			}
 		}
 		else{
 			b++;
 			while(b != a){
-				System.out.print(b++ + "\t");
+				System.out.print(b++ + "\\t");
 			}
 		}
 	}
@@ -1526,7 +1526,7 @@ class Main {
 	manager.generatePerformanceReport();
         manager.manageProjects();
 
-        System.out.println("\nDeveloper:");
+        System.out.println("\\nDeveloper:");
         System.out.println("Name: " + developer.getName());
         System.out.println("Address: " + developer.getAddress());
         System.out.println("Salary: " + developer.getSalary());
@@ -1536,7 +1536,7 @@ class Main {
         developer.generatePerformanceReport();
         developer.manageProjects();
 
-        System.out.println("\nProgrammer:");
+        System.out.println("\\nProgrammer:");
         System.out.println("Name: " + programmer.getName());
         System.out.println("Address: " + programmer.getAddress());
         System.out.println("Salary: " + programmer.getSalary());
@@ -1813,7 +1813,7 @@ class Main {
         System.out.println("Perimeter: " + circle.calculatePerimeter());
 
         Shape triangle = new Triangle(3.0, 4.0, 5.0);
-        System.out.println("\nTriangle:");
+        System.out.println("\\nTriangle:");
         System.out.println("Sides: " + ((Triangle) triangle).getSide1() + ", " 
                             + ((Triangle) triangle).getSide2() + ", " 
                             + ((Triangle) triangle).getSide3());
@@ -2738,7 +2738,7 @@ class Main{
 	public static void main(String[] args) throws java.io.IOException, java.io.FileNotFoundException{
 		java.io.InputStreamReader isr = new java.io.FileReader("my.txt");
 		int ch = 5;
-		System.out.println("Content of my.txt File is below : \n");
+		System.out.println("Content of my.txt File is below : \\n");
 		while((ch = isr.read()) != -1){
 			System.out.print((char)ch);
 		}
@@ -2760,18 +2760,18 @@ class Main{
 	public static void main(String[] args) throws java.io.IOException, java.io.FileNotFoundException{
 		java.io.InputStreamReader isr = new java.io.FileReader("my.txt");
 		int ch = 5, numoflines = 0, numofchars = 0, wordcount = 0;
-		System.out.println("Content of my.txt File is below : \n");
+		System.out.println("Content of my.txt File is below : \\n");
 		while((ch = isr.read()) != -1){
 			numofchars++;
 			System.out.print((char)ch);
 			if(Character.isLetterOrDigit(((char)ch))){
-				while((ch = isr.read()) != -1 && ((char)ch) != '\n' && ((char)ch) != ' '){
+				while((ch = isr.read()) != -1 && ((char)ch) != '\\n' && ((char)ch) != ' '){
 					numofchars++;
 					System.out.print((char)ch);
 				}
 				wordcount++;
 			}
-			if(((char)ch) == '\n'){
+			if(((char)ch) == '\\n'){
 				numoflines++;
 				System.out.print((char)ch);
 			}
@@ -2779,7 +2779,7 @@ class Main{
 				System.out.print((char)ch);
 			}
 		}
-		System.out.println("\nNumber of Lines : " + ++numoflines);
+		System.out.println("\\nNumber of Lines : " + ++numoflines);
 		System.out.println("Number of Characters : " + numofchars);
 		System.out.println("Number of Words : " + wordcount);
 	}
@@ -3437,7 +3437,7 @@ class Main {
 		age = ag;
 	}
 	void display(){
-		System.out.println("Name : " + name + "\t Age : " + age);
+		System.out.println("Name : " + name + "\\t Age : " + age);
 		System.out.println();
 	}
 }
@@ -3476,7 +3476,7 @@ class Main{
 		breed = br;
 	}
 	void display(){
-		System.out.println("Name : " + name + "\t Breed : " + breed);
+		System.out.println("Name : " + name + "\\t Breed : " + breed);
 		System.out.println();
 	}
 }
@@ -3600,7 +3600,7 @@ class Main{
 			System.out.println("Book No : " + (books.indexOf(b)+1));
 			System.out.println("Title : " + b.title);
 			System.out.println("Author : " + b.author);
-			System.out.println("ISBN : " + b.isbn + "\n");
+			System.out.println("ISBN : " + b.isbn + "\\n");
 		}
 	}
 }
@@ -3738,7 +3738,7 @@ class Bank{
 		for(int i = 0; i < accounts.size(); i++){
 			if(accounts.get(i).getAccountNumber() == num){
 				accounts.get(i).setBalance(accounts.get(i).getBalance() + amt);
-				System.out.println(amt + "Rs Depoited Successfully in " + accounts.get(i).getHolder()+"'s Account\n");
+				System.out.println(amt + "Rs Depoited Successfully in " + accounts.get(i).getHolder()+"'s Account\\n");
 				return true;
 			}
 		}
@@ -3753,7 +3753,7 @@ class Bank{
 					return false;
 				}
 				accounts.get(i).setBalance(accounts.get(i).getBalance() - amt);
-				System.out.println(amt + "Rs Withdrawal Successful from " + accounts.get(i).getHolder()+"'s Account\n");
+				System.out.println(amt + "Rs Withdrawal Successful from " + accounts.get(i).getHolder()+"'s Account\\n");
 				return true;
 			}
 		}
@@ -3908,7 +3908,7 @@ class Main{
 		System.out.print("Courses : ");
 		System.out.println(courses.isEmpty() ? "No Courses Choosen" : "");
 		for(int i = 0; i < courses.size(); i++){
-			System.out.print(i+1 + ") " + courses.get(i)+"\t");
+			System.out.print(i+1 + ") " + courses.get(i)+"\\t");
 		}
 		System.out.println();
 	}
@@ -3975,7 +3975,7 @@ class Main{
 			System.out.println("No Books in Collection");
 			return;
 		}
-		System.out.println("\nLibrary Books : ");
+		System.out.println("\\nLibrary Books : ");
 
 		for(int i = 0; i < books.size(); i++){
 			System.out.println("Book " + i + ") " + books.get(i));
@@ -4128,7 +4128,7 @@ class Inventory{
 		for(int i = 0; i < products.size(); i++){
 			System.out.println("Product No : " + (i+1));
 			System.out.println("Product Name : " + products.get(i).productname);
-			System.out.println("Quantity : " + products.get(i).quantity + "\n");
+			System.out.println("Quantity : " + products.get(i).quantity + "\\n");
 		}
 	}
 }
@@ -4265,7 +4265,7 @@ class Main{
 		}
 	}
 	void playRandom(){
-		System.out.println("\nPlaying Random Song");
+		System.out.println("\\nPlaying Random Song");
 		System.out.println("Playing Song : " + songs.get(new java.util.Random().nextInt(songs.size()-1)));
 	}
 }
@@ -4418,7 +4418,7 @@ class Main{
 		titanic.addReview("STANDING OVATION! - (10 stars out of 10)");
 
 		titanic.displayMovie();
-		System.out.println("\nDisplaying Reviews\n");
+		System.out.println("\\nDisplaying Reviews\\n");
 		java.util.List<String> reviews = titanic.getReviews();
 		for(String str : reviews){
 			System.out.println(str);
@@ -4798,7 +4798,7 @@ class Main{
 		else{	
 			System.out.print("Entered Arguments : ");
 			for(String arg : args){
-				System.out.print(arg + "\t");
+				System.out.print(arg + "\\t");
 			}
 		}
 	}
@@ -5129,7 +5129,7 @@ class Main{
         	student.addGrade(101.0); 
         	student.addGrade(78.0);
 
-        	System.out.println("\nUpdated Student Details:");
+        	System.out.println("\\nUpdated Student Details:");
         	System.out.println("Student ID: " + student.getStudentId());
         	System.out.println("Student Name: " + student.getStudentName());
         	System.out.println("Grades: " + student.getGrades());
@@ -5910,7 +5910,7 @@ class C{}`
 	public static void main(String[] args){
 		int arr[] = {83, 49, 289, 27, 23, 592};
 		printArray(arr);
-		System.out.println("\nMaximum value of array :" + arrayMax(arr));
+		System.out.println("\\nMaximum value of array :" + arrayMax(arr));
 	}
 }`
             }
@@ -5943,7 +5943,7 @@ class C{}`
 	public static void main(String[] args){
 		int arr[] = {83, 49, 289, 27, 23};
 		printArray(arr);
-		System.out.println("\nMinimum value of array :" + arrayMin(arr));
+		System.out.println("\\nMinimum value of array :" + arrayMin(arr));
 	}
 }`
             }
@@ -5996,7 +5996,7 @@ class C{}`
 	public static void main(String[] args){
 		int arr[] = {83, 49, 289, 27, 23};
 		printArray(arr);
-		System.out.println("\nSum of Values : " + sumOfArray(arr));
+		System.out.println("\\nSum of Values : " + sumOfArray(arr));
 	}
 }`
             }
@@ -6071,7 +6071,7 @@ class C{}`
 		int arr[] = {83, 49, 289, 27, 23};
 		printArray(arr);
 		sortArray(arr);
-		System.out.println("\nAfter Sorting in Ascending order : ");
+		System.out.println("\\nAfter Sorting in Ascending order : ");
 		printArray(arr);
 	}
 }`
@@ -6108,7 +6108,7 @@ class C{}`
 		int arr[] = {83, 49, 289, 27, 23};
 		printArray(arr);
 		sortArray(arr);
-		System.out.println("\nAfter Sorting in Descending order : ");
+		System.out.println("\\nAfter Sorting in Descending order : ");
 		printArray(arr);
 	}
 }`
@@ -6246,7 +6246,7 @@ class C{}`
 	public static void main(String[] args){
 		int arr[] = {83, 49, 289, 27, 23, 592};
 		printArray(arr);
-		System.out.println("\nMaximum value of array :" + arrayMax(arr));
+		System.out.println("\\nMaximum value of array :" + arrayMax(arr));
 	}
 }`
             }
@@ -6331,7 +6331,7 @@ class C{}`
 	public static void main(String[] args){
 		int arr[] = {83, 49, 289, 27, 23};
 		printArray(arr);
-		System.out.println("\nMinimum value of array :" + arrayMin(arr));
+		System.out.println("\\nMinimum value of array :" + arrayMin(arr));
 	}
 }`
             }
@@ -6450,7 +6450,7 @@ class C{}`
 		int arr[] = {83, 49, 289, 27, 23};
 		printArray(arr);
 		sortArray(arr);
-		System.out.println("\nAfter Sorting in Ascending order : ");
+		System.out.println("\\nAfter Sorting in Ascending order : ");
 		printArray(arr);
 	}
 }`
@@ -7327,7 +7327,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
                 "explanation": "This program demonstrates how to include new lines within a string and print it.",
                 "code": `class Main{
 	public static void main(String[] args){
-		String str = "Hello I am \nLine Break";
+		String str = "Hello I am \\nLine Break";
 		System.out.println(str);
 	}
 }`
@@ -7546,11 +7546,11 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
                 "code": `class Main{
 	public static void main(String[] args){
 		String st1 = "Hello", st2 = "World";
-		System.out.println("Before Swap\nString 1 : " + st1 + " String 2 : " + st2);
+		System.out.println("Before Swap\\nString 1 : " + st1 + " String 2 : " + st2);
 		st1 += st2;
 		st2 = st1.substring(0, st1.length() - st2.length());
 		st1 = st1.substring(st2.length());
-		System.out.println("After Swap\nString 1 : " + st1 + " String 2 : " + st2);
+		System.out.println("After Swap\\nString 1 : " + st1 + " String 2 : " + st2);
 
 	}
 }`
@@ -7842,12 +7842,12 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
 	public static void main(String[] args){
 		int num1 = 84, num2 = 128;
 		System.out.println("Before Swapping : ");
-		System.out.println("num1 = " + num1 + "\nnum2 = " + num2);
+		System.out.println("num1 = " + num1 + "\\\nnum2 = " + num2);
 		num1 += num2;
 		num2 = num1 - num2;
 		num1 = num1 - num2; 
 		System.out.println("After Swapping : ");
-		System.out.println("num1 = " + num1 + "\nnum2 = " + num2);
+		System.out.println("num1 = " + num1 + "\\\nnum2 = " + num2);
 	}
 }`
             }
@@ -7984,7 +7984,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
 			}
 		}
 		System.out.println("Entered String : " + str);
-		System.out.println("\nNumber of Letters : " + letters);
+		System.out.println("\\nNumber of Letters : " + letters);
 		System.out.println("Number of Spaces : " + spaces);
 		System.out.println("Number of Numbers : " + numbers);
 		System.out.println("Number of Other Characters : " + others);
