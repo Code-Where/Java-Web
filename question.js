@@ -6,8 +6,19 @@ const quesData = {
             "description": "Enter the Matrix of rows and columns entered by the user and print in matrix format",
             "difficulty": "easy",
             "topic": 0,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": `Enter A00th value : 15
+Enter A01th value : 92
+Enter A02th value : 32
+Enter A10th value : 15
+Enter A11th value : 52
+Enter A12th value : 35
+Enter A20th value : 36
+Enter A21th value : 78
+Enter A22th value : 48`,
+            "sample_output": `Printing Matrix Values :
+15      92      32
+15      52      35
+36      78      48`,
             "solution": {
                 "language": "Java",
                 "explanation": "The user enters the number of rows and columns, and the program prints the matrix.",
@@ -53,7 +64,18 @@ class Main{
             "difficulty": "easy",
             "topic": 0,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `First Matrix :
+1       2       3
+2       3       5
+1       1       1
+Second Matrix :
+4       4       1
+7       1       6
+9       0       3
+Addition of above Matrix :
+5       6       4
+9       4       11
+10      1       4`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program takes two matrices as input and outputs their sum.",
@@ -104,7 +126,18 @@ class Main{
             "difficulty": "medium",
             "topic": 0,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `First Matrix :
+1       2       3
+2       3       5
+1       1       1
+Second Matrix :
+4       4       1
+7       1       6
+9       0       3
+Multiplication of above Matrix :
+45      6       22
+74      11      35
+20      5       10`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program multiplies two matrices and prints the result.",
@@ -157,7 +190,18 @@ class Main{
             "difficulty": "easy",
             "topic": 0,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `First Matrix :
+1       2       3
+2       3       5
+1       1       1
+Second Matrix :
+4       4       1
+7       1       6
+9       0       3
+Subtraction of above Matrix :
+-3      -2      2
+-5      2       -1
+-8      1       -2`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program subtracts one matrix from another and prints the result.",
@@ -208,7 +252,15 @@ class Main{
             "difficulty": "easy",
             "topic": 0,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `First Matrix :
+1       2       3
+2       3       5
+1       0       3
+Second Matrix :
+1       2       3
+2       3       5
+1       0       3
+Both Matrix are Equal`,
             "solution": {
                 "language": "Java",
                 "explanation": "The program checks if two matrices are equal by comparing their elements.",
@@ -258,7 +310,16 @@ class Main{
             "difficulty": "medium",
             "topic": 0,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Matrix :
+1       2       3       4
+52      2       3       5
+1       7       5       3
+8       1       8       3
+Lower Triangular Matrix :
+1       0       0       0
+52      2       0       0
+1       7       5       0
+8       1       8       3`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program prints only the lower triangular part of a matrix.",
@@ -302,7 +363,16 @@ class Main{
             "difficulty": "medium",
             "topic": 0,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Matrix :
+1       2       3       4
+52      2       3       5
+1       7       5       3
+8       1       8       3
+Upper Triangular Matrix :
+1       2       3       4
+0       2       3       5
+0       0       5       3
+0       0       0       3`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program prints only the upper triangular part of a matrix.",
@@ -347,7 +417,13 @@ class Main{
             "difficulty": "easy",
             "topic": 0,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Matrix :
+1       2       3       4
+52      2       3       5
+1       7       5       3
+8       1       8       3
+Count of odd Numbers : 10
+Count of even Numbers : 6`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program counts how many odd and even numbers are in the matrix.",
@@ -391,7 +467,19 @@ class Main{
             "difficulty": "easy",
             "topic": 0,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Matrix :
+1       2       3       4
+52      2       3       5
+1       7       5       3
+8       1       8       3
+Sum of Row 1 : 10
+Sum of Row 2 : 62
+Sum of Row 3 : 16
+Sum of Row 4 : 20
+Sum of Column 1 : 62
+Sum of Column 2 : 12
+Sum of Column 3 : 19
+Sum of Column 4 : 15`,
             "solution": {
                 "language": "Java",
                 "explanation": "The program calculates the sum of each row and each column of the matrix.",
@@ -438,7 +526,14 @@ class Main{
             "difficulty": "medium",
             "topic": 0,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Matrix :
+1       2
+52      2
+1       3
+8       3
+Transpose of Above Matrix
+1       52      1       8
+2       2       3       3`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program finds the transpose of a matrix by swapping its rows and columns.",
@@ -477,7 +572,16 @@ class Main{
             "difficulty": "medium",
             "topic": 0,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Matrix :
+1       2       9
+52      2       2
+1       3       8
+No It is not an Identity matrix
+Matrix :
+1       0       0
+0       1       0
+0       0       1
+Yes It is Identity matrix`,
             "solution": {
                 "language": "Java",
                 "explanation": "The program checks whether the given matrix is an identity matrix.",
@@ -525,7 +629,14 @@ System.out.println("Matrix : ");
             "difficulty": "easy",
             "topic": 0,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Matrix :
+1       2
+52      2
+1       3
+8       3
+Transpose of Above Matrix
+1       52      1       8
+2       2       3       3`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates the transpose of a matrix.",
@@ -573,7 +684,16 @@ System.out.println("Matrix : ");
             "difficulty": "medium",
             "topic": 0,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Matrix :
+1       2       9
+52      2       2
+1       3       8
+No It is not an Sparse matrix
+Matrix :
+1       0       0
+0       1       0
+0       0       1
+Yes It is Sparse matrix`,
             "solution": {
                 "language": "Java",
                 "explanation": "The program checks whether the matrix is sparse, i.e., has more zero elements than non-zero ones.",
@@ -622,7 +742,7 @@ System.out.println("Matrix : ");
             "difficulty": "easy",
             "topic": 6,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Minimum value of 105, 9, 209 is 9`,
             "solution": {
                 "language": "Java",
                 "explanation": "This method compares three numbers and returns the smallest one.",
@@ -657,7 +777,7 @@ System.out.println("Matrix : ");
             "difficulty": "easy",
             "topic": 6,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Average of 105, 9, 209 is 107.66666666666667`,
             "solution": {
                 "language": "Java",
                 "explanation": "This method takes three numbers as input and returns their average.",
@@ -673,11 +793,11 @@ System.out.println("Matrix : ");
         },
         {
             "id": 15,
-            "description": "Write a Java method to display the middle character of a string. Note: a) If the length of the string is odd there will be two middle characters. b) If the length of the string is even there will be one middle character.",
+            "description": "Write a Java method to display the middle character of a string. Note: a) If the length of the string is even there will be two middle characters. b) If the length of the string is odd there will be one middle character.",
             "difficulty": "medium",
             "topic": 6,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Middle Character = l and o`,
             "solution": {
                 "language": "Java",
                 "explanation": "This method calculates and prints the middle character(s) of a string.",
@@ -714,7 +834,7 @@ System.out.println("Matrix : ");
             "difficulty": "easy",
             "topic": 6,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Number of words in string is : 5`,
             "solution": {
                 "language": "Java",
                 "explanation": "This method counts the number of words in a given string by splitting it using spaces.",
@@ -751,7 +871,10 @@ System.out.println("Matrix : ");
             "difficulty": "medium",
             "topic": 6,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Amount = 10000
+Rate of Interest = 10
+Years = 5
+Your Future Value is 16105.10`,
             "solution": {
                 "language": "Java",
                 "explanation": "This method calculates the future investment value based on interest rate and years.",
@@ -775,7 +898,8 @@ System.out.println("Matrix : ");
             "difficulty": "easy",
             "topic": 6,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Character Between A and F :
+B       C       D       E`,
             "solution": {
                 "language": "Java",
                 "explanation": "This method prints all characters in the ASCII sequence between two specified characters.",
@@ -810,7 +934,8 @@ System.out.println("Matrix : ");
             "difficulty": "medium",
             "topic": 6,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Password is Valid
+Invalid Password`,
             "solution": {
                 "language": "Java",
                 "explanation": "This method checks if a string satisfies certain password criteria, like length, uppercase, digits, etc.",
@@ -851,7 +976,8 @@ System.out.println("Matrix : ");
             "difficulty": "easy",
             "topic": 6,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Date : 16/9/2024
+Time : 23H:18M:48S`,
             "solution": {
                 "language": "Java",
                 "explanation": "This method prints the current date and time using Java's date-time API.",
@@ -875,7 +1001,14 @@ System.out.println("Matrix : ");
             "difficulty": "medium",
             "topic": 6,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `3 and 5 are twin Prime
+5 and 7 are twin Prime
+11 and 13 are twin Prime
+17 and 19 are twin Prime
+29 and 31 are twin Prime
+41 and 43 are twin Prime
+59 and 61 are twin Prime
+71 and 73 are twin Prime`,
             "solution": {
                 "language": "Java",
                 "explanation": "This method identifies and prints all twin primes less than 100.",
@@ -907,11 +1040,11 @@ System.out.println("Matrix : ");
         },
         {
             "id": 22,
-            "description": "Write a Java method to count the number of digits in an integer with the value 2. The integer may be assumed to be non-negative.",
+            "description": "Write a Java method to count the number of digits. The integer may be assumed to be non-negative.",
             "difficulty": "easy",
             "topic": 6,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Number of Digits in 55969 is : 5`,
             "solution": {
                 "language": "Java",
                 "explanation": "This method counts how many times the digit 2 appears in a non-negative integer.",
@@ -938,7 +1071,7 @@ System.out.println("Matrix : ");
             "difficulty": "medium",
             "topic": 6,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Consecutive Numbers`,
             "solution": {
                 "language": "Java",
                 "explanation": "This method checks whether the three integers are consecutive in value.",
@@ -967,7 +1100,7 @@ System.out.println("Matrix : ");
             "difficulty": "medium",
             "topic": 6,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Entered numbers contain middle number`,
             "solution": {
                 "language": "Java",
                 "explanation": "This method checks if one integer is the midpoint between the other two integers.",
@@ -990,7 +1123,7 @@ System.out.println("Matrix : ");
             "difficulty": "medium",
             "topic": 6,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `String Contains Vowels and Consonents`,
             "solution": {
                 "language": "Java",
                 "explanation": "This method checks if every character in the string is a vowel.",
@@ -1022,7 +1155,7 @@ System.out.println("Matrix : ");
             "difficulty": "medium",
             "topic": 9,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Meow`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates class inheritance and method overriding.",
@@ -1053,7 +1186,7 @@ class Main {
             "difficulty": "medium",
             "topic": 9,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Repairing a car`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates class inheritance and method overriding.",
@@ -1084,7 +1217,7 @@ class Main {
             "difficulty": "medium",
             "topic": 9,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Area of the rectangle: 15.0`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates overriding methods for calculating area in a subclass.",
@@ -1125,7 +1258,10 @@ class Main {
             "difficulty": "medium",
             "topic": 9,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `HR Manager is managing employees of company
+Salary: 80000.0
+Employee is working
+Salary: 10000.0`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates method overriding and adding new methods in a subclass.",
@@ -1182,7 +1318,15 @@ class Main {
             "difficulty": "medium",
             "topic": 9,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Initial Balance: 500.0
+Deposited: 200.0
+Balance after deposit: 700.0
+Processing withdraw of 300.0Rs
+Withdrawn: 300.0
+Balance after withdrawal: 400.0
+Processing withdraw of 350.0Rs
+Withdrawal denied. Account balance cannot fall below 100.
+Final balance: 400.0`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates method overriding with account balance restrictions.",
@@ -1254,7 +1398,7 @@ class Main {
             "difficulty": "medium",
             "topic": 9,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Run`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program shows how subclasses can modify inherited behavior.",
@@ -1285,7 +1429,13 @@ class Main {
             "difficulty": "medium",
             "topic": 9,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Normal Person :
+First Name : Abhishek
+Last Name : Dhawan
+Employee :
+Id : 5595
+First Name : Mark
+Last Name : Zukerburg ( Facebook's CEO )`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program illustrates method overriding and adding new properties in a subclass.",
@@ -1341,7 +1491,8 @@ class Main{
             "difficulty": "medium",
             "topic": 9,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Perimeter of the circle: 31.41592653589793
+Area of the circle: 78.53981633974483`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates method overriding for specific shape calculations.",
@@ -1395,7 +1546,35 @@ class Main {
             "difficulty": "medium",
             "topic": 9,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Manager:
+Name: Alice
+Address: 123 Elm St
+Salary: 90000.0
+Job Title: Team Manager
+Team Size: 10
+Bonus: 9000.0
+Manager Alice has successfully managed a team of 10 members.
+Manager Alice is overseeing project progress and team performance.
+
+Developer:
+Name: Bob
+Address: 456 Oak St
+Salary: 80000.0
+Job Title: Senior Developer
+Programming Language: Java
+Bonus: 6400.0
+Developer Bob is proficient in Java.
+Developer Bob is working on coding tasks and software development.
+
+Programmer:
+Name: Charlie
+Address: 789 Pine St
+Salary: 70000.0
+Job Title: Junior Programmer
+Project Assigned: Inventory System
+Bonus: 4900.000000000001
+Programmer Charlie is working on project: Inventory System.
+Programmer Charlie is focusing on tasks related to project: Inventory System.`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program illustrates a class hierarchy with various employee roles.",
@@ -1556,7 +1735,8 @@ class Main {
             "difficulty": "easy",
             "topic": 9,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Without super keyword : Value of x = 10
+With super keyword : Value of x in super class = 20`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates the use of the super keyword in accessing superclass properties.",
@@ -1600,7 +1780,8 @@ class Main{
             "difficulty": "easy",
             "topic": 9,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Default Constructor of parent class
+Parameterized Constructor of parent class`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program shows how to call a superclass constructor using super().",
@@ -1635,7 +1816,8 @@ class Main{
             "difficulty": "medium",
             "topic": 9,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Overrided Method : Use Automated Billing System
+Non Overrided Method : Jai Shree Ganesh`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates method overriding in subclasses.",
@@ -1669,7 +1851,8 @@ class Main{
             "difficulty": "medium",
             "topic": 9,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `x = 10
+Child Class`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program illustrates dynamic method dispatch through polymorphism.",
@@ -1703,7 +1886,8 @@ class Main{
             "difficulty": "medium",
             "topic": 9,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Lion Roars
+Tiger Growls`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program shows the use of abstract classes and methods.",
@@ -1741,7 +1925,15 @@ class Main {
             "difficulty": "medium",
             "topic": 9,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Circle:
+Radius: 5.0
+Area: 78.53981633974483
+Perimeter: 31.41592653589793
+
+Triangle:
+Sides: 3.0, 4.0, 5.0
+Area: 6.0
+Perimeter: 12.0`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates abstract classes and method implementation in subclasses.",
@@ -1830,7 +2022,14 @@ class Main {
             "difficulty": "medium",
             "topic": 9,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Saving Account : Initial Amount 1000.0
+Deposited 200.0 into Savings Account. New Balance: 1200.0
+Withdrew 150.0 from Savings Account. New Balance: 1050.0
+Interest of 52.5 added to Savings Account. New Balance: 1102.5
+Current Account : Initial Amount 500.0
+Deposited 100.0 into Current Account. New Balance: 600.0
+Withdrew 700.0 from Current Account. New Balance: -100.0
+Withdrew 200.0 from Current Account. New Balance: -300.0`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program illustrates abstract classes for bank accounts and their implementations.",
@@ -1935,7 +2134,15 @@ class Main {
             "difficulty": "medium",
             "topic": 9,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Lion:
+The lion eats meat
+The lion sleeps for 19-20 hours a day.
+Tiger:
+The tiger eats meat
+The tiger sleeps for 16-20 hours a day.
+Deer:
+The deer grazes on grass and plants.
+The deer sleeps for 4-6 hours a day in short intervals.`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program shows how to define abstract methods and implement them in subclasses.",
@@ -2003,7 +2210,20 @@ class Main {
             "difficulty": "medium",
             "topic": 9,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Manager Information:
+Name: Abhishek
+Age: 45
+Base Salary: 5000.0
+Bonus: 1500.0
+Total Salary: 6500.0
+Programmer Information:
+Name: Misbah
+Age: 30
+Base Salary: 4000.0
+Bonus: 700.0
+Overtime Hours: 10
+Overtime Rate: 50.0
+Total Salary: 5200.0`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates abstract classes for employee roles and their implementations.",
@@ -2089,7 +2309,10 @@ class Programmer extends Employee {
             "difficulty": "medium",
             "topic": 9,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Sphere Volume: 523.5987755982989
+Sphere Surface Area: 314.1592653589793
+Cube Volume: 64.0
+Cube Surface Area: 96.0`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program illustrates abstract classes for 3D shapes and their implementations.",
@@ -2150,7 +2373,10 @@ class Main {
             "difficulty": "medium",
             "topic": 9,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Car Engine Started
+Car Engine Stopped
+Motorcycle Engine Started
+Motorcycle Engine Stopped`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates abstract classes for vehicle operations.",
@@ -2197,7 +2423,12 @@ class Main{
             "difficulty": "medium",
             "topic": 9,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Athelete :
+Likes to eat healthy meal like Green Vegetables etc
+Doing exercise regularly
+Lazy Person :
+Like to eat fast food more often
+Not able to do exercise for whole life`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program shows abstract classes for different types of persons and their behaviors.",
@@ -2246,7 +2477,10 @@ class Main{
             "difficulty": "medium",
             "topic": 9,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Playing the Glockenspiel with mallets
+Tuning the Glockenspiel by adjusting the metal bars
+Playing the Violin with a bow
+Tuning the Violin by adjusting the pegs`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates abstract classes for musical instruments.",
@@ -2295,7 +2529,10 @@ class Main {
             "difficulty": "medium",
             "topic": 9,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Drawing a rectangle with width 4.0 and height 5.0
+Resized rectangle to width 6.0 and height 7.5
+Drawing a circle with radius 3.0
+Resized circle to radius 6.0`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program illustrates abstract classes for 2D shapes.",
@@ -2361,7 +2598,10 @@ class Main {
             "difficulty": "medium",
             "topic": 9,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `The eagle soars high in the sky with powerful wing strokes.
+The eagle makes a sharp screeching sound.
+The hawk glides swiftly and dives at high speed.
+The hawk emits a high-pitched, shrill scream.`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program shows abstract classes for birds and their behaviors.",
@@ -2411,7 +2651,10 @@ class Main {
             "difficulty": "medium",
             "topic": 9,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Triangle Area: 7.5
+Triangle Perimeter: 15.0
+Square Area: 16.0
+Square Perimeter: 16.0`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates abstract classes for geometric shapes.",
@@ -2479,8 +2722,8 @@ class Main {
             "description": "Enter the character from user using InputStreamReader",
             "difficulty": "easy",
             "topic": 10,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": `Enter Any Character : c`,
+            "sample_output": `Value Entered : c`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to enter a character using InputStreamReader.",
@@ -2510,8 +2753,9 @@ class Main{
             "description": "Enter the string from user using BufferedReader",
             "difficulty": "easy",
             "topic": 10,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": `Enter String :
+Abhishek Dhawan`,
+            "sample_output": `String Entered : Abhishek Dhawan`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to enter a string using BufferedStreamReader.",
@@ -2543,8 +2787,8 @@ class Main{
             "description": "Enter the integer from user using Scanner class",
             "difficulty": "easy",
             "topic": 10,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": `Enter Integer Value : 483`,
+            "sample_output": `Integer Entered : 483`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to enter an integer using the Scanner class.",
@@ -2574,8 +2818,8 @@ class Main{
             "description": "Enter the float from user using Scanner class",
             "difficulty": "easy",
             "topic": 10,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": `Enter Float Value : 5055.365`,
+            "sample_output": `Float Entered : 5055.365`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to enter a float value using the Scanner class.",
@@ -2605,8 +2849,8 @@ class Main{
             "description": "Enter the double from user using Scanner class",
             "difficulty": "easy",
             "topic": 10,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": `Enter floating point Value : 5998.96888854`,
+            "sample_output": `Double Type Value : 5998.96888854`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to enter a double value using the Scanner class.",
@@ -2636,8 +2880,8 @@ class Main{
             "description": "Enter the boolean from user using Scanner class",
             "difficulty": "easy",
             "topic": 10,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": `Enter true/false Value : true`,
+            "sample_output": `Value Entered : true`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to enter a boolean value using the Scanner class.",
@@ -2667,8 +2911,8 @@ class Main{
             "description": "Enter the short integer from user using Scanner class",
             "difficulty": "easy",
             "topic": 10,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": `Enter Value Between -32768 and 32767 : 23668`,
+            "sample_output": `Value Entered: 23668`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to enter a short integer using the Scanner class.",
@@ -2698,8 +2942,8 @@ class Main{
             "description": "Enter the long integer from user using Scanner class",
             "difficulty": "easy",
             "topic": 10,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": `Enter Value Between -9223372036854775808 and 9223372036854775807 : 66878544887788`,
+            "sample_output": `Value Entered: 66878544887788`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to enter a long integer using the Scanner class.",
@@ -2729,8 +2973,14 @@ class Main{
             "description": "Get all characters from the file and display on the screen",
             "difficulty": "medium",
             "topic": 10,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": 'my.txt file with some text inside',
+            "sample_output": `Content of my.txt File is below :
+
+When a seed of a plant or tree grow it makes the area around it greener. Also, it supports many life forms. Birds make their nests, many reptiles and animals live on it or near it.
+
+Besides, all these many beautiful flowers, food growing on it. Moreover, many parts of trees such as roots, leaves, stem, flower, seeds, are also edible. Most importantly they never ask anything in return for their services and the gifts they give. Trees also keep the balance in the ecosystem and ecology.
+
+To conclude, we can say that trees are very important and beneficial for every life form on earth. Without them, the survival of life on earth will become difficult and after some time every species starts to die because of lack of oxygen on the planet. So, to save our lives and to survive we have to learn the importance of trees and also have to teach our children the importance of trees.`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to read all characters from a file and display them.",
@@ -2751,8 +3001,16 @@ class Main{
             "description": "Get all characters from the file, count number of lines, words, characters and display on the screen",
             "difficulty": "medium",
             "topic": 10,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": `When a seed of a plant or tree grow it makes the area around it greener. Also, it supports many life forms. Birds make their nests, many reptiles and animals live on it or near it.
+
+
+Besides, all these many beautiful flowers, food growing on it. Moreover, many parts of trees such as roots, leaves, stem, flower, seeds, are also edible. Most importantly they never ask anything in return for their services and the gifts they give. Trees also keep the balance in the ecosystem and ecology.
+
+
+To conclude, we can say that trees are very important and beneficial for every life form on earth. Without them, the survival of life on earth will become difficult and after some time every species starts to die because of lack of oxygen on the planet. So, to save our lives and to survive we have to learn the importance of trees and also have to teach our children the importance of trees.`,
+            "sample_output": `Number of Lines : 5
+Number of Characters : 727
+Number of Words : 160`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to read a file and count lines, words, and characters.",
