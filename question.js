@@ -3051,7 +3051,9 @@ Number of Words : 160`,
             "difficulty": "medium",
             "topic": 11,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Rectangle Area: 20.0
+Circle Area: 28.274333882308138
+Triangle Area: 12.0`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to implement the Shape interface for different shapes and calculate their areas.",
@@ -3118,7 +3120,7 @@ class Main {
             "difficulty": "easy",
             "topic": 11,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Dog is barking`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to create an interface and implement it in a class.",
@@ -3148,7 +3150,9 @@ class Main {
             "difficulty": "medium",
             "topic": 11,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Spacecraft is flying in space.
+Airplane is flying in the sky.
+Helicopter is flying above the ground.`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to implement an interface in multiple classes.",
@@ -3195,7 +3199,24 @@ class Main {
             "difficulty": "hard",
             "topic": 11,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Account Type : Saving Account
+80000.0 Deposited Successfully
+Account Balance : 80000.0
+Annually Interest : 2400.0
+Your Withdrawl Limit is 80000
+10000.0 Withdrawl Successfully
+Account Balance : 70000.0
+Account Type : Current Account
+5000.0 Deposited Successfully
+Account Balance : 5000.0
+Over Draft Limit : 10000
+Annually Interest : 0.0
+7000.0 Withdrawl Successfully
+Account Balance : -2000.0
+Over Draft Limit : 10000
+Insufficient Balance in account
+Account Balance : -2000.0
+Over Draft Limit : 10000`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates a banking system with interfaces and multiple account types.",
@@ -3332,7 +3353,12 @@ class Main{
             "difficulty": "medium",
             "topic": 11,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Initial Dimensions :
+Height of Rectangle : 5
+Width of Rectangle : 15
+Dimensions After Resizing:
+Height of Rectangle : 10
+Width of Rectangle : 25`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to create a resizable rectangle class using an interface.",
@@ -3379,7 +3405,9 @@ class Main{
             "difficulty": "easy",
             "topic": 11,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Drawing Circle
+Drawing Rectangle
+Drawing Triangle`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to create a drawable shape class using an interface.",
@@ -3420,7 +3448,12 @@ class Main{
             "difficulty": "medium",
             "topic": 11,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Array 1 : [58, 4, 11, 26, 49, 98, 37]
+Bubble Sort Implemented
+Bubble Sort : [4, 11, 26, 37, 49, 58, 98]
+Array 2 : [105, 85, 71, 526, 76, 20]
+Selection Sort Implemented
+Selection Sort : [20, 71, 76, 85, 105, 526]`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates sorting algorithms using an interface.",
@@ -3477,7 +3510,9 @@ class Main{
             "difficulty": "easy",
             "topic": 11,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Playing Football
+Playing Volleyball
+Playing Basketball`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to create a playable class using an interface.",
@@ -3517,7 +3552,14 @@ class Main{
             "difficulty": "medium",
             "topic": 11,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Searching Hello in my.txt
+Document contain Hello
+Searching No in my.txt
+Document does not contain No
+Searching life in my.html
+Webpage contain life
+Searching No in my.html
+Webpage does not contain No`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to implement a search functionality in multiple classes.",
@@ -3578,7 +3620,10 @@ class Main{
             "difficulty": "hard",
             "topic": 11,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Array 1 : [5, 2, 9, 1, 5, 6]
+QuickSort Descending: [9, 6, 5, 5, 2, 1]
+Array 2 : [9, 6, 5, 5, 2, 1]
+MergeSort Descending: [9, 8, 7, 4, 3, 1]`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to implement sorting algorithms using an interface.",
@@ -3683,7 +3728,11 @@ class Main {
             "difficulty": "easy",
             "topic": 14,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Person 1 :
+Name : Abhishek  Age : 21
+
+Person 2 :
+Name : Manya     Age : 19`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to create instances of a class and set attributes using a constructor.",
@@ -3717,7 +3766,14 @@ class Main{
             "difficulty": "easy",
             "topic": 14,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Dog 1 :
+Name : Tommy     Breed : Bull Dog
+
+Modifying Name of dog 1 to Rymond :
+Name : Rymond    Breed : Bull Dog
+
+Dog 2 :
+Name : Tyson     Breed : German Shephard`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates creating and modifying objects using setter methods.",
@@ -3759,7 +3815,8 @@ class Main{
             "difficulty": "medium",
             "topic": 14,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Area : 75
+Perimeter : 40`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates the area and perimeter of a rectangle using class attributes.",
@@ -3791,7 +3848,8 @@ class Main{
             "difficulty": "medium",
             "topic": 14,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Area : 78.53981633974483
+Circumference : 31.41592653589793`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates calculating the area and circumference of a circle.",
@@ -3821,7 +3879,31 @@ class Main{
             "difficulty": "medium",
             "topic": 14,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Book No : 1
+Title : To Kill a Mockingbird
+Author : Harper Lee
+ISBN : 9782
+
+Book No : 2
+Title : 1984
+Author : George Orwell
+ISBN : 9780
+
+Book No : 3
+Title : The Great Gatsby
+Author : F. Scott Fitzgerald
+ISBN : 9783
+
+Book 2 Removed
+Book No : 1
+Title : To Kill a Mockingbird
+Author : Harper Lee
+ISBN : 9782
+
+Book No : 2
+Title : The Great Gatsby
+Author : F. Scott Fitzgerald
+ISBN : 9783`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates managing a collection of books using a class.",
@@ -3883,7 +3965,13 @@ class Main{
             "difficulty": "medium",
             "topic": 14,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Employee Detail :
+Name : Abhishek
+Job Title : Manager
+Base Salary : 40000.0
+Salary After Bonus and Deductions : 43999.63
+Updating Salary by 10000 :
+New Base Salary : 50000.0`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates and updates the salary of an employee.",
@@ -3937,7 +4025,36 @@ class Main{
             "difficulty": "hard",
             "topic": 14,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Account Added Successfully
+Account Added Successfully
+Account Added Successfully
+Name : Abhishek Dhawan
+Account Type : Savings
+Balance : 10000.0
+
+Name : Asha
+Account Type : Savings
+Balance : 5035.0
+
+Name : Pawan Kumar
+Account Type : Savings
+Balance : 100.0
+
+7000.0Rs Depoited Successfully in Pawan Kumar's Account
+
+1000.0Rs Withdrawal Successful from Asha's Account
+
+Name : Abhishek Dhawan
+Account Type : Savings
+Balance : 10000.0
+
+Name : Asha
+Account Type : Savings
+Balance : 4035.0
+
+Name : Pawan Kumar
+Account Type : Savings
+Balance : 7100.0`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates a banking system with multiple accounts.",
@@ -4050,7 +4167,9 @@ class Main{
             "difficulty": "easy",
             "topic": 14,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Current Signal : Red
+Changing Signal
+Current Signal : Green`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program simulates a traffic light system with methods to check color and duration.",
@@ -4090,7 +4209,10 @@ class Main{
             "difficulty": "medium",
             "topic": 14,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Name : Abhishek
+Salary : 20000.0
+Hiring Date : 1/6/2011
+Year of Service : 13 Years`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates the years of service for an employee.",
@@ -4133,7 +4255,23 @@ class Main{
             "difficulty": "medium",
             "topic": 14,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Name : Abhishek
+Grade : 10th
+Courses : No Courses Choosen
+
+English Added Successfull
+Hindi Added Successfull
+Music Added Successfull
+Drawing Added Successfull
+Name : Abhishek
+Grade : 10th
+Courses :
+1) English      2) Hindi        3) Music        4) Drawing
+Hindi Removed Successful
+Name : Abhishek
+Grade : 10th
+Courses :
+1) English      2) Music        3) Drawing`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program manages courses for a student.",
@@ -4193,7 +4331,20 @@ class Main{
             "difficulty": "medium",
             "topic": 14,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `To Kill a Mockingbird Added to Library
+1984 Added to Library
+The Great Gatsby Added to Library
+
+Library Books :
+Book 0) To Kill a Mockingbird
+Book 1) 1984
+Book 2) The Great Gatsby
+1984 Removed from Library
+Hello Not Available in Library
+
+Library Books :
+Book 0) To Kill a Mockingbird
+Book 1) The Great Gatsby`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program manages a library collection using a class.",
@@ -4261,7 +4412,11 @@ class Main{
             "difficulty": "medium",
             "topic": 14,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Airplane{Flight Number='AA123', Destination='New York', Departure Time=Wed Sep 11 14:30:30 IST 2024, Status=On Time}
+Flight Status: On Time
+Flight delayed by 45 minutes. New departure time: Wed Sep 11 15:15:30 IST 2024
+Airplane{Flight Number='AA123', Destination='New York', Departure Time=Wed Sep 11 15:15:30 IST 2024, Status=Delayed}
+Updated Flight Status: Delayed`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program checks flight status and delay using an Airplane class.",
@@ -4320,7 +4475,41 @@ class Main {
             "difficulty": "hard",
             "topic": 14,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `No Products in Collection
+Product No : 1
+Product Name : Pen
+Quantity : 10
+
+Product No : 2
+Product Name : Pencil
+Quantity : 0
+
+Product No : 3
+Product Name : Scale
+Quantity : 500
+
+Product No : 4
+Product Name : Eraser
+Quantity : 100
+
+Product No : 1
+Product Name : Pen
+Quantity : 10
+
+Product No : 2
+Product Name : Pencil
+Quantity : 0
+
+Product No : 3
+Product Name : Scale
+Quantity : 50
+
+Product No : 4
+Product Name : Eraser
+Quantity : 400
+
+Scale is soon out of stock
+Pencil is out of stock`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program manages an inventory system using a class.",
@@ -4414,7 +4603,23 @@ class Main{
             "difficulty": "hard",
             "topic": 14,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Student Abhishek has been added.
+Student Madhu has been added.
+Teacher Mr. Rahul has been added.
+Teacher Ms. Sikha has been added.
+Class BCA - 1 has been created.
+Class BCOM - 2 has been created.
+
+Students: [Abhishek, Madhu]
+Teachers: [Mr. Rahul, Ms. Sikha]
+Classes: [BCA - 1, BCOM - 2]
+
+Student Madhu has been removed.
+Teacher Ms. Sikha has been removed.
+
+Students: [Abhishek]
+Teachers: [Mr. Rahul]
+Classes: [BCA - 1, BCOM - 2]`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program manages a school system with students, teachers, and classes.",
@@ -4497,7 +4702,21 @@ class Main{
             "difficulty": "medium",
             "topic": 14,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Dildariyaan Song Added To Music Library
+Tum Hi Ho Song Added To Music Library
+Pee Loon Song Added To Music Library
+Yaariyan Song Added To Music Library
+Old Money Song Added To Music Library
+College Days Song Added To Music Library
+Jatt Shikari Song Added To Music Library
+
+Playing Random Song
+Playing Song : Dildariyaan
+
+Playing Random Song
+Playing Song : Dildariyaan
+Old Money Song Removed From Music Library
+ABC Song not Available in Music Library`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program manages a music library and plays a random song.",
@@ -4552,7 +4771,12 @@ class Main{
             "difficulty": "hard",
             "topic": 14,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Area of Rectangle : 50.0
+Perimeter of Rectangle : 30.0
+Area of Circle : 78.53981633974483
+Perimeter of Circle : 31.41592653589793
+Area of Triangle : 4.683748498798798
+Perimeter of Triangle : 13.0`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates abstract classes and methods for shape calculation.",
@@ -4624,7 +4848,25 @@ class Main{
             "difficulty": "medium",
             "topic": 14,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Kate Winslet Added To Cast Of Titanic
+Leonardo DiCaprio Added To Cast Of Titanic
+Billy Zane Added To Cast Of Titanic
+Kathy Bates Added To Cast Of Titanic
+Your Review Added for Titanic
+Your Review Added for Titanic
+Your Review Added for Titanic
+
+Title : Titanic
+Director : James Cameron
+Actors : [Kate Winslet, Leonardo DiCaprio, Billy Zane, Kathy Bates]
+
+Displaying Reviews
+
+How many times I watch this movie.... It's still the masterpiece.
+
+Titanic masterpiece: an emotional and visual thrill ride
+
+STANDING OVATION! - (10 stars out of 10)`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program manages movie details and allows adding and retrieving reviews.",
@@ -4692,7 +4934,18 @@ class Main{
             "difficulty": "medium",
             "topic": 14,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Item : Noodles - Full Price : 100.0 Added to Menu
+Item : Noodles - Half Price : 70.0 Added to Menu
+Item : Burger Price : 50.0 Added to Menu
+Item : White Sauce Pasta Price : 120.0 Added to Menu
+Item : Masala Dosa Price : 70.0 Added to Menu
+White Sauce Pasta Removed Successfully
+abc Not Found
+Rating Should be between 0 to 10. You Entered : 18.0
+5.5 Rated Successfull
+7.0 Rated Successfull
+8.3 Rated Successfull
+6.933333333333334`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program manages restaurant menu items and calculates the average rating.",
@@ -4776,7 +5029,16 @@ class Main{
             "difficulty": "hard",
             "topic": 14,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Flight 101 - New York to London Flight is Avalable
+Hotel A - New York Hotel is Avalable
+Successfully booked: Flight 101 - New York to London
+Successfully booked: Hotel A - New York
+Flight not available or already booked.
+Hotel not available or already booked.
+Successfully canceled: Flight 101 - New York to London
+Successfully canceled: Hotel A - New York
+No such flight booking found.
+No such hotel booking found.`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program simulates a booking system that handles flights and hotel reservations.",
@@ -4887,7 +5149,7 @@ class ReservationSystem {
             "difficulty": "easy",
             "topic": 14,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `This is Default Constructor`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates the use of a default constructor in a class.",
@@ -4910,7 +5172,7 @@ class Main{
             "difficulty": "easy",
             "topic": 14,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `This is Parametrized Constructor. x = 500`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates the use of a parameterized constructor in a class.",
@@ -4933,7 +5195,10 @@ class Main{
             "difficulty": "medium",
             "topic": 14,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Parametrized Constructor
+x = 500
+Copy Constructor
+x = 500`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates the use of a copy constructor to copy the attributes of another object.",
@@ -4969,7 +5234,45 @@ class Main{
             "difficulty": "medium",
             "topic": 14,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Roll No : 4001
+Name : Abhishek
+Class : BCA - 3
+
+Roll No : 4002
+Name : Asha
+Class : BCA - 3
+
+Roll No : 4003
+Name : Neha
+Class : BBA - 3
+
+Roll No : 4004
+Name : Gurpreet
+Class : BBA - 2
+
+Roll No : 4005
+Name : Amandeep
+Class : BCOM - 1
+
+Roll No : 4006
+Name : Gian
+Class : BCA - 1
+
+Roll No : 4007
+Name : Rohit
+Class : BCA - 3
+
+Roll No : 4008
+Name : Mohit
+Class : BCOM - 2
+
+Roll No : 4009
+Name : Nisha
+Class : BBA - 2
+
+Roll No : 4010
+Name : Riya
+Class : BA - 2`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program automatically generates roll numbers for students while adding their details.",
@@ -5016,7 +5319,8 @@ class Main{
             "difficulty": "medium",
             "topic": 14,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Area of Circle with radius = 5 : 78.53981633974483
+Area of Rectangle with length = 5 and breadth = 9 : 45.0`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates method overloading by calculating the area of a circle and rectangle.",
@@ -5043,8 +5347,8 @@ class Main{
             "description": "Create a class, entering the command line arguments from the user and show all the arguments as output.",
             "difficulty": "easy",
             "topic": 14,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": `java Main hello i am command line argument`,
+            "sample_output": `Entered Arguments : hello       i       am      command line    argument`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program takes user input via command-line arguments and prints them.",
@@ -5069,7 +5373,9 @@ class Main{
             "difficulty": "easy",
             "topic": 14,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Name : Abhishek
+Country : India
+Age : 20`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates the encapsulation principle by using private variables and public getter/setter methods.",
@@ -5116,7 +5422,8 @@ class Main{
             "difficulty": "easy",
             "topic": 14,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Account Number : 6258203210
+Balance : 18501.3872 Rs`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program manages bank account details using getter and setter methods.",
@@ -5156,7 +5463,8 @@ class Main{
             "difficulty": "easy",
             "topic": 14,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Length : 10.3
+Breadth : 18.38`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates the use of getter and setter methods for rectangle dimensions.",
@@ -5195,7 +5503,9 @@ class Main{
             "difficulty": "medium",
             "topic": 14,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Employee Id : 1001
+Employee Name : Abhishek
+Employee Salary : 40500.87 Rs`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates encapsulation by providing access control using getter and setter methods.",
@@ -5242,7 +5552,9 @@ class Main{
             "difficulty": "medium",
             "topic": 14,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Radius of Circle : 5.0
+Area : 78.53981633974483
+Circumference : 31.41592653589793`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates the area and perimeter of a circle based on its radius.",
@@ -5278,7 +5590,10 @@ class Main{
             "difficulty": "medium",
             "topic": 14,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Car Company : BMW
+Car Model : X1
+Car Year : 2022
+Car Mileage : 15.0`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates controlled access to class attributes with the use of getter and setter methods.",
@@ -5327,7 +5642,19 @@ class Main{
             "difficulty": "hard",
             "topic": 14,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Student ID: 1
+Student Name: Alice
+Grades: []
+Grade added: 85.5
+Grade added: 92.0
+Invalid grade. Please enter a grade between 0 and 100.
+Invalid grade. Please enter a grade between 0 and 100.
+Grade added: 78.0
+
+Updated Student Details:
+Student ID: 1
+Student Name: Alice
+Grades: [85.5, 92.0, 78.0]`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program handles student data with validation, using getter, setter, and additional methods.",
@@ -5401,13 +5728,13 @@ class Main{
             "description": "Write a Java program that throws an exception and catches it using a try-catch block.",
             "difficulty": "easy",
             "topic": 5,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": `Enter Character : 8`,
+            "sample_output": `Entered Character : 8`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates exception handling using a try-catch block.",
                 "code": `class ReadChar{
-	void takeChar() throws IOException{
+	void takeChar() throws java.io.IOException{
 		System.out.print("Enter Character : ");
 		System.out.println("Entered Character : " + ((char)(System.in.read())));
 	}
@@ -5431,7 +5758,7 @@ class Main{
             "difficulty": "medium",
             "topic": 5,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Exception : Number is Odd`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program throws an exception if the input integer is odd.",
@@ -5463,7 +5790,7 @@ class Main{
             "difficulty": "medium",
             "topic": 5,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `File Not Found : Hello.txt (The system cannot find the file specified)`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program handles file reading and throws an exception if the file does not exist.",
@@ -5496,8 +5823,8 @@ class Main{
             "description": "Write a Java program that reads a list of numbers from a file and throws an exception if any of the numbers are positive.",
             "difficulty": "hard",
             "topic": 5,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": `my.txt file with positive numbers`,
+            "sample_output": `File Contain Positive Numbers`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program throws an exception if a positive number is found in the file.",
@@ -5535,8 +5862,8 @@ class Main{
             "description": "Write a Java program that reads a file and throws an exception if the file is empty.",
             "difficulty": "medium",
             "topic": 5,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": `my.txt file with empty content`,
+            "sample_output": `File Is Empty Exception`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program reads a file and checks if it is empty, throwing an exception if so.",
@@ -5573,8 +5900,11 @@ class Main{
             "description": "Write a Java program that reads a list of integers from the user and throws an exception if any numbers are duplicates.",
             "difficulty": "medium",
             "topic": 5,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": `838
+831
+747
+838`,
+            "sample_output": `Number Already Entered`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program throws an exception if duplicate integers are found in the input list.",
@@ -5613,8 +5943,8 @@ class Main{
             "description": "Write a Java program to create a method that takes a string as input and throws an exception if the string does not contain vowels.",
             "difficulty": "medium",
             "topic": 5,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": `hggh`,
+            "sample_output": `String Doesn't contain vowels`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program throws an exception if the input string does not contain any vowels.",
@@ -5733,7 +6063,7 @@ class Main{
             "difficulty": "easy",
             "topic": 15,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Today : Fri Oct 18 20:53:16 IST 2024`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates using the import keyword to access the java.util.Date class and print the current system date.",
@@ -5752,7 +6082,7 @@ class Main{
             "difficulty": "easy",
             "topic": 15,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Today : Fri Oct 18 20:53:37 IST 2024`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates accessing the java.util.Date class directly through its fully qualified name and printing the current date.",
@@ -5769,7 +6099,7 @@ class Main{
             "difficulty": "medium",
             "topic": 15,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Today : Fri Oct 18 20:54:00 IST 2024`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates importing the java.util.Date class, extending it, and printing the current date by using inheritance.",
@@ -5790,7 +6120,7 @@ class Main extends Date{
             "difficulty": "medium",
             "topic": 15,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Today : Fri Oct 18 20:54:21 IST 2024`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates accessing the java.util.Date class using the fully qualified name, extending it, and printing the current system date through inheritance.",
@@ -5895,7 +6225,18 @@ class C{}`
             "difficulty": "easy",
             "topic": 16,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Original Array :
+Value at 1position : 52
+Value at 2position : 98
+Value at 3position : 71
+Value at 4position : 28
+Value at 5position : 56
+Duplicated Array :
+Value at 1position : 52
+Value at 2position : 98
+Value at 3position : 71
+Value at 4position : 28
+Value at 5position : 56`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to copy the elements of one array into another array using a loop.",
@@ -5929,7 +6270,10 @@ class C{}`
             "difficulty": "medium",
             "topic": 16,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `6 occurred 2 Times
+2 occurred 2 Times
+9 occurred 1 Times
+3 occurred 1 Times`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to count the frequency of each element in an array.",
@@ -5962,7 +6306,18 @@ class C{}`
             "difficulty": "easy",
             "topic": 16,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Before Left Rotation :
+Value at 1 position : 20
+Value at 2 position : 38
+Value at 3 position : 17
+Value at 4 position : 47
+Value at 5 position : 27
+After Left Rotation 2 times:
+Value at 1 position : 17
+Value at 2 position : 47
+Value at 3 position : 27
+Value at 4 position : 20
+Value at 5 position : 38`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to left rotate the elements of an array by shifting each element to its left.",
@@ -6001,7 +6356,16 @@ class C{}`
             "difficulty": "medium",
             "topic": 16,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Array Values :
+Value at 1 position : 6
+Value at 2 position : 2
+Value at 3 position : 9
+Value at 4 position : 3
+Value at 5 position : 6
+Value at 6 position : 2
+Duplicate Values :
+6
+2`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to find and print duplicate elements in an array.",
@@ -6050,7 +6414,11 @@ class C{}`
             "difficulty": "easy",
             "topic": 16,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Value at 1 position : 83
+Value at 2 position : 49
+Value at 3 position : 289
+Value at 4 position : 27
+Value at 5 position : 23`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to iterate over an array and print its elements.",
@@ -6074,7 +6442,11 @@ class C{}`
             "difficulty": "easy",
             "topic": 16,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Value at 5 position : 23
+Value at 4 position : 27
+Value at 3 position : 289
+Value at 2 position : 49
+Value at 1 position : 83`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to iterate over an array in reverse order and print its elements.",
@@ -6098,7 +6470,8 @@ class C{}`
             "difficulty": "easy",
             "topic": 16,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Value at 2 position : 49
+Value at 4 position : 27`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to print the elements of an array that are located at even positions.",
@@ -6122,7 +6495,9 @@ class C{}`
             "difficulty": "easy",
             "topic": 16,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Value at 1 position : 83
+Value at 3 position : 289
+Value at 5 position : 23`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to print the elements of an array that are located at odd positions.",
@@ -6146,7 +6521,14 @@ class C{}`
             "difficulty": "easy",
             "topic": 16,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Value at 1 position : 83
+Value at 2 position : 49
+Value at 3 position : 289
+Value at 4 position : 27
+Value at 5 position : 23
+Value at 6 position : 592
+
+Maximum value of array :592`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to find and print the largest element in an array.",
@@ -6162,7 +6544,7 @@ class C{}`
 			if(arr[max] < arr[i])
 				max = i;
 		}
-		return arr[maxind];
+		return arr[max];
 	}
 
 	public static void main(String[] args){
@@ -6179,7 +6561,13 @@ class C{}`
             "difficulty": "easy",
             "topic": 16,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Value at 1 position : 83
+Value at 2 position : 49
+Value at 3 position : 289
+Value at 4 position : 27
+Value at 5 position : 23
+
+Minimum value of array :23`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to find and print the smallest element in an array.",
@@ -6212,7 +6600,7 @@ class C{}`
             "difficulty": "easy",
             "topic": 16,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `The number of elements present in the array is: 5`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to print the total number of elements present in an array.",
@@ -6232,7 +6620,13 @@ class C{}`
             "difficulty": "easy",
             "topic": 16,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Value at 1 position : 83
+Value at 2 position : 49
+Value at 3 position : 289
+Value at 4 position : 27
+Value at 5 position : 23
+
+Sum of Values : 471`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to calculate and print the sum of all the elements of an array.",
@@ -6265,7 +6659,18 @@ class C{}`
             "difficulty": "easy",
             "topic": 16,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Before Right Rotation :
+Value at 1 position : 1
+Value at 2 position : 3
+Value at 3 position : 5
+Value at 4 position : 7
+Value at 5 position : 9
+After Right Rotation 2 times:
+Value at 1 position : 7
+Value at 2 position : 9
+Value at 3 position : 1
+Value at 4 position : 3
+Value at 5 position : 5`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to right rotate the elements of an array by shifting each element to its right.",
@@ -6304,7 +6709,18 @@ class C{}`
             "difficulty": "easy",
             "topic": 16,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Value at 1 position : 83
+Value at 2 position : 49
+Value at 3 position : 289
+Value at 4 position : 27
+Value at 5 position : 23
+
+After Sorting in Ascending order :
+Value at 1 position : 23
+Value at 2 position : 27
+Value at 3 position : 49
+Value at 4 position : 83
+Value at 5 position : 289`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to sort the elements of an array in ascending order using any sorting algorithm.",
@@ -6341,7 +6757,18 @@ class C{}`
             "difficulty": "easy",
             "topic": 16,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Value at 1 position : 83
+Value at 2 position : 49
+Value at 3 position : 289
+Value at 4 position : 27
+Value at 5 position : 23
+
+After Sorting in Descending order :
+Value at 1 position : 289
+Value at 2 position : 83
+Value at 3 position : 49
+Value at 4 position : 27
+Value at 5 position : 23`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to sort the elements of an array in descending order using any sorting algorithm.",
@@ -6378,7 +6805,12 @@ class C{}`
             "difficulty": "medium",
             "topic": 16,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Value at 1 position : 9
+Value at 2 position : 3
+Value at 3 position : 91
+Value at 4 position : 25
+Value at 5 position : 87
+Third Largest Value of Array : 25`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to find the third largest number in an array.",
@@ -6430,7 +6862,12 @@ class C{}`
             "difficulty": "medium",
             "topic": 16,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Value at 1 position : 9
+Value at 2 position : 3
+Value at 3 position : 91
+Value at 4 position : 25
+Value at 5 position : 87
+Second Largest Value of Array : 87`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to find the second largest number in an array.",
@@ -6482,7 +6919,14 @@ class C{}`
             "difficulty": "easy",
             "topic": 16,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Value at 1 position : 83
+Value at 2 position : 49
+Value at 3 position : 289
+Value at 4 position : 27
+Value at 5 position : 23
+Value at 6 position : 592
+
+Maximum value of array :592`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to find the largest number in an array.",
@@ -6498,7 +6942,7 @@ class C{}`
 			if(arr[max] < arr[i])
 				max = i;
 		}
-		return arr[maxind];
+		return arr[max];
 	}
 
 	public static void main(String[] args){
@@ -6515,7 +6959,12 @@ class C{}`
             "difficulty": "medium",
             "topic": 16,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Value at 1 position : 9
+Value at 2 position : 3
+Value at 3 position : 91
+Value at 4 position : 25
+Value at 5 position : 87
+Second Smallest Value of Array : 9`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to find the second smallest number in an array.",
@@ -6567,7 +7016,13 @@ class C{}`
             "difficulty": "easy",
             "topic": 16,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Value at 1 position : 83
+Value at 2 position : 49
+Value at 3 position : 289
+Value at 4 position : 27
+Value at 5 position : 23
+
+Minimum value of array :23`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to find the smallest number in an array.",
@@ -6600,7 +7055,19 @@ class C{}`
             "difficulty": "medium",
             "topic": 16,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Value at 1 position : 6
+Value at 2 position : 2
+Value at 3 position : 9
+Value at 4 position : 3
+Value at 5 position : 6
+Value at 6 position : 2
+Value at 7 position : 3
+Value at 8 position : 6
+New Array :
+Value at 1 position : 6
+Value at 2 position : 2
+Value at 3 position : 9
+Value at 4 position : 3`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to remove duplicate elements from an array.",
@@ -6643,7 +7110,18 @@ class C{}`
             "difficulty": "easy",
             "topic": 16,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Value at 1 position : 83
+Value at 2 position : 42
+Value at 3 position : 28
+Value at 4 position : 27
+Value at 5 position : 23
+Odd Values of array :
+Value at 1 position : 83
+Value at 4 position : 27
+Value at 5 position : 23
+Even Values of array :
+Value at 2 position : 42
+Value at 3 position : 28`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to separate and print the odd and even numbers from an array.",
@@ -6683,7 +7161,18 @@ class C{}`
             "difficulty": "easy",
             "topic": 16,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Value at 1 position : 83
+Value at 2 position : 49
+Value at 3 position : 289
+Value at 4 position : 27
+Value at 5 position : 23
+
+After Sorting in Ascending order :
+Value at 1 position : 23
+Value at 2 position : 27
+Value at 3 position : 49
+Value at 4 position : 83
+Value at 5 position : 289`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to sort an array using Java's built-in sorting method or a custom sorting algorithm.",

@@ -52,6 +52,9 @@ code{
     width: 95%;
     overflow-x: auto;
 }
+#code{
+    height: 100%;
+}
 .prehead{
     padding: 2vh 2vw;
     border-radius: 12px 12px 0px 0px;
