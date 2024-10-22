@@ -7210,7 +7210,10 @@ Value at 5 position : 289`,
             "difficulty": "easy",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `String Value : 389294
+String Contain Only Digits
+String Value : 393aje
+String Does not have digits only`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program checks if the input string contains only numeric digits.",
@@ -7240,7 +7243,8 @@ Value at 5 position : 289`,
             "difficulty": "medium",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Orignal String : Hello Everyone
+Copied String : Hello Everyone`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to perform a deep copy of a String in Java.",
@@ -7267,7 +7271,7 @@ Value at 5 position : 289`,
             "difficulty": "easy",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Both object are different i.e Immutable Objects`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program proves the immutability of the String class in Java by showing that once created, a String object cannot be changed.",
@@ -7291,7 +7295,8 @@ Value at 5 position : 289`,
             "difficulty": "easy",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Removing p from apple
+ale`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program removes all instances of a specific character from the input String.",
@@ -7320,7 +7325,8 @@ Value at 5 position : 289`,
             "difficulty": "easy",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `String Value : Hello
+After Appending String : Hello World. Number : 47`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to append a string using the StringBuffer class.",
@@ -7341,7 +7347,8 @@ Value at 5 position : 289`,
             "difficulty": "easy",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Initial String : I am
+After Inserting String : Hello I am 20`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to insert a string using the StringBuffer class.",
@@ -7362,7 +7369,10 @@ Value at 5 position : 289`,
             "difficulty": "easy",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `String : hell
+Adding o at 4th index : hello
+Adding J at 0th index : Jhell
+Adding f at 2th index : hefll`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program shows how to add characters to an existing string.",
@@ -7412,7 +7422,8 @@ Value at 5 position : 289`,
             "difficulty": "easy",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `abc11cba is pallindrome
+39d is not pallindrome`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program checks if a given string is a palindrome.",
@@ -7438,7 +7449,7 @@ Value at 5 position : 289`,
             "difficulty": "easy",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Sunday Monday Tuesday Wednesday Thursday Friday Saturday`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to convert an Enum to a String in Java.",
@@ -7474,7 +7485,7 @@ Value at 5 position : 289`,
             "difficulty": "easy",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Number of words in string is : 5`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program counts the number of words present in a given String.",
@@ -7511,7 +7522,7 @@ Value at 5 position : 289`,
             "difficulty": "easy",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Number of Character in Hello World : 11`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program counts the total number of characters in a String, including spaces.",
@@ -7529,7 +7540,7 @@ Value at 5 position : 289`,
             "difficulty": "medium",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Number of Punctuations in string is : 3`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program counts the total number of punctuation marks present in a given String.",
@@ -7559,7 +7570,8 @@ Value at 5 position : 289`,
             "difficulty": "medium",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Number of Vowels : 3
+Number of Consonents : 7`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program counts the total number of vowels and consonants present in a String.",
@@ -7598,7 +7610,8 @@ Value at 5 position : 289`,
             "difficulty": "easy",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `abc11cba is pallindrome
+39d is not pallindrome`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program checks if the input string is a palindrome by comparing characters from both ends.",
@@ -7624,7 +7637,7 @@ Value at 5 position : 289`,
             "difficulty": "medium",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `String is rotated`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program determines if one string is a rotation of another string.",
@@ -7660,7 +7673,9 @@ Value at 5 position : 289`,
             "difficulty": "medium",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Parts of String are :
+Part No 1 : HelloW
+Part No 2 : orld12`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program divides a string into N equal parts and prints each part.",
@@ -7700,7 +7715,21 @@ Value at 5 position : 289`,
             "difficulty": "medium",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `a
+b
+ab
+c
+ac
+bc
+abc
+d
+ad
+bd
+abd
+cd
+acd
+bcd
+abcd`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program finds and prints all subsets of a given string.",
@@ -7746,7 +7775,10 @@ Value at 5 position : 289`,
             "difficulty": "medium",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Maximum Occuring Character : a
+Number of timesaOccurs : 6
+Minimum Occuring Character : b
+Number of timesbOccurs : 1`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program finds the character that appears the most and the least in a given string.",
@@ -7798,7 +7830,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `olleH`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program reverses the input string and prints the result.",
@@ -7823,7 +7855,11 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Duplicate Characters
+a
+b
+d
+e`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program identifies and prints all duplicate characters found in a given string.",
@@ -7871,7 +7907,11 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Character : a Frequency : 6
+Character : b Frequency : 1
+Character : d Frequency : 2
+Character : h Frequency : 5
+Character : i Frequency : 3`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates and prints the frequency of each character in a string.",
@@ -7913,7 +7953,9 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Given String : Hello I am a Abhishek Dhawan
+Largest Word in String : Abhishek
+Smallest Word in String : I`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program finds and prints the largest and smallest word in a given string.",
@@ -7994,7 +8036,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Character at 4th index : o`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program retrieves and prints a character from a given string at a specific index.",
@@ -8014,7 +8056,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Hello`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to insert one string into another at a specified position.",
@@ -8047,7 +8089,17 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Character At 0th index : H
+Character At 1th index : e
+Character At 2th index : l
+Character At 3th index : l
+Character At 4th index : o
+Character At 5th index :
+Character At 6th index : W
+Character At 7th index : o
+Character At 8th index : r
+Character At 9th index : l
+Character At 10th index : d`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program iterates through each character in a string and prints them.",
@@ -8068,7 +8120,8 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Hello I am
+Line Break`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to include new lines within a string and print it.",
@@ -8086,7 +8139,11 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Entered String : Hello I am a Abhishek Dhawan
+Even Length words in string :
+am
+Abhishek
+Dhawan`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program prints words from a string that have an even length.",
@@ -8121,7 +8178,11 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "hard",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Given String : abba mobile no 123454321
+Largest Pallindrome Word in String : 123454321
+Smallest Pallindrome Word in String : abba
+Given String : Hello world
+No Pallindrome word found`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program finds and prints the smallest and largest palindrome words from a given string.",
@@ -8176,7 +8237,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `HelloWorldIamAbhishek`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program removes all whitespace characters from a string and prints the result.",
@@ -8202,7 +8263,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `hELLO i AM aBHISHEK`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program replaces all lowercase characters in a string with uppercase ones, and vice versa.",
@@ -8216,6 +8277,9 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
 			else if(str.charAt(i) >= 'A' && str.charAt(i) <= 'Z'){
 				newstr += (char)(str.charAt(i)+32);
 			}
+            else{
+                newstr += str.charAt(i);
+            }
 		}
 		return newstr;
 	}
@@ -8231,7 +8295,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Hello*World*I*am*Abhishek**`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program replaces all spaces in a string with a specified character.",
@@ -8286,7 +8350,10 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Before Swap
+String 1 : Hello String 2 : World
+After Swap
+String 1 : World String 2 : Hello`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program swaps two string variables without the use of a temporary variable.",
@@ -8335,7 +8402,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `olleH`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates how to reverse a string manually without using the built-in reverse() method.",
@@ -8360,7 +8427,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `olleH dlroW`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program reverses the words in a given string, keeping the words in reverse order but not reversing the characters in each word.",
@@ -8399,7 +8466,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Different Characters`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program checks whether two strings are made up of exactly the same characters, regardless of their order.",
@@ -8442,7 +8509,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `dlroW olleH`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates the usage of StringBuffer's reverse() method to reverse a string.",
@@ -8463,7 +8530,11 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 17,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Initial String : Hello World
+After Insert function : Hello! World
+After Append function : Hello! World I am India.
+After Delete function : World I am India.
+After Replace function : WoMyd I am India.`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program demonstrates the usage of StringBuffer's methods like insert(), append(), delete(), and replace() on strings.",
@@ -8491,7 +8562,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Hello World!`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program prints a simple 'Hello World!' message on the screen.",
@@ -8508,7 +8579,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Sum of 100.0 and 47883.0 is 47983.0`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program takes two numbers as input and prints their sum.",
@@ -8526,12 +8597,33 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "description": "Write a Java program that takes two numbers and display the product of two numbers",
             "difficulty": "easy",
             "topic": 2,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": `Enter the first number: 5
+Enter the second number: 3`,
+            "sample_output": `The product is: 15.0`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program accepts two numbers and displays their product.",
-                "code": null
+                "code": `import java.util.Scanner;
+
+public class ProductCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        try {
+            System.out.print("Enter the first number: ");
+            double num1 = Double.parseDouble(scanner.nextLine());
+
+            System.out.print("Enter the second number: ");
+            double num2 = Double.parseDouble(scanner.nextLine());
+
+            double product = num1 * num2;
+            System.out.println("The product is: " + product);
+        } 
+        catch (NumberFormatException e) {
+            System.out.println("Invalid input. Please enter valid numbers.");
+        }
+    }
+}
+`
             }
         },
         {
@@ -8540,7 +8632,11 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `5 + 12 = 17
+5 X 12 = 60
+5 - 12 = -7
+5 / 12 = 0
+5 % 12 = 5`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program performs various arithmetic operations (addition, multiplication, subtraction, division, and modulus) on two numbers.",
@@ -8567,12 +8663,39 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "description": "Write a Java program that takes five numbers as input to calculate and print the average of the numbers",
             "difficulty": "medium",
             "topic": 2,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": `Enter number 1: 4
+Enter number 2: 5
+Enter number 3: 6
+Enter number 4: 7
+Enter number 5: 8`,
+            "sample_output": `The average is: 6.0`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program takes five numbers as input, calculates their sum, and prints the average.",
-                "code": null
+                "code": `import java.util.Scanner;
+
+class AverageCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double sum = 0;
+        int count = 0;
+
+        try {
+            for (int i = 1; i <= 5; i++) {
+                System.out.print("Enter number " + i + ": ");
+                sum += Double.parseDouble(scanner.nextLine());
+                count++;
+            }
+
+            double average = sum / count;
+            System.out.println("The average is: " + average);
+        } 
+        catch (NumberFormatException e) {
+            System.out.println("Invalid input. Please enter valid numbers.");
+        } 
+    }
+}
+`
             }
         },
         {
@@ -8581,7 +8704,12 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Before Swapping :
+num1 = 84
+num2 = 128
+After Swapping :
+num1 = 128
+num2 = 84`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program swaps the values of two variables.",
@@ -8605,7 +8733,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `0000001001`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program converts a decimal number to its binary representation.",
@@ -8631,11 +8759,38 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `The decimal of 1011 is: 11
+`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program converts a binary number to its decimal equivalent.",
-                "code": null
+                "code": `class BinaryToDecimal {
+    public static void main(String[] args) {
+        String binaryString = "1011"; 
+        int decimal = 0;
+        int base = 1;
+        boolean isValid = true;
+
+        for (int i = binaryString.length() - 1; i >= 0; i--) {
+            char bit = binaryString.charAt(i);
+            if (bit == '1') {
+                decimal += base;
+            } else if (bit == '0') {
+                
+            } else {
+                System.out.println("Invalid binary number.");
+                isValid = false;
+                break;
+            }
+            base *= 2; 
+        }
+
+        if (isValid) {
+            System.out.println("The decimal of " + binaryString + " is: " + decimal);
+        }
+    }
+}
+`
             }
         },
         {
@@ -8657,11 +8812,27 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `The sum of the digits of 12345 is: 15
+`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program computes the sum of digits of a given integer.",
-                "code": null
+                "code": `class SumOfDigits {
+    public static void main(String[] args) {
+        int number = 12345; 
+        int sum = 0;
+
+        int temp = number; 
+
+        while (temp > 0) {
+            sum += temp % 10; 
+            temp /= 10; 
+        }
+
+        System.out.println("The sum of the digits of " + number + " is: " + sum);
+    }
+}
+`
             }
         },
         {
@@ -8670,7 +8841,9 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `49 is greater than 18
+92 is greater than 47
+84 is equal to 84`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program compares two numbers and prints which one is greater, or if they are equal.",
@@ -8699,8 +8872,14 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "description": "Write a Java program to count the letters, spaces, numbers and other characters of an input string",
             "difficulty": "medium",
             "topic": 2,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": `Enter String value :
+Hello! I am 18`,
+            "sample_output": `Entered String : Hello! I am 18
+
+Number of Letters : 8
+Number of Spaces : 3
+Number of Numbers : 2
+Number of Other Characters : 1`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program counts the occurrences of letters, spaces, numbers, and other characters in an input string.",
@@ -8745,8 +8924,8 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "description": "Write a Java program to print the ascii value of a given character",
             "difficulty": "easy",
             "topic": 2,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": `Enter Character : f`,
+            "sample_output": `Ascii Value : 102`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program prints the ASCII value of a given character.",
@@ -8769,8 +8948,8 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "description": "Write a Java program that accepts an integer (n) and computes the value of n+nn+nnn",
             "difficulty": "medium",
             "topic": 2,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": `Enter n value : 5`,
+            "sample_output": `Value of n+nn+nn for n = 5 is 155`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program computes the value of n+nn+nnn for a given integer n.",
@@ -8799,7 +8978,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `System Time : 18:29:17`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program displays the current system time.",
@@ -8817,7 +8996,16 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `1 is odd number
+3 is odd number
+5 is odd number
+7 is odd number
+9 is odd number
+11 is odd number
+13 is odd number
+15 is odd number
+17 is odd number
+19 is odd number`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program prints all odd numbers between 1 and 20.",
@@ -8841,7 +9029,16 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `2 is Even number
+4 is Even number
+6 is Even number
+8 is Even number
+10 is Even number
+12 is Even number
+14 is Even number
+16 is Even number
+18 is Even number
+20 is Even number`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program prints all even numbers between 1 and 20.",
@@ -8865,7 +9062,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Integer value : 73388`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program converts a given string to its corresponding integer value.",
@@ -8890,7 +9087,8 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Total Seconds : 3661
+1 Hour 1 Minutes 1 Seconds`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program converts a given number of seconds into hours, minutes, and seconds.",
@@ -8912,7 +9110,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "hard",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Sum of first 100 Prime Numbers : 24133`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates the sum of the first 100 prime numbers.",
@@ -8951,7 +9149,8 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Original Array : [52, 74, 10, 53, 58]
+New Created Array : [58, 74, 10, 53, 52]`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program swaps the first and last elements of an array and creates a new array with the swapped elements.",
@@ -8981,7 +9180,9 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Array : [52, 86, 71, 52, 20, 93]
+Number of Even Elements : 4
+Number of Odd Elements : 2`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program counts and prints the number of even and odd elements in a given array.",
@@ -9010,7 +9211,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Square Root of 169 is 13.0`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program computes the square root of a given integer using Java's Math library.",
@@ -9028,7 +9229,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `12221 is Pallindrome`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program checks whether a given positive number is a palindrome (reads the same forward and backward).",
@@ -9072,7 +9273,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Sum of digits of 12221 is 8`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program adds together all the digits of a given positive integer.",
@@ -9098,7 +9299,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Area of circle with radius 5.0 is 78.53981633974483`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates the area of a circle using the formula: area = π * radius².",
@@ -9119,7 +9320,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Area of rectangle with length 5.0 and breadth 4.0 is 20.0`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates the area of a rectangle using the formula: area = length * width.",
@@ -9140,13 +9341,13 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Area of triangle with height 5.0 and base 4.0 is 10.0`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates the area of a triangle using the formula: area = 0.5 * base * height.",
                 "code": `class Main{
 	static double triangleArea(double height, double base){
-		return ((1/2)*base*height);
+		return ((1.0/2.0)*base*height);
 	}
 	public static void main(String args[]){
 		double h = 5, b = 4;
@@ -9161,7 +9362,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Area of Equilateral Triangle with side 5.0 is 10.825317547305481`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates the area of an equilateral triangle using the formula: area = (√3 / 4) * side².",
@@ -9182,7 +9383,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Area of Rhombus with base 5.0 and height 9.0 is 45.0`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates the area of a rhombus using the formula: area = (diagonal1 * diagonal2) / 2.",
@@ -9203,7 +9404,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Area of Parallelogram with base 5.0 and height 9.0 is 45.0`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates the area of a parallelogram using the formula: area = base * height.",
@@ -9224,7 +9425,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "hard",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Area of Triangular Prism is 63.0`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates the surface area of a prism using the relevant geometric formulas based on the type of prism.",
@@ -9245,7 +9446,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Volume of Sphere with radius 5 : 523.5987755982989`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates the volume of a sphere using the formula: volume = (4/3) * π * radius³.",
@@ -9265,7 +9466,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Volume of Cyllinder with radius 5 and height 10 : 785.3981633974483`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates the volume of a cylinder using the formula: volume = π * radius² * height.",
@@ -9274,7 +9475,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
 		return (Math.PI * radius * radius * height);
 	}
 	public static void main(String[] args){
-		System.out.println("Volume of Sphere with radius 5 and height 10 : " + cyllinderVolume(5, 10));
+		System.out.println("Volume of Cyllinder with radius 5 and height 10 : " + cyllinderVolume(5, 10));
 	}
 }`
             }
@@ -9285,7 +9486,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Volume of Cuboid with length 5, breadth 7 and height 10 : 350.0`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates the volume of a cuboid using the formula: volume = length * width * height.",
@@ -9305,7 +9506,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Volume of Cone with radius 7 and height 10 : 513.1268000863329`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates the volume of a cone using the formula: volume = (1/3) * π * radius² * height.",
@@ -9325,7 +9526,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Surface area of cuboid with length 3, width 6 and height 10 is 216.0`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates the surface area of a cuboid using the formula: surface area = 2 * (length * width + width * height + height * length).",
@@ -9345,7 +9546,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Surface area of Cyllinder with radius 6 and height 10 is 603.1857894892403`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates the surface area of a cylinder using the formula: surface area = 2 * π * radius * (radius + height).",
@@ -9365,7 +9566,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Surface area of Cube with side 10 is 600.0`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates the surface area of a cube using the formula: surface area = 6 * side².",
@@ -9385,7 +9586,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Average Marks of student is 46.8`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates the average of marks input by the user.",
@@ -9411,7 +9612,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `I is a Vowel`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program checks whether the input character is a vowel or a consonant.",
@@ -9456,7 +9657,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Sum of first 100 Numbers : 5050`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates the sum of N numbers input by the user.",
@@ -9479,7 +9680,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Factorial of 5 : 120`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates the factorial of a given number using a loop or recursion.",
@@ -9501,7 +9702,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Electricity Bill Of Consumed Units 4000 : 40000.0`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates the electricity bill based on units consumed and rate per unit.",
@@ -9523,7 +9724,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `CGPA Percentage of Marks : [90.0, 80.0, 70.0, 80.0, 90.0] is 77.89999999999999`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates the CGPA percentage based on the CGPA input by the user.",
@@ -9548,7 +9749,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Compound Interest for Principle 10000 for 5 years at 5% : 12762.815625000003`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates the compound interest using the formula: A = P(1 + r/n)^(nt), where P is the principal, r is the rate, t is the time, and n is the number of times the interest is compounded per year.",
@@ -9569,7 +9770,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Virat Kohli scores 13906 runs and dismissed 239 times, His Average : 58.18410041841004`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates the batting average based on the total runs and total outs.",
@@ -9590,7 +9791,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Commission of 40000Rs sales is 3279.9999999999995`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates the commission percentage based on sales and commission rate.",
@@ -9610,7 +9811,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `The distance between the points (3.0, 4.0) and (7.0, 1.0) is: 5.0`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates the distance between two points using the distance formula: distance = √[(x2 - x1)² + (y2 - y1)²].",
@@ -9633,7 +9834,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `5 raised to the power of 3 is: 125`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates the power of a number using the Math.pow() function.",
@@ -9658,8 +9859,10 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "description": "Write a Java program to take three numbers from the user and print the greatest number",
             "difficulty": "easy",
             "topic": 2,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": `Enter the first number: 29
+Enter the second number: 58
+Enter the third number: -85`,
+            "sample_output": `The greatest number is: 58`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program takes three numbers as input and prints the largest number using conditional statements.",
@@ -9705,7 +9908,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `The number of days in month 2 of year 2020 is: 29`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program finds the number of days in a month based on the month number input and handles leap year conditions for February.",
@@ -9754,7 +9957,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `-5 is negative.`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program checks whether a number is positive, negative, or zero based on user input.",
@@ -9779,8 +9982,8 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "description": "Write a Java Program to accept number of week’s day (1-7) and print name of the day",
             "difficulty": "easy",
             "topic": 2,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": `Enter the number of the day (1-7): 5`,
+            "sample_output": `Thursday`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program accepts a number between 1 and 7 from the user and prints the corresponding weekday name.",
@@ -9793,19 +9996,19 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             System.out.print("Enter the number of the day (1-7): ");
             dayNumber = Integer.parseInt(reader.readLine());
         } 
-	catch (java.io.IOException e) {
+	    catch (java.io.IOException e) {
             System.out.println("An error occurred during input.");
-	    return;
+	        return;
         } 
-	catch (NumberFormatException e) {
+	    catch (NumberFormatException e) {
             System.out.println("Invalid input! Please enter a valid number.");
-	    return;
+	        return;
         }
-	catch(Throwable e){
-	    System.out.println("Something Went Wrong!");
-	    return;
-	}
-	switch (dayNumber) {
+	    catch(Throwable e){
+	        System.out.println("Something Went Wrong!");
+	        return;
+	    }
+	    switch (dayNumber) {
                 case 1:
                     System.out.println("Sunday");
                     break;
@@ -9829,7 +10032,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
                     break;
                 default:
                     System.out.println("Invalid input! Please enter a number between 1 and 7.");
-	}
+	    }
     }
 }
 `
@@ -9840,8 +10043,8 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "description": "Write a Java program that takes a year from user and print whether that year is a leap year or not",
             "difficulty": "easy",
             "topic": 2,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": `Enter the year: 2020`,
+            "sample_output": `2020 is a leap Year`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program checks whether the input year is a leap year or not based on leap year rules.",
@@ -9885,8 +10088,13 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "description": "Write a Java program to input 5 numbers from keyboard and find their sum and average",
             "difficulty": "easy",
             "topic": 2,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": `Enter number 1: 56
+Enter number 2: 85
+Enter number 3: 12
+Enter number 4: 0
+Enter number 5: 6`,
+            "sample_output": `Sum: 159.0
+Average: 31.8`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program takes 5 numbers from the user, calculates their sum, and finds the average.",
@@ -9922,7 +10130,11 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `1
+2
+3
+4
+5`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program displays the first five natural numbers using a loop.",
@@ -9944,11 +10156,43 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `I is a Vowel`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program checks if a given character is a vowel or consonant.",
-                "code": null
+                "code": `class Main{
+	static byte isVowelOrConsonent(char ch){
+		if(Character.isLetter(ch)){
+			switch(ch){
+				case 'a': ;
+				case 'e': ; 
+				case 'i': ;
+				case 'o': ;
+				case 'u': ;
+				case 'A': ;
+				case 'E': ; 
+				case 'I': ;
+				case 'O': ;
+				case 'U': return 1;
+				default : return 0;
+			}
+		}
+		return -1;
+	}
+	public static void main(String[] args){
+		char ch = 'I';
+		byte val = isVowelOrConsonent(ch);
+		if(val == -1){
+			System.out.println(ch + " is not a Letter");
+		}
+		else if(val == 0){
+			System.out.println(ch + " is a Consonent");
+		}
+		else{
+			System.out.println(ch + " is a Vowel");
+		}
+	}
+}`
             }
         },
         {
@@ -9956,8 +10200,12 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "description": "Write a Java program to display the cube of the number up to a given integer",
             "difficulty": "medium",
             "topic": 2,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": `Enter the integer: 5`,
+            "sample_output": `Cube of 1 is: 1
+Cube of 2 is: 8
+Cube of 3 is: 27
+Cube of 4 is: 64
+Cube of 5 is: 125`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates and displays the cube of numbers up to a specified integer.",
@@ -9988,7 +10236,13 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `The first 5 odd natural numbers are:
+1
+3
+5
+7
+9
+Sum of these odd natural numbers is: 25`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program displays the first n odd natural numbers and calculates their sum.",
@@ -10017,7 +10271,17 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Printing table of 5
+5 X 1 = 5
+5 X 2 = 10
+5 X 3 = 15
+5 X 4 = 20
+5 X 5 = 25
+5 X 6 = 30
+5 X 7 = 35
+5 X 8 = 40
+5 X 9 = 45
+5 X 10 = 50`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program generates and displays the multiplication table for a user-specified integer.",
@@ -10039,8 +10303,8 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "description": "Write a Java program that reads an integer and check whether it is negative, zero, or positive",
             "difficulty": "easy",
             "topic": 2,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": `Enter an integer: 0`,
+            "sample_output": `0 is zero.`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program checks whether the input integer is negative, zero, or positive.",
@@ -10073,8 +10337,8 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "description": "Write a Java program that reads a positive integer and counts the number of digits",
             "difficulty": "easy",
             "topic": 2,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": `Enter a positive integer: 945884`,
+            "sample_output": `The num of digits is: 6`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program counts the number of digits in a given positive integer.",
@@ -10113,8 +10377,10 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "description": "Write a Java program that accepts three numbers and check if all numbers are equal or not",
             "difficulty": "easy",
             "topic": 2,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": `Enter a integer: 52
+Enter a integer: 63
+Enter a integer: 25`,
+            "sample_output": `The Numbers 52, 63, 25 are not equal`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program checks if three input numbers are equal.",
@@ -10149,8 +10415,10 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "description": "Write a Java program that accepts three numbers from the user and check if numbers are in 'increasing' or 'decreasing' order.",
             "difficulty": "medium",
             "topic": 2,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": `Enter a integer: -1
+Enter a integer: 0
+Enter a integer: 2`,
+            "sample_output": `Numbers are in increasing order`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program checks if three numbers are arranged in increasing or decreasing order.",
@@ -10191,7 +10459,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Grade D`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates a student's grade based on their marks.",
@@ -10233,8 +10501,15 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "description": "Write a Java program to create a simple calculator",
             "difficulty": "medium",
             "topic": 2,
-            "sample_input": null,
-            "sample_output": null,
+            "sample_input": `Enter the first number: 58
+Enter the second number: 2
+Select an operation:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+2`,
+            "sample_output": `The result of subtraction is: 56.0`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program implements a simple calculator that performs basic arithmetic operations.",
@@ -10299,7 +10574,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Concatenated String : Hello World`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program concatenates two input strings and displays the result.",
@@ -10320,7 +10595,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `hello world`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program converts all characters of a given string to lowercase.",
@@ -10351,7 +10626,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `HELLO WORLD`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program converts all characters of a given string to uppercase.",
@@ -10382,7 +10657,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `helloworld`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program removes leading and trailing whitespace from a given string.",
@@ -10410,7 +10685,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `worl`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program extracts a substring from a given string based on specified indices.",
@@ -10442,7 +10717,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `hello worlf`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program replaces all occurrences of 'd' in a string with 'f'.",
@@ -10472,7 +10747,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Length of hello : 5 characters`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates and displays the length of a given string.",
@@ -10490,7 +10765,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Current date and time: Date : 22-10-2024 Time : 19:14:36`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program displays the current date and time in a specified format.",
@@ -10498,7 +10773,7 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
 	public static void main(String[] args){
 
         	java.time.LocalDateTime now = java.time.LocalDateTime.now();
-       		java.time.format.DateTimeFormatter formatter = 					java.time.format.DateTimeFormatter.ofPattern("'Date : 'dd-MM-yyyy 'Time : 'HH:mm:ss");
+       		java.time.format.DateTimeFormatter formatter = 	java.time.format.DateTimeFormatter.ofPattern("'Date : 'dd-MM-yyyy 'Time : 'HH:mm:ss");
 
         	String formattedDateTime = now.format(formatter);
         	System.out.println("Current date and time: " + formattedDateTime);
@@ -10513,7 +10788,8 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `String : Hello World
+Character at index 4 : o`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program retrieves and displays the character at a specified index of a given string.",
@@ -10533,7 +10809,8 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `String : Hello
+String After Removing character l : Heo`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program removes all occurrences of a specified character from a given string.",
@@ -10561,7 +10838,8 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `String : Hello
+Reverse of String : olleH`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program reverses the characters in a given string.",
@@ -10587,7 +10865,8 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Html Code : <b>hello world</b>
+Html Code without Tag: hello world`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program removes all HTML tags from a given string.",
@@ -10622,11 +10901,42 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `The total number of lines is: 3`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program counts and displays the total number of lines in a given string.",
-                "code": null
+                "code": `class LineCounter {
+    public static void main(String[] args) {
+        String text = "This is line one.\\nThis is line two.\\nThis is line three."; 
+        int lineCount = countLines(text);
+
+        System.out.println("The total number of lines is: " + lineCount);
+    }
+
+    static int countLines(String text) {
+        int count = 0;
+        boolean isPreviousCharNewLine = true; 
+
+        for (int i = 0; i < text.length(); i++) {
+            char currentChar = text.charAt(i);
+            if (currentChar == '\n') {
+                isPreviousCharNewLine = true; 
+            } else {
+                if (isPreviousCharNewLine) {
+                    count++; 
+                }
+                isPreviousCharNewLine = false; 
+            }
+        }
+
+        if (text.length() > 0 && text.charAt(text.length() - 1) != '\n') {
+            count++;
+        }
+
+        return count;
+    }
+}
+`
             }
         },
         {
@@ -10635,11 +10945,29 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `The sum of the array values is: 15`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates and displays the sum of all elements in an array.",
-                "code": null
+                "code": `class ArraySum {
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 4, 5}; 
+        int sum = sumArray(numbers);
+
+        System.out.println("The sum of the array values is: " + sum);
+    }
+
+    static int sumArray(int[] array) {
+        int sum = 0;
+
+        for (int i = 0; i < array.length; i++) {
+            sum += array[i]; 
+        }
+
+        return sum;
+    }
+}
+`
             }
         },
         {
@@ -10648,11 +10976,34 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Element 30 found at index: 2`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program finds and displays the index of a specified element in an array.",
-                "code": null
+                "code": `class ElementIndexFinder {
+    public static void main(String[] args) {
+        int[] array = {10, 20, 30, 40, 50};
+        int target = 30;
+        int index = findIndex(array, target);
+        
+        if (index != -1) {
+            System.out.println("Element " + target + " found at index: " + index);
+        } 
+        else {
+            System.out.println("Element " + target + " not found in the array.");
+        }
+    }
+
+    static int findIndex(int[] array, int target) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == target) {
+                return i;
+            }
+        }
+        return -1;
+    }
+}
+`
             }
         },
         {
@@ -10661,11 +11012,26 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `The average value of the array elements is: 30.0`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program calculates and displays the average of elements in an array.",
-                "code": null
+                "code": `class AverageCalculator {
+    public static void main(String[] args) {
+        int[] array = {10, 20, 30, 40, 50};
+        double average = calculateAverage(array);
+        System.out.println("The average value of the array elements is: " + average);
+    }
+
+    static double calculateAverage(int[] array) {
+        int sum = 0;
+        for (int number : array) {
+            sum += number;
+        }
+        return (double) sum / array.length;
+    }
+}
+`
             }
         },
         {
@@ -10674,11 +11040,32 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "easy",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `The array contains the value: 15`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program checks if a specified value is present in an array.",
-                "code": null
+                "code": `class ArrayContains {
+    public static void main(String[] args) {
+        int[] array = {5, 10, 15, 20, 25};
+        int target = 15;
+        boolean contains = containsValue(array, target);
+        if (contains) {
+            System.out.println("The array contains the value: " + target);
+        } else {
+            System.out.println("The array does not contain the value: " + target);
+        }
+    }
+
+    static boolean containsValue(int[] array, int target) {
+        for (int value : array) {
+            if (value == target) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
+`
             }
         },
         {
@@ -10687,11 +11074,49 @@ System.out.println("Number of times" + uniquechars.charAt(minInd) +  "Occurs : "
             "difficulty": "medium",
             "topic": 2,
             "sample_input": null,
-            "sample_output": null,
+            "sample_output": `Value at 1 position : 83
+Value at 2 position : 49
+Value at 3 position : 289
+Value at 4 position : 27
+Value at 5 position : 23
+Value at 6 position : 592
+
+Maximum value of array :592
+
+Minimum value of array :23`,
             "solution": {
                 "language": "Java",
                 "explanation": "This program finds and displays the maximum and minimum values in an array.",
-                "code": null
+                "code": `class Main{
+	static void printArray(int arr[]){
+		for(int i = 0; i < arr.length; i++){
+			System.out.println("Value at " + (i+1) + " position : " + arr[i]);
+		}
+	}
+	static int arrayMax(int arr[]){
+		int max = 0;
+		for(int i = 1; i < arr.length; i++){
+			if(arr[max] < arr[i])
+				max = i;
+		}
+		return arr[max];
+	}
+    static int arrayMin(int arr[]){
+		int min = 0;
+		for(int i = 1; i < arr.length; i++){
+			if(arr[min] > arr[i])
+				min = i;
+		}
+		return arr[min];
+	}
+	public static void main(String[] args){
+		int arr[] = {83, 49, 289, 27, 23, 592};
+		printArray(arr);
+		System.out.println("\\nMaximum value of array :" + arrayMax(arr));
+        System.out.println("\\nMinimum value of array :" + arrayMin(arr));
+
+	}
+}`
             }
         },
         {
