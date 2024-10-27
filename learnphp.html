@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="learn.css">
 </head>
+
 <body>
-    <header style="height: 30vh;">
+    <header style="height: 50vh;">
         <nav>
             <img src="https://code-where.github.io/Abhishek-Dhawan/img/logo.png" alt="Logo......." class="logo">
             <label class="hamburger">
@@ -21,12 +25,42 @@
             </label>
             <ul id="navMenu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#" class="active-page">Java</a></li>
-                <li><a href="learnphp.html">PHP</a></li>
+                <li><a href="learnjava.html">Java</a></li>
+                <li><a href="#" class="active-page">PHP</a></li>
                 <li><a href="programs.html">Practise Programs</a></li>
             </ul>
         </nav>
+        <section class="header-content" id="headTxt">
+            <section>
+                <h1>Start Learning PHP</h1>
+                <a href="#main" class="button">Lets Go</a>
+            </section>
+        </section>
     </header>
+    <main style="margin: 0;">
+        <aside>
+            
+        </aside>
+    </main>
 </body>
 <script src="hamburger.js"></script>
+<script src="learning.js"></script>
+<script>
+    const smenu = document.getElementsByTagName("aside")[0];
+    smenu.innerHTML = "";
+    phpTopics.forEach(topic => {
+        let submenus = "";
+        for (const key in topic.subTopics) {
+            submenus += `<li><a href="" name=${topic.subTopics.key}>${key}</a></li>`;
+        }
+        smenu.innerHTML += `
+            <section>
+                <p>${topic.heading}</p>
+                <ul>
+                    ${submenus}
+                </ul>
+            </section>
+        `
+    });
+</script>
 </html>
