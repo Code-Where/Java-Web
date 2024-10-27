@@ -51,7 +51,7 @@
     phpTopics.forEach(topic => {
         let submenus = "";
         for (const key in topic.subTopics) {
-            submenus += `<li><a href="" name=${topic.subTopics.key}>${key}</a></li>`;
+            submenus += `<li><a href="learnphp.html?s='${topic.subTopics.key}'" name=${topic.subTopics.key}>${key}</a></li>`;
         }
         smenu.innerHTML += `
             <section>

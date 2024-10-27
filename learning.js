@@ -43,16 +43,48 @@ const phpTopics = [
         "id" : 4,
         "heading" : "Printing Statements",
         "subTopics" : {
-            "echo" : 6,
-            "print" : 7,
+            "echo" : 16,
+            "print" : 17,
         }
     },
     {
         "id" : 5,
         "heading" : "Control Structures",
         "subTopics" : {
-            "Branching Statements" : 6,
-            "print" : 7,
+            "Branching Statements" : 18,
+            "Looping Statemnents" : 19,
         }
     },
+    {
+        "id" : 6,
+        "heading" : "Functions",
+        "subTopics" : {
+            "Introduction" : 20,
+            "Predefined Functions" : 21,
+            "User Defined Functions" : 22,
+            "Recursion" : 23
+        }
+    },
+    {
+       "id" : 7,
+        "heading" : "Strings",
+        "subTopics" : {
+            "Introduction" : 24,
+            "Interpolation" : 25,
+            "String Operators" : 26,
+            "heredoc" : 27,
+            "Predefined Functions for Strings" : 28
+        }
+    },
+    {
+        "id" : 8,
+         "heading" : "Arrays",
+         "subTopics" : {
+             "Introduction" : 29,
+             "Types of Arrays" : 30,
+             "Inspecting Arrays" : 31,
+             "Predefined Functions for Arrays" : 32,
+             "Iterating Arrays" : 33
+         }
+     },
 ]
