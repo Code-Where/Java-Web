@@ -21,7 +21,7 @@ aside ul {
     margin: 1vh 3vw;
     font-size: 1.25rem;
     font-family: "Open Sans";
-    font-weight: 550;
+    /* font-weight: 600; */
 }
 aside ul a{
     color: rgb(0, 200, 255);;
