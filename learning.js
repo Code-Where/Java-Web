@@ -14,7 +14,7 @@ const phpTopics = [
         "subTopics" : {
             "Introduction" : 3,
             "Local Servers" : 4,
-            "Dynamic Website" : 5
+            "Remote Servers" : 5
         }
     },
     {

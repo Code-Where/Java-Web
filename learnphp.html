@@ -7,10 +7,11 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="programs.css">
     <link rel="stylesheet" href="learn.css">
 </head>
 
-<body>
+<body onload="queryFetch()">
     <header style="height: 50vh;">
         <nav>
             <img src="https://code-where.github.io/Abhishek-Dhawan/img/logo.png" alt="Logo......." class="logo">
@@ -33,14 +34,1361 @@
         <section class="header-content" id="headTxt">
             <section>
                 <h1>Start Learning PHP</h1>
-                <a href="#main" class="button">Lets Go</a>
+                <a href="#content-container" class="button">Lets Go</a>
             </section>
         </section>
     </header>
-    <main style="margin: 0;">
+    <main style="margin: 0;" class="d-flex">
         <aside>
-            
+
         </aside>
+        <section id="content-container">
+            <section class="phpcontent">
+                <h2>What is PHP?</h2>
+                <ul class="sol">
+                    <li>PHP is an acronym for "PHP: Hypertext Preprocessor"</li>
+                    <li>PHP is a widely-used, open source scripting language</li>
+                    <li>PHP scripts are executed on the server</li>
+                    <li>PHP is free to download and use</li>
+                </ul>
+                <h2>What is a PHP File?</h2>
+                <ul class="sol">
+                    <li>PHP files can contain text, HTML, CSS, JavaScript, and PHP code</li>
+                    <li>PHP code is executed on the server, and the result is returned to the browser as plain HTML</li>
+                    <li>PHP files have extension "<code class="w3-codespan">.php</code>"</li>
+                </ul>
+                <h2>What Can PHP Do?</h2>
+                <ul class="sol">
+                    <li>PHP can generate dynamic page content</li>
+                    <li>PHP can create, open, read, write, delete, and close files on the server</li>
+                    <li>PHP can collect form data</li>
+                    <li>PHP can send and receive cookies</li>
+                    <li>PHP can add, delete, modify data in your database</li>
+                    <li>PHP can be used to control user-access</li>
+                    <li>PHP can encrypt data</li>
+                </ul>
+                <h2>Why PHP?</h2>
+                <ul class="sol">
+                    <li>PHP runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.)</li>
+                    <li>PHP is compatible with almost all servers used today (Apache, IIS, etc.)</li>
+                    <li>PHP supports a wide range of databases</li>
+                    <li>PHP is free. Download it from the official PHP resource: <a target="_blank"
+                            href="http://www.php.net/">www.php.net</a></li>
+                    <li>PHP is easy to learn and runs efficiently on the server side</li>
+                </ul>
+            </section>
+            <section class="phpcontent">
+                <h2>Static Websites</h2>
+                <p class="sol">Static websites are built with fixed content that doesn’t change dynamically when a user
+                    interacts with it. They’re made using HTML, CSS, and sometimes JavaScript to display information,
+                    but they don’t require a backend server or database, making them lightweight and fast.</p>
+
+                <h2>Key Features:</h2>
+                <ul>
+                    <li><strong>Fixed Content:</strong> Content is pre-built and doesn’t change based on user input.
+                    </li>
+                    <li><strong>No Backend Needed:</strong> Doesn’t require a server or database.</li>
+                    <li><strong>Fast Loading:</strong> Static sites load quickly since they only need to fetch the
+                        content and design from files, not a database.</li>
+                    <li><strong>Easy to Host:</strong> They can be hosted anywhere, from GitHub Pages to Netlify, with
+                        minimal setup.</li>
+                </ul>
+
+                <h2>Benefits:</h2>
+                <ul>
+                    <li><strong>Low Cost:</strong> Hosting is often free or inexpensive.</li>
+                    <li><strong>Security:</strong> Without a backend, there’s less risk of database hacks.</li>
+                    <li><strong>Performance:</strong> Fast loading times due to fewer server requests.</li>
+                </ul>
+
+                <h2>Common Use Cases:</h2>
+                <ul>
+                    <li>Portfolio websites</li>
+                    <li>Documentation pages</li>
+                    <li>Blogs (with static site generators)</li>
+                    <li>Company landing pages</li>
+                </ul>
+
+                <h2>Tools for Creating Static Sites:</h2>
+                <ul>
+                    <li><strong>HTML & CSS:</strong> Basic building blocks of a static site.</li>
+                    <li><strong>Static Site Generators:</strong> Tools like Jekyll, Hugo, and Gatsby that convert
+                        content into static HTML pages.</li>
+                    <li><strong>Deployment Platforms:</strong> Netlify, Vercel, GitHub Pages.</li>
+                </ul>
+
+                <p class="note">If you’re planning to build a simple site for something like CodeWhere, a static setup
+                    might work
+                    well unless you need user interaction or real-time updates.</p>
+
+            </section>
+            <section class="phpcontent">
+                <h2>Dynamic Websites</h2>
+                <p>Dynamic websites are built to display content that changes in response to user interactions or other
+                    factors, like time or location. They rely on both front-end and back-end technologies to fetch and
+                    display up-to-date information, making them ideal for more complex applications requiring user
+                    engagement and interaction.</p>
+
+                <h2>Key Features:</h2>
+                <ul>
+                    <li><strong>Interactive Content:</strong> Content changes based on user input or other variables.
+                    </li>
+                    <li><strong>Backend Required:</strong> Requires a server and often a database to process and serve
+                        content.</li>
+                    <li><strong>Data-Driven:</strong> Content can be dynamically generated based on data from databases
+                        or APIs.</li>
+                    <li><strong>Personalized Experience:</strong> Users can have personalized content, such as account
+                        information, recommendations, or messages.</li>
+                </ul>
+
+                <h2>Benefits:</h2>
+                <ul>
+                    <li><strong>User Engagement:</strong> Dynamic websites offer interactive features, increasing user
+                        engagement.</li>
+                    <li><strong>Scalability:</strong> Suitable for applications that need regular updates, like news,
+                        e-commerce, or social media platforms.</li>
+                    <li><strong>Personalization:</strong> Tailored content based on user preferences, increasing
+                        relevance and engagement.</li>
+                </ul>
+
+                <h2>Common Use Cases:</h2>
+                <ul>
+                    <li>Online stores</li>
+                    <li>Social media platforms</li>
+                    <li>Content management systems (e.g., WordPress)</li>
+                    <li>Interactive web applications (e.g., Google Docs, project management tools)</li>
+                </ul>
+
+                <h2>Technologies for Building Dynamic Sites:</h2>
+                <ul>
+                    <li><strong>Server-Side Languages:</strong> PHP, Node.js, Python (e.g., Django, Flask), Ruby, Java
+                        (e.g., Spring).</li>
+                    <li><strong>Databases:</strong> MySQL, MongoDB, PostgreSQL, Firebase.</li>
+                    <li><strong>Front-End Frameworks:</strong> React, Vue, Angular for creating dynamic user interfaces.
+                    </li>
+                    <li><strong>APIs:</strong> Allows data exchange between the server and client for real-time updates.
+                    </li>
+                </ul>
+
+                <p class="note">Dynamic websites are best suited for applications that need frequent content updates,
+                    real-time data, or user-specific experiences. If CodeWhere is expected to have personalized features
+                    or interactions, a dynamic site approach may be ideal.</p>
+            </section>
+            <section class="phpcontent">
+                <h2>Introduction to Web Servers</h2>
+                <p>A web server is a system that hosts, processes, and delivers web content to users. When users access
+                    a website through a browser, their requests are sent to a web server, which processes them and
+                    returns the necessary files (HTML, CSS, JavaScript, images, etc.) to display the requested web
+                    pages.</p>
+
+                <h2>Key Functions of a Web Server:</h2>
+                <ul>
+                    <li><strong>Hosting Content:</strong> Web servers store website files and make them accessible over
+                        the internet.</li>
+                    <li><strong>Handling Requests:</strong> They receive HTTP requests from clients (browsers) and
+                        respond with the appropriate resources.</li>
+                    <li><strong>Security:</strong> Web servers can provide security features like SSL encryption to
+                        protect data during transmission.</li>
+                    <li><strong>Resource Management:</strong> They manage network traffic, bandwidth, and resources to
+                        ensure smooth performance.</li>
+                </ul>
+
+                <h2>Examples of Web Servers:</h2>
+                <ul>
+                    <li><strong>Apache HTTP Server:</strong> An open-source server known for its stability, flexibility,
+                        and popularity.</li>
+                    <li><strong>Nginx:</strong> Known for its performance, it is widely used for handling high-traffic
+                        sites.</li>
+                    <li><strong>Microsoft IIS:</strong> Internet Information Services, a server designed for Windows
+                        environments.</li>
+                    <li><strong>LiteSpeed:</strong> A performance-focused server, often used as an alternative to
+                        Apache.</li>
+                </ul>
+
+                <h2>How a Web Server Works:</h2>
+                <ol>
+                    <li><strong>Request:</strong> The browser sends a request for a specific page or resource (e.g.,
+                        <code>example.com</code>) via HTTP/HTTPS.
+                    </li>
+                    <li><strong>Processing:</strong> The server receives the request, locates the requested file, and
+                        processes any necessary server-side scripts.</li>
+                    <li><strong>Response:</strong> The server responds with the requested file, which the browser then
+                        displays as a webpage.</li>
+                </ol>
+                <img src="web-servers.png" alt="">
+                <h2>Benefits of Using a Web Server:</h2>
+                <ul>
+                    <li><strong>Accessibility:</strong> Makes content available online for users worldwide.</li>
+                    <li><strong>Reliability:</strong> Provides stable access to resources and can handle multiple
+                        requests.</li>
+                    <li><strong>Customization:</strong> Allows configurations to optimize performance, security, and
+                        functionality.</li>
+                </ul>
+
+                <p class="note">In essence, a web server acts as the backbone of the internet, connecting users to the
+                    content and
+                    applications they need. Without web servers, online content delivery would not be possible.</p>
+
+            </section>
+            <section class="phpcontent">
+                <h2>Introduction to Local Servers</h2>
+                <p>A local server is a server environment hosted on your own computer. It allows developers to build,
+                    test, and run applications locally without needing to deploy them online. Local servers are commonly
+                    used for development and testing purposes.</p>
+
+                <h2>Key Functions of a Local Server:</h2>
+                <ul>
+                    <li><strong>Local Development:</strong> Allows developers to build and test applications without
+                        needing an internet connection.</li>
+                    <li><strong>Speed:</strong> Since everything is running locally, response times are faster compared
+                        to remote servers.</li>
+                    <li><strong>Environment Control:</strong> Developers have complete control over the environment,
+                        including versions of software, databases, and configurations.</li>
+                    <li><strong>Error Testing:</strong> Enables testing of applications in a controlled environment
+                        before going live.</li>
+                </ul>
+
+                <h2>Common Local Server Software:</h2>
+                <ul>
+                    <li><strong>XAMPP:</strong> A package that includes Apache, MySQL, PHP, and Perl, commonly used for
+                        PHP development.</li>
+                    <li><strong>WAMP:</strong> A Windows-based alternative to XAMPP, with Apache, MySQL, and PHP.</li>
+                    <li><strong>MAMP:</strong> A local server environment for macOS, including Apache, MySQL, and PHP.
+                    </li>
+                    <li><strong>Local by Flywheel:</strong> A tool designed for WordPress development with easy local
+                        setup and configurations.</li>
+                    <li><strong>Node.js:</strong> Commonly used to run JavaScript-based applications locally for
+                        full-stack development.</li>
+                </ul>
+
+                <h2>How to Set Up a Local Server:</h2>
+                <ol>
+                    <li><strong>Download:</strong> Choose and download a local server software package (e.g., XAMPP,
+                        WAMP, MAMP).</li>
+                    <li><strong>Install:</strong> Follow the installation instructions and set up the server
+                        environment.</li>
+                    <li><strong>Run Server:</strong> Start the local server software, which will open a control panel to
+                        manage services like Apache and MySQL.</li>
+                    <li><strong>Access:</strong> Once running, you can access the local server by typing
+                        <code>localhost</code> or <code>127.0.0.1</code> in a browser.
+                    </li>
+                </ol>
+
+                <h2>Benefits of Using a Local Server:</h2>
+                <ul>
+                    <li><strong>No Internet Required:</strong> Development can continue offline.</li>
+                    <li><strong>Privacy:</strong> Local development keeps projects private until they are ready for
+                        deployment.</li>
+                    <li><strong>Cost-Effective:</strong> Free to set up, with no hosting fees for local development.
+                    </li>
+                </ul>
+
+                <p class="note">Local servers are invaluable for developers as they provide a risk-free environment to
+                    test, debug, and improve applications before deploying them online.</p>
+
+            </section>
+            <section class="phpcontent">
+
+                <h2>Introduction to Remote Servers</h2>
+                <p>A remote server is a computer or server located in a remote data center, designed to store, process,
+                    and serve data to users over the internet. Unlike local servers, which operate on a developer’s
+                    personal computer, remote servers are accessed online and provide services or resources to multiple
+                    users across different locations.</p>
+
+                <h2>Key Functions of a Remote Server:</h2>
+                <ul>
+                    <li><strong>Data Hosting:</strong> Stores files, databases, and applications, allowing users to
+                        access them from anywhere.</li>
+                    <li><strong>Handling Requests:</strong> Processes user requests and delivers content or application
+                        data in real time.</li>
+                    <li><strong>High Availability:</strong> Often configured to run 24/7 to serve users around the
+                        clock.</li>
+                    <li><strong>Security and Backups:</strong> Provides robust security, encryption, and automated
+                        backups to protect data.</li>
+                </ul>
+
+                <h2>Types of Remote Servers:</h2>
+                <ul>
+                    <li><strong>Web Servers:</strong> Servers like Apache or Nginx that deliver websites and
+                        applications to users over the internet.</li>
+                    <li><strong>Application Servers:</strong> Host applications for remote access, often running Java,
+                        .NET, or PHP applications.</li>
+                    <li><strong>Database Servers:</strong> Store and manage databases that applications can query to
+                        retrieve information.</li>
+                    <li><strong>File Servers:</strong> Centralized storage for file sharing and retrieval.</li>
+                    <li><strong>Cloud Servers:</strong> Virtual servers hosted in cloud environments, such as AWS,
+                        Azure, or Google Cloud.</li>
+                </ul>
+
+                <h2>Benefits of Using a Remote Server:</h2>
+                <ul>
+                    <li><strong>Accessibility:</strong> Accessible from anywhere with an internet connection.</li>
+                    <li><strong>Scalability:</strong> Resources can be scaled up or down depending on the user or
+                        application needs.</li>
+                    <li><strong>Cost-Effectiveness:</strong> No need for on-premise hardware; services are often
+                        pay-as-you-go in the cloud.</li>
+                    <li><strong>Reliability:</strong> Most remote servers offer uptime guarantees and redundant systems
+                        to ensure data availability.</li>
+                </ul>
+
+                <h2>How to Connect to a Remote Server:</h2>
+                <ol>
+                    <li><strong>Access Information:</strong> Obtain the server’s IP address or hostname and the
+                        necessary login credentials.</li>
+                    <li><strong>Use an SSH Client:</strong> For secure connections, use an SSH client like PuTTY (for
+                        Windows) or the Terminal (for macOS/Linux).</li>
+                    <li><strong>Remote Desktop Tools:</strong> For graphical interfaces, use tools like Remote Desktop
+                        Protocol (RDP) or VNC.</li>
+                    <li><strong>Upload Files:</strong> Use protocols like FTP or SFTP to transfer files to and from the
+                        server.</li>
+                </ol>
+
+                <p class="note">Remote servers are essential for hosting websites, applications, databases, and more.
+                    They enable global accessibility and provide the backbone of the internet, serving billions of users
+                    daily.</p>
+
+            </section>
+            <section class="phpcontent">
+                <h2>How to Install WAMP</h2>
+                <p>WAMP (Windows, Apache, MySQL, PHP) is a Windows-based software package that sets up a local web
+                    server, allowing developers to test applications in a local environment. This guide will walk you
+                    through installing WAMP on your Windows computer.</p>
+
+                <h2>Step-by-Step Installation Guide:</h2>
+                <ol>
+                    <li><strong>Download WAMP:</strong>
+                        <ul>
+                            <li>Visit the official WAMP website at <a href="https://www.wampserver.com"
+                                    target="_blank">www.wampserver.com</a>.</li>
+                            <li>Download the appropriate version (32-bit or 64-bit) based on your Windows operating
+                                system.</li>
+                        </ul>
+                    </li>
+                    <img src="wamp1.webp" alt="">
+                    <img src="wamp2.webp" alt="">
+                    <li><strong>Run the Installer:</strong>
+                        <ul>
+                            <li>Once downloaded, open the installer file and run it as an administrator.</li>
+                            <li>Follow the on-screen instructions to complete the setup process.</li>
+                        </ul>
+                    </li>
+                    <img src="wamp3.webp" alt="">
+                    <img src="wamp4.webp" alt="">
+                    <img src="wamp5.webp" alt="">
+                    <li><strong>Choose Installation Directory:</strong>
+                        <ul>
+                            <li>Select a folder to install WAMP (default is usually <code>C:\wamp</code>).</li>
+                        </ul>
+                    </li>
+                    <img src="wamp6.webp" alt="">
+                    <li><strong>Configure Settings:</strong>
+                        <ul>
+                            <li>During installation, you may be prompted to choose a default browser. You can use the
+                                default or select another one by navigating to its location.</li>
+                            <li>WAMP also allows you to set a text editor (e.g., Notepad) for configuration files.</li>
+                        </ul>
+                    </li>
+                    <img src="wamp7.webp" alt="">
+                    <img src="wamp8.webp" alt="">
+                    <img src="wamp9.webp" alt="">
+                    <img src="wamp10.webp" alt="">
+                    <img src="wamp11.webp" alt="">
+                    <li><strong>Complete Installation:</strong>
+                        <ul>
+                            <li>After installation is complete, launch WAMP by clicking on its icon from the Start Menu
+                                or Desktop.</li>
+                            <li>The WAMP icon will appear in the system tray. A green icon indicates that the server is
+                                running correctly.</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h2>Using WAMP:</h2>
+                <ul>
+                    <li><strong>Accessing localhost:</strong> Open your browser and type <code>localhost</code> or
+                        <code>127.0.0.1</code> to access the WAMP homepage.</li>
+                    <li><strong>Adding Projects:</strong> Place your web project files in the <code>www</code> folder
+                        within the WAMP installation directory.</li>
+                    <li><strong>Using phpMyAdmin:</strong> Access <code>phpMyAdmin</code> by visiting
+                        <code>localhost/phpmyadmin</code> in your browser to manage MySQL databases.</li>
+                </ul>
+
+                <h2>Troubleshooting:</h2>
+                <ul>
+                    <li><strong>Check Port Conflicts:</strong> Ensure that port 80 (used by Apache) is not in use by
+                        other software like Skype or IIS.</li>
+                    <li><strong>Check WAMP Icon Color:</strong> The WAMP icon changes color to indicate status:
+                        <ul>
+                            <li><strong>Green:</strong> Server is running correctly.</li>
+                            <li><strong>Orange:</strong> Some services are running, but not all.</li>
+                            <li><strong>Red:</strong> Server is stopped; try restarting WAMP.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <p>Once installed, WAMP allows you to develop and test web applications locally before deploying them to
+                    a live server.</p>
+
+            </section>
+            <section class="phpcontent">
+                <h2>How to Configure a PHP Environment</h2>
+                <p>Configuring a PHP environment is essential for developing and testing PHP applications on your
+                    computer. This guide will walk you through setting up and configuring PHP with essential tools and
+                    configurations.</p>
+
+                <h2>Step 1: Install PHP</h2>
+                <p class="note">We already discussed about installing previously <a href="?s=6">See Here</a></p>
+
+                <h2>Step 2: Configure PHP Environment Variables (Windows)</h2>
+                <ol>
+                    <li>Open the System Properties by searching for "Environment Variables" in the Windows search bar.
+                    </li>
+                    <li>Edit the <strong>PATH</strong> variable and add the path to your PHP folder (e.g.,
+                        <code>C:\php</code>).</li>
+                    <li>Open a new command prompt and type <code>php -v</code> to confirm the installation.</li>
+                </ol>
+
+                <h2>Step 3: Configure the <code>php.ini</code> File</h2>
+                <p>The <code>php.ini</code> file is the main configuration file for PHP. Here are some common
+                    configurations:</p>
+                <ul>
+                    <li><strong>Enable Error Reporting:</strong> For development, enable error reporting by setting:
+                        <pre><code>display_errors = On</code></pre>
+                    </li>
+                    <li><strong>Set Timezone:</strong> Configure your timezone:
+                        <pre><code>date.timezone = "America/New_York"</code></pre>
+                    </li>
+                    <li><strong>Memory Limit:</strong> Set the maximum memory PHP can use:
+                        <pre><code>memory_limit = 128M</code></pre>
+                    </li>
+                    <li><strong>File Uploads:</strong> Adjust the max file upload size if needed:
+                        <pre><code>upload_max_filesize = 50M</code></pre>
+                    </li>
+                </ul>
+
+                <h2>Step 4: Install and Configure a Web Server</h2>
+                <p>PHP needs to run on a web server, such as Apache or Nginx:</p>
+                <ul>
+                    <li><strong>Apache:</strong> If using WAMP or XAMPP, Apache is preconfigured. Add this to
+                        <code>httpd.conf</code>:
+                        <pre><code>LoadModule php_module "C:/php/php8apache2_4.dll"</code></pre>
+                    </li>
+                    <li><strong>Nginx:</strong> Configure <code>nginx.conf</code> to point to your PHP processor.</li>
+                </ul>
+
+                <h2>Step 5: Test Your PHP Environment</h2>
+                <ol>
+                    <li>Create a new file in your web server's root directory named <code>info.php</code>.</li>
+                    <li>Add the following code to the file:
+                        <pre><code>&lt;?php phpinfo(); ?></code></pre>
+                    </li>
+                    <li>Open a browser and navigate to <code>http://localhost/info.php</code> to see the PHP info page,
+                        which confirms PHP is working.</li>
+                </ol>
+
+                <h2>Additional Tips:</h2>
+                <ul>
+                    <li><strong>Enable Extensions:</strong> Enable necessary extensions (e.g., MySQL, cURL) by
+                        uncommenting them in <code>php.ini</code>.</li>
+                    <li><strong>Restart Server:</strong> After making changes to <code>php.ini</code>, restart your
+                        server to apply the configurations.</li>
+                    <li><strong>Development vs. Production:</strong> Adjust configurations for security when moving to
+                        production, such as setting <code>display_errors = Off</code>.</li>
+                </ul>
+
+                <p>Following these steps will help you set up and configure a PHP environment for local development,
+                    allowing you to build and test PHP applications efficiently.</p>
+            </section>
+            <section class="phpcontent">
+                <h1>Embedding PHP in a Web Page</h1>
+                <p>PHP can be embedded within HTML to create dynamic web pages. PHP code is executed on the server, and
+                    the resulting output is sent to the browser. This guide explains how to include PHP in an HTML
+                    document.</p>
+
+                <h2>Basic Syntax for Embedding PHP</h2>
+                <p>PHP code is embedded within HTML using <code>&lt;?php ?&gt;</code> tags. Here’s a simple example:</p>
+                <pre><code>&lt;?php echo "Hello, World!"; ?&gt;</code></pre>
+                <p class="note">The above code will output "Hello, World!" to the web page when processed by the PHP server.</p>
+
+                <h2>Example: Embedding PHP Within HTML</h2>
+                <p>In practice, you can mix HTML and PHP code to display content dynamically. Here’s an example:</p>
+                <pre><code>&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;PHP Embedded Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+    &lt;p&gt;Today’s date is: &lt;?php echo date("l, F j, Y"); ?&gt;&lt;/p&gt;
+
+    &lt;p&gt;Here is a random number: &lt;?php echo rand(1, 100); ?&gt;&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                <p>In this example:</p>
+                <ul>
+                    <li><strong>Date Display:</strong> PHP generates the current date using the <code>date()</code>
+                        function.</li>
+                    <li><strong>Random Number:</strong> PHP generates a random number with <code>rand()</code>.</li>
+                </ul>
+
+                <h2>Using PHP for Conditional Content</h2>
+                <p>You can also use PHP to show different content based on conditions. For example:</p>
+                <pre><code>&lt;p&gt;Welcome, &lt;?php
+if (date("H") &lt; 12) {
+    echo "Good Morning!";
+} else {
+    echo "Good Afternoon!";
+}
+?&gt;&lt;/p&gt;</code></pre>
+
+                <h2>Tips for Embedding PHP in Web Pages</h2>
+                <ul>
+                    <li><strong>Save as .php:</strong> Make sure to save the file with a <code>.php</code> extension for
+                        the server to process PHP code.</li>
+                    <li><strong>Use Echo for Output:</strong> PHP code can print text to the HTML output using
+                        <code>echo</code> or <code>print</code>.</li>
+                    <li><strong>Server Requirement:</strong> PHP code will only execute on a server configured to run
+                        PHP (e.g., a WAMP, LAMP, or XAMPP server).</li>
+                </ul>
+
+                <p>Embedding PHP in HTML allows you to create dynamic content, enhancing the functionality and
+                    interactivity of web pages.</p>
+
+            </section>
+            <section class="phpcontent">
+
+    <h2>Understanding PHP Tokens</h2>
+    <p>In PHP, a token is the smallest unit of a program, including keywords, identifiers, operators, and punctuation. Understanding tokens is essential for grasping how PHP code is parsed and executed.</p>
+
+    <h2>Types of Tokens in PHP</h2>
+    <p>PHP tokens can be categorized into several types:</p>
+
+    <h3>1. Keywords</h3>
+    <p>Keywords are reserved words in PHP that have special meanings and are used to perform various functions. Examples include:</p>
+    <pre><code>if, else, while, for, function, return</code></pre>
+
+    <h3>2. Identifiers</h3>
+    <p>Identifiers are names given to variables, functions, classes, and other entities. They must start with a letter or an underscore. Examples:</p>
+    <pre><code>$name, $age, getDetails()</code></pre>
+
+    <h3>3. Constants</h3>
+    <p>Constants are fixed values that cannot be changed during script execution. Examples include numerical, string, and predefined constants:</p>
+    <pre><code>10, "Hello", PHP_VERSION</code></pre>
+    <p class="note">Read more about constants : <a href="?s=12">See Here</a></p>
+    <h3>4. Operators</h3>
+    <p>Operators are symbols that perform operations on variables and values. PHP has various types of operators:</p>
+    <ul>
+        <li><strong>Arithmetic Operators:</strong> <code>+, -, *, /</code></li>
+        <li><strong>Comparison Operators:</strong> <code>==, !=, &lt;, &gt;</code></li>
+        <li><strong>Logical Operators:</strong> <code>&& (and), || (or), ! (not)</code></li>
+    </ul>
+    <p class="note">Read more about Operators : <a href="?s=14">See Here</a></p>
+
+    <h3>5. Separators (Punctuation)</h3>
+    <p>Separators, also known as delimiters or punctuation, are symbols used to structure PHP code. Examples include:</p>
+    <pre><code>; , . ( ) { } [ ]</code></pre>
+
+    <h3>6. Comments</h3>
+    <p>Comments are non-executable lines in PHP used to describe the code. They come in single-line and multi-line forms:</p>
+    <pre><code>// Single-line comment
+/* Multi-line comment */</code></pre>
+    <p class="note">Read more about Comments : <a href="?s=15">See Here</a></p>
+
+    <h2>Examples of PHP Tokens in Code</h2>
+    <p>Let’s look at a PHP code snippet to identify various tokens:</p>
+    <pre><code>&lt;?php
+$number = 10;        // $number and 10 are tokens
+if ($number &gt; 5) { // if, $, &gt;, { are tokens
+    echo "Greater";   // echo and "Greater" are tokens
+}
+?&gt;</code></pre>
+    <p>In this example:</p>
+    <ul>
+        <li><code>if</code> is a keyword.</li>
+        <li><code>$number</code> is an identifier.</li>
+        <li><code>10</code> is a constant.</li>
+        <li><code>&gt;</code> is an operator.</li>
+        <li><code>{</code> and <code>}</code> are separators.</li>
+    </ul>
+
+    <h2>Summary</h2>
+    <p class="note">PHP tokens form the building blocks of any PHP script, helping define the structure and logic. Recognizing and understanding these tokens makes it easier to write and interpret PHP code effectively.</p>
+
+            </section>
+            <section class="phpcontent">
+
+    <h2>Understanding Variables in PHP</h2>
+    <p>In PHP, a variable is a container for storing data values. Variables are essential for managing information in a program, allowing you to store, manipulate, and retrieve data.</p>
+
+    <h2>Defining Variables</h2>
+    <p>Variables in PHP are defined using the dollar sign (<code>$</code>) followed by the variable name. The syntax is as follows:</p>
+    <pre><code>$variableName = value;</code></pre>
+
+    <h2>Variable Naming Rules</h2>
+    <p>When naming variables, you must follow certain rules:</p>
+    <ul>
+        <li>Must start with a letter or an underscore (<code>_</code>).</li>
+        <li>Can contain letters, numbers, and underscores.</li>
+        <li>Cannot contain spaces or special characters.</li>
+        <li>Case-sensitive (e.g., <code>$Var</code> and <code>$var</code> are different).</li>
+    </ul>
+
+    <h2>Examples of Variable Declaration</h2>
+    <p>Here are some examples of variable declarations in PHP:</p>
+    <pre><code>$name = "John";      // String variable
+$age = 25;            // Integer variable
+$height = 5.9;       // Float variable
+$isStudent = true;   // Boolean variable</code></pre>
+
+    <h2>Using Variables</h2>
+    <p>Once defined, variables can be used in expressions, functions, and output. Here’s an example:</p>
+    <pre><code>&lt;?php
+$name = "Alice";
+$age = 30;
+
+echo "Name: " . $name . "&lt;br&gt;Age: " . $age; // Output: Name: Alice, Age: 30
+?&gt;</code></pre>
+
+    <h2>Variable Scope</h2>
+    <p>The scope of a variable determines where it can be accessed within the code. PHP has three main variable scopes:</p>
+    <ul>
+        <li><strong>Global:</strong> Variables defined outside functions and accessible globally.</li>
+        <li><strong>Local:</strong> Variables defined within a function and accessible only within that function.</li>
+        <li><strong>Static:</strong> Local variables that maintain their value between function calls.</li>
+    </ul>
+
+    <p class="note">Read more about Variables Scope : <a href="?s=11">See Here</a></p>
+
+
+    <h2>Conclusion</h2>
+    <p class="note">Variables are a fundamental concept in PHP, allowing developers to store and manipulate data effectively. Understanding how to declare, use, and manage variables is crucial for building dynamic PHP applications.</p>
+
+            </section>
+            <section class="phpcontent">
+                <h2>Understanding Variable Scope in PHP</h2>
+                <p>Variable scope determines the visibility and lifetime of a variable within your PHP code. Understanding variable scope is crucial for effective programming and debugging.</p>
+            
+                <h2>Types of Variable Scope</h2>
+                <p>PHP has three main types of variable scope:</p>
+            
+                <h3>1. Global Scope</h3>
+                <p>Variables declared outside of any function or class have global scope. They can be accessed from anywhere in the script, but not inside functions unless declared as global within the function:</p>
+                <pre><code>&lt;?php
+            $globalVar = "I am global"; // Global variable
+            
+            function testGlobal() {
+                global $globalVar; // Declare global variable
+                echo $globalVar;   // Access global variable
+            }
+            testGlobal(); // Output: I am global
+            ?&gt;</code></pre>
+            
+                <h3>2. Local Scope</h3>
+                <p>Variables declared inside a function have local scope. They can only be accessed within that function:</p>
+                <pre><code>&lt;?php
+            function testLocal() {
+                $localVar = "I am local"; // Local variable
+                echo $localVar; // Accessible within the function
+            }
+            testLocal(); // Output: I am local
+            // echo $localVar; // This will cause an error since $localVar is not accessible here.
+            ?&gt;</code></pre>
+            
+                <h3>3. Static Scope</h3>
+                <p>Static variables retain their value even after the function has finished executing. They are declared using the <code>static</code> keyword:</p>
+                <pre><code>&lt;?php
+            function countCalls() {
+                static $count = 0; // Static variable
+                $count++;
+                echo "This function has been called $count times.&lt;br&gt;";
+            }
+            
+            countCalls(); // Output: This function has been called 1 times.
+            countCalls(); // Output: This function has been called 2 times.
+            ?&gt;</code></pre>
+            
+                <h2>Variable Scope and Superglobals</h2>
+                <p>PHP also provides <strong>superglobals</strong>, which are built-in global arrays accessible from any scope. Common superglobals include:</p>
+                <ul>
+                    <li><code>$_GET</code></li>
+                    <li><code>$_POST</code></li>
+                    <li><code>$_SESSION</code></li>
+                    <li><code>$_COOKIE</code></li>
+                    <li><code>$_FILES</code></li>
+                    <li><code>$_SERVER</code></li>
+                </ul>
+                <p>Superglobals can be accessed without the need for the <code>global</code> keyword.</p>
+            
+                <h2>Summary</h2>
+                <p class="note">Understanding variable scope in PHP helps manage the visibility and lifespan of variables effectively. By recognizing the differences between global, local, and static scopes, as well as utilizing superglobals, you can write more efficient and organized PHP code.</p>
+            
+            </section>
+            <section class="phpcontent">
+
+    <h2>Understanding Constants in PHP</h2>
+    <p>A constant is a simple value that cannot be changed during the execution of a script. Constants are beneficial for defining values that remain unchanged throughout your application, enhancing code readability and maintainability.</p>
+
+    <h2>Defining Constants</h2>
+    <p>Constants in PHP can be defined using the <code>define()</code> function. The syntax is as follows:</p>
+    <pre><code>define("CONSTANT_NAME", value);</code></pre>
+
+    <h2>Examples of Defining Constants</h2>
+    <p>Here are examples of defining constants:</p>
+    <pre><code>&lt;?php
+define("SITE_NAME", "My Awesome Website");
+define("MAX_USERS", 100);
+define("PI", 3.14159);
+?&gt;</code></pre>
+
+    <h2>Using Constants</h2>
+    <p>Once defined, constants can be used throughout your script. Unlike variables, constants do not require the dollar sign (<code>$</code>) prefix:</p>
+    <pre><code>&lt;?php
+echo "Welcome to " . SITE_NAME; // Output: Welcome to My Awesome Website
+echo "&lt;br&gt;Maximum users allowed: " . MAX_USERS; // Output: Maximum users allowed: 100
+?&gt;</code></pre>
+
+    <h2>Characteristics of Constants</h2>
+    <ul>
+        <li><strong>Immutable:</strong> Once defined, the value of a constant cannot be changed.</li>
+        <li><strong>Global Scope:</strong> Constants are automatically global across the entire script and can be accessed from any function or class.</li>
+        <li><strong>No Dollar Sign:</strong> Constants do not require a dollar sign (<code>$</code>) when being used.</li>
+    </ul>
+
+    <h2>Case Sensitivity</h2>
+    <p>By default, constant names are case-sensitive. However, you can define a constant as case-insensitive by passing a third argument to the <code>define()</code> function:</p>
+    <pre><code>define("MY_CONSTANT", "Value", true); // Case-insensitive constant</code></pre>
+    <p>This allows you to access it using either <code>MY_CONSTANT</code> or <code>my_constant</code>.</p>
+
+    <h2>Predefined Constants</h2>
+    <p>PHP also provides a number of predefined constants that are built into the language, such as:</p>
+    <ul>
+        <li><code>PHP_VERSION</code>: Current PHP version.</li>
+        <li><code>PHP_OS</code>: Operating system PHP is running on.</li>
+        <li><code>__LINE__</code>: Current line number of the file.</li>
+        <li><code>__FILE__</code>: Full path and filename of the file.</li>
+    </ul>
+    <p>These constants can be used without any additional definition.</p>
+
+    <h2>Conclusion</h2>
+    <p class="note">Constants in PHP are a powerful feature that allows you to define immutable values for use throughout your script. They enhance code clarity and maintainability, making it easier to manage values that should remain constant during execution.</p>
+
+            </section>
+            <section class="phpcontent">
+                <h2>Understanding Data Types in PHP</h2>
+    <p>Data types in PHP define the type of data a variable can hold. PHP is a loosely typed language, meaning you don’t need to declare a variable’s type explicitly; it automatically converts the type based on the value assigned. However, understanding data types is essential for effective programming and ensuring data integrity.</p>
+
+    <h2>Basic Data Types</h2>
+    <p>PHP has four main scalar data types and two compound data types:</p>
+
+    <h3>1. Scalar Data Types</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Data Type</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Integer</td>
+                <td>Whole numbers without decimal points.</td>
+                <td><code>42</code></td>
+            </tr>
+            <tr>
+                <td>Float</td>
+                <td>Numbers with decimal points.</td>
+                <td><code>3.14</code></td>
+            </tr>
+            <tr>
+                <td>String</td>
+                <td>A sequence of characters enclosed in quotes.</td>
+                <td><code>"Hello, World!"</code></td>
+            </tr>
+            <tr>
+                <td>Boolean</td>
+                <td>Represents two possible values: <code>true</code> or <code>false</code>.</td>
+                <td><code>true</code></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>2. Compound Data Types</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Data Type</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Array</td>
+                <td>A collection of values of any data type.</td>
+                <td><code>$fruits = array("Apple", "Banana", "Cherry");</code></td>
+            </tr>
+            <tr>
+                <td>Object</td>
+                <td>An instance of a class containing properties and methods.</td>
+                <td><code>$myCar = new Car("red");</code></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Type Casting</h2>
+    <p>PHP allows you to convert one data type into another using type casting. Here are some common examples:</p>
+    <pre><code>$num = "10"; // String
+$intValue = (int)$num; // Cast to Integer
+$floatValue = (float)$num; // Cast to Float
+</code></pre>
+
+    <h2>Checking Data Types</h2>
+    <p>You can check the data type of a variable using the <code>gettype()</code> function or the <code>var_dump()</code> function:</p>
+    <pre><code>&lt;?php
+$var = 42;
+echo gettype($var); // Output: integer
+var_dump($var); // Output: int(42)
+?&gt;</code></pre>
+
+    <h2>Type Juggling</h2>
+    <p>PHP automatically converts data types when necessary, a feature known as type juggling. For example:</p>
+    <pre><code>&lt;?php
+$number = "10"; // String
+$result = $number + 5; // Automatically converted to integer
+echo $result; // Output: 15
+?&gt;</code></pre>
+
+    <h2>Conclusion</h2>
+    <p class="note">Understanding data types in PHP is crucial for writing efficient and bug-free code. While PHP's flexibility with types makes it easier to work with, knowing how to properly handle and convert data types will enhance your programming skills.</p>
+
+            </section>
+            <section class="phpcontent">
+
+    <h2>Understanding Operators in PHP</h2>
+    <p>Operators are special symbols that perform operations on variables and values. PHP supports various types of operators that can be classified into several categories.</p>
+
+    <h2>1. Arithmetic Operators</h2>
+    <p>Arithmetic operators are used to perform basic mathematical operations:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Operator</th>
+                <th>Operation</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>+</code></td>
+                <td>Addition</td>
+                <td><code>$a + $b</code></td>
+            </tr>
+            <tr>
+                <td><code>-</code></td>
+                <td>Subtraction</td>
+                <td><code>$a - $b</code></td>
+            </tr>
+            <tr>
+                <td><code>*</code></td>
+                <td>Multiplication</td>
+                <td><code>$a * $b</code></td>
+            </tr>
+            <tr>
+                <td><code>/</code></td>
+                <td>Division</td>
+                <td><code>$a / $b</code></td>
+            </tr>
+            <tr>
+                <td><code>%</code></td>
+                <td>Modulus</td>
+                <td><code>$a % $b</code></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>2. Assignment Operators</h2>
+    <p>Assignment operators are used to assign values to variables:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Operator</th>
+                <th>Operation</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>=</code></td>
+                <td>Assigns the value on the right to the variable on the left</td>
+                <td><code>$a = 5</code></td>
+            </tr>
+            <tr>
+                <td><code>+=</code></td>
+                <td>Add and assign</td>
+                <td><code>$a += 3; // $a is now 8</code></td>
+            </tr>
+            <tr>
+                <td><code>-=</code></td>
+                <td>Subtract and assign</td>
+                <td><code>$a -= 2; // $a is now 6</code></td>
+            </tr>
+            <tr>
+                <td><code>*=</code></td>
+                <td>Multiply and assign</td>
+                <td><code>$a *= 4; // $a is now 24</code></td>
+            </tr>
+            <tr>
+                <td><code>/=</code></td>
+                <td>Divide and assign</td>
+                <td><code>$a /= 3; // $a is now 8</code></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>3. Comparison Operators</h2>
+    <p>Comparison operators are used to compare two values:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Operator</th>
+                <th>Operation</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>==</code></td>
+                <td>Equal to</td>
+                <td><code>$a == $b</code></td>
+            </tr>
+            <tr>
+                <td><code>===</code></td>
+                <td>Identical to</td>
+                <td><code>$a === $b</code></td>
+            </tr>
+            <tr>
+                <td><code>!=</code></td>
+                <td>Not equal to</td>
+                <td><code>$a != $b</code></td>
+            </tr>
+            <tr>
+                <td><code>!==</code></td>
+                <td>Not identical to</td>
+                <td><code>$a !== $b</code></td>
+            </tr>
+            <tr>
+                <td><code>&gt;</code></td>
+                <td>Greater than</td>
+                <td><code>$a &gt; $b</code></td>
+            </tr>
+            <tr>
+                <td><code>&lt;</code></td>
+                <td>Less than</td>
+                <td><code>$a &lt; $b</code></td>
+            </tr>
+            <tr>
+                <td><code>&gt;=</code></td>
+                <td>Greater than or equal to</td>
+                <td><code>$a &gt;= $b</code></td>
+            </tr>
+            <tr>
+                <td><code>&lt;=</code></td>
+                <td>Less than or equal to</td>
+                <td><code>$a &lt;= $b</code></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>4. Logical Operators</h2>
+    <p>Logical operators are used to combine conditional statements:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Operator</th>
+                <th>Operation</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>&&</code></td>
+                <td>Logical AND</td>
+                <td><code>($a &gt; 0) && ($b &gt; 0)</code></td>
+            </tr>
+            <tr>
+                <td><code>||</code></td>
+                <td>Logical OR</td>
+                <td><code>($a &gt; 0) || ($b &gt; 0)</code></td>
+            </tr>
+            <tr>
+                <td><code>!</code></td>
+                <td>Logical NOT</td>
+                <td><code>!($a &gt; 0)</code></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>5. String Operators</h2>
+    <p>String operators are used to concatenate strings:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Operator</th>
+                <th>Operation</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>.</code></td>
+                <td>Concatenation</td>
+                <td><code>$a . $b</code></td>
+            </tr>
+            <tr>
+                <td><code>.=</code></td>
+                <td>Concatenate and assign</td>
+                <td><code>$a .= $b; // $a becomes the concatenation of $a and $b</code></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Conclusion</h2>
+    <p class="note">Operators in PHP are essential for performing various operations on data. Understanding the different types of operators allows you to manipulate data effectively and write robust PHP scripts.</p>
+
+            </section>
+            <section class="phpcontent">
+                <h2>Understanding Comments in PHP</h2>
+                <p>Comments in PHP are non-executable lines in the code. They are meant for documentation and explanation purposes, helping developers understand the code. Comments can explain what a section of code does, provide context, and clarify complex logic.</p>
+            
+                <h2>Types of Comments in PHP</h2>
+                <p>PHP supports three types of comments:</p>
+            
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Syntax</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Single-line Comment</td>
+                            <td><code>//</code> or <code>#</code></td>
+                            <td>Single-line comments start with <code>//</code> or <code>#</code> and continue to the end of the line.</td>
+                            <td>
+                                <code>// This is a single-line comment</code><br>
+                                <code># Another single-line comment</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Multi-line Comment</td>
+                            <td><code>/* ... */</code></td>
+                            <td>Multi-line comments start with <code>/*</code> and end with <code>*/</code>, allowing comments over multiple lines.</td>
+                            <td>
+                                <code>/*<br>
+                                This is a<br>
+                                multi-line comment<br>
+                                */</code>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+                <h2>Using Comments in PHP Code</h2>
+                <p>Comments are helpful in explaining the functionality and logic of the code. They are ignored by the PHP interpreter and do not affect the execution.</p>
+                <p>Here’s how you might use comments in PHP:</p>
+                <pre><code>&lt;?php
+    // This is a single-line comment explaining the variable assignment
+    $number = 10; 
+    
+    /*
+    This is a multi-line comment.
+    It explains a block of code in more detail.
+    It can span multiple lines.
+    */
+    $result = $number * 2; // This calculates the doubled value
+            
+?&gt;</code></pre>
+            
+                <h2>Best Practices for Comments</h2>
+                <ul>
+                    <li>Use comments to explain complex or non-intuitive code.</li>
+                    <li>Avoid over-commenting simple or self-explanatory code.</li>
+                    <li>Maintain consistency in comment style throughout your codebase.</li>
+                    <li>Update comments if code changes to prevent outdated or incorrect explanations.</li>
+                </ul>
+            
+                <h2>Conclusion</h2>
+                <p class="note">Comments are essential for writing clear, understandable, and maintainable code. By using comments effectively, you can make your code more accessible to others and easier to understand over time.</p>
+            
+            </section>
+            <section class="phpcontent">
+
+    <h2>Understanding echo in PHP</h2>
+    <p>The <code>echo</code> statement in PHP is used to output text, variables, HTML markup, and other content to the web page. It is one of the most common ways to display information in PHP.</p>
+
+    <h2>Syntax</h2>
+    <p>The syntax for <code>echo</code> is straight forward. Here is a basic example:</p>
+    <pre><code>&lt;?php
+    echo "Hello, World!";
+  ?&gt;</code></pre>
+    <p>This code will output the text <strong>Hello, World!</strong> to the browser.</p>
+
+    <h2>Using echo with Variables</h2>
+    <p>You can also use <code>echo</code> to display the value of variables. For example:</p>
+    <pre><code>&lt;?php
+    $name = "John";
+    echo "Hello, " . $name . "!";
+  ?&gt;</code></pre>
+    <p>This will output <strong>Hello, John!</strong> by concatenating the variable <code>$name</code> with the string.</p>
+
+    <h2>Combining HTML and echo</h2>
+    <p>The <code>echo</code> statement can also output HTML content. For instance:</p>
+    <pre><code>&lt;?php
+    echo "&lt;h2&gt;Welcome to my website!&lt;/h2&gt;";
+    echo "&lt;p&gt;This is a paragraph.&lt;/p&gt;";
+  ?&gt;</code></pre>
+    <p>This PHP code will display an <code>&lt;h2&gt;</code> heading and a <code>&lt;p&gt;</code> paragraph on the web page.</p>
+
+    <h2>Using echo Without Parentheses</h2>
+    <p>Unlike functions, <code>echo</code> does not require parentheses:</p>
+    <pre><code>&lt;?php
+    echo "Hello, World!";
+  ?&gt;</code></pre>
+    <p>However, if you prefer, you can also use parentheses:</p>
+    <pre><code>&lt;?php
+    echo("Hello, World!");
+  ?&gt;</code></pre>
+    <p>Both methods work the same way.</p>
+
+    <h2>Outputting Multiple Parameters</h2>
+    <p>With <code>echo</code>, you can pass multiple arguments separated by commas:</p>
+    <pre><code>&lt;?php
+    echo "Hello", " ", "World", "!";
+  ?&gt;</code></pre>
+    <p>This will output <strong>Hello World!</strong>. Note that this only works with <code>echo</code> and not with <code>print</code>.</p>
+
+    <h2>Conclusion</h2>
+    <p class="note">The <code>echo</code> statement is a versatile and essential tool for displaying output in PHP. By combining <code>echo</code> with variables and HTML tags, you can create dynamic content for your web pages.</p>
+
+            </section>
+            <section class="phpcontent">
+
+    <h2>Understanding the print Statement in PHP</h2>
+    <p>The <code>print</code> statement in PHP is used to output text, variables, HTML markup, and other content to the web page. While similar to <code>echo</code>, <code>print</code> has some distinct characteristics.</p>
+
+    <h2>Syntax</h2>
+    <p>The syntax for <code>print</code> is simple, and here is an example:</p>
+    <pre><code>&lt;?php
+    print "Hello, World!";
+  ?&gt;</code></pre>
+    <p>This code will output the text <strong>Hello, World!</strong> to the browser.</p>
+
+    <h2>Difference Between echo and print</h2>
+    <ul>
+        <li><code>print</code> returns a value (1), so it can be used in expressions.</li>
+        <li><code>echo</code> does not return a value.</li>
+        <li><code>print</code> can only take one argument, while <code>echo</code> can take multiple arguments.</li>
+    </ul>
+
+    <h2>Using print with Variables</h2>
+    <p>Just like <code>echo</code>, <code>print</code> can display variables:</p>
+    <pre><code>&lt;?php
+    $name = "Alice";
+    print "Hello, " . $name . "!";
+  ?&gt;</code></pre>
+    <p>This will output <strong>Hello, Alice!</strong> by concatenating the variable <code>$name</code> with the string.</p>
+
+    <h2>Combining HTML and print</h2>
+    <p>The <code>print</code> statement can also output HTML content. For instance:</p>
+    <pre><code>&lt;?php
+    print "&lt;h2&gt;Welcome to My Website!&lt;/h2&gt;";
+    print "&lt;p&gt;This is a paragraph.&lt;/p&gt;";
+  ?&gt;</code></pre>
+    <p>This PHP code will display an <code>&lt;h2&gt;</code> heading and a <code>&lt;p&gt;</code> paragraph on the web page.</p>
+
+    <h2>Using print with Parentheses</h2>
+    <p>Unlike functions, <code>print</code> does not require parentheses:</p>
+    <pre><code>&lt;?php
+    print "Hello, World!";
+  ?&gt;</code></pre>
+    <p>However, you can also use parentheses:</p>
+    <pre><code>&lt;?php
+    print("Hello, World!");
+  ?&gt;</code></pre>
+    <p>Both methods work the same way.</p>
+
+    <h2>Using print in Expressions</h2>
+    <p>Since <code>print</code> returns a value, you can use it within expressions:</p>
+    <pre><code>&lt;?php
+    $result = (print "Hello!") + 5;
+    print "&lt;p&gt;The result is $result&lt;/p&gt;";
+  ?&gt;</code></pre>
+    <p>This will output <strong>Hello!</strong> followed by <strong>The result is 6</strong> since <code>print</code> returns 1.</p>
+
+    <h2>Conclusion</h2>
+    <p class="note">The <code>print</code> statement in PHP is useful for outputting text and variables, especially in cases where a return value is helpful. By understanding how to use <code>print</code>, you can display content dynamically on your PHP web pages.</p>
+
+            </section>
+            <section class="phpcontent">
+
+    <h1>Understanding Branching Statements in PHP</h1>
+    <p>Branching statements, also known as conditional statements, allow your code to make decisions based on certain conditions. They are essential for creating dynamic behavior in PHP programs.</p>
+
+    <h2>If Statement</h2>
+    <p>The <code>if</code> statement checks a condition and executes code if the condition is true.</p>
+    <pre><code>&lt;?php
+    $age = 18;
+
+    if ($age >= 18) {
+        echo "You are eligible to vote.";
+    }
+  ?&gt;</code></pre>
+    <p>In this example, if <code>$age</code> is 18 or greater, it will print <strong>You are eligible to vote.</strong>.</p>
+
+    <h2>If-Else Statement</h2>
+    <p>The <code>if-else</code> statement provides an alternative path if the <code>if</code> condition is false.</p>
+    <pre><code>&lt;?php
+    $score = 75;
+
+    if ($score >= 50) {
+        echo "You passed.";
+    } else {
+        echo "You failed.";
+    }
+  ?&gt;</code></pre>
+    <p>If <code>$score</code> is 50 or higher, it will print <strong>You passed</strong>. Otherwise, it will print <strong>You failed</strong>.</p>
+
+    <h2>If-Elseif-Else Statement</h2>
+    <p>The <code>if-elseif-else</code> statement checks multiple conditions sequentially.</p>
+    <pre><code>&lt;?php
+    $grade = 85;
+
+    if ($grade >= 90) {
+        echo "A";
+    } elseif ($grade >= 80) {
+        echo "B";
+    } elseif ($grade >= 70) {
+        echo "C";
+    } else {
+        echo "F";
+    }
+  ?&gt;</code></pre>
+    <p>This code checks each condition, outputting the grade based on the <code>$grade</code> value.</p>
+
+    <h2>Switch Statement</h2>
+    <p>The <code>switch</code> statement is useful for checking one variable against multiple possible values.</p>
+    <pre><code>&lt;?php
+    $day = "Wednesday";
+
+    switch ($day) {
+        case "Monday":
+            echo "Start of the week!";
+            break;
+        case "Wednesday":
+            echo "Midweek day!";
+            break;
+        case "Friday":
+            echo "Almost weekend!";
+            break;
+        default:
+            echo "Have a nice day!";
+    }
+  ?&gt;</code></pre>
+    <p>This code will output <strong>Midweek day!</strong> since the value of <code>$day</code> is <code>Wednesday</code>.</p>
+
+    <h2>Alternative Syntax for Control Structures</h2>
+    <p>PHP also provides an alternative syntax for branching statements that’s often used in templates:</p>
+    <pre><code>&lt;?php if ($age >= 18): ?&gt;
+    &lt;p&gt;You are eligible to vote.&lt;/p&gt;
+  &lt;?php else: ?&gt;
+    &lt;p&gt;You are not eligible to vote.&lt;/p&gt;
+  &lt;?php endif; ?&gt;</code></pre>
+    <p class="note">This alternative syntax is helpful for readability, especially in HTML-heavy PHP files.</p>
+
+    <h2>Conclusion</h2>
+    <p class="note">Branching statements are essential for creating logic and decision-making in PHP programs. By using <code>if</code>, <code>if-else</code>, <code>if-elseif-else</code>, and <code>switch</code> statements, you can control the flow of your code based on specific conditions.</p>
+
+
+            </section>
+            <section class="phpcontent">
+
+    <h2>Understanding Looping Statements in PHP</h2>
+    <p>Looping statements allow you to execute a block of code multiple times. In PHP, there are several types of loops, each useful in different scenarios.</p>
+
+    <h2>while Loop</h2>
+    <p>The <code>while</code> loop runs as long as a specified condition is true.</p>
+    <pre><code>&lt;?php
+    $count = 1;
+    while ($count &lt;= 5) {
+        echo "Count: $count&lt;br&gt;";
+        $count++;
+    }
+  ?&gt;</code></pre>
+    <p>This loop will output <strong>Count: 1</strong> to <strong>Count: 5</strong>, incrementing the count each time until the condition is no longer true.</p>
+
+    <h2>do-while Loop</h2>
+    <p>The <code>do-while</code> loop is similar to <code>while</code> but guarantees at least one execution of the code block.</p>
+    <pre><code>&lt;?php
+    $count = 1;
+    do {
+        echo "Count: $count&lt;br&gt;";
+        $count++;
+    } while ($count &lt;= 5);
+  ?&gt;</code></pre>
+    <p>This loop also outputs <strong>Count: 1</strong> to <strong>Count: 5</strong>, but will always run at least once, even if the condition is initially false.</p>
+
+    <h2>for Loop</h2>
+    <p>The <code>for</code> loop is commonly used for a specific number of iterations, with a counter that is initialized, tested, and updated in one line.</p>
+    <pre><code>&lt;?php
+    for ($i = 1; $i &lt;= 5; $i++) {
+        echo "Iteration: $i&lt;br&gt;";
+    }
+  ?&gt;</code></pre>
+    <p>This loop will output <strong>Iteration: 1</strong> to <strong>Iteration: 5</strong>, incrementing <code>$i</code> after each loop iteration.</p>
+
+    <h2>foreach Loop</h2>
+    <p>The <code>foreach</code> loop is designed to work with arrays, iterating over each element in the array.</p>
+    <pre><code>&lt;?php
+    $colors = array("Red", "Green", "Blue");
+
+    foreach ($colors as $color) {
+        echo "Color: $color&lt;br&gt;";
+    }
+  ?&gt;</code></pre>
+    <p>This loop will output <strong>Color: Red</strong>, <strong>Color: Green</strong>, and <strong>Color: Blue</strong>, iterating over each element in the <code>$colors</code> array.</p>
+
+    <h2>Loop Control Statements</h2>
+    <p>PHP includes control statements to manage loop flow:</p>
+    <ul>
+        <li><code>break</code>: Exits the loop entirely.</li>
+        <li><code>continue</code>: Skips the current iteration and moves to the next one.</li>
+    </ul>
+    <p>Examples:</p>
+    <pre><code>&lt;?php
+    // Using break
+    for ($i = 1; $i &lt;= 5; $i++) {
+        if ($i == 3) break;
+        echo "Iteration: $i&lt;br&gt;";
+    }
+
+    // Using continue
+    for ($i = 1; $i &lt;= 5; $i++) {
+        if ($i == 3) continue;
+        echo "Iteration: $i&lt;br&gt;";
+    }
+  ?&gt;</code></pre>
+    <p>The first loop will stop at <strong>Iteration: 2</strong> due to <code>break</code>, and the second loop will skip <strong>Iteration: 3</strong> due to <code>continue</code>.</p>
+
+    <h2>Conclusion</h2>
+    <p class="note">Looping statements in PHP enable repetitive tasks, whether by using <code>while</code>, <code>do-while</code>, <code>for</code>, or <code>foreach</code>. Loop control statements like <code>break</code> and <code>continue</code> offer additional flexibility for more complex tasks.</p>
+
+            </section>
+        </section>
     </main>
 </body>
 <script src="hamburger.js"></script>
@@ -51,7 +1399,7 @@
     phpTopics.forEach(topic => {
         let submenus = "";
         for (const key in topic.subTopics) {
-            submenus += `<li><a href="learnphp.html?s='${topic.subTopics.key}'" name=${topic.subTopics.key}>${key}</a></li>`;
+            submenus += `<li><a href="learnphp.html?s=${topic.subTopics[key]}" name=${topic.subTopics[key]}>${key}</a></li>`;
         }
         smenu.innerHTML += `
             <section>
@@ -62,5 +1410,14 @@
             </section>
         `
     });
+    function queryFetch() {
+        let index = new URLSearchParams(window.location.search).get('s');
+        let pages = document.querySelectorAll(".phpcontent");
+        pages.forEach(element => {
+            element.classList.add("d-hide");
+        });
+        pages[index].style.display = "block";
+    }
 </script>
+
 </html>
