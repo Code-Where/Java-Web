@@ -82,7 +82,7 @@ code{
 }
 #output{
     padding: 5vh 2vw;
-    height: 50%;
+    height: 100%;
 }
 @media (max-width: 768px){
     main section label{

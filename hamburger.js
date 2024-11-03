@@ -30,11 +30,11 @@ changeProgram(quesData.questions[0].solution.code, quesData.questions[0].sample_
 
 menu.addEventListener("change", () => {
     createQues(menu.selectedIndex, difficultyMenu.options[difficultyMenu.selectedIndex].value);
-    changeProgram(quesData.questions[quesMenu.options[0].value].solution.code, quesData.questions[quesMenu.options[0].value].sample_output, quesData.questions[quesMenu.options[0].value].sample_input, quesData.questions[0].solution.explanation);
+    changeProgram(quesData.questions[quesMenu.options[0].value].solution.code, quesData.questions[quesMenu.options[0].value].sample_output, quesData.questions[quesMenu.options[0].value].sample_input, quesData.questions[quesMenu.options[0].value].solution.explanation);
 });
 difficultyMenu.addEventListener("change", () => {
     createQues(menu.selectedIndex, difficultyMenu.options[difficultyMenu.selectedIndex].value);
-    changeProgram(quesData.questions[quesMenu.options[0].value].solution.code, quesData.questions[quesMenu.options[0].value].sample_output, quesData.questions[quesMenu.options[0].value].sample_input, quesData.questions[0].solution.explanation);
+    changeProgram(quesData.questions[quesMenu.options[0].value].solution.code, quesData.questions[quesMenu.options[0].value].sample_output, quesData.questions[quesMenu.options[0].value].sample_input, quesData.questions[quesMenu.options[0].value].solution.explanation);
 });
 function createQues(index, mode) {
     quesMenu.innerHTML = "";

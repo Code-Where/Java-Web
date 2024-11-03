@@ -11807,7 +11807,1118 @@ Minimum value of array :23`,
                 "explanation": "This program accepts a float number and returns it rounded to the nearest whole number.",
                 "code": null
             }
+        },
+        {
+            "id": 339,
+            "description": "Create the connection with MySQL Database and manage the driver.",
+            "difficulty": "easy",
+            "topic": 12,
+            "sample_input": null,
+            "sample_output": `Connection to MySQL database established successfully.
+Unexpected Error :  Unknown database 'abjjsj'
+Unexpected Error :  Access denied for user 'root'@'localhost' (using password: YES)`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This tutorial explains how to set up a connection to a MySQL database using Java and manage the JDBC driver.",
+                "code": `class Main{
+    static java.sql.Connection connectDB(String dbname, String username, String password){
+        java.sql.Connection connection = null;
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            connection = java.sql.DriverManager.getConnection("jdbc:mysql://localhost:3306/" + dbname, username, password);
+            System.out.println("Connection to MySQL database established successfully.");
         }
+        catch(ClassNotFoundException e){
+            System.out.println("MySQL JDBC Driver not found.");
+        }
+        catch(Exception e){
+            connection = null;
+            System.out.println("Unexpected Error :  " + e.getMessage());
+        }
+        return connection;
+    }
+    public static void main(String[] args) {
+        java.sql.Connection con = connectDB("school", "root", "mypass");
+        java.sql.Connection con1 = connectDB("abjjsj", "root", "mypass");
+        java.sql.Connection con2 = connectDB("school", "root", "ab");
+    }
+}`
+            }
+        },
+        {
+            "id": 340,
+            "description": "Create the table in the database from Java API.",
+            "difficulty": "easy",
+            "topic": 12,
+            "sample_input": null,
+            "sample_output": `Connection to MySQL database established successfully.
+Table created Successfully`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This tutorial explains how to create a table in a MySQL database using Java API.",
+                "code": `class Main{
+    static java.sql.Connection connectDB(String dbname, String username, String password){
+        java.sql.Connection connection = null;
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            connection = java.sql.DriverManager.getConnection("jdbc:mysql://localhost:3306/" + dbname, username, password);
+            System.out.println("Connection to MySQL database established successfully.");
+        }
+        catch(ClassNotFoundException e){
+            System.out.println("MySQL JDBC Driver not found.");
+        }
+        catch(Exception e){
+            connection = null;
+            System.out.println("Unexpected Error :  " + e.getMessage());
+        }
+        return connection;
+    }
+    static void createTable(java.sql.Connection con, String query){
+        java.sql.Statement st = null;
+        try {
+            st = con.createStatement();
+            if(st.executeUpdate(query) == 0){
+                System.out.println("Table created Successfully");
+            }
+        } 
+        catch (Exception e) {
+            System.out.println("Unexpected Error :  " + e.getMessage());
+        }
+    }
+    public static void main(String[] args) {
+        java.sql.Connection con = connectDB("school", "root", "mypass");
+        createTable(con, "CREATE TABLE MYTB(ID INT, Name VARCHAR(20), Updated DATE)");
+    }
+}`
+            }
+        },
+        {
+            "id": 341,
+            "description": "Insert the row in the table in the database from Java API.",
+            "difficulty": "easy",
+            "topic": 12,
+            "sample_input": null,
+            "sample_output": `Connection to MySQL database established successfully.
+Row Inserted Successfully
+Row Inserted Successfully`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This tutorial explains how to insert a row into a table in a MySQL database using Java API.",
+                "code": `class Main{
+    static java.sql.Connection connectDB(String dbname, String username, String password){
+        java.sql.Connection connection = null;
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            connection = java.sql.DriverManager.getConnection("jdbc:mysql://localhost:3306/" + dbname, username, password);
+            System.out.println("Connection to MySQL database established successfully.");
+        }
+        catch(ClassNotFoundException e){
+            System.out.println("MySQL JDBC Driver not found.");
+        }
+        catch(Exception e){
+            connection = null;
+            System.out.println("Unexpected Error :  " + e.getMessage());
+        }
+        return connection;
+    }
+    static boolean insertDB(java.sql.Connection con, String tbName, String vals[]){
+        java.sql.Statement st = null;
+        String query = "insert into " + tbName + " values(";
+        for (int i = 0; i < vals.length; i++) {
+            query += (i < (vals.length-1)) ? vals[i] + "," : vals[i] + ");";
+        }
+        try {
+            st = con.createStatement();
+            if(st.executeUpdate(query) != 0){
+                return true;
+            }
+        } 
+        catch (Exception e) {
+            System.out.println("Unexpected Error :  " + e.getMessage());
+        }
+        return false;
+    }
+    public static void main(String[] args) {
+        String[] arr = {"1", "'Abhishek'", "'2004-02-12'"};
+	String[] arr2 = {"2", "'Asha'", "'2004-05-21'"};
+        java.sql.Connection con = connectDB("school", "root", "mypass");
+        if(insertDB(con, "mytb", arr)){
+            System.out.println("Row Inserted Successfully");
+        }
+        else{
+            System.out.println("Failed to Insert Row");
+        }
+	if(insertDB(con, "mytb", arr2)){
+            System.out.println("Row Inserted Successfully");
+        }
+        else{
+            System.out.println("Failed to Insert Row");
+        }
+
+    }
+}`
+            }
+        },
+        {
+            "id": 342,
+            "description": "Update the row in the table in the database from Java API.",
+            "difficulty": "easy",
+            "topic": 12,
+            "sample_input": null,
+            "sample_output": `Connection to MySQL database established successfully.
+1 Number of  rows Updated
+Row Updated Successfully
+0 Number of  rows Updated
+Failed to Update Row`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This tutorial explains how to update an existing row in a MySQL database table using Java API.",
+                "code": `
+class Main{
+    static java.sql.Connection connectDB(String dbname, String username, String password){
+        java.sql.Connection connection = null;
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            connection = java.sql.DriverManager.getConnection("jdbc:mysql://localhost:3306/" + dbname, username, password);
+            System.out.println("Connection to MySQL database established successfully.");
+        }
+        catch(ClassNotFoundException e){
+            System.out.println("MySQL JDBC Driver not found.");
+        }
+        catch(Exception e){
+            connection = null;
+            System.out.println("Unexpected Error :  " + e.getMessage());
+        }
+        return connection;
+    }
+    static boolean updateDB(java.sql.Connection con, String tbName, String column, String value, String condition){
+        java.sql.Statement st = null;
+        String query = "update " + tbName + " set " + column + " = " + value;
+        if(condition != null){
+            query += " where " + condition;
+        }
+        try {
+            st = con.createStatement();
+            int rows = st.executeUpdate(query);
+            System.out.println(rows + " Number of  rows Updated");
+            if(rows != 0){
+                return true;
+            }
+        } 
+        catch (Exception e) {
+            System.out.println("Unexpected Error :  " + e.getMessage());
+        }
+        return false;
+    }
+    public static void main(String[] args) {
+        java.sql.Connection con = connectDB("school", "root", "mypass");
+        if(updateDB(con, "mytb", "Name" , "'Abhishek Dhawan'", "Id = 1")){
+            System.out.println("Row Updated Successfully");
+        }
+        else{
+            System.out.println("Failed to Update Row");
+        }
+	    if(updateDB(con, "mytb", "Name" , "'Ashssa'", "Id = 4")){
+            System.out.println("Row Updated Successfully");
+        }
+        else{
+            System.out.println("Failed to Update Row");
+        }
+    }
+}`
+            }
+        },
+        {
+            "id": 343,
+            "description": "Delete the row in the table in the database from Java API.",
+            "difficulty": "easy",
+            "topic": 12,
+            "sample_input": null,
+            "sample_output": `Connection to MySQL database established successfully.
+1 Number of  rows Deleted
+Row Deleted Successfully`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This tutorial explains how to delete a row from a MySQL database table using Java API.",
+                "code": `class Main{
+    static java.sql.Connection connectDB(String dbname, String username, String password){
+        java.sql.Connection connection = null;
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            connection = java.sql.DriverManager.getConnection("jdbc:mysql://localhost:3306/" + dbname, username, password);
+            System.out.println("Connection to MySQL database established successfully.");
+        }
+        catch(ClassNotFoundException e){
+            System.out.println("MySQL JDBC Driver not found.");
+        }
+        catch(Exception e){
+            connection = null;
+            System.out.println("Unexpected Error :  " + e.getMessage());
+        }
+        return connection;
+    }
+    static boolean deleteRow(java.sql.Connection con, String tbName, String condition){
+        java.sql.Statement st = null;
+        String query = "delete from " + tbName;
+        if(condition != null){
+            query += " where " + condition;
+        }
+        try {
+            st = con.createStatement();
+            int rows = st.executeUpdate(query);
+            System.out.println(rows + " Number of  rows Deleted");
+            if(rows != 0){
+                return true;
+            }
+        } 
+        catch (Exception e) {
+            System.out.println("Unexpected Error :  " + e.getMessage());
+        }
+        return false;
+    }
+    public static void main(String[] args) {
+        java.sql.Connection con = connectDB("school", "root", "mypass");
+        if(deleteRow(con, "mytb", "id = 2")){
+            System.out.println("Row Deleted Successfully");
+        }
+        else{
+            System.out.println("Failed to Delete Row");
+        }
+    }
+}`
+            }
+        },
+        {
+            "id": 344,
+            "description": "Select multiple rows from the database table in Java API and show the result on the screen.",
+            "difficulty": "medium",
+            "topic": 12,
+            "sample_input": null,
+            "sample_output": `Connection to MySQL database established successfully.
+Row Number 1
+Id : 1
+Name : Abhishek Dhawan
+Last Updated : 2004-02-12`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This tutorial explains how to select multiple rows from a MySQL database table and display the result on the screen using Java API.",
+                "code": `class Main{
+    static java.sql.Connection connectDB(String dbname, String username, String password){
+        java.sql.Connection connection = null;
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            connection = java.sql.DriverManager.getConnection("jdbc:mysql://localhost:3306/" + dbname, username, password);
+            System.out.println("Connection to MySQL database established successfully.");
+        }
+        catch(ClassNotFoundException e){
+            System.out.println("MySQL JDBC Driver not found.");
+        }
+        catch(Exception e){
+            connection = null;
+            System.out.println("Unexpected Error :  " + e.getMessage());
+        }
+        return connection;
+    }
+    static void selectRows(java.sql.Connection con, String tbName, String condition){
+        java.sql.Statement st = null;
+        String query = "select * from " + tbName;
+        if(condition != null){
+            query += " where " + condition + ";";
+        }
+        try {
+            st = con.createStatement();
+            java.sql.ResultSet rs = st.executeQuery(query);
+            for (int i = 1; rs.next(); i++) {
+                System.out.println("Row Number " + i);
+                System.out.println("Id : " + rs.getInt(1) + "\nName : " + rs.getString(2) + "\nLast Updated : " + rs.getDate(3));
+            }
+        } 
+        catch (Exception e) {
+            System.out.println("Unexpected Error :  " + e.getMessage());
+        }
+    }
+    public static void main(String[] args) {
+        java.sql.Connection con = connectDB("school", "root", "mypass");
+        selectRows(con, "mytb", null);
+         
+    }
+}`
+            }
+        },
+        {
+            "id": 345,
+            "description": "Create a Scrollable Readonly Resultset and ask the row number from the user and display that row on the screen.",
+            "difficulty": "medium",
+            "topic": 12,
+            "sample_input": `Enter Row Number
+1`,
+            "sample_output": `Connection to MySQL database established successfully.
+Printing Row Values :
+Id : 1
+Name : Abhishek Dhawan
+Last Updated : 2004-02-12`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This tutorial explains how to create a scrollable, read-only ResultSet and display a specific row based on user input.",
+                "code": `class Main{
+    static java.sql.Connection connectDB(String dbname, String username, String password){
+        java.sql.Connection connection = null;
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            connection = java.sql.DriverManager.getConnection("jdbc:mysql://localhost:3306/" + dbname, username, password);
+            System.out.println("Connection to MySQL database established successfully.");
+        }
+        catch(ClassNotFoundException e){
+            System.out.println("MySQL JDBC Driver not found.");
+        }
+        catch(Exception e){
+            connection = null;
+            System.out.println("Unexpected Error :  " + e.getMessage());
+        }
+        return connection;
+    }
+    static void selectRows(java.sql.Connection con, String tbName, int row){
+        java.sql.Statement st = null;
+        String query = "select * from " + tbName;
+        try {
+            st = con.createStatement(java.sql.ResultSet.TYPE_SCROLL_SENSITIVE, java.sql.ResultSet.CONCUR_READ_ONLY);
+            java.sql.ResultSet rs = st.executeQuery(query);
+            if(rs.absolute(row)){
+                System.out.println("Printing Row Values : ");
+                System.out.println("Id : " + rs.getInt(1) + "\nName : " + rs.getString(2) + "\nLast Updated : " + rs.getDate(3));
+            }
+            else{
+                System.out.println("Row Number " + row + " Not Available");
+            }
+        } 
+        catch (Exception e) {
+            System.out.println("Unexpected Error :  " + e.getMessage());
+        }
+    }
+    public static void main(String[] args) {
+        java.sql.Connection con = connectDB("school", "root", "mypass");
+        java.io.BufferedReader br = new java.io.BufferedReader(new java.io.InputStreamReader(System.in));
+        int r;
+        System.out.println("Enter Row Number");
+        try {
+            r = Integer.parseInt(br.readLine());  
+            selectRows(con, "mytb", r);
+        }
+        catch(NumberFormatException e){
+            System.out.println("Invalid Row Number");
+        } 
+        catch (Exception e) {
+            System.out.println("error occured : " + e.getMessage());
+        }
+    }
+}`
+            }
+        },
+        {
+            "id": 346,
+            "description": "Create a Scrollable Updateable Resultset and insert a new row, update an existing row and delete the row from Resultset and also the changes should be made to the database also. The values should be inserted, updated and deleted by the user only.",
+            "difficulty": "medium",
+            "topic": 12,
+            "sample_input": `Press 1 : For Insert
+Press 2 : For Update
+Press 3 : For Delete
+Press any other key : Exit
+1
+Id Value : 3
+Name Value : Manjit
+Press 1 : For Insert
+Press 2 : For Update
+Press 3 : For Delete
+Press any other key : Exit
+2
+Row Number :
+3
+Id Value :
+5
+Name Value :
+Manjit Kumar
+Press 1 : For Insert
+Press 2 : For Update
+Press 3 : For Delete
+Press any other key : Exit
+3
+Row Number :
+5
+Press 1 : For Insert
+Press 2 : For Update
+Press 3 : For Delete
+Press any other key : Exit
+3
+Row Number :
+3
+Press 1 : For Insert
+Press 2 : For Update
+Press 3 : For Delete
+Press any other key : Exit
+y
+`,
+            "sample_output": `Connection to MySQL database established successfully.
+Inserted Successfully
+Updated Successfully
+Row number 5 Not Available
+Row Deletion Failed
+Row Deleted Successfully
+Quiting.....`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This tutorial explains how to create a scrollable, updatable ResultSet, and make changes to the database (insert, update, delete) based on user input.",
+                "code": `
+class Main{
+    static java.sql.Connection connectDB(String dbname, String username, String password){
+        java.sql.Connection connection = null;
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            connection = java.sql.DriverManager.getConnection("jdbc:mysql://localhost:3306/" + dbname, username, password);
+            System.out.println("Connection to MySQL database established successfully.");
+        }
+        catch(ClassNotFoundException e){
+            System.out.println("MySQL JDBC Driver not found.");
+        }
+        catch(Exception e){
+            connection = null;
+            System.out.println("Unexpected Error :  " + e.getMessage());
+        }
+        return connection;
+    }
+    static java.sql.ResultSet selectRows(java.sql.Connection con, String tbName){
+        java.sql.Statement st = null;
+        String query = "select * from " + tbName;
+        try {
+            st = con.createStatement(java.sql.ResultSet.TYPE_SCROLL_SENSITIVE, java.sql.ResultSet.CONCUR_UPDATABLE);
+            java.sql.ResultSet rs = st.executeQuery(query);
+            return rs;
+        } 
+        catch (Exception e) {
+            System.out.println("Unexpected Error :  " + e.getMessage());
+        }
+        return null;
+    }
+    static boolean insertRS(java.sql.ResultSet rs, int val1, String val2, java.sql.Date val3){
+        try {
+            rs.moveToInsertRow();
+            rs.updateInt(1, val1);
+            rs.updateString(2, val2);
+            rs.updateDate(3, val3);
+            rs.insertRow();
+            return true;
+        } 
+        catch (Exception e) {
+            System.out.println("error occured : " + e.getMessage());
+        }
+        return false;
+    }
+    static boolean updateRS(java.sql.ResultSet rs, int row, int val1, String val2, java.sql.Date val3){
+        try {
+            if(rs.absolute(row)){
+                rs.updateInt(1, val1);
+                rs.updateString(2, val2);
+                rs.updateDate(3, val3);
+                rs.updateRow();
+                return true;
+            }
+            else{
+                System.out.println("Row number " + row + " Not Available");
+            }
+        } 
+        catch (Exception e) {
+            System.out.println("error occured : " + e.getMessage());
+        }
+        return false;
+    }
+    static boolean deleteRS(java.sql.ResultSet rs, int row){
+        try {
+            if(rs.absolute(row)){
+                rs.deleteRow();
+                return true;
+            }
+            else{
+                System.out.println("Row number " + row + " Not Available");
+            }
+        } 
+        catch (Exception e) {
+            System.out.println("error occured : " + e.getMessage());
+        }
+        return false;
+    }
+    public static void main(String[] args) {
+        java.sql.Connection con = connectDB("school", "root", "mypass");
+        java.io.BufferedReader br = new java.io.BufferedReader(new java.io.InputStreamReader(System.in));
+        java.sql.ResultSet rs = selectRows(con, "mytb");
+        char choice = '1';
+        while (choice != '0') {
+            int val1 = 0, row = -1;
+            String val2 = "";
+            System.out.println("Press 1 : For Insert");
+            System.out.println("Press 2 : For Update");
+            System.out.println("Press 3 : For Delete");
+	    System.out.println("Press any other key : Exit");
+            try {
+                choice = (char)new java.io.InputStreamReader(System.in).read();
+            } 
+            catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
+            switch (choice) {
+                case '1':
+                    try{
+                        System.out.print("Id Value : ");
+                        val1 = Integer.parseInt(br.readLine());
+                        System.out.print("Name Value : ");
+                        val2 = br.readLine();
+                        if(insertRS(rs, val1, val2, new java.sql.Date(new java.util.Date().getTime()))){
+                            System.out.println("Inserted Successfully");
+                        }
+                        else{
+                            System.out.println("Insertion Failed");
+                        }
+                    }
+                    catch(Exception e){
+                        System.out.println("Error Occured : " + e.getMessage());
+                    }
+                    break;
+                case '2' :
+                    try{
+                        System.out.println("Row Number : ");
+                        row = Integer.parseInt(br.readLine());
+                        System.out.println("Id Value : ");
+                        val1 = Integer.parseInt(br.readLine());
+                        System.out.println("Name Value : ");
+                        val2 = br.readLine();
+                        if(updateRS(rs, row, val1, val2, new java.sql.Date(new java.util.Date().getTime()))){
+                            System.out.println("Updated Successfully");
+                        }
+                        else{
+                            System.out.println("Updation Failed");
+                        }
+                    }
+                    catch(Exception e){
+                        System.out.println("Error Occured : " + e.getMessage());
+                    }
+                    break;
+                case '3' :
+                    try{
+                        System.out.println("Row Number : ");
+                        row = Integer.parseInt(br.readLine());
+                        if(deleteRS(rs, row)){
+                            System.out.println("Row Deleted Successfully");
+                        }
+                        else{
+                            System.out.println("Row Deletion Failed");
+                        }
+                    }
+                    catch(Exception e){
+                        System.out.println("Error Occured : " + e.getMessage());
+                    }
+                    break;
+                default:
+		    choice = '0';
+                    System.out.println("Quiting....");
+                    break;
+            }
+        }
+    }
+}`
+            }
+        },
+        {
+            "id": 347,
+            "description": "Create a Java Program to show, insert, update, delete of the table in Java API through PreparedStatement.",
+            "difficulty": "medium",
+            "topic": 12,
+            "sample_input": null,
+            "sample_output": `Row : 0
+ID : 1  Name : Abhishek Dhawan  Last Updated : 2004-02-12
+Row : 1
+ID : 2  Name : Asha     Last Updated : 2024-11-03
+Inserting Row
+Row : 0
+ID : 1  Name : Abhishek Dhawan  Last Updated : 2004-02-12
+Row : 1
+ID : 2  Name : Asha     Last Updated : 2024-11-03
+Row : 2
+ID : 38 Name : Manu     Last Updated : 2024-12-08
+Updating Value
+Row : 0
+ID : 1  Name : Abhishek Dhawan  Last Updated : 2004-02-12
+Row : 1
+ID : 2  Name : Asha     Last Updated : 2024-11-03
+Row : 2
+ID : 38 Name : NewName  Last Updated : 2024-12-08
+Deleting Row
+Row : 0
+ID : 1  Name : Abhishek Dhawan  Last Updated : 2004-02-12
+Row : 1
+ID : 2  Name : Asha     Last Updated : 2024-11-03`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This tutorial explains how to perform CRUD operations on a MySQL database table using PreparedStatement in Java API.",
+                "code": `class Main{
+    static java.sql.Connection connectDB(String dbname){
+        java.sql.Connection connection = null;
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            connection = java.sql.DriverManager.getConnection("jdbc:mysql://localhost:3306/" + dbname, "root", "mypass");
+        }
+        catch(ClassNotFoundException e){
+            System.out.println("MySQL JDBC Driver not found.");
+        }
+        catch(Exception e){
+            connection = null;
+            System.out.println("Unexpected Error :  " + e.getMessage());
+        }
+        return connection;
+    }
+    static void selectRows(String query){
+        java.sql.PreparedStatement st = null;
+        try {
+            st = connectDB("school").prepareStatement(query);
+            java.sql.ResultSet rs = st.executeQuery();
+            for (int i = 0; rs.next(); i++) {
+                System.out.println("Row : " + i);
+                System.out.println("ID : " + rs.getInt(1) + "\tName : " + rs.getString(2) + "\tLast Updated : " + rs.getDate(3));
+            }
+        } 
+        catch (Exception e) {
+            System.out.println("Unexpected Error :  " + e.getMessage());
+        }
+    }
+    static boolean executePS(String query){
+        try {
+            java.sql.PreparedStatement ps = connectDB("school").prepareStatement(query);
+            return ps.execute();
+        } 
+        catch (Exception e) {
+            System.out.println("Unexpected Error : " + e.getMessage());
+        }
+        return false;
+    }
+    public static void main(String[] args) {
+        selectRows("Select * from mytb;");
+        System.out.println("Inserting Row");
+        executePS("insert into mytb values(38, 'Manu', '2024-12-08')");
+        selectRows("Select * from mytb;");
+        System.out.println("Updating Value");
+        executePS("update mytb set name = 'NewName' where id = 38");
+        selectRows("Select * from mytb;");
+        System.out.println("Deleting Row");
+        executePS("delete from mytb where id = 38");
+        selectRows("Select * from mytb;");
+    }
+}`
+            }
+        },
+        {
+            "id": 348,
+            "description": "Create a simple AWT application that displays a button with FlowLayout manager.",
+            "difficulty": "easy",
+            "topic": 7,
+            "sample_input": null,
+            "sample_output": `<img src = "awt/1.png" heigth = "200px">`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This tutorial explains how to create an AWT application that uses FlowLayout to display a button.",
+                "code": `class Main{
+    public static void main(String[] args) {
+        java.awt.Frame frame = new java.awt.Frame("Simple AWT Application");
+
+        java.awt.Button button = new java.awt.Button("Click Me");
+
+        frame.setLayout(new java.awt.FlowLayout());
+        frame.add(button);
+
+        frame.setSize(300, 200);
+        frame.setVisible(true);
+    }
+}`
+            }
+        },
+        {
+            "id": 349,
+            "description": "Create a simple AWT application that displays a button with Custom Layout.",
+            "difficulty": "medium",
+            "topic": 7,
+            "sample_input": null,
+            "sample_output": `<img src = "awt/2.png" heigth = "200px">`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This tutorial explains how to create an AWT application that uses a custom layout to display a button.",
+                "code": null
+            }
+        },
+        {
+            "id": 350,
+            "description": "Create a simple AWT application that displays multiple buttons with BorderLayout manager (North, East, West, South, Center).",
+            "difficulty": "easy",
+            "topic": 7,
+            "sample_input": null,
+            "sample_output": `<img src = "awt/3.png" heigth = "200px">`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This tutorial explains how to create an AWT application that uses BorderLayout to position multiple buttons in different regions.",
+                "code": `class Main{
+    public static void main(String[] args) {
+        java.awt.Frame frame = new java.awt.Frame("AWT with BorderLayout");
+
+        java.awt.Button northButton = new java.awt.Button("North");
+        java.awt.Button southButton = new java.awt.Button("South");
+        java.awt.Button eastButton = new java.awt.Button("East");
+        java.awt.Button westButton = new java.awt.Button("West");
+        java.awt.Button centerButton = new java.awt.Button("Center");
+
+        frame.setLayout(new java.awt.BorderLayout());
+
+        frame.add(northButton, java.awt.BorderLayout.NORTH);
+        frame.add(southButton, java.awt.BorderLayout.SOUTH);
+        frame.add(eastButton, java.awt.BorderLayout.EAST);
+        frame.add(westButton, java.awt.BorderLayout.WEST);
+        frame.add(centerButton, java.awt.BorderLayout.CENTER);
+
+        frame.setSize(400, 300);
+        frame.setVisible(true);
+    }
+}`
+            }
+        },
+        {
+            "id": 351,
+            "description": "Create a simple AWT application that displays a TextField with FlowLayout manager.",
+            "difficulty": "easy",
+            "topic": 7,
+            "sample_input": null,
+            "sample_output": `<img src = "awt/4.png" heigth = "200px">`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This tutorial explains how to create an AWT application that uses FlowLayout to display a TextField.",
+                "code": `class Main{
+    public static void main(String[] args) {
+        java.awt.Frame frame = new java.awt.Frame("AWT with FlowLayout");
+
+        java.awt.TextField textField = new java.awt.TextField(20);
+
+        frame.setLayout(new java.awt.FlowLayout());
+        frame.add(textField);
+
+        frame.setSize(300, 200);
+        frame.setVisible(true);
+    }
+}`
+            }
+        },
+        {
+            "id": 352,
+            "description": "Create a simple AWT application that displays a TextField with Custom Layout.",
+            "difficulty": "medium",
+            "topic": 7,
+            "sample_input": null,
+            "sample_output": `<img src = "awt/5.png" heigth = "200px">`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This tutorial explains how to create an AWT application that uses a custom layout to display a TextField.",
+                "code": null
+            }
+        },
+        {
+            "id": 353,
+            "description": "Create a simple AWT application that displays a Checkbox with FlowLayout manager.",
+            "difficulty": "easy",
+            "topic": 7,
+            "sample_input": null,
+            "sample_output": `<img src = "awt/6.png" heigth = "200px">`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This tutorial explains how to create an AWT application that uses FlowLayout to display a Checkbox.",
+                "code": `class Main{
+    public static void main(String[] args) {
+        java.awt.Frame frame = new java.awt.Frame("AWT with FlowLayout");
+
+        java.awt.Checkbox checkbox = new java.awt.Checkbox("Accept Terms and Conditions");
+
+        frame.setLayout(new java.awt.FlowLayout());
+        frame.add(checkbox);
+
+        frame.setSize(300, 200);
+        frame.setVisible(true);
+    }
+}`
+            }
+        },
+        {
+            "id": 354,
+            "description": "Create a simple AWT application that displays a Checkbox with Custom Layout.",
+            "difficulty": "medium",
+            "topic": 7,
+            "sample_input": null,
+            "sample_output": `<img src = "awt/7.png" heigth = "200px">`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This tutorial explains how to create an AWT application that uses a custom layout to display a Checkbox.",
+                "code": null
+            }
+        },
+        {
+            "id": 355,
+            "description": "Create a simple AWT application that displays a Label with FlowLayout manager.",
+            "difficulty": "easy",
+            "topic": 7,
+            "sample_input": null,
+            "sample_output": `<img src = "awt/8.png" heigth = "200px">`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This tutorial explains how to create an AWT application that uses FlowLayout to display a Label.",
+                "code": `class Main{
+    public static void main(String[] args) {
+        java.awt.Frame frame = new java.awt.Frame("AWT with FlowLayout");
+
+        java.awt.Label label = new java.awt.Label("Welcome to AWT Application!");
+
+        frame.setLayout(new java.awt.FlowLayout());
+        frame.add(label);
+
+        frame.setSize(300, 200);
+        frame.setVisible(true);
+    }
+}`
+            }
+        },
+        {
+            "id": 356,
+            "description": "Create a simple AWT application that displays a Label with Custom Layout.",
+            "difficulty": "medium",
+            "topic": 7,
+            "sample_input": null,
+            "sample_output": `<img src = "awt/9.png" heigth = "200px">`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This tutorial explains how to create an AWT application that uses a custom layout to display a Label.",
+                "code": null
+            }
+        },
+        {
+            "id": 357,
+            "description": "Create a simple AWT application that displays a Choice with FlowLayout manager.",
+            "difficulty": "easy",
+            "topic": 7,
+            "sample_input": null,
+            "sample_output": `<img src = "awt/10.png" heigth = "200px">`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This tutorial explains how to create an AWT application that uses FlowLayout to display a Choice component.",
+                "code": `class Main{
+    public static void main(String[] args) {
+        java.awt.Frame frame = new java.awt.Frame("AWT with FlowLayout");
+
+        java.awt.Choice choice = new java.awt.Choice();
+        choice.add("Option 1");
+        choice.add("Option 2");
+        choice.add("Option 3");
+
+        frame.setLayout(new java.awt.FlowLayout());
+        frame.add(choice);
+
+        frame.setSize(300, 200);
+        frame.setVisible(true);
+    }
+}`
+            }
+        },
+        {
+            "id": 358,
+            "description": "Create a simple AWT application that displays a Choice with Custom Layout.",
+            "difficulty": "medium",
+            "topic": 7,
+            "sample_input": null,
+            "sample_output": `<img src = "awt/11.png" heigth = "200px">`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This tutorial explains how to create an AWT application that uses a custom layout to display a Choice component.",
+                "code": null
+            }
+        },
+        {
+            "id": 359,
+            "description": "Create a simple AWT application that displays a CheckboxGroup with FlowLayout manager.",
+            "difficulty": "easy",
+            "topic": 7,
+            "sample_input": null,
+            "sample_output": `<img src = "awt/12.png" heigth = "200px">`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This tutorial explains how to create an AWT application that uses FlowLayout to display a CheckboxGroup.",
+                "code": `class Main{
+    public static void main(String[] args) {
+        java.awt.Frame frame = new java.awt.Frame("AWT with FlowLayout");
+
+        java.awt.CheckboxGroup checkboxGroup = new java.awt.CheckboxGroup();
+
+        java.awt.Checkbox option1 = new java.awt.Checkbox("Option 1", checkboxGroup, false);
+        java.awt.Checkbox option2 = new java.awt.Checkbox("Option 2", checkboxGroup, false);
+        java.awt.Checkbox option3 = new java.awt.Checkbox("Option 3", checkboxGroup, true); 
+
+        frame.setLayout(new java.awt.FlowLayout());
+        frame.add(option1);
+        frame.add(option2);
+        frame.add(option3);
+
+        frame.setSize(300, 200);
+        frame.setVisible(true);
+    }
+}`
+            }
+        },
+        {
+            "id": 360,
+            "description": "Create a simple AWT application that displays a CheckboxGroup with Custom Layout.",
+            "difficulty": "medium",
+            "topic": 7,
+            "sample_input": null,
+            "sample_output": `<img src = "awt/13.png" heigth = "200px">`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This tutorial explains how to create an AWT application that uses a custom layout to display a CheckboxGroup.",
+                "code": null
+            }
+        },
+        {
+            "id": 361,
+            "description": "Create a simple AWT application that displays a List with FlowLayout manager.",
+            "difficulty": "easy",
+            "topic": 7,
+            "sample_input": null,
+            "sample_output": `<img src = "awt/14.png" heigth = "200px">`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This tutorial explains how to create an AWT application that uses FlowLayout to display a List component.",
+                "code": `class Main{
+    public static void main(String[] args) {
+        java.awt.Frame frame = new java.awt.Frame("AWT with FlowLayout");
+
+        java.awt.List list = new java.awt.List(); 
+        list.add("Item 1");
+        list.add("Item 2");
+        list.add("Item 3");
+        list.add("Item 4");
+        list.add("Item 5");
+
+        frame.setLayout(new java.awt.FlowLayout());
+        frame.add(list);
+
+        frame.setSize(300, 200);
+        frame.setVisible(true);
+    }
+}`
+            }
+        },
+        {
+            "id": 362,
+            "description": "Create a simple AWT application that displays a List with Custom Layout.",
+            "difficulty": "medium",
+            "topic": 7,
+            "sample_input": null,
+            "sample_output": `<img src = "awt/15.png" heigth = "200px">`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This tutorial explains how to create an AWT application that uses a custom layout to display a List component.",
+                "code": null
+            }
+        },
+        {
+            "id": 363,
+            "description": "Create a simple AWT application that displays a TextArea with FlowLayout manager.",
+            "difficulty": "easy",
+            "topic": 7,
+            "sample_input": null,
+            "sample_output": `<img src = "awt/16.png" heigth = "200px">`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This tutorial explains how to create an AWT application that uses FlowLayout to display a TextArea.",
+                "code": `class Main{
+    public static void main(String[] args) {
+        java.awt.Frame frame = new java.awt.Frame("AWT with FlowLayout");
+
+        java.awt.TextArea textArea = new java.awt.TextArea(); 
+
+        frame.setLayout(new java.awt.FlowLayout());
+        frame.add(textArea);
+
+        frame.setSize(400, 300);
+        frame.setVisible(true);
+    }
+}`
+            }
+        },
+        {
+            "id": 364,
+            "description": "Create a simple AWT application that displays a TextArea with Custom Layout.",
+            "difficulty": "medium",
+            "topic": 7,
+            "sample_input": null,
+            "sample_output": `<img src = "awt/17.png" heigth = "200px">`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This tutorial explains how to create an AWT application that uses a custom layout to display a TextArea.",
+                "code": null
+            }
+        },
+        {
+            "id": 365,
+            "description": "Create a simple AWT application design a calculator that displays buttons, TextField with GridLayout manager.",
+            "difficulty": "hard",
+            "topic": 7,
+            "sample_input": null,
+            "sample_output": `<img src = "awt/18.png" heigth = "200px">`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This tutorial explains how to design a simple calculator using AWT components and GridLayout to manage buttons and a TextField.",
+                "code": `class Calculator extends  java.awt.Frame{
+    Calculator(){
+        super("Basic Calculator");
+        setLayout(new java.awt.GridLayout(5,4));
+        java.awt.Button btns[] = new java.awt.Button[16];
+        java.awt.TextField tf = new java.awt.TextField(100);
+        tf.setEditable(false);
+        add(tf);
+        add(new java.awt.Label());
+        add(new java.awt.Label());
+        add(new java.awt.Label());
+        for (int i = 0; i < btns.length; i++) {
+            btns[i] = new java.awt.Button();
+            btns[i].setBackground(java.awt.Color.BLUE);
+            add(btns[i]);
+        }
+        btns[0].setLabel("7");
+        btns[1].setLabel("8");
+        btns[2].setLabel("9");
+        btns[3].setLabel("C");
+        btns[4].setLabel("4");
+        btns[5].setLabel("5");
+        btns[6].setLabel("6");
+        btns[7].setLabel("/");
+        btns[8].setLabel("1");
+        btns[9].setLabel("2");
+        btns[10].setLabel("3");
+        btns[11].setLabel("X");
+        btns[12].setLabel("+");
+        btns[13].setLabel("0");
+        btns[14].setLabel("-");
+        btns[15].setLabel("=");
+        btns[3].setBackground(java.awt.Color.RED);
+        setVisible(true);
+        setSize(300, 500);
+    }
+}
+class Main{
+    public static void main(String[] args) {
+        new Calculator();
+    }
+}`
+            }
+        }
+
     ]
 
 }
