@@ -39,7 +39,7 @@
         </section>
     </header>
     <main style="margin: 0;" class="d-flex">
-        <aside>
+        <aside id="phpsidemenu">
 
         </aside>
         <section id="content-container">
@@ -1388,13 +1388,784 @@ echo $result; // Output: 15
     <p class="note">Looping statements in PHP enable repetitive tasks, whether by using <code>while</code>, <code>do-while</code>, <code>for</code>, or <code>foreach</code>. Loop control statements like <code>break</code> and <code>continue</code> offer additional flexibility for more complex tasks.</p>
 
             </section>
+            <section class="phpcontent">
+
+    <h2>Introduction to Functions in PHP</h2>
+    <p>Functions in PHP are reusable blocks of code that perform a specific task. They help in organizing and simplifying code, making it easier to maintain and debug.</p>
+
+    <h2>What is a Function?</h2>
+    <p>A function is a block of code designed to perform a particular task. Functions are executed only when they are called or invoked. PHP has many built-in functions, but you can also create your own.</p>
+
+    <h2>Defining a Function</h2>
+    <p>To define a function in PHP, use the <code>function</code> keyword, followed by the name of the function, parentheses, and curly braces:</p>
+    <pre><code>&lt;?php
+    function sayHello() {
+        echo "Hello, World!";
+    }
+  ?&gt;</code></pre>
+    <p>In this example, a function named <code>sayHello</code> is defined. It outputs <strong>Hello, World!</strong> when called.</p>
+
+    <h2>Calling a Function</h2>
+    <p>To call a function, simply use its name followed by parentheses:</p>
+    <pre><code>&lt;?php
+    sayHello();
+  ?&gt;</code></pre>
+
+    <h2>Functions with Parameters</h2>
+    <p>Functions can take parameters to accept input values. These parameters are specified in the parentheses:</p>
+    <pre><code>&lt;?php
+    function greet($name) {
+        echo "Hello, $name!";
+    }
+
+    greet("Alice"); 
+  ?&gt;</code></pre>
+    <p>In this example, the <code>greet</code> function takes one parameter, <code>$name</code>, and uses it in the output.</p>
+
+    <h2>Functions with Multiple Parameters</h2>
+    <p>Functions can have multiple parameters, separated by commas:</p>
+    <pre><code>&lt;?php
+    function add($a, $b) {
+        return $a + $b;
+    }
+
+    $result = add(5, 10); 
+    echo "The sum is: $result";
+  ?&gt;</code></pre>
+    <p>The <code>add</code> function takes two parameters, adds them, and returns the result.</p>
+
+    <h2>Returning Values from a Function</h2>
+    <p>Functions can return a value using the <code>return</code> keyword:</p>
+    <pre><code>&lt;?php
+    function multiply($x, $y) {
+        return $x * $y;
+    }
+
+    $product = multiply(3, 4); 
+    echo "The product is: $product";
+  ?&gt;</code></pre>
+    <p>The <code>multiply</code> function returns the product of <code>$x</code> and <code>$y</code>, which is then stored in <code>$product</code>.</p>
+
+    <h2>Default Parameter Values</h2>
+    <p>PHP functions can have default parameter values, which are used if no arguments are provided:</p>
+    <pre><code>&lt;?php
+    function greet($name = "Guest") {
+        echo "Hello, $name!";
+    }
+
+    greet(); 
+    greet("Bob"); 
+  ?&gt;</code></pre>
+    <p>In this example, the <code>greet</code> function has a default value of <code>"Guest"</code> for the <code>$name</code> parameter.</p>
+
+    <h2>Conclusion</h2>
+    <p class="note">Functions in PHP are powerful tools that help make your code more efficient and manageable. By understanding how to define, call, and use functions with parameters and return values, you can build more dynamic and reusable code.</p>
+
+            </section>
+            <section class="phpcontent">
+
+    <h2>Predefined Functions in PHP</h2>
+    <p>PHP provides many built-in functions that can simplify your code for different tasks, such as handling strings, arrays, and dates.</p>
+
+    <h2>String Functions</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Function</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>strlen()</code></td>
+                <td>Returns the length of a string.</td>
+                <td><code>strlen("Hello"); // Outputs: 5</code></td>
+            </tr>
+            <tr>
+                <td><code>strtolower()</code></td>
+                <td>Converts a string to lowercase.</td>
+                <td><code>strtolower("HELLO"); // Outputs: hello</code></td>
+            </tr>
+            <tr>
+                <td><code>strtoupper()</code></td>
+                <td>Converts a string to uppercase.</td>
+                <td><code>strtoupper("hello"); // Outputs: HELLO</code></td>
+            </tr>
+            <tr>
+                <td><code>substr()</code></td>
+                <td>Returns a part of a string.</td>
+                <td><code>substr("Hello, World!", 7, 5); // Outputs: World</code></td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="note">Here’s the list of most commonly used String Function <a href="learnphp.html?s=28">Click Here</a></p>
+    <h2>Math Functions</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Function</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>abs()</code></td>
+                <td>Returns the absolute (positive) value of a number.</td>
+                <td><code>abs(-15); // Outputs: 15</code></td>
+            </tr>
+            <tr>
+                <td><code>ceil()</code></td>
+                <td>Rounds a number up to the nearest integer.</td>
+                <td><code>ceil(4.3); // Outputs: 5</code></td>
+            </tr>
+            <tr>
+                <td><code>floor()</code></td>
+                <td>Rounds a number down to the nearest integer.</td>
+                <td><code>floor(4.7); // Outputs: 4</code></td>
+            </tr>
+            <tr>
+                <td><code>round()</code></td>
+                <td>Rounds a number to the nearest integer.</td>
+                <td><code>round(5.5); // Outputs: 6</code></td>
+            </tr>
+            <tr>
+                <td><code>max()</code></td>
+                <td>Returns the largest value from a list of numbers.</td>
+                <td><code>max(1, 3, 7, 2); // Outputs: 7</code></td>
+            </tr>
+            <tr>
+                <td><code>min()</code></td>
+                <td>Returns the smallest value from a list of numbers.</td>
+                <td><code>min(1, 3, 7, 2); // Outputs: 1</code></td>
+            </tr>
+            <tr>
+                <td><code>pow()</code></td>
+                <td>Returns the value of a number raised to the power of another number.</td>
+                <td><code>pow(2, 3); // Outputs: 8</code></td>
+            </tr>
+            <tr>
+                <td><code>sqrt()</code></td>
+                <td>Returns the square root of a number.</td>
+                <td><code>sqrt(16); // Outputs: 4</code></td>
+            </tr>
+            <tr>
+                <td><code>rand()</code></td>
+                <td>Generates a random integer.</td>
+                <td><code>rand(1, 100); // Outputs a random number between 1 and 100</code></td>
+            </tr>
+            <tr>
+                <td><code>sin()</code></td>
+                <td>Returns the sine of a number (in radians).</td>
+                <td><code>sin(pi()/2); // Outputs: 1</code></td>
+            </tr>
+            <tr>
+                <td><code>cos()</code></td>
+                <td>Returns the cosine of a number (in radians).</td>
+                <td><code>cos(0); // Outputs: 1</code></td>
+            </tr>
+            <tr>
+                <td><code>tan()</code></td>
+                <td>Returns the tangent of a number (in radians).</td>
+                <td><code>tan(pi()/4); // Outputs: 1</code></td>
+            </tr>
+            <tr>
+                <td><code>log()</code></td>
+                <td>Returns the natural logarithm (base e) of a number.</td>
+                <td><code>log(1); // Outputs: 0</code></td>
+            </tr>
+            <tr>
+                <td><code>exp()</code></td>
+                <td>Returns e raised to the power of a number.</td>
+                <td><code>exp(1); // Outputs: 2.718281828459</code></td>
+            </tr>
+            <tr>
+                <td><code>deg2rad()</code></td>
+                <td>Converts degrees to radians.</td>
+                <td><code>deg2rad(180); // Outputs: 3.14159</code></td>
+            </tr>
+            <tr>
+                <td><code>rad2deg()</code></td>
+                <td>Converts radians to degrees.</td>
+                <td><code>rad2deg(pi()); // Outputs: 180</code></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Array Functions</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Function</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>count()</code></td>
+                <td>Returns the number of elements in an array.</td>
+                <td><code>count([1, 2, 3]); // Outputs: 3</code></td>
+            </tr>
+            <tr>
+                <td><code>array_merge()</code></td>
+                <td>Merges one or more arrays.</td>
+                <td><code>array_merge([1, 2], [3, 4]); // Outputs: [1, 2, 3, 4]</code></td>
+            </tr>
+            <tr>
+                <td><code>in_array()</code></td>
+                <td>Checks if a value exists in an array.</td>
+                <td><code>in_array(3, [1, 2, 3]); // Outputs: true</code></td>
+            </tr>
+            <tr>
+                <td><code>sort()</code></td>
+                <td>Sorts an array in ascending order.</td>
+                <td><code>sort($array); // Sorts $array</code></td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="note">Here’s the list of most commonly used Array Functions <a href="learnphp.html?s=32">Click Here</a></p>
+
+    <h2>Conclusion</h2>
+    <p class="note">These tables highlight some of the most frequently used predefined functions in PHP for handling strings, performing mathematical operations, and managing arrays. Each function helps simplify coding tasks significantly.</p>
+            </section>
+            <section class="phpcontent">
+                <h2>User-Defined Functions in PHP</h2>
+    <p>In addition to using built-in functions, PHP allows developers to create their own functions, called user-defined functions. These functions make your code more organized, reusable, and easier to maintain.</p>
+
+    <h2>Syntax of a User-Defined Function</h2>
+    <p>A user-defined function in PHP is declared using the <code>function</code> keyword, followed by the function name and a set of parentheses. Here’s the basic syntax:</p>
+    <pre><code>&lt;?php
+    function functionName() {
+        // Code to be executed
+    }
+  ?&gt;</code></pre>
+
+    <h2>Examples of User-Defined Functions</h2>
+
+    <h3>Simple Function</h3>
+    <p>This function prints a greeting message:</p>
+    <pre><code>&lt;?php
+    function sayHello() {
+        echo "Hello, World!";
+    }
+
+    sayHello(); // Outputs: Hello, World!
+  ?&gt;</code></pre>
+
+    <h3>Function with Parameters</h3>
+    <p>This function accepts parameters and prints a personalized greeting:</p>
+    <pre><code>&lt;?php
+    function greet($name) {
+        echo "Hello, $name!";
+    }
+
+    greet("Alice"); // Outputs: Hello, Alice!
+    greet("Bob");   // Outputs: Hello, Bob!
+  ?&gt;</code></pre>
+
+    <h3>Function with Return Value</h3>
+    <p>This function calculates the sum of two numbers and returns the result:</p>
+    <pre><code>&lt;?php
+    function add($a, $b) {
+        return $a + $b;
+    }
+
+    $result = add(5, 10);
+    echo "The sum is: " . $result; // Outputs: The sum is: 15
+  ?&gt;</code></pre>
+
+    <h3>Function with Default Parameters</h3>
+    <p>This function has a default value for one of its parameters:</p>
+    <pre><code>&lt;?php
+    function greetWithDefault($name = "Guest") {
+        echo "Hello, $name!";
+    }
+
+    greetWithDefault();        // Outputs: Hello, Guest!
+    greetWithDefault("Charlie"); // Outputs: Hello, Charlie!
+  ?&gt;</code></pre>
+
+    <h2>Conclusion</h2>
+    <p class="note">User-defined functions in PHP are powerful tools that help structure your code more efficiently. They are especially useful when you need to perform the same operation multiple times in a program.</p>
+
+            </section>
+            <section class="phpcontent">
+
+    <h2>Recursion in PHP</h2>
+    <p>Recursion is a programming technique where a function calls itself directly or indirectly to solve a problem. It is useful for problems that can be broken down into simpler, identical sub-problems.</p>
+
+    <h2>How Recursion Works</h2>
+    <p>A recursive function must have a termination condition to prevent infinite loops. This condition, called the base case, stops the function from calling itself when a certain condition is met.</p>
+
+    <h2>Example: Factorial Function</h2>
+    <p>One common example of a recursive function is calculating the factorial of a number. The factorial of <code>n</code> (denoted as <code>n!</code>) is the product of all positive integers less than or equal to <code>n</code>. It is defined as:</p>
+    <ul>
+        <li><code>0! = 1</code></li>
+        <li><code>n! = n * (n - 1)!</code> for <code>n &gt; 0</code></li>
+    </ul>
+
+    <pre><code>&lt;?php
+    function factorial($n) {
+        if ($n === 0) {
+            return 1; // Base case
+        } else {
+            return $n * factorial($n - 1); // Recursive call
+        }
+    }
+
+    echo "Factorial of 5 is: " . factorial(5); // Outputs: 120
+  ?&gt;</code></pre>
+
+    <h2>Example: Fibonacci Sequence</h2>
+    <p>The Fibonacci sequence is another classic example of recursion. The sequence is defined as:</p>
+    <ul>
+        <li><code>F(0) = 0</code></li>
+        <li><code>F(1) = 1</code></li>
+        <li><code>F(n) = F(n - 1) + F(n - 2)</code> for <code>n &gt; 1</code></li>
+    </ul>
+
+    <pre><code>&lt;?php
+    function fibonacci($n) {
+        if ($n === 0) {
+            return 0; // Base case
+        } elseif ($n === 1) {
+            return 1; // Base case
+        } else {
+            return fibonacci($n - 1) + fibonacci($n - 2); // Recursive call
+        }
+    }
+
+    echo "Fibonacci of 6 is: " . fibonacci(6); // Outputs: 8
+  ?&gt;</code></pre>
+
+    <h2>Advantages and Disadvantages of Recursion</h2>
+    <h3>Advantages</h3>
+    <ul>
+        <li>Simplifies code for problems that have a natural recursive structure, such as tree traversal and mathematical sequences.</li>
+        <li>Easy to write and understand for problems that are inherently recursive.</li>
+    </ul>
+
+    <h3>Disadvantages</h3>
+    <ul>
+        <li>Can be less efficient and use more memory due to the overhead of function calls.</li>
+        <li>Risk of stack overflow if the recursion depth is too large.</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p class="note">Recursion is a powerful tool in PHP, but it should be used with caution. For problems that can be solved iteratively, using loops may be more efficient. However, for problems like traversing hierarchical structures, recursion is often the most natural and elegant solution.</p>
+
+            </section>
+            <section class="phpcontent">
+                <h2>Introduction to Strings in PHP</h2>
+    <p>In PHP, a string is a sequence of characters used to store and manipulate text. Strings can be created using single quotes or double quotes, and they can include letters, numbers, symbols, or even whitespace.</p>
+
+    <h2>Creating Strings</h2>
+    <p>Strings can be declared in two main ways:</p>
+    <ul>
+        <li>Single quotes: <code>'This is a string'</code></li>
+        <li>Double quotes: <code>"This is another string"</code></li>
+    </ul>
+
+    <h2>Examples</h2>
+    <pre><code>&lt;?php
+    // Using single quotes
+    $string1 = 'Hello, World!';
+
+    // Using double quotes
+    $string2 = "Hello, PHP!";
+
+    // Displaying strings
+    echo $string1; // Outputs: Hello, World!
+    echo "&lt;br&gt;";
+    echo $string2; // Outputs: Hello, PHP!
+  ?&gt;</code></pre>
+
+    <h2>String Concatenation</h2>
+    <p>In PHP, you can join two or more strings using the concatenation operator <code>.</code>:</p>
+    <pre><code>&lt;?php
+    $firstName = "John";
+    $lastName = "Doe";
+    $fullName = $firstName . " " . $lastName;
+
+    echo $fullName; // Outputs: John Doe
+  ?&gt;</code></pre>
+
+    <h2>Escaping Characters</h2>
+    <p>When using single or double quotes, you may need to escape certain characters. This is done using a backslash <code>\</code>:</p>
+    <pre><code>&lt;?php
+    // Using single quotes with escape characters
+    $string = 'It\'s a sunny day!'; // Escapes the single quote
+
+    // Using double quotes with escape characters
+    $quote = "He said, \"Hello, World!\""; // Escapes the double quotes
+
+    echo $string; // Outputs: It's a sunny day!
+    echo "&lt;br&gt;";
+    echo $quote;  // Outputs: He said, "Hello, World!"
+  ?&gt;</code></pre>
+<h2>Conclusion</h2>
+    <p class="note">Strings are a fundamental part of PHP programming, used in almost every application. Understanding how to work with strings and use built-in string functions is essential for handling and manipulating text efficiently.</p>
+
+            </section>
+            <section class="phpcontent">
+
+    <h2>String Interpolation in PHP</h2>
+    <p>String interpolation in PHP allows variables to be embedded directly within double-quoted strings, making it easier to construct complex strings. This feature works only with double quotes and not with single quotes.</p>
+
+    <h2>Syntax of String Interpolation</h2>
+    <p>When using double quotes, PHP automatically parses variables and replaces them with their values:</p>
+    <pre><code>&lt;?php
+    $name = "Alice";
+    echo "Hello, $name!"; // Outputs: Hello, Alice!
+  ?&gt;</code></pre>
+
+    <h2>Using Curly Braces for Complex Expressions</h2>
+    <p>To handle more complex expressions or when embedding an array element, curly braces <code>{}</code> can be used:</p>
+    <pre><code>&lt;?php
+    $fruit = "apple";
+    echo "I have an {$fruit}s."; // Outputs: I have apples.
+
+    $items = ["pen", "notebook", "eraser"];
+    echo "I bought a {$items[1]}."; // Outputs: I bought a notebook.
+  ?&gt;</code></pre>
+
+    <h2>Difference Between Single and Double Quotes</h2>
+    <p>String interpolation works with double quotes but not with single quotes. Single quotes treat variables as plain text:</p>
+    <pre><code>&lt;?php
+    $color = "blue";
+
+    echo "The sky is $color.";  // Outputs: The sky is blue.
+    echo '&lt;br&gt;';
+    echo 'The sky is $color.';  // Outputs: The sky is $color.
+  ?&gt;</code></pre>
+
+    <h2>Example of String Interpolation</h2>
+    <p>Here’s a simple example that demonstrates how string interpolation can be used to construct dynamic messages:</p>
+    <pre><code>&lt;?php
+    $user = "Bob";
+    $age = 25;
+    echo "Hello, $user! You are $age years old."; // Outputs: Hello, Bob! You are 25 years old.
+  ?&gt;</code></pre>
+
+    <h2>Interpolation with Array Elements</h2>
+    <p>Interpolation can also be used with elements of an array:</p>
+    <pre><code>&lt;?php
+    $colors = ["red", "green", "blue"];
+    echo "My favorite color is {$colors[2]}."; // Outputs: My favorite color is blue.
+  ?&gt;</code></pre>
+
+    <h2>Conclusion</h2>
+    <p class="note">String interpolation in PHP is a simple and effective way to include variable values within strings. It is particularly useful for making code cleaner and easier to understand, especially when dealing with dynamic text.</p>
+
+            </section>
+            <section class="phpcontent">
+
+    <h2>String Operators in PHP</h2>
+    <p>In PHP, there are several operators specifically designed for working with strings. The most commonly used string operators are concatenation and string comparison operators.</p>
+
+    <h2>Concatenation Operator</h2>
+    <p>The concatenation operator <code>.</code> is used to combine two or more strings into one. You can concatenate strings using this operator as follows:</p>
+    <pre><code>&lt;?php
+    $string1 = "Hello, ";
+    $string2 = "world!";
+    $result = $string1 . $string2;
+
+    echo $result; // Outputs: Hello, world!
+  ?&gt;</code></pre>
+
+    <h2>Concatenation Assignment Operator</h2>
+    <p>PHP also provides a concatenation assignment operator <code>.=</code> which appends a string to an existing string variable:</p>
+    <pre><code>&lt;?php
+    $message = "Hello";
+    $message .= ", world!";
+    echo $message; // Outputs: Hello, world!
+  ?&gt;</code></pre>
+
+    <h2>String Comparison Operators</h2>
+    <p>PHP includes comparison operators that can be used to compare strings. The following operators are commonly used:</p>
+    <ul>
+        <li><code>==</code>: Checks if two strings are equal.</li>
+        <li><code>===</code>: Checks if two strings are identical (equal and of the same type).</li>
+        <li><code>!=</code>: Checks if two strings are not equal.</li>
+        <li><code>&lt;&gt;</code>: Checks if two strings are not equal (alternative to <code>!=</code>).</li>
+        <li><code>&lt;</code>: Checks if one string is less than another.</li>
+        <li><code>&gt;</code>: Checks if one string is greater than another.</li>
+    </ul>
+
+    <h2>Example of String Comparison</h2>
+    <pre><code>&lt;?php
+    $stringA = "apple";
+    $stringB = "banana";
+
+    if ($stringA == $stringB) {
+        echo "$stringA is equal to $stringB.";
+    } else {
+        echo "$stringA is not equal to $stringB."; // Outputs: apple is not equal to banana.
+    }
+  ?&gt;</code></pre>
+
+    <h2>Case Sensitivity in Comparisons</h2>
+    <p>String comparisons in PHP are case-sensitive. For example:</p>
+    <pre><code>&lt;?php
+    $stringC = "Hello";
+    $stringD = "hello";
+
+    if ($stringC === $stringD) {
+        echo "Strings are identical.";
+    } else {
+        echo "Strings are not identical."; // Outputs: Strings are not identical.
+    }
+  ?&gt;</code></pre>
+
+    <h2>Conclusion</h2>
+    <p class="note">String operators in PHP are essential for manipulating and comparing text. The concatenation operator allows you to build strings dynamically, while comparison operators enable you to check equality and order of strings effectively.</p>
+
+            </section>
+            <section class="phpcontent">
+
+    <h2>Heredoc in PHP</h2>
+    <p>Heredoc is a syntax for defining multi-line strings in PHP. It allows you to create strings that span multiple lines without the need for concatenation. Heredoc syntax is particularly useful for embedding large blocks of text, such as HTML or documentation, within your PHP code.</p>
+
+    <h2>Syntax</h2>
+    <p>The basic syntax for a Heredoc string is as follows:</p>
+    <pre><code>&lt;?php
+    $variableName = &lt;&lt;&lt;EOT
+    This is a Heredoc string.
+    It can span multiple lines.
+    You can include variables like $variable directly in it.
+    EOT;
+  ?&gt;</code></pre>
+
+    <h2>Example of Using Heredoc</h2>
+    <p>Here is an example that demonstrates how to use Heredoc to create a multi-line string:</p>
+    <pre><code>&lt;?php
+    $name = "Alice";
+    $heredocString = &lt;&lt;&lt;EOT
+    Hello, $name!
+    Welcome to the world of PHP.
+    This string spans multiple lines.
+    EOT;
+
+    echo $heredocString;
+    /* Outputs:
+    Hello, Alice!
+    Welcome to the world of PHP.
+    This string spans multiple lines.
+    */
+  ?&gt;</code></pre>
+
+    <h2>Important Notes</h2>
+    <ul>
+        <li>The identifier used to start and end the Heredoc (e.g., <code>EOT</code>) can be any valid label, but it must match at both the start and end.</li>
+        <li>There should be no spaces or tabs before the identifier on the closing line.</li>
+        <li>Variables within a Heredoc are parsed, similar to double-quoted strings.</li>
+        <li>Heredoc can also include special characters without needing to escape them.</li>
+    </ul>
+
+    <h2>Using Heredoc with HTML</h2>
+    <p>Heredoc is especially useful when embedding HTML code:</p>
+    <pre><code>&lt;?php
+$html = &lt;&lt;&lt;HTML
+&lt;div&gt;
+    &lt;h1&gt;Welcome!&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph in HTML.&lt;/p&gt;
+&lt;/div&gt;
+HTML;
+
+echo $html; // Outputs the HTML structure
+?&gt;</code></pre>
+
+    <h2>Conclusion</h2>
+    <p class="note">Heredoc syntax provides a clean and convenient way to handle multi-line strings in PHP. It is particularly valuable when working with large text blocks or when embedding HTML directly into PHP scripts.</p>
+
+            </section>
+            <section class="phpcontent">
+
+    <h2>Predefined String Functions in PHP</h2>
+    <p>PHP provides a variety of built-in functions for manipulating strings. Below is a table listing 20 common string functions along with their descriptions.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Function</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>strlen()</code></td>
+                <td>Returns the length of a string.</td>
+            </tr>
+            <tr>
+                <td><code>strpos()</code></td>
+                <td>Finds the position of the first occurrence of a substring in a string.</td>
+            </tr>
+            <tr>
+                <td><code>str_replace()</code></td>
+                <td>Replaces all occurrences of a search string with a replacement string.</td>
+            </tr>
+            <tr>
+                <td><code>substr()</code></td>
+                <td>Returns a portion of a string specified by the start and length.</td>
+            </tr>
+            <tr>
+                <td><code>strtoupper()</code></td>
+                <td>Converts a string to uppercase.</td>
+            </tr>
+            <tr>
+                <td><code>strtolower()</code></td>
+                <td>Converts a string to lowercase.</td>
+            </tr>
+            <tr>
+                <td><code>ucfirst()</code></td>
+                <td>Capitalizes the first character of a string.</td>
+            </tr>
+            <tr>
+                <td><code>ucwords()</code></td>
+                <td>Capitalizes the first character of each word in a string.</td>
+            </tr>
+            <tr>
+                <td><code>trim()</code></td>
+                <td>Strips whitespace from the beginning and end of a string.</td>
+            </tr>
+            <tr>
+                <td><code>str_repeat()</code></td>
+                <td>Repeats a string a specified number of times.</td>
+            </tr>
+            <tr>
+                <td><code>str_split()</code></td>
+                <td>Splits a string into an array by a specified delimiter.</td>
+            </tr>
+            <tr>
+                <td><code>implode()</code></td>
+                <td>Joins array elements into a single string with a specified separator.</td>
+            </tr>
+            <tr>
+                <td><code>explode()</code></td>
+                <td>Splits a string by a specified delimiter into an array.</td>
+            </tr>
+            <tr>
+                <td><code>strrev()</code></td>
+                <td>Reverses a string.</td>
+            </tr>
+            <tr>
+                <td><code>str_pad()</code></td>
+                <td>Pads a string to a certain length with another string.</td>
+            </tr>
+            <tr>
+                <td><code>str_contains()</code></td>
+                <td>Checks if a string contains a specified substring.</td>
+            </tr>
+            <tr>
+                <td><code>str_starts_with()</code></td>
+                <td>Checks if a string starts with a specified substring.</td>
+            </tr>
+            <tr>
+                <td><code>str_ends_with()</code></td>
+                <td>Checks if a string ends with a specified substring.</td>
+            </tr>
+            <tr>
+                <td><code>htmlspecialchars()</code></td>
+                <td>Converts special characters to HTML entities.</td>
+            </tr>
+            <tr>
+                <td><code>strtok()</code></td>
+                <td>Tokenizes a string using a specified delimiter.</td>
+            </tr>
+            <tr>
+                <td><code>nl2br()</code></td>
+                <td>Inserts HTML line breaks before all newlines in a string.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Example Programs</h2>
+
+    <h3>1. Using <code>strlen()</code></h3>
+    <pre><code>&lt;?php
+    $string = "Hello, World!";
+    $length = strlen($string);
+    echo "The length of the string is: $length"; // Outputs: The length of the string is: 13
+  ?&gt;</code></pre>
+
+    <h3>2. Using <code>strpos()</code></h3>
+    <pre><code>&lt;?php
+    $text = "Find the position of the word 'the'.";
+    $position = strpos($text, "the");
+    echo "The position of 'the' is: $position"; // Outputs: The position of 'the' is: 10
+  ?&gt;</code></pre>
+
+    <h3>3. Using <code>str_replace()</code></h3>
+    <pre><code>&lt;?php
+    $original = "Hello, World!";
+    $replaced = str_replace("World", "PHP", $original);
+    echo $replaced; // Outputs: Hello, PHP!
+  ?&gt;</code></pre>
+
+    <h3>4. Using <code>substr()</code></h3>
+    <pre><code>&lt;?php
+    $string = "Hello, World!";
+    $substring = substr($string, 7, 5);
+    echo $substring; // Outputs: World
+  ?&gt;</code></pre>
+
+    <h3>5. Using <code>strtoupper()</code></h3>
+    <pre><code>&lt;?php
+    $string = "hello, world!";
+    $uppercase = strtoupper($string);
+    echo $uppercase; // Outputs: HELLO, WORLD!
+  ?&gt;</code></pre>
+
+    <h3>6. Using <code>trim()</code></h3>
+    <pre><code>&lt;?php
+    $string = "   Hello, World!   ";
+    $trimmed = trim($string);
+    echo $trimmed; // Outputs: Hello, World!
+  ?&gt;</code></pre>
+
+    <h3>7. Using <code>str_split()</code></h3>
+    <pre><code>&lt;?php
+    $string = "Hello, World!";
+    $array = str_split($string);
+    print_r($array); // Outputs: Array ( [0] => H [1] => e [2] => l [3] => l [4] => o [5] => , [6] =>   [7] => W [8] => o [9] => r [10] => l [11] => d [12] => ! )
+  ?&gt;</code></pre>
+
+    <h3>8. Using <code>implode()</code></h3>
+    <pre><code>&lt;?php
+    $array = ['Hello', 'World'];
+    $string = implode(", ", $array);
+    echo $string; // Outputs: Hello, World
+  ?&gt;</code></pre>
+
+    <h3>9. Using <code>strrev()</code></h3>
+    <pre><code>&lt;?php
+    $string = "Hello, World!";
+    $reversed = strrev($string);
+    echo $reversed; // Outputs: !dlroW ,olleH
+  ?&gt;</code></pre>
+
+    <h3>10. Using <code>htmlspecialchars()</code></h3>
+    <pre><code>&lt;?php
+    $string = "<div>Hello, World!</div>";
+    $safeString = htmlspecialchars($string);
+    echo $safeString; // Outputs: &lt;div&gt;Hello, World!&lt;/div&gt;
+  ?&gt;</code></pre>
+
+            </section>
+            <section style="display: flex; justify-content: space-between; margin-top: 8vh;">
+                <a href="" id="prevpagephp" style="background-color: red; padding: 1.5vh 2vw; border-radius: 30px; color: white;">Previous</a>
+
+                <a href="" id="nextpagephp" style="background-color: green; padding: 1.5vh 2vw; border-radius: 30px; color: white;">Next</a>
+            </section>
         </section>
     </main>
 </body>
 <script src="hamburger.js"></script>
 <script src="learning.js"></script>
 <script>
-    const smenu = document.getElementsByTagName("aside")[0];
+    const smenu = document.getElementById("phpsidemenu");
     smenu.innerHTML = "";
     phpTopics.forEach(topic => {
         let submenus = "";
@@ -1412,6 +2183,13 @@ echo $result; // Output: 15
     });
     function queryFetch() {
         let index = new URLSearchParams(window.location.search).get('s');
+        if(parseInt(index)-1 >= 0){
+            document.getElementById("prevpagephp").style.display = "block";
+            document.getElementById("prevpagephp").href = "learnphp.html?s=" + (parseInt(index)-1);
+        }
+        else
+            document.getElementById("prevpagephp").style.display = "none";
+        document.getElementById("nextpagephp").href = "learnphp.html?s=" + (parseInt(index)+1);
         let pages = document.querySelectorAll(".phpcontent");
         pages.forEach(element => {
             element.classList.add("d-hide");

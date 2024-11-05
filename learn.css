@@ -50,6 +50,7 @@ aside ul a:hover{
     margin: 2vh 5vw;
     font-size: 1.2rem;
 }
+
 main{
     height: 100vh;
     overflow: hidden;
@@ -59,6 +60,7 @@ main{
     color: white;
     background-color: #FB505C;
     padding: 2vh 3vw;
+    text-align: justify;
 }
 .d-hide{
     display: none;
@@ -71,7 +73,7 @@ pre{
     padding:1vw;
 }
 table{
-    margin: auto;
+    margin: 3vh auto;
     border: 1px solid black;
     text-align: center;
     border-spacing: 0;
