@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Code-Where | Learning PHP</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="programs.css">
@@ -38,11 +38,21 @@
             </section>
         </section>
     </header>
-    <main style="margin: 0;" class="d-flex">
+    <main class="d-flex">
+        
         <aside id="phpsidemenu">
 
         </aside>
         <section id="content-container">
+            <label class="hamburger">
+                <input type="checkbox" id="phpshowmenu">
+                <svg viewBox="0 0 32 32">
+                    <path class="line line-top-bottom"
+                        d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                    </path>
+                    <path class="line" d="M7 16 27 16"></path>
+                </svg>
+            </label>
             <section class="phpcontent">
                 <h2>What is PHP?</h2>
                 <ul class="sol">
@@ -2154,6 +2164,927 @@ echo $html; // Outputs the HTML structure
   ?&gt;</code></pre>
 
             </section>
+            <section class="phpcontent">
+
+    <h2>Introduction to Arrays in PHP</h2>
+    <p>Arrays in PHP are used to store multiple values in a single variable. They are a powerful data structure that allows you to work with lists of data efficiently.</p>
+
+    <h2>What is an Array?</h2>
+    <p>An array is a collection of elements, where each element can be accessed using an index. PHP supports both indexed arrays and associative arrays:</p>
+    <ul>
+        <li><strong>Indexed Arrays:</strong> Arrays with numeric indices, starting from 0.</li>
+        <li><strong>Associative Arrays:</strong> Arrays with named keys, where each key is associated with a value.</li>
+    </ul>
+
+    <h2>Creating Arrays</h2>
+    <p>You can create arrays in PHP using the <code>array()</code> function or the shorthand <code>[]</code> syntax:</p>
+    <pre><code>&lt;?php
+    // Indexed array
+    $colors = array("Red", "Green", "Blue");
+    $fruits = ["Apple", "Banana", "Orange"];
+
+    // Associative array
+    $ages = array("Alice" => 25, "Bob" => 30, "Charlie" => 35);
+    $scores = ["Math" => 90, "Science" => 85, "English" => 95];
+  ?&gt;</code></pre>
+
+    <h2>Accessing Array Elements</h2>
+    <p>To access elements in an array, you use the index or key:</p>
+    <pre><code>&lt;?php
+    // Accessing elements in an indexed array
+    echo $colors[0]; // Outputs: Red
+    echo $fruits[2]; // Outputs: Orange
+
+    // Accessing elements in an associative array
+    echo $ages["Alice"]; // Outputs: 25
+    echo $scores["Science"]; // Outputs: 85
+  ?&gt;</code></pre>
+
+    <h2>Modifying Arrays</h2>
+    <p>You can add or change elements in an array using their index or key:</p>
+    <pre><code>&lt;?php
+    // Adding elements to an indexed array
+    $colors[] = "Yellow";
+    $fruits[1] = "Mango"; // Modifies the second element
+
+    // Adding elements to an associative array
+    $ages["David"] = 40;
+    $scores["History"] = 88;
+  ?&gt;</code></pre>
+
+    <h2>Conclusion</h2>
+    <p class="note">Arrays are essential for managing lists of data in PHP, whether you are dealing with simple lists or complex collections of key-value pairs. Mastering arrays is crucial for effective programming in PHP.</p>
+
+            </section>
+            <section class="phpcontent">
+
+    <h2>Types of Arrays in PHP</h2>
+    <p>PHP supports three main types of arrays:</p>
+
+    <h2>1. Indexed Arrays</h2>
+    <p>Indexed arrays use numeric indices to access their elements. The index starts from 0 for the first element and increases by 1 for each subsequent element.</p>
+    <h3>Example:</h3>
+    <pre><code>&lt;?php
+    // Creating an indexed array
+    $colors = array("Red", "Green", "Blue");
+    $fruits = ["Apple", "Banana", "Orange"];
+
+    // Accessing elements
+    echo $colors[0]; // Outputs: Red
+    echo $fruits[2]; // Outputs: Orange
+  ?&gt;</code></pre>
+
+    <h2>2. Associative Arrays</h2>
+    <p>Associative arrays use named keys to access their elements. Each key is associated with a value, allowing for more descriptive data access.</p>
+    <h3>Example:</h3>
+    <pre><code>&lt;?php
+    // Creating an associative array
+    $ages = array("Alice" => 25, "Bob" => 30, "Charlie" => 35);
+    $scores = ["Math" => 90, "Science" => 85, "English" => 95];
+
+    // Accessing elements
+    echo $ages["Alice"]; // Outputs: 25
+    echo $scores["Science"]; // Outputs: 85
+  ?&gt;</code></pre>
+
+    <h2>3. Multidimensional Arrays</h2>
+    <p>Multidimensional arrays are arrays that contain other arrays as their elements. They can be used to represent more complex data structures, like a table of data or a matrix.</p>
+    <h3>Example:</h3>
+    <pre><code>&lt;?php
+    // Creating a two-dimensional array
+    $students = array(
+        array("Name" => "Alice", "Age" => 25, "Grade" => "A"),
+        array("Name" => "Bob", "Age" => 30, "Grade" => "B"),
+        array("Name" => "Charlie", "Age" => 35, "Grade" => "C")
+    );
+
+    // Accessing elements
+    echo $students[0]["Name"]; // Outputs: Alice
+    echo $students[1]["Grade"]; // Outputs: B
+  ?&gt;</code></pre>
+
+    <h2>Conclusion</h2>
+    <p class="note">Arrays in PHP come in different forms, allowing you to choose the most suitable structure based on your data requirements. Understanding indexed, associative, and multidimensional arrays is fundamental for effective data manipulation in PHP.</p>
+
+            </section>
+            <section class="phpcontent">
+
+    <h1>Inspecting Arrays in PHP</h1>
+    <p>When working with arrays in PHP, you often need to inspect them to understand their structure and contents. PHP provides several functions to help with this.</p>
+
+    <h2>1. <code>print_r()</code></h2>
+    <p>The <code>print_r()</code> function displays the structure and contents of an array in a human-readable format. It is especially useful for debugging purposes.</p>
+    <h3>Example:</h3>
+    <pre><code>&lt;?php
+    $fruits = array("Apple", "Banana", "Orange");
+    print_r($fruits);
+  ?&gt;</code></pre>
+<h3>Output:</h3>
+<pre>
+Array
+ (
+    [0] => Apple
+    [1] => Banana
+    [2] => Orange
+ )
+</pre>
+
+    <h2>2. <code>var_dump()</code></h2>
+    <p>The <code>var_dump()</code> function provides detailed information about an array, including the type and length of each element. It is more comprehensive than <code>print_r()</code>.</p>
+    <h3>Example:</h3>
+    <pre><code>&lt;?php
+    $ages = array("Alice" => 25, "Bob" => 30, "Charlie" => 35);
+    var_dump($ages);
+  ?&gt;</code></pre>
+
+<h3>Output:</h3>
+<pre>
+array(3) {
+    ["Alice"]=> int(25)
+    ["Bob"]=> int(30)
+    ["Charlie"]=> int(35)
+}
+</pre>
+
+    <h2>3. <code>var_export()</code></h2>
+    <p>The <code>var_export()</code> function returns a parsable string representation of an array. It is similar to <code>print_r()</code> but can be used to recreate the array.</p>
+    <h3>Example:</h3>
+    <pre><code>&lt;?php
+    $scores = array("Math" => 90, "Science" => 85, "English" => 95);
+    var_export($scores);
+  ?&gt;</code></pre>
+<h3>Output:</h3>
+<pre>
+array(
+    'Math' => 90,
+    'Science' => 85,
+    'English' => 95,
+)
+</pre>
+    <h2>Conclusion</h2>
+    <p class="note">Using functions like <code>print_r()</code>, <code>var_dump()</code>, and <code>var_export()</code> can greatly aid in debugging and understanding the contents and structure of arrays in PHP. Choose the function that best suits your debugging needs.</p>
+
+            </section>
+            <section class="phpcontent">
+
+    <h2>Predefined Functions for Arrays in PHP</h2>
+
+    <table>
+        <tr>
+            <th>Function</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><code>array_push()</code></td>
+            <td>Adds one or more elements to the end of an array.</td>
+        </tr>
+        <tr>
+            <td><code>array_pop()</code></td>
+            <td>Removes the last element from an array and returns it.</td>
+        </tr>
+        <tr>
+            <td><code>array_shift()</code></td>
+            <td>Removes the first element from an array and returns it.</td>
+        </tr>
+        <tr>
+            <td><code>array_unshift()</code></td>
+            <td>Adds one or more elements to the beginning of an array.</td>
+        </tr>
+        <tr>
+            <td><code>array_merge()</code></td>
+            <td>Merges one or more arrays into a single array.</td>
+        </tr>
+        <tr>
+            <td><code>array_keys()</code></td>
+            <td>Returns all the keys of an array.</td>
+        </tr>
+        <tr>
+            <td><code>array_values()</code></td>
+            <td>Returns all the values of an array.</td>
+        </tr>
+        <tr>
+            <td><code>array_key_exists()</code></td>
+            <td>Checks if a specified key exists in an array.</td>
+        </tr>
+        <tr>
+            <td><code>in_array()</code></td>
+            <td>Checks if a value exists in an array.</td>
+        </tr>
+        <tr>
+            <td><code>count()</code></td>
+            <td>Returns the number of elements in an array.</td>
+        </tr>
+        <tr>
+            <td><code>array_slice()</code></td>
+            <td>Extracts a portion of an array.</td>
+        </tr>
+        <tr>
+            <td><code>array_splice()</code></td>
+            <td>Removes a portion of the array and replaces it with something else.</td>
+        </tr>
+        <tr>
+            <td><code>sort()</code></td>
+            <td>Sorts an array in ascending order.</td>
+        </tr>
+        <tr>
+            <td><code>rsort()</code></td>
+            <td>Sorts an array in descending order.</td>
+        </tr>
+        <tr>
+            <td><code>array_reverse()</code></td>
+            <td>Returns an array with elements in reverse order.</td>
+        </tr>
+        <tr>
+            <td><code>array_unique()</code></td>
+            <td>Removes duplicate values from an array.</td>
+        </tr>
+        <tr>
+            <td><code>array_filter()</code></td>
+            <td>Filters elements of an array using a callback function.</td>
+        </tr>
+        <tr>
+            <td><code>array_map()</code></td>
+            <td>Applies a callback function to each element of an array.</td>
+        </tr>
+        <tr>
+            <td><code>array_reduce()</code></td>
+            <td>Reduces an array to a single value using a callback function.</td>
+        </tr>
+        <tr>
+            <td><code>array_search()</code></td>
+            <td>Searches an array for a value and returns the key if found.</td>
+        </tr>
+    </table>
+
+    <h2>Example Programs</h2>
+
+    <h3>1. Using <code>array_push()</code> and <code>array_pop()</code></h3>
+    <pre><code>&lt;?php
+    $stack = array("orange", "banana");
+    array_push($stack, "apple", "raspberry");
+    print_r($stack); 
+
+    $fruit = array_pop($stack);
+    echo $fruit;  
+  ?&gt;</code></pre>
+
+  <h3>Output:</h3>
+<pre>
+Dog, Cat, Horse
+raspberry
+</pre>
+
+    <h3>2. Using <code>array_merge()</code> and <code>array_reverse()</code></h3>
+    <pre><code>&lt;?php
+    $array1 = array("red", "green");
+    $array2 = array("blue", "yellow");
+    $result = array_merge($array1, $array2);
+    print_r($result); 
+
+    $reversed = array_reverse($result);
+    print_r($reversed); 
+  ?&gt;</code></pre>
+  <h3>Output:</h3>
+<pre>
+Array ( [0] => red [1] => green [2] => blue [3] => yellow )
+Array ( [0] => yellow [1] => blue [2] => green [3] => red )</pre>
+            </section>
+            <section class="phpcontent">
+                <h2>Iterating Arrays in PHP</h2>
+                <p>There are several ways to iterate through arrays in PHP. Depending on the structure and use case of your array, you can choose from different loop constructs.</p>
+            
+                <h2>1. Using <code>foreach</code> Loop</h2>
+                <p>The <code>foreach</code> loop is the easiest way to iterate through arrays. It automatically loops through each element of the array.</p>
+                 <h3>Example:</h3>
+<pre><code>&lt;?php
+    $colors = array("Red", "Green", "Blue");
+
+    foreach ($colors as $color) {
+        echo $color . "&lt;br&gt;"; 
+    }
+
+    $ages = array("Alice" => 25, "Bob" => 30, "Charlie" => 35);
+
+    foreach ($ages as $name => $age) {
+        echo "$name is $age years old.&lt;br&gt;"; 
+    }
+  ?&gt;</code></pre>
+  <h3>Output:</h3>
+  <pre>
+    Red
+    Green
+    Blue
+    Alice is 25 years old
+    Bob is 30
+    Charlie is 35
+  </pre>
+                <h2>2. Using <code>for</code> Loop</h2>
+                <p>The <code>for</code> loop is useful when you have an indexed array and you need to use the index to iterate through the elements.</p>
+                <h3>Example:</h3>
+<pre><code>&lt;?php
+    $fruits = array("Apple", "Banana", "Orange");
+    
+    for ($i = 0; $i &lt; count($fruits); $i++) {
+        echo $fruits[$i] . "&lt;br&gt;"; 
+    }
+  ?&gt;</code></pre>
+  <h3>Output:</h3>
+  <pre>
+    Apple
+    Banana
+    Orange
+  </pre>
+                <h2>3. Using <code>while</code> Loop</h2>
+                <p>The <code>while</code> loop can be used to iterate through an array using a manual index.</p>
+                <h3>Example:</h3>
+<pre><code>&lt;?php
+    $animals = array("Dog", "Cat", "Horse");
+    $i = 0;
+
+    while ($i &lt; count($animals)) {
+        echo $animals[$i] . "&lt;br&gt;"; 
+        $i++;
+    }
+  ?&gt;</code></pre>
+  <h3>Output:</h3>
+<pre>
+    Dog
+    Cat
+    Horse
+</pre>
+            
+                <h2>4. Using <code>do-while</code> Loop</h2>
+                <p>The <code>do-while</code> loop is similar to the <code>while</code> loop but guarantees that the loop will run at least once.</p>
+                <h3>Example:</h3>
+<pre><code>&lt;?php
+    $numbers = array(1, 2, 3);
+    $i = 0;
+    
+    do {
+        echo $numbers[$i] . "&lt;br&gt;";
+        $i++;
+    } while ($i &lt; count($numbers));
+  ?&gt;</code></pre>
+  <h3>Output:</h3>
+<pre>
+    1
+    2
+    3
+</pre>
+                <h2>Conclusion</h2>
+                <p class="note">PHP provides multiple ways to iterate through arrays, each suited for different situations. The <code>foreach</code> loop is the most common and user-friendly for working with arrays, while <code>for</code> and <code>while</code> loops offer more control over the iteration process.</p>
+            
+            </section>
+            <section class="phpcontent">
+
+    <h2>Super Global Variables in PHP</h2>
+    <p>Super Global Variables in PHP are built-in variables that are available in all scopes throughout a script. They are initialized by PHP and can be used anywhere in your script.</p>
+
+    <h2>List of Super Global Variables</h2>
+    <ul>
+        <li><code>$_GLOBALS</code>: References all variables available in global scope.</li>
+        <li><code>$_SERVER</code>: Contains information about the server and environment.</li>
+        <li><code>$_REQUEST</code>: Contains data from <code>$_GET</code>, <code>$_POST</code>, and <code>$_COOKIE</code>.</li>
+        <li><code>$_POST</code>: Used to collect form data sent via HTTP POST.</li>
+        <li><code>$_GET</code>: Used to collect form data sent via HTTP GET.</li>
+        <li><code>$_FILES</code>: Used to manage file uploads.</li>
+        <li><code>$_ENV</code>: Contains environment variables.</li>
+        <li><code>$_COOKIE</code>: Contains cookie variables.</li>
+        <li><code>$_SESSION</code>: Contains session variables.</li>
+    </ul>
+
+    <h2>Examples of Super Global Variables</h2>
+
+    <h3>1. Using <code>$_SERVER</code></h3>
+    <p><code>$_SERVER</code> contains information like headers, paths, and script locations.</p>
+    <pre><code>&lt;?php
+    echo "Server Name: " . $_SERVER['SERVER_NAME'] . "&lt;br&gt;";
+    echo "Server Address: " . $_SERVER['SERVER_ADDR'] . "&lt;br&gt;";
+    echo "Request Method: " . $_SERVER['REQUEST_METHOD'] . "&lt;br&gt;";
+  ?&gt;</code></pre>
+
+    <h3>2. Using <code>$_GET</code> and <code>$_POST</code></h3>
+    <p>These variables are used to collect data from forms. <code>$_GET</code> retrieves data sent with a GET request, and <code>$_POST</code> retrieves data sent with a POST request.</p>
+    <p><strong>Example:</strong> Form using <code>$_POST</code>:</p>
+    <pre><code>&lt;form method="post"&gt;
+    Name: &lt;input type="text" name="name"&gt;
+    &lt;input type="submit"&gt;
+    &lt;/form&gt;
+
+    &lt;?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $name = $_POST['name'];
+        echo "Hello, " . htmlspecialchars($name);
+    }
+  ?&gt;</code></pre>
+
+    <h3>3. Using <code>$_SESSION</code></h3>
+    <p>Sessions store user information to be used across multiple pages.</p>
+    <pre><code>&lt;?php
+    session_start();
+    $_SESSION['username'] = "JohnDoe";
+    echo "Session username is: " . $_SESSION['username'];
+  ?&gt;</code></pre>
+
+    <h2>Conclusion</h2>
+    <p class="note">Super Global Variables are essential for handling form data, managing sessions, accessing server information, and more. Understanding how to use them effectively will help you build robust PHP applications.</p>
+
+            </section>
+            <section class="phpcontent">
+
+    <h2>Importing User Input in PHP</h2>
+    <p>In PHP, you can collect input from users through forms. This input can be imported using several super global arrays such as <code>$_GET</code>, <code>$_POST</code>, and <code>$_REQUEST</code>. Each of these arrays has different use cases for handling user-submitted data.</p>
+
+    <h2>1. Using <code>$_GET</code> to Collect Data</h2>
+    <p><code>$_GET</code> is used to collect data sent via the HTTP GET method. Data is passed as query parameters in the URL.</p>
+    <p><strong>Example:</strong> URL: <code>example.php?name=John&age=25</code></p>
+    <pre><code>&lt;?php
+    echo "Name: " . $_GET['name'];  // Outputs: John
+    echo "&lt;br&gt;";
+    echo "Age: " . $_GET['age'];    // Outputs: 25
+  ?&gt;</code></pre>
+
+    <h2>2. Using <code>$_POST</code> to Collect Data</h2>
+    <p><code>$_POST</code> is used to collect data sent via the HTTP POST method, typically from an HTML form. Data is not visible in the URL.</p>
+    <p><strong>HTML Form using POST:</strong></p>
+    <pre><code>&lt;form method="POST"&gt;
+    Name: &lt;input type="text" name="name"&gt;&lt;br&gt;
+    Age: &lt;input type="text" name="age"&gt;&lt;br&gt;
+    &lt;input type="submit" value="Submit"&gt;
+  &lt;/form&gt;</code></pre>
+        <p><strong>Processing the Form Data with <code>$_POST</code>:</strong></p>
+        <pre><code>&lt;?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $name = $_POST['name'];
+        $age = $_POST['age'];
+        echo "Name: $name&lt;br&gt;";
+        echo "Age: $age&lt;br&gt;";
+    }
+  ?&gt;</code></pre>
+
+    <h2>3. Using <code>$_REQUEST</code> to Collect Data</h2>
+    <p><code>$_REQUEST</code> is a combination of <code>$_GET</code>, <code>$_POST</code>, and <code>$_COOKIE</code> data. It can collect data from any method (GET, POST, or COOKIE).</p>
+    <p><strong>Example using <code>$_REQUEST</code>:</strong></p>
+    <pre><code>&lt;form method="POST"&gt;
+    Name: &lt;input type="text" name="name"&gt;&lt;br&gt;
+    Age: &lt;input type="text" name="age"&gt;&lt;br&gt;
+    &lt;input type="submit" value="Submit"&gt;
+  &lt;/form&gt;</code></pre>
+    <p><strong>Processing the Form Data with <code>$_REQUEST</code>:</strong></p>
+    <pre><code>&lt;?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $name = $_REQUEST['name'];
+        $age = $_REQUEST['age'];
+        echo "Name: $name&lt;br&gt;";
+        echo "Age: $age&lt;br&gt;";
+    }
+  ?&gt;</code></pre>
+
+    <h2>4. Importing Data from a URL</h2>
+    <p>If you pass data via the URL using <code>?name=John&age=25</code>, you can retrieve it with <code>$_GET</code>. However, if the data is passed using the POST method, <code>$_POST</code> is used.</p>
+    <p><strong>Example:</strong> Collecting data via GET (URL) and POST (form submission).</p>
+    <pre><code>&lt;?php
+    if ($_SERVER["REQUEST_METHOD"] == "GET") {
+        $name = $_GET['name'];
+        echo "Name from GET: $name&lt;br&gt;";
+    }
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $name = $_POST['name'];
+        echo "Name from POST: $name&lt;br&gt;";
+    }
+  ?&gt;</code></pre>
+
+    <h2>Conclusion</h2>
+    <p class="note">PHP provides multiple methods for importing user input, including the <code>$_GET</code>, <code>$_POST</code>, and <code>$_REQUEST</code> superglobal arrays. Choosing the appropriate method depends on how you want to send and process the data in your web applications.</p>
+
+            </section>
+            <section class="phpcontent">
+                <h2>Connecting to a Database in PHP</h2>
+                <p>In PHP, you can connect to a MySQL database using the <code>mysqli</code> extension or <code>PDO</code> (PHP Data Objects). Here, we'll focus on the <code>mysqli</code> extension.</p>
+            
+                <h2>Step 1: Database Configuration</h2>
+                <p>Before you begin, ensure that you have a MySQL database and the necessary credentials:</p>
+                <ul>
+                    <li><strong>Host</strong>: Typically 'localhost' if running locally.</li>
+                    <li><strong>Username</strong>: The username for accessing the database (e.g., 'root').</li>
+                    <li><strong>Password</strong>: The password associated with the username.</li>
+                    <li><strong>Database Name</strong>: The name of the database you want to connect to.</li>
+                </ul>
+            
+                <h2>Step 2: PHP Code to Connect to the Database</h2>
+                <p>The following PHP code shows how to connect to a MySQL database using the <code>mysqli_connect()</code> function.</p>
+            
+                <pre><code>&lt;?php
+            
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "mydatabase";
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    echo "Connected successfully to the database";
+  ?&gt;</code></pre>
+            
+                <h2>Step 3: Check for Connection Errors</h2>
+                <p>Always check for connection errors to handle potential issues, such as incorrect credentials or unreachable database server. If the connection fails, an error message is displayed.</p>
+            
+                <pre><code>&lt;?php
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+  ?&gt;</code></pre>
+            
+                <h2>Step 4: Closing the Connection</h2>
+                <p>After you have finished interacting with the database, it's important to close the connection to free up resources.</p>
+            
+                <pre><code>&lt;?php
+    $conn->close();
+  ?&gt;</code></pre>
+            
+                <h2>Conclusion</h2>
+                <p class="note">By using the <code>mysqli</code> extension in PHP, you can easily connect to a MySQL database, handle connection errors, and perform queries. Always ensure that you close the connection when done to avoid unnecessary resource consumption.</p>
+            
+            </section>
+            <section class="phpcontent">
+
+    <h2>Making SQL Queries in PHP</h2>
+    <p>In PHP, you can interact with a MySQL database by executing SQL queries using the <code>mysqli</code> extension. The queries can be used to retrieve, insert, update, or delete data in the database.</p>
+
+    <h2>1. SELECT Query</h2>
+    <p>The <code>SELECT</code> query is used to retrieve data from the database.</p>
+
+    <pre><code>&lt;?php
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "mydatabase";
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    $sql = "SELECT id, name, age FROM users";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        // Output data of each row
+        while($row = $result->fetch_assoc()) {
+            echo "id: " . $row["id"]. " - Name: " . $row["name"]. " - Age: " . $row["age"]. "&lt;br&gt;";
+        }
+    } else {
+        echo "0 results";
+    }
+
+    $conn->close();
+  ?&gt;</code></pre>
+
+    <h2>2. INSERT Query</h2>
+    <p>The <code>INSERT</code> query is used to insert new records into a table.</p>
+
+    <pre><code>&lt;?php
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "mydatabase";
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    $sql = "INSERT INTO users (name, age) VALUES ('John Doe', 30)";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "New record created successfully";
+    } else {
+        echo "Error: " . $sql . "&lt;br&gt;" . $conn->error;
+    }
+
+    $conn->close();
+  ?&gt;</code></pre>
+
+    <h2>3. UPDATE Query</h2>
+    <p>The <code>UPDATE</code> query is used to modify existing records in a table.</p>
+
+    <pre><code>&lt;?php
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "mydatabase";
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    $sql = "UPDATE users SET age=31 WHERE name='John Doe'";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "Record updated successfully";
+    } else {
+        echo "Error: " . $sql . "&lt;br&gt;" . $conn->error;
+    }
+
+    $conn->close();
+  ?&gt;</code></pre>
+
+    <h2>4. DELETE Query</h2>
+    <p>The <code>DELETE</code> query is used to delete records from a table.</p>
+
+    <pre><code>&lt;?php
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "mydatabase";
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    $sql = "DELETE FROM users WHERE name='John Doe'";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "Record deleted successfully";
+    } else {
+        echo "Error: " . $sql . "&lt;br&gt;" . $conn->error;
+    }
+
+    $conn->close();
+  ?&gt;</code></pre>
+
+    <h2>Conclusion</h2>
+    <p class="note">Using PHP and the <code>mysqli</code> extension, you can easily execute SQL queries to interact with your MySQL database. The <code>SELECT</code> query allows you to retrieve data, while the <code>INSERT</code>, <code>UPDATE</code>, and <code>DELETE</code> queries are used to manipulate data in your database.</p>
+
+            </section>
+            <section class="phpcontent">
+
+    <h2>Integrating Forms and Databases in PHP</h2>
+    <p>This example demonstrates how to create an HTML form to collect user input, then insert that input into a MySQL database using PHP.</p>
+
+    <h2>Step 1: Create the Database Table</h2>
+    <p>Before integrating the form, ensure you have a MySQL database and a table to store the data. Below is an SQL query to create a `users` table.</p>
+
+    <pre><code>CREATE TABLE users (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    age INT(3) NOT NULL
+);</code></pre>
+
+    <h2>Step 2: Create the HTML Form</h2>
+    <p>The following HTML form collects the name and age of a user:</p>
+
+    <pre><code>&lt;form method="POST" action="insert.php"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name" required&gt;&lt;br&gt;
+
+    &lt;label for="age"&gt;Age:&lt;/label&gt;
+    &lt;input type="number" id="age" name="age" required&gt;&lt;br&gt;
+
+    &lt;input type="submit" value="Submit"&gt;
+  &lt;/form&gt;</code></pre>
+
+    <h2>Step 3: PHP Script to Insert Data into Database</h2>
+    <p>When the user submits the form, the data is sent to a PHP script (in this case, `insert.php`) using the POST method. Below is the PHP code for `insert.php`:</p>
+
+    <pre><code>&lt;?php
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "mydatabase";
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    $name = $_POST['name'];
+    $age = $_POST['age'];
+
+    $sql = "INSERT INTO users (name, age) VALUES ('$name', '$age')";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "New record created successfully";
+    } else {
+        echo "Error: " . $sql . "&lt;br&gt;" . $conn->error;
+    }
+
+    $conn->close();
+  ?&gt;</code></pre>
+
+    <h2>Step 4: Form Submission and Data Insertion</h2>
+    <p>When the form is submitted, the data is sent to the PHP script using the POST method. The script processes the input, inserts it into the `users` table, and provides feedback to the user:</p>
+
+    <pre><code>New record created successfully</code></pre>
+
+    <h2>Security Considerations: SQL Injection Prevention</h2>
+    <p>To protect your application from SQL injection attacks, you should use prepared statements or parameterized queries instead of directly inserting user input into the SQL query. Here's an updated example using prepared statements:</p>
+
+    <pre><code>&lt;?php
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "mydatabase";
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    $name = $_POST['name'];
+    $age = $_POST['age'];
+
+    $stmt = $conn->prepare("INSERT INTO users (name, age) VALUES (?, ?)");
+    $stmt->bind_param("si", $name, $age);  // "si" means string and integer
+
+    if ($stmt->execute()) {
+        echo "New record created successfully";
+    } else {
+        echo "Error: " . $stmt->error;
+    }
+
+    $stmt->close();
+    $conn->close();
+  ?&gt;</code></pre>
+
+    <h2>Conclusion</h2>
+    <p class="note">By using an HTML form and PHP, you can collect user input and store it in a MySQL database. This process involves creating the form, sending the data to a PHP script, and using SQL queries to insert the data into the database. Always remember to secure your application by using prepared statements to prevent SQL injection attacks.</p>
+
+            </section>
+            <section class="phpcontent">
+
+    <h2>Working with Cookies in PHP</h2>
+    <p>In PHP, cookies are small pieces of data stored on the user's browser. They are commonly used for tracking user sessions, storing user preferences, or any other small data that should persist across pages or visits.</p>
+
+    <h2>1. Setting a Cookie</h2>
+    <p>You can set a cookie using the <code>setcookie()</code> function. The syntax is:</p>
+    
+    <pre><code>setcookie(name, value, expire, path, domain, secure, httponly);</code></pre>
+
+    <p>Here's an example of how to set a cookie:</p>
+
+    <pre><code>&lt;?php
+    // Set a cookie named "user" with value "John Doe" that expires in 1 hour
+    setcookie("user", "John Doe", time() + 3600, "/"); // 3600 = 1 hour
+    echo "Cookie has been set!";
+  ?&gt;</code></pre>
+
+    <h2>2. Retrieving a Cookie</h2>
+    <p>To retrieve the value of a cookie, use the <code>$_COOKIE</code> superglobal array. Here's an example:</p>
+
+    <pre><code>&lt;?php
+    if(isset($_COOKIE["user"])) {
+        echo "User cookie value: " . $_COOKIE["user"];
+    } else {
+        echo "Cookie named 'user' is not set!";
+    }
+  ?&gt;</code></pre>
+
+    <h2>3. Deleting a Cookie</h2>
+    <p>To delete a cookie, you can set its expiration time to a past time. This will instruct the browser to remove it. Here's how to delete the "user" cookie:</p>
+
+    <pre><code>&lt;?php
+    // Set the cookie to expire in the past to delete it
+    setcookie("user", "", time() - 3600, "/");
+    echo "Cookie has been deleted!";
+  ?&gt;</code></pre>
+
+    <h2>4. Cookie Expiration</h2>
+    <p>The expiration time is important because it determines how long the cookie will last. If the expiration time is not set, the cookie will be a session cookie, which means it will expire once the browser is closed. Here's an example of setting a cookie that expires in 30 days:</p>
+
+    <pre><code>&lt;?php
+    // Set a cookie with a 30-day expiration time
+    setcookie("user", "Jane Doe", time() + (30 * 24 * 60 * 60), "/"); // 30 days
+    echo "Cookie with 30 days expiration has been set!";
+  ?&gt;</code></pre>
+
+    <h2>5. Important Notes on Cookies</h2>
+    <ul>
+        <li>The <code>setcookie()</code> function must be called before any output (like HTML or echo statements) is sent to the browser. Otherwise, the cookie won't be set.</li>
+        <li>Cookies are sent to the server with every HTTP request, so they can affect the performance of your website if too many cookies are used.</li>
+        <li>Cookies are stored in the user's browser, so they can be cleared by the user at any time.</li>
+        <li>For security reasons, always use <code>httponly</code> and <code>secure</code> flags when using cookies to store sensitive information.</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p class="note">Cookies are a useful tool for storing small pieces of data on the user's browser. They allow for persistent data storage and can be used for things like tracking sessions or storing preferences. However, it's important to use them securely and ensure that sensitive information is not stored in cookies without proper safeguards.</p>
+
+            </section>
+            <section class="phpcontent">
+
+    <h2>Working with Sessions in PHP</h2>
+    <p>In PHP, sessions are used to store user data across multiple pages. Unlike cookies, session data is stored on the server, and only a session ID is stored in the user's browser. Sessions are commonly used to maintain user login states, shopping cart information, and other user-specific data.</p>
+
+    <h2>1. Starting a Session</h2>
+    <p>To begin using sessions in PHP, you must call <code>session_start()</code> at the top of your PHP file, before any HTML output. This function creates or resumes a session.</p>
+
+    <pre><code>&lt;?php
+    // Start the session
+    session_start();
+  ?&gt;</code></pre>
+
+    <h2>2. Storing Data in a Session</h2>
+    <p>You can store data in a session using the <code>$_SESSION</code> superglobal array. Here's how to store a user's name in a session:</p>
+
+    <pre><code>&lt;?php
+    // Start the session
+    session_start();
+
+    // Store data in session
+    $_SESSION['username'] = 'John Doe';
+
+    echo "Session data has been stored!";
+  ?&gt;</code></pre>
+
+    <h2>3. Accessing Session Data</h2>
+    <p>You can access session data on any page after starting the session with <code>session_start()</code>. Here's an example of accessing and displaying the stored username:</p>
+
+    <pre><code>&lt;?php
+    // Start the session
+    session_start();
+
+    // Check if the session variable is set
+    if(isset($_SESSION['username'])) {
+        echo "Hello, " . $_SESSION['username'];
+    } else {
+        echo "No session data found!";
+    }
+  ?&gt;</code></pre>
+
+    <h2>4. Modifying Session Data</h2>
+    <p>To modify session data, simply assign a new value to the session variable:</p>
+
+    <pre><code>&lt;?php
+    // Start the session
+    session_start();
+
+    // Modify the session data
+    $_SESSION['username'] = 'Jane Doe';
+
+    echo "Session data has been updated!";
+  ?&gt;</code></pre>
+
+    <h2>5. Destroying a Session</h2>
+    <p>If you want to remove a specific session variable, use <code>unset()</code>. To destroy the entire session (removing all session data), use <code>session_destroy()</code>.</p>
+
+    <pre><code>&lt;?php
+    // Start the session
+    session_start();
+
+    // Destroy a specific session variable
+    unset($_SESSION['username']);
+
+    // Destroy the entire session
+    session_destroy();
+
+    echo "Session has been destroyed!";
+  ?&gt;</code></pre>
+
+    <h2>6. Session Expiration</h2>
+    <p>Sessions do not have an expiration time by default, but you can control the session lifetime by adjusting the session cookie parameters or manually destroying the session after a certain period. Here's how you can set a session timeout:</p>
+
+    <pre><code>&lt;?php
+    // Start the session
+    session_start();
+
+    // Set the session timeout to 30 minutes
+    $timeout_duration = 1800; // 30 minutes
+
+    if (isset($_SESSION['last_activity']) && (time() - $_SESSION['last_activity']) > $timeout_duration) {
+        // If the session has expired, destroy the session
+        session_unset();     // Unset $_SESSION variable
+        session_destroy();   // Destroy session data
+        echo "Session expired!";
+    } else {
+        $_SESSION['last_activity'] = time(); // Update the last activity time
+    }
+  ?&gt;</code></pre>
+
+    <h2>7. Important Notes on Sessions</h2>
+    <ul>
+        <li>Sessions are stored on the server, while a unique session ID is stored in the user's browser as a cookie (by default).</li>
+        <li>The <code>session_start()</code> function must be called at the beginning of the PHP script before any HTML output is sent to the browser.</li>
+        <li>Session data is temporary and will be lost once the user closes the browser, unless you set the session to persist across multiple visits by configuring session parameters.</li>
+        <li>Always call <code>session_destroy()</code> to clear the session data after the user logs out or when it's no longer needed.</li>
+        <li>Session data can be accessed across different pages as long as the session is active.</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p class="note">Sessions provide a convenient way to store and access user-specific data across multiple pages. By using PHP sessions, you can manage things like user authentication, preferences, and any temporary data that needs to be shared across different parts of your website. Always remember to properly manage session data and destroy sessions when they are no longer needed for security reasons.</p>
+
+
+            </section>
             <section style="display: flex; justify-content: space-between; margin-top: 8vh;">
                 <a href="" id="prevpagephp" style="background-color: red; padding: 1.5vh 2vw; border-radius: 30px; color: white;">Previous</a>
 
@@ -2237,9 +3168,18 @@ echo $html; // Outputs the HTML structure
             document.getElementById("prevpagephp").style.display = "block";
             document.getElementById("prevpagephp").href = "learnphp.html?s=" + (parseInt(index)-1);
         }
-        else
+        else{
             document.getElementById("prevpagephp").style.display = "none";
-        document.getElementById("nextpagephp").href = "learnphp.html?s=" + (parseInt(index)+1);
+        }
+
+        if(parseInt(index)+1 <= 40){
+            document.getElementById("nextpagephp").style.display = "block";
+            document.getElementById("nextpagephp").href = "learnphp.html?s=" + (parseInt(index)+1);
+        }
+        else{
+            document.getElementById("nextpagephp").style.display = "none";
+        }
+
         let pages = document.querySelectorAll(".phpcontent");
         pages.forEach(element => {
             element.classList.add("d-hide");

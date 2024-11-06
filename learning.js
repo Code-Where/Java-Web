@@ -87,4 +87,29 @@ const phpTopics = [
              "Iterating Arrays" : 33
          }
      },
+     {
+        "id" : 9,
+         "heading" : "Form",
+         "subTopics" : {
+             "Super Global Arrays" : 34,
+             "Importing/Accessing User Input" : 35
+         }
+     },
+     {
+        "id" : 10,
+         "heading" : "Database Connectivity",
+         "subTopics" : {
+             "Connection" : 36,
+             "Making SQL Queries" : 37,
+             "Integrating Forms and Databases" : 38
+         }
+     },
+     {
+        "id" : 10,
+         "heading" : "Maintaining User State",
+         "subTopics" : {
+             "Cookies" : 39,
+             "Sessions" : 40
+         }
+     }
 ]

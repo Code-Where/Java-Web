@@ -12,6 +12,16 @@ checkBox.addEventListener("click", () => {
 
     }
 });
+let phpcheckBox = document.getElementById("phpshowmenu");
+let sideMenu = document.getElementById("phpsidemenu");
+phpcheckBox.addEventListener("click", () => {
+    if (phpcheckBox.checked) {
+        sideMenu.style.display = "block";
+    }
+    else {
+        sideMenu.style.display = "none";
+    }
+});
 const data = ["2D ARRAYS", "APPLETS", "BASIC PROGRAMMING CONSTRUCTS", " DATA CONVERSION", "DELEGATION EVENT MODEL", "EXCEPTION HANDLING", "FUNCTIONS", "GRAPHICAL USER INTERFACE (AWT)",
     "GRAPHICAL USER INTERFACE (SWINGS)", "INHERITANCE", "INPUT/OUTPUT", "INTERFACES", "JAVA DATABASE CONNECTIVITY", "MULTITHREADING", "OBJECT ORIENTED PROGRAMMING",
     "PACKAGES", "SINGLE DIMENSION ARRAYS", "STRINGS"]
