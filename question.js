@@ -13590,7 +13590,325 @@ class Main {
 }
 `
             }
+        },
+        {
+            "id": 379,
+            "description": "Java Program to Display Some Text in the Frame using Labels.",
+            "difficulty": "easy",
+            "topic": 4,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to display text using Labels in an AWT Frame.",
+                "code": `class Main extends java.awt.Frame{
+    Main(){
+        setSize(400, 600);
+        setVisible(true);
+        setLayout(null);
+        java.awt.Label l1 = new java.awt.Label("Hello I am Label 1");
+        java.awt.Label l2 = new java.awt.Label("Hello I am Label 2");
+        java.awt.Label l3 = new java.awt.Label("Hello I am Label 3");
+        l1.setBounds(100, 70, 300, 100);
+        l2.setBounds(100, 150, 300, 100);
+        l3.setBounds(100, 240, 300, 100);
+        add(l1);
+        add(l2);
+        add(l3);
+    }
+    public static void main(String[] args) {
+        new Main();
+    }
+}`
+            }
+        },
+        {
+            "id": 380,
+            "description": "Java Program to Create Text Area and Password Field.",
+            "difficulty": "medium",
+            "topic": 4,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to use TextArea and PasswordField components in an AWT Frame.",
+                "code": `class Main extends java.awt.Frame{
+    Main(){
+        setSize(400, 600);
+        setVisible(true);
+        setLayout(null);
+        java.awt.TextArea ta = new java.awt.TextArea();
+        ta.setBounds(50, 50, 300, 200);
+        java.awt.TextField tf = new java.awt.TextField();
+        tf.setBounds(50, 270, 300, 50);
+        tf.setEchoChar('*');
+        add(ta);
+        add(tf);
+    }
+    public static void main(String[] args) {
+        new Main();
+    }
+}`
+            }
+        },
+        {
+            "id": 381,
+            "description": "Java Program to Create a Button and Display Image in the Frame when Clicked.",
+            "difficulty": "medium",
+            "topic": 4,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program shows how to use a Button to trigger an action that displays an image in an AWT Frame.",
+                "code": `class Main extends java.awt.Frame{
+    java.awt.Image img;
+    Main(){
+        setSize(400, 600);
+        setVisible(true);
+        setLayout(null);
+        java.awt.Button btn = new java.awt.Button("Click to Show");
+        btn.setBounds(50, 50, 300, 50);
+        add(btn);
+        btn.addActionListener(new java.awt.event.ActionListener() {
+            @Override
+            public void actionPerformed(java.awt.event.ActionEvent e) {
+                img = java.awt.Toolkit.getDefaultToolkit().getImage("awt.png");
+                repaint();
+                throw new UnsupportedOperationException("Not supported yet.");
+            }
+            
+        });
+    }
+    public void paint(java.awt.Graphics g){
+        g.drawImage(img, 50, 200, this);
+    }
+    public static void main(String[] args) {
+        new Main();
+    }
+}`
+            }
+        },
+        {
+            "id": 382,
+            "description": "Java Program to Create 2 Radio Buttons and Display Selected Button Label.",
+            "difficulty": "medium",
+            "topic": 4,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to create Radio Buttons and display the label of the selected button.",
+                "code": `
+import java.awt.CheckboxGroup;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
+
+class Main extends java.awt.Frame{
+    Main(){
+        setSize(400, 600);
+        setVisible(true);
+        setLayout(null);
+        CheckboxGroup checkboxGroup = new CheckboxGroup();
+        java.awt.Checkbox ch = new java.awt.Checkbox("Radio 1", checkboxGroup, true);
+        java.awt.Checkbox ch2 = new java.awt.Checkbox("", checkboxGroup, false);
+        ch.setBounds(50, 50, 100, 50);
+        ch2.setBounds(160, 50, 100, 50);
+        add(ch);
+        add(ch2);
+        ch.addFocusListener(new FocusListener() {
+            @Override
+            public void focusGained(FocusEvent e) {
+                    ch2.setLabel("");
+                    ch.setLabel("Radio 1");
+                throw new UnsupportedOperationException("Not supported yet.");
+            }
+
+            @Override
+            public void focusLost(FocusEvent e) {
+                ch.setLabel("");
+                ch2.setLabel("Radio 2");
+                throw new UnsupportedOperationException("Not supported yet.");
+            }
+            
+        });
+    }
+    public static void main(String[] args) {
+        new Main();
+    }
+}`
+            }
+        },
+        {
+            "id": 383,
+            "description": "Java Program to Handle Keyboard Events.",
+            "difficulty": "medium",
+            "topic": 4,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program handles keyboard events to capture key presses in an AWT Frame.",
+                "code": `import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+
+class Main extends java.awt.Frame{
+    java.awt.Label l2;
+    Main(){
+        setSize(400, 600);
+        setVisible(true);
+        setLayout(null);
+        java.awt.Label l1 = new java.awt.Label("Enter Text : ");
+        java.awt.TextField tf = new java.awt.TextField();
+        l2 = new java.awt.Label();
+        l1.setBounds(20, 70, 100, 40);
+        tf.setBounds(130, 70, 200, 50);
+        l2.setBounds(130, 140, 100, 10);
+        add(l1);
+        add(tf);
+        add(l2);
+        tf.addKeyListener(new KeyListener() {
+            @Override
+            public void keyReleased(KeyEvent e) {
+                l2.setText("Key Released : " + e.getKeyChar());
+                throw new UnsupportedOperationException("Not supported yet.");
+            }
+
+            @Override
+            public void keyPressed(KeyEvent e) {
+                l2.setText("Key Pressed : " + e.getKeyChar());
+                throw new UnsupportedOperationException("Not supported yet.");
+            }
+
+            @Override
+            public void keyTyped(KeyEvent e) {
+                tf.setText(tf.getText()+e.getKeyChar());
+                throw new UnsupportedOperationException("Not supported yet.");
+            }
+            
+        });
+    }
+    public static void main(String[] args) {
+        new Main();
+    }
+}`
+            }
+        },
+        {
+            "id": 384,
+            "description": "Java Program to Handle Mouse Events.",
+            "difficulty": "medium",
+            "topic": 4,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates handling mouse events such as clicks, movements, and drags in an AWT Frame.",
+                "code": `import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+
+class Main extends java.awt.Frame{
+    Main(){
+        setSize(400, 600);
+        setVisible(true);
+        setLayout(null);
+        java.awt.Label l1 = new java.awt.Label("Mouse Event : ");
+        l1.setBounds(20, 70, 300, 40);
+        add(l1);
+        l1.addMouseListener(new MouseListener() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                l1.setText("Mouse Event : Clicked");
+                throw new UnsupportedOperationException("Not supported yet.");
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                l1.setText("Mouse Event : Entered");
+                throw new UnsupportedOperationException("Not supported yet.");
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                l1.setText("Mouse Event : Exited");
+                throw new UnsupportedOperationException("Not supported yet.");
+            }
+
+            @Override
+            public void mousePressed(MouseEvent e) {
+                l1.setText("Mouse Event : Pressed");
+                throw new UnsupportedOperationException("Not supported yet.");
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                l1.setText("Mouse Event : Released");
+                throw new UnsupportedOperationException("Not supported yet.");
+            }
+        });
+    }
+    public static void main(String[] args) {
+        new Main();
+    }
+}`
+            }
+        },
+        {
+            "id": 385,
+            "description": "Java Program to Get and Set State and Get Label of a Check Box.",
+            "difficulty": "easy",
+            "topic": 4,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to manipulate checkboxes, including setting their state and getting their labels.",
+                "code": `
+import java.awt.Checkbox;
+import java.awt.Label;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
+
+class Main extends java.awt.Frame{
+    Label lb, lb2;
+    Checkbox cb;
+    Main(){
+        setSize(400, 600);
+        setVisible(true);
+        setLayout(null);
+        cb = new Checkbox("Checked", true);
+        lb = new Label("Status of Checkbox : " + cb.getState());
+        lb2 = new Label("Label of Checkbox : " + cb.getLabel());
+        cb.setBounds(10, 50, 200, 20);
+        lb.setBounds(10, 80, 200, 20);
+        lb2.setBounds(10, 110, 200, 20);
+
+        add(cb);
+        add(lb);
+        add(lb2);
+        cb.addItemListener(new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+                if(e.getStateChange() == e.SELECTED){
+                    cb.setLabel("Checked");
+                }
+                else{
+                    cb.setLabel("UnChecked");
+                }
+                lb.setText("Status of Checkbox : " + cb.getState());
+                lb2.setText("Label of Checkbox : " + cb.getLabel());
+                throw new UnsupportedOperationException("Not supported yet.");
+            }
+            
+        });
+    }
+    public static void main(String[] args) {
+        new Main();
+    }
+}`
+            }
         }
+
 
 
     ]
