@@ -12917,7 +12917,681 @@ class Main{
     }
 }`
             }
+        },
+        {
+            "id": 366,
+            "description": "Write a Java program to create a basic Java thread that prints 'Hello, World!' when executed.",
+            "difficulty": "easy",
+            "topic": 13,
+            "sample_input": null,
+            "sample_output": `Running Thread : Thread T2
+Hello World!
+Running Thread : Thread T1
+Hello World!
+Running Thread : Thread T3
+Hello World!`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates the creation of a simple thread that prints 'Hello, World!' using the Thread class.",
+                "code": `class Main extends Thread{
+
+    public void run() {
+        System.out.println("Running Thread : " + this.getName() +"\nHello World!");
+    }
+    
+    public static void main(String[] args) {
+        Main t1 = new Main();
+        Main t2 = new Main();
+        Main t3 = new Main();
+        t1.setName("Thread T1");
+        t2.setName("Thread T2");
+        t3.setName("Thread T3");
+        t1.start();
+        t2.start();
+        t3.start();
+    }
+}`
+            }
+        },
+        {
+            "id": 367,
+            "description": "Write a Java program that creates two threads to find and print even and odd numbers from 1 to 20.",
+            "difficulty": "medium",
+            "topic": 13,
+            "sample_input": null,
+            "sample_output": `Thread T2 : 1 is odd
+Thread T2 : 2 is even
+Thread T2 : 3 is odd
+Thread T1 : 1 is odd
+Thread T1 : 2 is even
+Thread T2 : 4 is even
+Thread T2 : 5 is odd
+Thread T1 : 3 is odd
+Thread T2 : 6 is even
+Thread T2 : 7 is odd
+Thread T1 : 4 is even
+Thread T2 : 8 is even
+Thread T1 : 5 is odd
+Thread T1 : 6 is even
+Thread T2 : 9 is odd
+Thread T1 : 7 is odd
+Thread T1 : 8 is even
+Thread T2 : 10 is even
+Thread T1 : 9 is odd
+Thread T2 : 11 is odd
+Thread T1 : 10 is even
+Thread T2 : 12 is even
+Thread T1 : 11 is odd
+Thread T2 : 13 is odd
+Thread T1 : 12 is even
+Thread T1 : 13 is odd
+Thread T2 : 14 is even
+Thread T1 : 14 is even
+Thread T2 : 15 is odd
+Thread T1 : 15 is odd
+Thread T2 : 16 is even
+Thread T1 : 16 is even
+Thread T1 : 17 is odd
+Thread T2 : 17 is odd
+Thread T2 : 18 is even
+Thread T1 : 18 is even
+Thread T2 : 19 is odd
+Thread T1 : 19 is odd
+Thread T1 : 20 is even
+Thread T2 : 20 is even`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to use threads to print even and odd numbers concurrently.",
+                "code": `class Main extends Thread{
+
+    public void run() {
+        for(int i = 1; i < 21; i++){
+            if(i % 2 == 0){
+                System.out.println(this.getName() + " : " + i +" is even");
+            }
+            else{
+                System.out.println(this.getName() + " : " + i +" is odd");
+            }
         }
+    }
+    
+    public static void main(String[] args) {
+        Main t1 = new Main();
+        Main t2 = new Main();
+        t1.setName("Thread T1");
+        t2.setName("Thread T2");
+        t1.start();
+        t2.start();
+    }
+}`
+            }
+        },
+        {
+            "id": 368,
+            "description": "Write a Java program that sorts an array of integers using multiple threads.",
+            "difficulty": "hard",
+            "topic": 13,
+            "sample_input": null,
+            "sample_output": `Before Sorting : [15, 20, 10, 8, 5]
+Before Sorting : [15, 20, 10, 8, 5]
+Swapping Performed in Thread Thread 2
+Swapping Performed in Thread Thread 1
+Array : [10, 15, 20, 8, 5]
+Swapping Performed in Thread Thread 2
+Array : [10, 15, 20, 8, 5]
+Swapping Performed in Thread Thread 1
+Array : [10, 15, 8, 20, 5]
+Swapping Performed in Thread Thread 2
+Array : [10, 15, 8, 5, 20]
+Swapping Performed in Thread Thread 1
+Array : [10, 8, 15, 5, 20]
+Swapping Performed in Thread Thread 2
+Array : [8, 10, 15, 5, 20]
+Swapping Performed in Thread Thread 1
+Array : [8, 10, 5, 15, 20]
+Swapping Performed in Thread Thread 2
+Array : [5, 8, 10, 15, 20]
+Array : [8, 5, 10, 15, 20]
+After Sorting : [5, 8, 10, 15, 20]
+After Sorting : [5, 8, 10, 15, 20]`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program uses multiple threads to sort an array using a divide-and-conquer approach.",
+                "code": `class Main extends Thread{
+    private static int arr[] = {15, 20, 10, 8, 5};
+    void sortArray(){
+		for(int i = 0; i < arr.length; i++){
+			for(int j = 0; j < (arr.length-i-1); j++){
+				if(arr[j] > arr[j+1]){
+					int temp = arr[j];
+					arr[j] = arr[j+1];
+					arr[j+1] = temp;
+                    System.out.println("Swapping Performed in Thread " + this.getName());
+                    System.out.println("Array : " + java.util.Arrays.toString(arr));
+				}
+			}
+		}
+	}
+    public void run() {
+        System.out.println("Before Sorting : " + java.util.Arrays.toString(arr));
+        sortArray();
+        System.out.println("After Sorting : " + java.util.Arrays.toString(arr));    
+    }
+    public static void main(String[] args) {
+        Main t1 = new Main();
+        Main t2 = new Main();
+        
+        t1.setName("Thread 1");
+        t2.setName("Thread 2");
+        t1.start();
+        t2.start();
+    }
+}
+`
+            }
+        },
+        {
+            "id": 369,
+            "description": "Write a Java program that performs matrix multiplication using multiple threads.",
+            "difficulty": "hard",
+            "topic": 13,
+            "sample_input": null,
+            "sample_output": `Running Thread : Thread 2
+Running Thread : Thread 1
+Running Thread : Thread 2
+Running Thread : Thread 2
+Running Thread : Thread 2
+Running Thread : Thread 2
+Running Thread : Thread 2
+Running Thread : Thread 2
+Running Thread : Thread 2
+Running Thread : Thread 2
+Running Thread : Thread 1
+Running Thread : Thread 1
+Running Thread : Thread 2
+Running Thread : Thread 2
+Running Thread : Thread 1
+Running Thread : Thread 1
+Running Thread : Thread 1
+Running Thread : Thread 1
+Running Thread : Thread 1
+Running Thread : Thread 1
+Running Thread : Thread 2
+Running Thread : Thread 2
+Running Thread : Thread 1
+Running Thread : Thread 1
+Running Thread : Thread 2
+Running Thread : Thread 2
+Running Thread : Thread 2
+Running Thread : Thread 2
+Running Thread : Thread 2
+Running Thread : Thread 1
+Running Thread : Thread 1
+Running Thread : Thread 1
+Running Thread : Thread 1
+Running Thread : Thread 1
+Running Thread : Thread 1
+Running Thread : Thread 1
+Thread Thread 1 Multiplication Completed
+Thread Thread 2 Multiplication Completed
+258 89 17 
+31 17 26
+258 89 17
+31 17 26`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to perform matrix multiplication using threads to parallelize row-column computations.",
+                "code": `
+
+class Main extends Thread{
+    
+	private final static int arr1[][] = {{2, 8, 7}, {5, 2, 1}};
+    private final static int arr2[][] = {{1, 0, 5}, {9, 5, 0}, {8, 7, 1}};
+    private static int mat[][] = new int[arr1.length][arr2[0].length];
+    void matrixMultiply(){
+        for (int i = 0; i < arr1.length; i++) {
+            for (int j = 0; j < arr1[i].length; j++) {
+                mat[i][j] = 0;
+                for (int k = 0; k < arr2[i].length; k++) {
+                    mat[i][j] += arr1[i][k] * arr2[k][j];
+                    System.out.println("Running Thread : " + this.getName());
+                }
+            }
+        }
+	}
+    void printResultMatrix(int arr[][]) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+    public void run() {
+        matrixMultiply();
+        System.out.println("Thread " + this.getName() + " Multiplication Completed");
+        printResultMatrix(mat);    
+    }
+    public static void main(String[] args) {
+        Main t1 = new Main();
+        Main t2 = new Main();
+        
+        t1.setName("Thread 1");
+        t2.setName("Thread 2");
+        t1.start();
+        t2.start();
+    }
+}
+`
+            }
+        },
+        {
+            "id": 370,
+            "description": "Write a Java program that calculates the sum of all prime numbers up to a given limit using multiple threads.",
+            "difficulty": "medium",
+            "topic": 13,
+            "sample_input": null,
+            "sample_output": `Thread 2 Sum of Prime Number Upto 100 is 1060
+Thread 1 Sum of Prime Number Upto 100 is 1060`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program uses multiple threads to find and sum prime numbers up to a specified limit.",
+                "code": `class Main extends Thread{
+	static Boolean isPrime(int num){
+		int i = 0;
+		if(num == 2)
+			return true;
+		for(i = 2; i < num; i++){
+			if(num%i == 0){
+				return false;
+			}
+		}
+		if(i == num)
+			return true;
+		else
+			return false;
+	}
+    void sumOfNPrime(int n){
+        int sum = 0;
+        for(int i = 2; i < n; i++){
+			if(isPrime(i)){
+				sum += i;
+			}
+		}
+        System.out.println(this.getName() +" Sum of Prime Number Upto " + n + " is " + sum);
+    }
+
+    public void run() {
+        sumOfNPrime(100);
+    }
+    
+	public static void main(String[] args){
+		Main t1 = new Main();
+        Main t2 = new Main();
+        
+        t1.setName("Thread 1");
+        t2.setName("Thread 2");
+        t1.start();
+        t2.start();
+	}
+}`
+            }
+        },
+        {
+            "id": 371,
+            "description": "Write a Java program to implement a concurrent web crawler that crawls multiple websites simultaneously using threads.",
+            "difficulty": "hard",
+            "topic": 13,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates concurrent web crawling using threads to fetch content from multiple websites simultaneously.",
+                "code": null
+            }
+        },
+        {
+            "id": 372,
+            "description": "Write a Java program that creates a bank account with concurrent deposits and withdrawals using threads.",
+            "difficulty": "medium",
+            "topic": 13,
+            "sample_input": null,
+            "sample_output": null,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program simulates a bank account where multiple threads perform deposits and withdrawals concurrently, demonstrating synchronization.",
+                "code": null
+            }
+        },
+        {
+            "id": 373,
+            "description": "Create a program to create multiple threads using the Runnable interface.",
+            "difficulty": "easy",
+            "topic": 13,
+            "sample_input": null,
+            "sample_output": `Task 2 - Count: 1
+Task 2 - Count: 2
+Task 3 - Count: 1
+Task 3 - Count: 2
+Task 1 - Count: 1
+Task 3 - Count: 3
+Task 2 - Count: 3
+Task 3 - Count: 4
+Task 1 - Count: 2
+Task 3 - Count: 5
+Task 2 - Count: 4
+Task 1 - Count: 3
+Task 2 - Count: 5
+Task 1 - Count: 4
+Task 1 - Count: 5`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program shows how to implement threads using the Runnable interface.",
+                "code": `class SimpleTask implements Runnable {
+    private String taskName;
+
+    public SimpleTask(String taskName) {
+        this.taskName = taskName;
+    }
+
+    @Override
+    public void run() {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(taskName + " - Count: " + i);
+        }
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Thread thread1 = new Thread(new SimpleTask("Task 1"));
+        Thread thread2 = new Thread(new SimpleTask("Task 2"));
+        Thread thread3 = new Thread(new SimpleTask("Task 3"));
+
+        thread1.start();
+        thread2.start();
+        thread3.start();
+
+    }
+}
+`
+            }
+        },
+        {
+            "id": 374,
+            "description": "Create a program to create multiple threads using the Thread class.",
+            "difficulty": "easy",
+            "topic": 13,
+            "sample_input": null,
+            "sample_output": `Thread 1 - Count: 1
+Thread 1 - Count: 2
+Thread 3 - Count: 1
+Thread 3 - Count: 2
+Thread 2 - Count: 1
+Thread 2 - Count: 2
+Thread 2 - Count: 3
+Thread 3 - Count: 3
+Thread 1 - Count: 3
+Thread 1 - Count: 4
+Thread 3 - Count: 4
+Thread 2 - Count: 4
+Thread 3 - Count: 5
+Thread 1 - Count: 5
+Thread 2 - Count: 5`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program shows how to implement threads by extending the Thread class.",
+                "code": `class SimpleTask extends Thread{
+    public void run() {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(this.getName() + " - Count: " + i);
+        }
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        SimpleTask t1 = new SimpleTask();
+        SimpleTask t2 = new SimpleTask();
+        SimpleTask t3= new SimpleTask();
+        t1.setName("Thread 1");
+        t2.setName("Thread 2");
+        t3.setName("Thread 3");
+        t1.start();
+        t2.start();
+        t3.start();
+
+    }
+}
+`
+            }
+        },
+        {
+            "id": 375,
+            "description": "Create a program to create multiple threads, set their names, and their priorities.",
+            "difficulty": "medium",
+            "topic": 13,
+            "sample_input": null,
+            "sample_output": `Thread 1 - Count: 1
+Thread 1 - Count: 2
+Thread 3 - Count: 1
+Thread 3 - Count: 2
+Thread 2 - Count: 1
+Thread 3 - Count: 3
+Thread 1 - Count: 3
+Thread 3 - Count: 4
+Thread 2 - Count: 2
+Thread 3 - Count: 5
+Thread 1 - Count: 4
+Thread 2 - Count: 3
+Thread 1 - Count: 5
+Thread 2 - Count: 4
+Thread 2 - Count: 5`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates how to set names and priorities for multiple threads.",
+                "code": `class SimpleTask extends Thread{
+    public void run() {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(this.getName() + " - Count: " + i);
+        }
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        SimpleTask t1 = new SimpleTask();
+        SimpleTask t2 = new SimpleTask();
+        SimpleTask t3= new SimpleTask();
+        t1.setName("Thread 1");
+        t2.setName("Thread 2");
+        t3.setName("Thread 3");
+        t1.setPriority(Thread.MAX_PRIORITY);
+        t2.setPriority(Thread.MIN_PRIORITY);
+        t1.start();
+        t2.start();
+        t3.start();
+
+    }
+}
+`
+            }
+        },
+        {
+            "id": 376,
+            "description": "Create a program to create multiple threads and show an example of the synchronized keyword.",
+            "difficulty": "medium",
+            "topic": 13,
+            "sample_input": null,
+            "sample_output": `Running : Thread 2
+Hello World
+Running : Thread 1
+Hello World`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates the use of the synchronized keyword to avoid race conditions.",
+                "code": `class SyncExample extends Thread{
+    public synchronized void show(){
+        System.out.println("Running : " + this.getName());
+        System.out.println("Hello World");
+    }
+    public void run() {
+        show();
+    }
+}
+class Main{
+    public static void main(String[] args) {
+        SyncExample t1 = new SyncExample();
+        SyncExample t2 = new SyncExample();
+        t1.setName("Thread 1");
+        t2.setName("Thread 2");
+        t1.start();
+        t2.start();
+    }
+}`
+            }
+        },
+        {
+            "id": 377,
+            "description": "Create a program to create multiple threads and demonstrate notify, notifyAll, wait, resume, and sleep methods.",
+            "difficulty": "hard",
+            "topic": 13,
+            "sample_input": null,
+            "sample_output": `Thread 1 : i = 1
+Thread 1 : i = 2
+Thread 2 : i = 1
+Thread 1 : i = 3
+Thread 1 : i = 4
+Notifying all
+Thread 1 : i = 5
+Thread 2 is waiting to resume
+Thread 2 : i = 2
+Thread 2 : i = 3
+Thread 2 : i = 4
+Thread 2 : i = 5`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates the use of inter-thread communication methods like notify, wait, and sleep.",
+                "code": `class ThreadEx extends Thread{
+    public void waitThread(){
+        try {
+            System.out.println(this.getName() + " is waiting to resume");
+            this.wait();
+        } 
+        catch (Exception e) {
+        }
+    }
+    public void resumeThread(){
+        System.out.println("Resuming " + this.getName());
+        this.resume();
+    }
+    public synchronized void notiAll(){
+        System.out.println("Notifying all");
+        notifyAll();
+    }
+    public void run() {
+        for(int i = 1; i <= 5; i++){
+            if(this.getName().equals("Thread 2") && i == 2){
+                waitThread();
+            }
+            if(this.getName().equals("Thread 1") && i==5){
+                notiAll();
+            }
+            System.out.println(this.getName() + " : i = " + i);
+        }
+    }
+}
+class Main{
+    public static void main(String[] args) {
+        ThreadEx t1 = new ThreadEx();
+        ThreadEx t2 = new ThreadEx();
+        t1.setName("Thread 1");
+        t2.setName("Thread 2");
+        t1.start();
+        t2.start();
+        
+    }
+}`
+            }
+        },
+        {
+            "id": 378,
+            "description": "Create a program to create multiple threads and demonstrate join and yield methods.",
+            "difficulty": "medium",
+            "topic": 13,
+            "sample_input": null,
+            "sample_output": `Thread-3 - Count: 1
+Thread-1 - Count: 1
+Thread-1 - Count: 2
+Thread-2 - Count: 1
+Thread-2 - Count: 2
+Thread-2 - Count: 3
+Thread-3 - Count: 2
+Thread-3 - Count: 3
+Thread-3 - Count: 4
+Thread-2 - Count: 4
+Thread-1 - Count: 3
+Thread-2 - Count: 5
+Thread-3 - Count: 5
+Thread-1 - Count: 4
+Thread-1 - Count: 5
+Thread-3 has completed.
+Thread-2 has completed.
+Thread-1 has completed.
+Thread-1 has finished, now waiting for Thread-2 to complete.
+Thread-2 has finished, now waiting for Thread-3 to complete.
+Thread-3 has finished.
+All threads have completed, main thread resumes.`,
+            "solution": {
+                "language": "Java",
+                "explanation": "This program demonstrates the use of join and yield methods for thread management.",
+                "code": `class MyTask extends Thread {
+    private String taskName;
+
+    public MyTask(String taskName) {
+        this.taskName = taskName;
+    }
+
+    public void run() {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(taskName + " - Count: " + i);
+            Thread.yield(); 
+        }
+        System.out.println(taskName + " has completed.");
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        MyTask thread1 = new MyTask("Thread-1");
+        MyTask thread2 = new MyTask("Thread-2");
+        MyTask thread3 = new MyTask("Thread-3");
+
+        thread1.start();
+        thread2.start();
+        thread3.start();
+
+        try {
+            thread1.join();
+            System.out.println("Thread-1 has finished, now waiting for Thread-2 to complete.");
+
+            thread2.join();
+            System.out.println("Thread-2 has finished, now waiting for Thread-3 to complete.");
+
+            thread3.join();
+            System.out.println("Thread-3 has finished.");
+        } 
+        catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
+        System.out.println("All threads have completed, main thread resumes.");
+    }
+}
+`
+            }
+        }
+
 
     ]
 
