@@ -96,6 +96,7 @@ function copyCode(){
 }
 let phpcheckBox = document.getElementById("phpshowmenu");
 let sideMenu = document.getElementById("phpsidemenu");
+console.log(phpcheckBox);
 phpcheckBox.addEventListener("click", () => {
     if (phpcheckBox.checked) {
         sideMenu.style.display = "block";
