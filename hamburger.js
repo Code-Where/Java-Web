@@ -94,14 +94,14 @@ function copyCode(){
         console.error('Failed to copy text: ', err);
     });
 }
-let phpcheckBox = document.getElementById("phpshowmenu");
-let sideMenu = document.getElementById("phpsidemenu");
-console.log(phpcheckBox);
-phpcheckBox.addEventListener("click", () => {
+function phpShowMenu(){
+    let phpcheckBox = document.getElementById("phpshowmenu");
+    let sideMenu = document.getElementById("phpsidemenu");
     if (phpcheckBox.checked) {
         sideMenu.style.display = "block";
     }
     else {
         sideMenu.style.display = "none";
     }
-});
+
+}
